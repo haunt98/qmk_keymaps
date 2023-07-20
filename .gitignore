@@ -6,3 +6,6 @@
 
 # VSCode
 .vscode
+
+# QMK
+*.bin

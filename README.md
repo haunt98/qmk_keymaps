@@ -2,15 +2,9 @@
 
 ## Install
 
-First, clone this repo to `qmk_firmware/keyboards/dztech/dz60rgb_wkl/keymaps/haunt98`.
+Run `make` to build the firmware.
 
-Second, compile:
-
-```sh
-qmk compile -kb dztech/dz60rgb_wkl/v2_1 -km haunt98
-```
-
-Third, flash with [QMK Toolbox](https://github.com/qmk/qmk_toolbox)
+If success, use `dztech_dz60rgb_wkl_v2_1_haunt98.bin` to flash with [QMK Toolbox](https://github.com/qmk/qmk_toolbox).
 
 ## Features
 
