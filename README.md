@@ -9,7 +9,7 @@ If success, firmware file is `dztech_dz60rgb_wkl_v2_1_haunt98.bin`
 Currently firmware size:
 
 ```txt
-* The firmware size is fine - 23804/26624 (89%, 2820 bytes free)
+* The firmware size is fine - 23518/26624 (88%, 3106 bytes free)
 ```
 
 Put keyboard into bootloader mode:
