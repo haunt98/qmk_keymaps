@@ -14,3 +14,8 @@ If success, use `dztech_dz60rgb_wkl_v2_1_haunt98.bin` to flash with [QMK Toolbox
 - [Configuring QMK](https://github.com/qmk/qmk_firmware/blob/master/docs/config_options.md)
   - [Squeezing the most out of AVR](https://github.com/qmk/qmk_firmware/blob/master/docs/squeezing_avr.md)
   - [Reducing firmware size](https://get.vial.today/docs/firmware-size.html)
+
+## TODO
+
+- [ ] How to flash
+- [ ] Add stock firmware/docs
