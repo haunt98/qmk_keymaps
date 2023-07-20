@@ -4,7 +4,20 @@
 
 Run `make` to build the firmware.
 
-If success, use `dztech_dz60rgb_wkl_v2_1_haunt98.bin` to flash with [QMK Toolbox](https://github.com/qmk/qmk_toolbox).
+If success, firmware file is `dztech_dz60rgb_wkl_v2_1_haunt98.bin`
+
+Currently firmware size:
+
+```txt
+* The firmware size is fine - 23804/26624 (89%, 2820 bytes free)
+```
+
+Put keyboard into bootloader mode:
+
+- Press `QK_BOOT`.
+- Unplug cable, then hold `ESC` and plug cable.
+
+Using [QMK Toolbox](https://github.com/qmk/qmk_toolbox) to flash.
 
 ## Features
 
@@ -17,5 +30,5 @@ If success, use `dztech_dz60rgb_wkl_v2_1_haunt98.bin` to flash with [QMK Toolbox
 
 ## TODO
 
-- [ ] How to flash
+- [x] How to flash
 - [ ] Add stock firmware/docs
