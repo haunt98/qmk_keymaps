@@ -22,4 +22,5 @@ json:
 	qmk c2json -kb dztech/dz60rgb_wkl/v2_1 -km haunt98 -o keymaps_json/haunt98/keymap.json keymaps/haunt98/keymap.c
 
 clean:
+	qmk clean
 	rm -rf dztech_dz60rgb_wkl_v2_1_haunt98.bin
