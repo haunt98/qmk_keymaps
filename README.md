@@ -23,7 +23,10 @@ Use [QMK Toolbox](https://github.com/qmk/qmk_toolbox) to flash.
 
 - [Keymap FAQ](https://github.com/qmk/qmk_firmware/blob/master/docs/faq_keymap.md)
   - [Keycodes Overview](https://github.com/qmk/qmk_firmware/blob/master/docs/keycodes.md)
-  - [Grave Escape](https://github.com/qmk/qmk_firmware/blob/master/docs/feature_grave_esc.md)
+  - Do
+    - [Grave Escape](https://github.com/qmk/qmk_firmware/blob/master/docs/feature_grave_esc.md)
+  - Don't
+    - [Space Cadet: The Future, Built In](https://github.com/qmk/qmk_firmware/blob/master/docs/feature_space_cadet.md)
 - [Configuring QMK](https://github.com/qmk/qmk_firmware/blob/master/docs/config_options.md)
   - [Squeezing the most out of AVR](https://github.com/qmk/qmk_firmware/blob/master/docs/squeezing_avr.md)
   - [Reducing firmware size](https://get.vial.today/docs/firmware-size.html)
