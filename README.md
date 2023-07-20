@@ -17,7 +17,7 @@ Put keyboard into bootloader mode:
 - Press `QK_BOOT`.
 - Unplug cable, then hold `ESC` and plug cable.
 
-Using [QMK Toolbox](https://github.com/qmk/qmk_toolbox) to flash.
+Use [QMK Toolbox](https://github.com/qmk/qmk_toolbox) to flash.
 
 ## Features
 
@@ -28,7 +28,17 @@ Using [QMK Toolbox](https://github.com/qmk/qmk_toolbox) to flash.
   - [Squeezing the most out of AVR](https://github.com/qmk/qmk_firmware/blob/master/docs/squeezing_avr.md)
   - [Reducing firmware size](https://get.vial.today/docs/firmware-size.html)
 
+## Stock
+
+Stock firmware: `stock/dztech_dz60rgb_wkl_v2_1.bin`.
+Can be flashed with QMK Toolbox.
+
+Links:
+
+- [DZ60RGB-WKL Hot-Swap PCB](https://kbdfans.com/products/dz60rgb-wkl-hot-swap-pcb)
+- [USB Drive Flash Manual (New Flash Manual)](https://docs.google.com/document/d/111qx6Qec4JqtIhWaZlMND-VuRnFtn9a-gJaHN8fsL7M/edit?usp=sharing)
+
 ## TODO
 
 - [x] How to flash
-- [ ] Add stock firmware/docs
+- [x] Add stock firmware/docs
