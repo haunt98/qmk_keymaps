@@ -15,4 +15,5 @@ Third, flash with [QMK Toolbox](https://github.com/qmk/qmk_toolbox)
 ## Features
 
 - [Keymap FAQ](https://github.com/qmk/qmk_firmware/blob/master/docs/faq_keymap.md)
+  - [Keycodes Overview](https://github.com/qmk/qmk_firmware/blob/master/docs/keycodes.md)
 - [Squeezing the most out of AVR](https://github.com/qmk/qmk_firmware/blob/master/docs/squeezing_avr.md)
