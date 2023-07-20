@@ -27,6 +27,7 @@ Use [QMK Toolbox](https://github.com/qmk/qmk_toolbox) to flash.
 - [Configuring QMK](https://github.com/qmk/qmk_firmware/blob/master/docs/config_options.md)
   - [Squeezing the most out of AVR](https://github.com/qmk/qmk_firmware/blob/master/docs/squeezing_avr.md)
   - [Reducing firmware size](https://get.vial.today/docs/firmware-size.html)
+  - [Configuring QMK](https://www.caniusevia.com/docs/configuring_qmk)
 
 ## Stock
 
