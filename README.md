@@ -30,7 +30,7 @@ Use [QMK Toolbox](https://github.com/qmk/qmk_toolbox) to flash.
 
 ## Stock
 
-Stock firmware: `stock/dztech_dz60rgb_wkl_v2_1.bin`.
+Stock firmware is `stock/dztech_dz60rgb_wkl_v2_1.bin`.
 Can be flashed with QMK Toolbox.
 
 Links:
