@@ -1,4 +1,4 @@
-# QMK keymap for dztech/dz60rgb_wkl
+# QMK for dztech/dz60rgb_wkl
 
 ## Install
 
