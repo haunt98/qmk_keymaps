@@ -15,6 +15,8 @@ dztech_dz60rgb_wkl:
 	# Copy
 	rm -rf ~/qmk_firmware/keyboards/dztech/dz60rgb_wkl/keymaps/haunt98
 	cp -rf dztech_dz60rgb_wkl/keymaps/haunt98 ~/qmk_firmware/keyboards/dztech/dz60rgb_wkl/keymaps/
+	# Lint
+	qmk lint -kb dztech/dz60rgb_wkl/v2_1 -km haunt98
 	# Compile
 	qmk compile -j 8 -kb dztech/dz60rgb_wkl/v2_1 -km haunt98
 	# JSON

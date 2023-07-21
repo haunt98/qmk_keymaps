@@ -75,3 +75,4 @@ Build/Optimize
 
 - [x] How to flash
 - [x] Add stock firmware/docs
+- [x] Add qmk lint
