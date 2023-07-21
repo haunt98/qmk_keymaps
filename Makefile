@@ -24,3 +24,6 @@ json:
 clean:
 	qmk clean
 	rm -rf dztech_dz60rgb_wkl_v2_1_haunt98.bin
+
+draw:
+	pipx install keymap-drawer
