@@ -13,7 +13,7 @@ If success, firmware file is `dztech_dz60rgb_wkl_v2_1_haunt98.bin`
 Currently firmware size:
 
 ```txt
-* The firmware size is fine - 21280/26624 (79%, 5344 bytes free)
+* The firmware size is fine - 16074/26624 (60%, 10550 bytes free)
 ```
 
 Put keyboard into bootloader mode:
@@ -47,6 +47,7 @@ Don't
 - [Mouse keys](https://github.com/qmk/qmk_firmware/blob/master/docs/feature_mouse_keys.md)
 - [Space Cadet: The Future, Built In](https://github.com/qmk/qmk_firmware/blob/master/docs/feature_space_cadet.md)
 - [One Shot Keys](https://github.com/qmk/qmk_firmware/blob/master/docs/one_shot_keys.md)
+- [RGB Matrix Lighting](https://docs.qmk.fm/#/feature_rgb_matrix)
 
 Build/Optimize
 
