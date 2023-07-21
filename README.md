@@ -1,13 +1,25 @@
-# QMK for dztech/dz60rgb_wkl
+# QMK custom keymaps
 
-From [QMK dztech/dz60rgb_wkl](https://github.com/qmk/qmk_firmware/tree/master/keyboards/dztech/dz60rgb_wkl):
+## [dztech/dz60rgb_wkl](https://github.com/qmk/qmk_firmware/tree/master/keyboards/dztech/dz60rgb_wkl)
 
 > V2.1: ATmega32U4 (AVR), takes .bin files Started shipping in June 2021 as a slightly modified version of v2.
 
-## Install
+### Stock
 
-Run `make` to build the firmware.
-If success, firmware file `dztech_dz60rgb_wkl_v2_1_haunt98.bin` is located inside repo.
+Stock firmware is `dztech_dz60rgb_wkl/stock/new dztech_dz60rgb_wkl_v3_via.bin`.
+Can be flashed with QMK Toolbox.
+
+Links:
+
+- [DZ60RGB-WKL Hot-Swap PCB](https://kbdfans.com/products/dz60rgb-wkl-hot-swap-pcb)
+- [USB Drive Flash Manual (New Flash Manual)](https://docs.google.com/document/d/111qx6Qec4JqtIhWaZlMND-VuRnFtn9a-gJaHN8fsL7M/edit?usp=sharing)
+
+### Compile
+
+```sh
+make dztech_dz60rgb_wkl
+# Output is dztech_dz60rgb_wkl_v2_1_haunt98.bin
+```
 
 Currently firmware size:
 
@@ -15,7 +27,11 @@ Currently firmware size:
 * The firmware size is fine - 16074/26624 (60%, 10550 bytes free)
 ```
 
-Put keyboard into bootloader mode in 2 ways (only choose one):
+## Install
+
+Locate firmware file after compile successfully.
+
+Put keyboard into bootloader mode in 2 ways:
 
 - Press `QK_BOOT`.
 - Unplug cable, then hold `ESC` and plug cable.
@@ -54,16 +70,6 @@ Build/Optimize
 - [Squeezing the most out of AVR](https://github.com/qmk/qmk_firmware/blob/master/docs/squeezing_avr.md)
 - [Reducing firmware size](https://get.vial.today/docs/firmware-size.html)
 - [Configuring QMK](https://www.caniusevia.com/docs/configuring_qmk)
-
-## Stock
-
-Stock firmware is `stock/dztech_dz60rgb_wkl_v2_1.bin`.
-Can be flashed with QMK Toolbox.
-
-Links:
-
-- [DZ60RGB-WKL Hot-Swap PCB](https://kbdfans.com/products/dz60rgb-wkl-hot-swap-pcb)
-- [USB Drive Flash Manual (New Flash Manual)](https://docs.google.com/document/d/111qx6Qec4JqtIhWaZlMND-VuRnFtn9a-gJaHN8fsL7M/edit?usp=sharing)
 
 ## TODO
 
