@@ -71,6 +71,10 @@ Build/Optimize
 - [Reducing firmware size](https://get.vial.today/docs/firmware-size.html)
 - [Configuring QMK](https://www.caniusevia.com/docs/configuring_qmk)
 
+Blog
+
+- [Measure and reduce keyboard input latency with QMK on the Kinesis Advantage (2021)](https://michael.stapelberg.ch/posts/2021-05-08-keyboard-input-latency-qmk-kinesis/)
+
 ## TODO
 
 - [x] How to flash
