@@ -19,7 +19,6 @@
 
 // Optimize
 #define NO_ACTION_ONESHOT
-#define NO_ACTION_TAPPING
 
 #define LAYER_STATE_8BIT
 
@@ -53,5 +52,7 @@
 #undef ENABLE_RGB_MATRIX_SOLID_SPLASH
 
 // Feature
+#define TAPPING_TERM 150
+
 #undef DEBOUNCE
 #define DEBOUNCE 5
