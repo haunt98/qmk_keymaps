@@ -9,6 +9,7 @@ format:
 
 clean:
 	qmk clean
+	rm -rf ~/qmk_firmware/keyboards/dztech/dz60rgb_wkl/keymaps/haunt98
 	rm -rf dztech_dz60rgb_wkl_v2_1_haunt98.bin
 
 dztech_dz60rgb_wkl:

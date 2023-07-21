@@ -24,7 +24,7 @@ make dztech_dz60rgb_wkl
 Currently firmware size:
 
 ```txt
-* The firmware size is fine - 16080/26624 (60%, 10544 bytes free)
+* The firmware size is fine - 14812/26624 (55%, 11812 bytes free)
 ```
 
 ## Install

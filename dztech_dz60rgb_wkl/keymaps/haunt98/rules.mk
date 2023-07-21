@@ -1,5 +1,5 @@
 # VIA
-VIA_ENABLE = yes
+VIA_ENABLE = no
 
 # Optimize
 LTO_ENABLE = yes
@@ -11,6 +11,7 @@ EXTRAKEY_ENABLE = yes
 
 SPACE_CADET_ENABLE = no
 MAGIC_ENABLE = no
+NKRO_ENABLE = no
 
 # Feature
 BOOTMAGIC_ENABLE = yes
