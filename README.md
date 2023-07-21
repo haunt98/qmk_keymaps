@@ -1,5 +1,9 @@
 # QMK for dztech/dz60rgb_wkl
 
+From [QMK dztech/dz60rgb_wkl](https://github.com/qmk/qmk_firmware/tree/master/keyboards/dztech/dz60rgb_wkl):
+
+> V2.1: ATmega32U4 (AVR), takes .bin files Started shipping in June 2021 as a slightly modified version of v2.
+
 ## Install
 
 Run `make` to build the firmware.
@@ -21,18 +25,34 @@ Use [QMK Toolbox](https://github.com/qmk/qmk_toolbox) to flash.
 
 ## Features
 
+Basic
+
 - [Keymap FAQ](https://github.com/qmk/qmk_firmware/blob/master/docs/faq_keymap.md)
-  - [Keycodes Overview](https://github.com/qmk/qmk_firmware/blob/master/docs/keycodes.md)
-  - Do
-    - [Grave Escape](https://github.com/qmk/qmk_firmware/blob/master/docs/feature_grave_esc.md)
-  - Don't
-    - [Space Cadet: The Future, Built In](https://github.com/qmk/qmk_firmware/blob/master/docs/feature_space_cadet.md)
-    - [Magic Keycodes](https://github.com/qmk/qmk_firmware/blob/master/docs/keycodes_magic.md)
-    - [One Shot Keys](https://github.com/qmk/qmk_firmware/blob/master/docs/one_shot_keys.md)
+- [Keycodes Overview](https://github.com/qmk/qmk_firmware/blob/master/docs/keycodes.md)
+- [Modifier Keys](https://github.com/qmk/qmk_firmware/blob/master/docs/feature_advanced_keycodes.md)
+- [Quantum Keycodes](https://github.com/qmk/qmk_firmware/blob/master/docs/quantum_keycodes.md)
+- [Layers](https://github.com/qmk/qmk_firmware/blob/master/docs/feature_layers.md)
+
+Do
+
+- [Grave Escape](https://github.com/qmk/qmk_firmware/blob/master/docs/feature_grave_esc.md)
+- [Contact bounce / contact chatter](https://github.com/qmk/qmk_firmware/blob/master/docs/feature_debounce_type.md)
+- [Bootmagic Lite](https://github.com/qmk/qmk_firmware/blob/master/docs/feature_bootmagic.md)
+
+Don't
+
+- [Command](https://github.com/qmk/qmk_firmware/blob/master/docs/feature_command.md)
+- [Mouse keys](https://github.com/qmk/qmk_firmware/blob/master/docs/feature_mouse_keys.md)
+- [Space Cadet: The Future, Built In](https://github.com/qmk/qmk_firmware/blob/master/docs/feature_space_cadet.md)
+- [One Shot Keys](https://github.com/qmk/qmk_firmware/blob/master/docs/one_shot_keys.md)
+- [Magic Keycodes](https://github.com/qmk/qmk_firmware/blob/master/docs/keycodes_magic.md)
+
+Build/Optimize
+
 - [Configuring QMK](https://github.com/qmk/qmk_firmware/blob/master/docs/config_options.md)
-  - [Squeezing the most out of AVR](https://github.com/qmk/qmk_firmware/blob/master/docs/squeezing_avr.md)
-  - [Reducing firmware size](https://get.vial.today/docs/firmware-size.html)
-  - [Configuring QMK](https://www.caniusevia.com/docs/configuring_qmk)
+- [Squeezing the most out of AVR](https://github.com/qmk/qmk_firmware/blob/master/docs/squeezing_avr.md)
+- [Reducing firmware size](https://get.vial.today/docs/firmware-size.html)
+- [Configuring QMK](https://www.caniusevia.com/docs/configuring_qmk)
 
 ## Stock
 
