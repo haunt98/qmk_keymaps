@@ -13,7 +13,7 @@ cp:
 
 compile:
 	$(MAKE) cp
-	qmk compile -kb dztech/dz60rgb_wkl/v2_1 -km haunt98
+	qmk compile -j 8 -kb dztech/dz60rgb_wkl/v2_1 -km haunt98
 	mv ~/qmk_firmware/dztech_dz60rgb_wkl_v2_1_haunt98.bin .
 
 json:
