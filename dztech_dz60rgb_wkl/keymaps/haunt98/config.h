@@ -61,3 +61,6 @@
 // https://github.com/qmk/qmk_firmware/blob/master/docs/feature_debounce_type.md
 #undef DEBOUNCE
 #define DEBOUNCE 5
+
+// https://github.com/qmk/qmk_firmware/blob/master/docs/config_options.md
+#define USB_SUSPEND_WAKEUP_DELAY 200
