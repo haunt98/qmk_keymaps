@@ -77,6 +77,7 @@ Interesting
 
 - [Measure and reduce keyboard input latency with QMK on the Kinesis Advantage (2021)](https://michael.stapelberg.ch/posts/2021-05-08-keyboard-input-latency-qmk-kinesis/)
 - [A guide to home row mods](https://precondition.github.io/home-row-mods)
+- [The SpaceFN layout: trying to end keyboard inflation](https://geekhack.org/index.php?topic=51069.0)
 - [Pascal Getreuer's QMK keymap](https://github.com/getreuer/qmk-keymap)
 
 ## TODO
@@ -84,3 +85,4 @@ Interesting
 - [x] How to flash
 - [x] Add stock firmware/docs
 - [x] Add qmk lint
+- [ ] Visualize
