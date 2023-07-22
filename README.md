@@ -24,7 +24,7 @@ make dztech_dz60rgb_wkl
 Currently firmware size:
 
 ```txt
-* The firmware size is fine - 14812/26624 (55%, 11812 bytes free)
+* The firmware size is fine - 15316/26624 (57%, 11308 bytes free)
 ```
 
 ## Install
@@ -43,6 +43,7 @@ Use [QMK Toolbox](https://github.com/qmk/qmk_toolbox) to flash.
 Basic
 
 - [Keymap FAQ](https://github.com/qmk/qmk_firmware/blob/master/docs/faq_keymap.md)
+- [Keymap Overview](https://github.com/qmk/qmk_firmware/blob/master/docs/keymap.md)
 - [Keycodes Overview](https://github.com/qmk/qmk_firmware/blob/master/docs/keycodes.md)
 - [Modifier Keys](https://github.com/qmk/qmk_firmware/blob/master/docs/feature_advanced_keycodes.md)
 - [Quantum Keycodes](https://github.com/qmk/qmk_firmware/blob/master/docs/quantum_keycodes.md)

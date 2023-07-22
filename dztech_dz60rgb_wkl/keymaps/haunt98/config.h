@@ -18,6 +18,7 @@
 #define DYNAMIC_KEYMAP_LAYER_COUNT 3
 
 // Optimize
+// https://github.com/qmk/qmk_firmware/blob/master/docs/squeezing_avr.md
 #define NO_ACTION_ONESHOT
 
 #define LAYER_STATE_8BIT
@@ -52,9 +53,11 @@
 #undef ENABLE_RGB_MATRIX_SOLID_SPLASH
 
 // Feature
+// https://github.com/qmk/qmk_firmware/blob/master/docs/tap_hold.md
 #define TAPPING_TERM 120
 #define HOLD_ON_OTHER_KEY_PRESS
 #define RETRO_TAPPING
 
+// https://github.com/qmk/qmk_firmware/blob/master/docs/feature_debounce_type.md
 #undef DEBOUNCE
 #define DEBOUNCE 5
