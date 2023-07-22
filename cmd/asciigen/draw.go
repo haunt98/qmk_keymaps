@@ -93,14 +93,8 @@ func Draw(
 
 				// Padding to center key
 				padding := (key.NewW - len(keyStr)) / 2
-				if padding == 0 {
+				if padding <= 0 {
 					padding = 1
-				}
-
-				keyWidthLimit := key.NewW - padding
-
-				if len(keyStr) > keyWidthLimit {
-					keyStr = keyStr[:keyWidthLimit]
 				}
 
 				for i := key.NewY; i < key.NewY+key.NewH; i++ {
@@ -115,12 +109,8 @@ func Draw(
 							// Write key in the middle
 							if j == key.NewX {
 								table[i][j] = "|"
-							} else if j > key.NewX+padding && j <= key.NewX+len(keyStr)+padding {
-								if j == key.NewX+padding+1 {
-									table[i][j] = keyStr
-								} else {
-									table[i][j] = ""
-								}
+							} else if j > key.NewX+padding && j < key.NewX+len(keyStr)+padding+1 && j <= key.NewX+key.NewW-padding {
+								table[i][j] = string(keyStr[j-key.NewX-padding-1])
 							} else {
 								table[i][j] = " "
 							}
