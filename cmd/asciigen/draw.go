@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"strings"
 )
 
@@ -86,7 +87,7 @@ func Draw(
 			}
 		}
 
-		for _, layer := range keymap.Layers {
+		for iLayer, layer := range keymap.Layers {
 			// Preprocess table
 			table := make([][]string, newMaxY)
 			for i := 0; i < newMaxY; i++ {
@@ -139,11 +140,11 @@ func Draw(
 				count++
 			}
 
-			// Postprecess table
+			// Postprocess table
 			newTable := make([][]string, 0, newMaxY+1)
 
-			// Remove empty row
 			for i := 0; i < len(table); i++ {
+				// Remove empty row
 				isEmptyRow := true
 				for j := 0; j < len(table[i]); j++ {
 					if table[i][j] != " " {
@@ -156,7 +157,7 @@ func Draw(
 					continue
 				}
 
-				// Padding
+				// Padding on most right
 				paddingRight := "|"
 				if table[i][len(table[i])-1] == "-" {
 					paddingRight = "+"
@@ -165,7 +166,7 @@ func Draw(
 				newTable = append(newTable, append(table[i], paddingRight))
 			}
 
-			// Padding
+			// Padding on bottom
 			paddingRow := make([]string, 0, newMaxX)
 			for j := 0; j < newMaxX; j++ {
 				paddingBottom := "-"
@@ -176,7 +177,7 @@ func Draw(
 			}
 			newTable = append(newTable, append(paddingRow, "+"))
 
-			str := ""
+			str := fmt.Sprintf("Layer %d\n", iLayer)
 			for i := range newTable {
 				for j := range newTable[i] {
 					str += newTable[i][j]
