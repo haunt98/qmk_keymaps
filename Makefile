@@ -1,4 +1,4 @@
-.PHONY: all format clean draw dztech_dz60rgb_wkl
+.PHONY: all format clean dztech_dz60rgb_wkl
 
 all:
 	$(MAKE) format
@@ -11,11 +11,6 @@ clean:
 	qmk clean
 	rm -rf ~/qmk_firmware/keyboards/dztech/dz60rgb_wkl/keymaps/haunt98
 	rm -rf dztech_dz60rgb_wkl_v2_1_haunt98.bin
-
-draw:
-	pipx install keymap-drawer
-	# keymap -c keymap-drawer-custom.yaml parse -q dztech_dz60rgb_wkl/keymaps_json/haunt98/keymap.json > dztech_dz60rgb_wkl/keymap-drawer/haunt98/keymap.yaml
-	keymap -c keymap-drawer-custom.yaml draw dztech_dz60rgb_wkl/keymap-drawer/haunt98/keymap.yaml > dztech_dz60rgb_wkl/keymap-drawer/haunt98/keymap.svg
 
 dztech_dz60rgb_wkl:
 	# Copy
