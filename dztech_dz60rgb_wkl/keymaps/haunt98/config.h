@@ -52,7 +52,9 @@
 #undef ENABLE_RGB_MATRIX_SOLID_SPLASH
 
 // Feature
-#define TAPPING_TERM 100
+#define TAPPING_TERM 120
+#define HOLD_ON_OTHER_KEY_PRESS
+#define RETRO_TAPPING
 
 #undef DEBOUNCE
 #define DEBOUNCE 5
