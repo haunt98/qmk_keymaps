@@ -45,7 +45,7 @@ func Draw(
 
 		// Preprocess keys
 		// Y aka row -> X aka col
-		var maxX4, maxY4 int
+		var newMaxX, newMaxY int
 		for i := range keys {
 			if int(keys[i].W) == 0 {
 				keys[i].W = 1
@@ -61,20 +61,20 @@ func Draw(
 			keys[i].NewW = int(keys[i].W * scaleX)
 			keys[i].NewH = int(keys[i].H * scaleY)
 
-			if keys[i].NewX+keys[i].NewW > maxX4 {
-				maxX4 = keys[i].NewX + keys[i].NewW
+			if keys[i].NewX+keys[i].NewW > newMaxX {
+				newMaxX = keys[i].NewX + keys[i].NewW
 			}
 
-			if keys[i].NewY+keys[i].NewH > maxY4 {
-				maxY4 = keys[i].NewY + keys[i].NewH
+			if keys[i].NewY+keys[i].NewH > newMaxY {
+				newMaxY = keys[i].NewY + keys[i].NewH
 			}
 		}
 
 		for _, layer := range keymap.Layers {
 			// Preprocess table
-			table := make([][]string, maxY4)
-			for i := 0; i < maxY4; i++ {
-				table[i] = make([]string, maxX4)
+			table := make([][]string, newMaxY)
+			for i := 0; i < newMaxY; i++ {
+				table[i] = make([]string, newMaxX)
 			}
 
 			// Fill layout
@@ -91,20 +91,16 @@ func Draw(
 					keyStr = strings.TrimPrefix(keyStr, "QK_")
 				}
 
-				// Always have 1 padding left and 1 padding right
-				if len(keyStr) > key.NewW-2 {
-					keyStr = keyStr[:key.NewW-2]
+				// Padding to center key
+				padding := (key.NewW - len(keyStr)) / 2
+				if padding == 0 {
+					padding = 1
 				}
 
-				// New padding to center key
-				padding := (key.NewW - len(keyStr)) / 2
-
-				keyWidthLimit := key.NewW - 2*padding
+				keyWidthLimit := key.NewW - padding
 
 				if len(keyStr) > keyWidthLimit {
 					keyStr = keyStr[:keyWidthLimit]
-				} else {
-					keyWidthLimit = len(keyStr)
 				}
 
 				for i := key.NewY; i < key.NewY+key.NewH; i++ {
@@ -119,8 +115,12 @@ func Draw(
 							// Write key in the middle
 							if j == key.NewX {
 								table[i][j] = "|"
-							} else if j >= key.NewX+padding && j < key.NewX+keyWidthLimit+padding {
-								table[i][j] = string(keyStr[j-key.NewX-padding])
+							} else if j > key.NewX+padding && j <= key.NewX+len(keyStr)+padding {
+								if j == key.NewX+padding+1 {
+									table[i][j] = keyStr
+								} else {
+									table[i][j] = ""
+								}
 							} else {
 								table[i][j] = " "
 							}
@@ -134,7 +134,7 @@ func Draw(
 			}
 
 			// Postprecess table
-			newTable := make([][]string, 0, maxY4+1)
+			newTable := make([][]string, 0, newMaxY+1)
 
 			// Remove empty row
 			for i := 0; i < len(table); i++ {
@@ -160,8 +160,8 @@ func Draw(
 			}
 
 			// Padding
-			paddingRow := make([]string, 0, maxX4)
-			for j := 0; j < maxX4; j++ {
+			paddingRow := make([]string, 0, newMaxX)
+			for j := 0; j < newMaxX; j++ {
 				paddingBottom := "-"
 				if newTable[len(newTable)-1][j] == "|" {
 					paddingBottom = "+"

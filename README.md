@@ -30,7 +30,7 @@ make dztech_dz60rgb_wkl
 Currently firmware size:
 
 ```txt
-* The firmware size is fine - 15334/26624 (57%, 11290 bytes free)
+* The firmware size is fine - 15316/26624 (57%, 11308 bytes free)
 ```
 
 ### Keymap
