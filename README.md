@@ -1,5 +1,11 @@
 # QMK custom keymaps
 
+Before doing anything, please check QMK first:
+
+```sh
+qmk doctor
+```
+
 ## [dztech/dz60rgb_wkl](https://github.com/qmk/qmk_firmware/tree/master/keyboards/dztech/dz60rgb_wkl)
 
 > V2.1: ATmega32U4 (AVR), takes .bin files Started shipping in June 2021 as a slightly modified version of v2.
