@@ -1,9 +1,41 @@
 package main
 
+import (
+	"strings"
+)
+
 const (
 	scaleX = 8
 	scaleY = 3
 )
+
+var mapSpecialKey = map[string]string{
+	"KC_TRNS":       " ",
+	"KC_NO":         " ",
+	"KC_LGUI":       "⌘",
+	"KC_RGUI":       "⌘",
+	"KC_LALT":       "⌥",
+	"KC_RALT":       "⌥",
+	"KC_LSFT":       "⇧",
+	"KC_RSFT":       "⇧",
+	"KC_TAB":        "↹ ",
+	"KC_CAPS":       "⇪",
+	"QK_GESC":       "⎋",
+	"CTL_T(KC_ESC)": "⌃",
+}
+
+var mapSpecialKeyWidthLimit = map[string]int{
+	"KC_LGUI":       1,
+	"KC_RGUI":       1,
+	"KC_LALT":       1,
+	"KC_RALT":       1,
+	"KC_LSFT":       1,
+	"KC_RSFT":       1,
+	"KC_TAB":        1,
+	"KC_CAPS":       1,
+	"QK_GESC":       1,
+	"CTL_T(KC_ESC)": 1,
+}
 
 func Draw(
 	layouts map[string]map[string][]QMKKeyDictionary,
@@ -33,7 +65,6 @@ func Draw(
 				keys[i].H = 1
 			}
 
-			// TODO: Better way to handle this
 			// Because 0.25
 			keys[i].NewX = int(keys[i].X * scaleX)
 			keys[i].NewY = int(keys[i].Y * scaleY)
@@ -59,14 +90,27 @@ func Draw(
 			// Fill layout
 			count := 0
 			for _, key := range keys {
+				originalKeyStr := layer[count]
 				keyStr := layer[count]
-				keyWidthLimit := key.NewW - 2
 
-				// TODO: Better way to handle this
-				if len(keyStr) > keyWidthLimit {
-					keyStr = keyStr[:keyWidthLimit]
-				} else {
-					keyWidthLimit = len(keyStr)
+				// Process keyStr
+				if newKeyStr, ok := mapSpecialKey[keyStr]; ok {
+					keyStr = newKeyStr
+				} else if strings.HasPrefix(keyStr, "KC_") {
+					keyStr = strings.TrimPrefix(keyStr, "KC_")
+				} else if strings.HasPrefix(keyStr, "QK_") {
+					keyStr = strings.TrimPrefix(keyStr, "QK_")
+				}
+
+				keyWidthLimit, existKeyWidthLimit := mapSpecialKeyWidthLimit[originalKeyStr]
+				if !existKeyWidthLimit {
+					keyWidthLimit = key.NewW - 3
+
+					if len(keyStr) > keyWidthLimit {
+						keyStr = keyStr[:keyWidthLimit]
+					} else {
+						keyWidthLimit = len(keyStr)
+					}
 				}
 
 				for i := key.NewY; i < key.NewY+key.NewH; i++ {
@@ -81,8 +125,18 @@ func Draw(
 							// Write key in the middle
 							if j == key.NewX {
 								table[i][j] = "|"
-							} else if j < key.NewX+keyWidthLimit+1 {
-								table[i][j] = string(keyStr[j-key.NewX-1])
+							} else if j > key.NewX+1 && j < key.NewX+keyWidthLimit+2 {
+								if existKeyWidthLimit {
+									// Special key can be Unicode
+									// So ignore get single character of keyStr
+									if j == key.NewX+2 {
+										table[i][j] = keyStr
+									} else {
+										table[i][j] = ""
+									}
+								} else {
+									table[i][j] = string(keyStr[j-key.NewX-2])
+								}
 							} else {
 								table[i][j] = " "
 							}

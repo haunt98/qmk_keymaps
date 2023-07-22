@@ -2,7 +2,6 @@ package main
 
 import (
 	"encoding/json"
-	"fmt"
 	"log"
 	"os"
 )
@@ -16,6 +15,11 @@ func main() {
 	filenameKeymap := os.Getenv("QMK_KEYMAP")
 	if filenameKeymap == "" {
 		log.Fatalln("ENV QMK_KEYMAP empty")
+	}
+
+	filenameOut := os.Getenv("OUT")
+	if filenameOut == "" {
+		log.Fatalln("ENV OUT empty")
 	}
 
 	bytesInfo, err := os.ReadFile(filenameInfo)
@@ -42,5 +46,8 @@ func main() {
 		qmkInfo.Layouts,
 		qmkKeymap,
 	)
-	fmt.Println(result)
+
+	if err := os.WriteFile(filenameOut, []byte(result), 0o644); err != nil {
+		log.Fatalln("Failed to write file", filenameOut, err)
+	}
 }
