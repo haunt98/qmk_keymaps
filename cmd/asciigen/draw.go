@@ -23,6 +23,11 @@ var mapSpecialKey = map[string]string{
 	"KC_RGUI": "CMD",
 	"KC_LSFT": "SHIFT",
 	"KC_RSFT": "SHIFT",
+	"RGB_TOG": "RGBTO",
+	"RGB_MOD": "RGBMO",
+	"RGB_HUI": "RGBH",
+	"RGB_SAI": "RGBS",
+	"RGB_VAI": "RGBV",
 	// Custom
 	"CTL_T(KC_ESC)": "CTRL ESC",
 }
