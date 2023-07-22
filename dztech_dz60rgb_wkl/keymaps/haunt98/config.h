@@ -52,7 +52,7 @@
 #undef ENABLE_RGB_MATRIX_SOLID_SPLASH
 
 // Feature
-#define TAPPING_TERM 150
+#define TAPPING_TERM 100
 
 #undef DEBOUNCE
 #define DEBOUNCE 5
