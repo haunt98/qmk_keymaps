@@ -1,7 +1,8 @@
-.PHONY: all format clean dztech_dz60rgb_wkl
+.PHONY: all format clean draw dztech_dz60rgb_wkl
 
 all:
 	$(MAKE) format
+	$(MAKE) draw
 	$(MAKE) dztech_dz60rgb_wkl
 
 format:
@@ -11,6 +12,10 @@ clean:
 	qmk clean
 	rm -rf ~/qmk_firmware/keyboards/dztech/dz60rgb_wkl/keymaps/haunt98
 	rm -rf dztech_dz60rgb_wkl_v2_1_haunt98.bin
+
+draw:
+	curl https://raw.githubusercontent.com/qmk/qmk_firmware/master/keyboards/dztech/dz60rgb_wkl/info.json --output dztech_dz60rgb_wkl/info.json
+	QMK_INFO=dztech_dz60rgb_wkl/info.json QMK_KEYMAP=dztech_dz60rgb_wkl/keymaps_json/haunt98/keymap.json go run ./cmd/asciigen/*.go > dztech_dz60rgb_wkl/asciiart/haunt98.txt
 
 dztech_dz60rgb_wkl:
 	# Copy

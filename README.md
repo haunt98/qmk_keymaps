@@ -33,6 +33,10 @@ Currently firmware size:
 * The firmware size is fine - 15334/26624 (57%, 11290 bytes free)
 ```
 
+### Keymap
+
+See [asciiart](dztech_dz60rgb_wkl/asciiart/haunt98.txt).
+
 ## Install
 
 Locate firmware file after compile successfully.
