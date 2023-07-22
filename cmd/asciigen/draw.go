@@ -9,32 +9,22 @@ const (
 	scaleY = 3
 )
 
+// https://github.com/qmk/qmk_firmware/blob/master/docs/keycodes.md
 var mapSpecialKey = map[string]string{
-	"KC_TRNS":       " ",
-	"KC_NO":         " ",
-	"KC_LGUI":       "⌘",
-	"KC_RGUI":       "⌘",
-	"KC_LALT":       "⌥",
-	"KC_RALT":       "⌥",
-	"KC_LSFT":       "⇧",
-	"KC_RSFT":       "⇧",
-	"KC_TAB":        "↹ ",
-	"KC_CAPS":       "⇪",
-	"QK_GESC":       "⎋",
-	"CTL_T(KC_ESC)": "⌃",
-}
-
-var mapSpecialKeyWidthLimit = map[string]int{
-	"KC_LGUI":       1,
-	"KC_RGUI":       1,
-	"KC_LALT":       1,
-	"KC_RALT":       1,
-	"KC_LSFT":       1,
-	"KC_RSFT":       1,
-	"KC_TAB":        1,
-	"KC_CAPS":       1,
-	"QK_GESC":       1,
-	"CTL_T(KC_ESC)": 1,
+	"KC_TRNS": " ",
+	"KC_NO":   " ",
+	"KC_ENT":  "ENTER",
+	"KC_BSPC": "BACKSPACE",
+	"KC_SPC":  "SPACE",
+	"KC_CAPS": "CAPSLOCK",
+	"KC_LALT": "ALT",
+	"KC_RALT": "ALT",
+	"KC_LGUI": "CMD",
+	"KC_RGUI": "CMD",
+	"KC_LSFT": "SHIFT",
+	"KC_RSFT": "SHIFT",
+	// Custom
+	"CTL_T(KC_ESC)": "CTRL ESC",
 }
 
 func Draw(
@@ -90,7 +80,6 @@ func Draw(
 			// Fill layout
 			count := 0
 			for _, key := range keys {
-				originalKeyStr := layer[count]
 				keyStr := layer[count]
 
 				// Process keyStr
@@ -102,15 +91,20 @@ func Draw(
 					keyStr = strings.TrimPrefix(keyStr, "QK_")
 				}
 
-				keyWidthLimit, existKeyWidthLimit := mapSpecialKeyWidthLimit[originalKeyStr]
-				if !existKeyWidthLimit {
-					keyWidthLimit = key.NewW - 3
+				// Always have 1 padding left and 1 padding right
+				if len(keyStr) > key.NewW-2 {
+					keyStr = keyStr[:key.NewW-2]
+				}
 
-					if len(keyStr) > keyWidthLimit {
-						keyStr = keyStr[:keyWidthLimit]
-					} else {
-						keyWidthLimit = len(keyStr)
-					}
+				// New padding to center key
+				padding := (key.NewW - len(keyStr)) / 2
+
+				keyWidthLimit := key.NewW - 2*padding
+
+				if len(keyStr) > keyWidthLimit {
+					keyStr = keyStr[:keyWidthLimit]
+				} else {
+					keyWidthLimit = len(keyStr)
 				}
 
 				for i := key.NewY; i < key.NewY+key.NewH; i++ {
@@ -125,18 +119,8 @@ func Draw(
 							// Write key in the middle
 							if j == key.NewX {
 								table[i][j] = "|"
-							} else if j > key.NewX+1 && j < key.NewX+keyWidthLimit+2 {
-								if existKeyWidthLimit {
-									// Special key can be Unicode
-									// So ignore get single character of keyStr
-									if j == key.NewX+2 {
-										table[i][j] = keyStr
-									} else {
-										table[i][j] = ""
-									}
-								} else {
-									table[i][j] = string(keyStr[j-key.NewX-2])
-								}
+							} else if j >= key.NewX+padding && j < key.NewX+keyWidthLimit+padding {
+								table[i][j] = string(keyStr[j-key.NewX-padding])
 							} else {
 								table[i][j] = " "
 							}
