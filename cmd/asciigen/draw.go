@@ -41,7 +41,8 @@ var mapSpecialKey = map[string]string{
 	"RGB_SAI": "RGBS",
 	"RGB_VAI": "RGBV",
 	// Custom
-	"CTL_T(KC_ESC)": "CTRL ESC",
+	"CTL_T(KC_ESC)":  "CTRL ESC",
+	"RSFT_T(KC_ENT)": "SHIFT ENTER",
 }
 
 func Draw(
