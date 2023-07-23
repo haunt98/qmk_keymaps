@@ -125,6 +125,11 @@ func Draw(
 					padding = 1
 				}
 
+				// Draw strategy
+				// Only draw top -
+				// Only draw left |
+				// Only draw top left +
+				// Right and bottom is ignored
 				for i := key.NewY; i < key.NewY+key.NewH; i++ {
 					for j := key.NewX; j < key.NewX+key.NewW; j++ {
 						if i == key.NewY {
@@ -138,6 +143,7 @@ func Draw(
 							if j == key.NewX {
 								table[i][j] = "|"
 							} else if j > key.NewX+padding && j < key.NewX+len(keyStr)+padding+1 && j <= key.NewX+key.NewW-padding {
+								// Only handle ASCII keyStr
 								table[i][j] = string(keyStr[j-key.NewX-padding-1])
 							} else {
 								table[i][j] = " "
