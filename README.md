@@ -3,6 +3,8 @@
 Before doing anything, please check QMK first:
 
 ```sh
+qmk setup
+qmk git-submodule
 qmk doctor
 ```
 
@@ -30,7 +32,7 @@ make dztech_dz60rgb_wkl
 Currently firmware size:
 
 ```txt
-* The firmware size is fine - 15326/26624 (57%, 11298 bytes free)
+* The firmware size is fine - 16036/26624 (60%, 10588 bytes free)
 ```
 
 ### Keymap
@@ -63,10 +65,11 @@ Basic
 Do
 
 - [Bootmagic Lite](https://github.com/qmk/qmk_firmware/blob/master/docs/feature_bootmagic.md)
+- [Contact bounce / contact chatter](https://github.com/qmk/qmk_firmware/blob/master/docs/feature_debounce_type.md)
 - [Grave Escape](https://github.com/qmk/qmk_firmware/blob/master/docs/feature_grave_esc.md)
 - [Mod-Tap](https://github.com/qmk/qmk_firmware/blob/master/docs/mod_tap.md)
 - [Tap-Hold Configuration Options](https://github.com/qmk/qmk_firmware/blob/master/docs/tap_hold.md)
-- [Contact bounce / contact chatter](https://github.com/qmk/qmk_firmware/blob/master/docs/feature_debounce_type.md)
+- [Tap Dance: A Single Key Can Do 3, 5, or 100 Different Things](https://github.com/qmk/qmk_firmware/blob/master/docs/feature_tap_dance.md)
 
 Don't
 
