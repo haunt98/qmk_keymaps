@@ -60,4 +60,4 @@
 
 // https://github.com/qmk/qmk_firmware/blob/master/docs/feature_debounce_type.md
 #undef DEBOUNCE
-#define DEBOUNCE 5
+#define DEBOUNCE 10

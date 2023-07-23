@@ -30,7 +30,7 @@ make dztech_dz60rgb_wkl
 Currently firmware size:
 
 ```txt
-* The firmware size is fine - 15316/26624 (57%, 11308 bytes free)
+* The firmware size is fine - 15326/26624 (57%, 11298 bytes free)
 ```
 
 ### Keymap
@@ -87,6 +87,7 @@ Interesting
 
 - [Measure and reduce keyboard input latency with QMK on the Kinesis Advantage (2021)](https://michael.stapelberg.ch/posts/2021-05-08-keyboard-input-latency-qmk-kinesis/)
 - [A guide to home row mods](https://precondition.github.io/home-row-mods)
+- [A Modern Space Cadet](https://stevelosh.com/blog/2012/10/a-modern-space-cadet/)
 - [The SpaceFN layout: trying to end keyboard inflation](https://geekhack.org/index.php?topic=51069.0)
 - [Pascal Getreuer's QMK keymap](https://github.com/getreuer/qmk-keymap)
 - [Miryoku](https://github.com/manna-harbour/miryoku)
