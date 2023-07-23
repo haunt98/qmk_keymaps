@@ -16,6 +16,16 @@
 
 #include QMK_KEYBOARD_H
 
+enum {
+    TD_SAFEBOOT,
+};
+
+// https://github.com/qmk/qmk_firmware/blob/master/docs/feature_tap_dance.md
+tap_dance_action_t tap_dance_actions[] = {
+    // Tap twice for boot
+    [TD_SAFEBOOT] = ACTION_TAP_DANCE_DOUBLE(_______, QK_BOOT),
+};
+
 // https://github.com/qmk/qmk_firmware/blob/master/docs/keycodes.md
 // https://github.com/qmk/qmk_firmware/blob/master/docs/feature_grave_esc.md
 // https://github.com/qmk/qmk_firmware/blob/master/docs/mod_tap.md
@@ -33,7 +43,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, KC_DOWN, _______, _______,
         XXXXXXX, TG(2), _______, _______, _______, _______, XXXXXXX),
     [2] = LAYOUT_60_tsangan_hhkb(
-        QK_BOOT, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______,
+        TD_SAFEBOOT, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______,
         _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______,
         KC_CAPS, RGB_HUI, RGB_SAI, RGB_VAI, _______, _______, _______, _______, KC_HOME, KC_PGUP, _______, _______, _______,
         _______, _______, _______, _______, _______, _______, _______, _______, KC_END, KC_PGDN, _______, _______, _______,

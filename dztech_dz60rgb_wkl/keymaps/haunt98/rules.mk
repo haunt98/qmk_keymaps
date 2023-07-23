@@ -17,3 +17,5 @@ MAGIC_ENABLE = no
 # Feature
 # https://github.com/qmk/qmk_firmware/blob/master/docs/feature_bootmagic.md
 BOOTMAGIC_ENABLE = yes
+
+TAP_DANCE_ENABLE = yes
