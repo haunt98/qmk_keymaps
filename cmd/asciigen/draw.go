@@ -92,7 +92,7 @@ func Draw(
 			}
 		}
 
-		// Each kemap has many layers
+		// Each keymap has many layers
 		layersStr := make([]string, 0, len(keymap.Layers))
 		for iLayer, layer := range keymap.Layers {
 			// Preprocess table
@@ -118,7 +118,9 @@ func Draw(
 				}
 
 				// Padding to center key
-				padding := (key.NewW - len(keyStr)) / 2
+				// Why / 2, why - 1 ?
+				// Base on my feeling of course
+				padding := (key.NewW-len(keyStr))/2 - 1
 				if padding <= 0 {
 					padding = 1
 				}
@@ -149,7 +151,7 @@ func Draw(
 				count++
 			}
 
-			// Postprocess table
+			// Process new table
 			newTable := make([][]string, 0, newMaxY+1)
 
 			for i := 0; i < len(table); i++ {
@@ -185,6 +187,15 @@ func Draw(
 				paddingRow = append(paddingRow, paddingBottom)
 			}
 			newTable = append(newTable, append(paddingRow, "+"))
+
+			// Postprocess new table
+			for i := 1; i < len(newTable); i++ {
+				for j := 0; j < len(newTable[i]); j++ {
+					if newTable[i-1][j] == "|" {
+						newTable[i][j] = "+"
+					}
+				}
+			}
 
 			layerStr := fmt.Sprintf("Layer %d\n", iLayer)
 			for i := range newTable {
