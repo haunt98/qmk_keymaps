@@ -48,8 +48,9 @@ func Draw(
 	layouts map[string]map[string][]QMKKeyDictionary,
 	keymap QMKKeymap,
 ) string {
-	result := ""
+	layoutsStr := make([]string, 0, len(layouts))
 
+	// Each keyboard has many layouts
 	for layout := range layouts {
 		if keymap.Layout != layout {
 			continue
@@ -59,6 +60,8 @@ func Draw(
 		if !ok {
 			continue
 		}
+
+		layoutStr := fmt.Sprintf("Layout %s\n", layout)
 
 		// Preprocess keys
 		// Y aka row -> X aka col
@@ -87,6 +90,8 @@ func Draw(
 			}
 		}
 
+		// Each kemap has many layers
+		layersStr := make([]string, 0, len(keymap.Layers))
 		for iLayer, layer := range keymap.Layers {
 			// Preprocess table
 			table := make([][]string, newMaxY)
@@ -177,18 +182,19 @@ func Draw(
 			}
 			newTable = append(newTable, append(paddingRow, "+"))
 
-			str := fmt.Sprintf("Layer %d\n", iLayer)
+			layerStr := fmt.Sprintf("Layer %d\n", iLayer)
 			for i := range newTable {
 				for j := range newTable[i] {
-					str += newTable[i][j]
+					layerStr += newTable[i][j]
 				}
-				str += "\n"
+				layerStr += "\n"
 			}
-
-			result += str + "\n"
+			layersStr = append(layersStr, layerStr)
 		}
 
+		layoutStr += strings.Join(layersStr, "\n")
+		layoutsStr = append(layoutsStr, layoutStr)
 	}
 
-	return result
+	return strings.Join(layoutsStr, "\n")
 }
