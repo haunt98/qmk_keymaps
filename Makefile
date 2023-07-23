@@ -1,8 +1,10 @@
-.PHONY: all format clean draw dztech_dz60rgb_wkl
+.PHONY: all format clean dztech_dz60rgb_wkl
 
 all:
+	qmk setup
+	qmk git-submodule
+	qmk doctor
 	$(MAKE) format
-	$(MAKE) draw
 	$(MAKE) dztech_dz60rgb_wkl
 
 format:
@@ -12,10 +14,6 @@ clean:
 	qmk clean
 	rm -rf ~/qmk_firmware/keyboards/dztech/dz60rgb_wkl/keymaps/haunt98
 	rm -rf dztech_dz60rgb_wkl_v2_1_haunt98.bin
-
-draw:
-	curl https://raw.githubusercontent.com/qmk/qmk_firmware/master/keyboards/dztech/dz60rgb_wkl/info.json --output dztech_dz60rgb_wkl/info.json
-	QMK_INFO=dztech_dz60rgb_wkl/info.json QMK_KEYMAP=dztech_dz60rgb_wkl/keymaps_json/haunt98/keymap.json OUT=dztech_dz60rgb_wkl/asciiart/haunt98.txt go run ./cmd/qmkasciigen/*.go
 
 dztech_dz60rgb_wkl:
 	# Copy
@@ -29,3 +27,6 @@ dztech_dz60rgb_wkl:
 	# JSON
 	rm -rf dztech_dz60rgb_wkl/keymaps_json/haunt98/keymap.json
 	qmk c2json -kb dztech/dz60rgb_wkl/v2_1 -km haunt98 -o dztech_dz60rgb_wkl/keymaps_json/haunt98/keymap.json dztech_dz60rgb_wkl/keymaps/haunt98/keymap.c
+	# Draw
+	curl https://raw.githubusercontent.com/qmk/qmk_firmware/master/keyboards/dztech/dz60rgb_wkl/info.json --output dztech_dz60rgb_wkl/info.json
+	QMK_INFO=dztech_dz60rgb_wkl/info.json QMK_KEYMAP=dztech_dz60rgb_wkl/keymaps_json/haunt98/keymap.json OUT=dztech_dz60rgb_wkl/asciiart/haunt98.txt go run ./cmd/qmkasciigen/*.go
