@@ -15,7 +15,7 @@ clean:
 
 draw:
 	curl https://raw.githubusercontent.com/qmk/qmk_firmware/master/keyboards/dztech/dz60rgb_wkl/info.json --output dztech_dz60rgb_wkl/info.json
-	QMK_INFO=dztech_dz60rgb_wkl/info.json QMK_KEYMAP=dztech_dz60rgb_wkl/keymaps_json/haunt98/keymap.json OUT=dztech_dz60rgb_wkl/asciiart/haunt98.txt go run ./cmd/asciigen/*.go
+	QMK_INFO=dztech_dz60rgb_wkl/info.json QMK_KEYMAP=dztech_dz60rgb_wkl/keymaps_json/haunt98/keymap.json OUT=dztech_dz60rgb_wkl/asciiart/haunt98.txt go run ./cmd/qmkasciigen/*.go
 
 dztech_dz60rgb_wkl:
 	# Copy
