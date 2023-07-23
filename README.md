@@ -95,6 +95,7 @@ Interesting
 - [The SpaceFN layout: trying to end keyboard inflation](https://geekhack.org/index.php?topic=51069.0)
 - [Pascal Getreuer's QMK keymap](https://github.com/getreuer/qmk-keymap)
 - [Miryoku](https://github.com/manna-harbour/miryoku)
+- [Toward a more useful keyboard](https://github.com/jasonrudolph/keyboard)
 
 ## TODO
 
