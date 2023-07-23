@@ -52,6 +52,7 @@ Use [QMK Toolbox](https://github.com/qmk/qmk_toolbox) to flash.
 
 Basic
 
+- [Introduction](https://github.com/qmk/qmk_firmware/blob/master/docs/getting_started_introduction.md)
 - [Keymap FAQ](https://github.com/qmk/qmk_firmware/blob/master/docs/faq_keymap.md)
 - [Keymap Overview](https://github.com/qmk/qmk_firmware/blob/master/docs/keymap.md)
 - [Keycodes Overview](https://github.com/qmk/qmk_firmware/blob/master/docs/keycodes.md)
