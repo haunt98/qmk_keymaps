@@ -16,15 +16,26 @@
 
 #include QMK_KEYBOARD_H
 
+// Custom keycodes
 enum {
     TD_SAFEBOOT,
 };
 
+// Custom functions
+void td_safe_boot(tap_dance_state_t* state, void* user_data);
+
 // https://github.com/qmk/qmk_firmware/blob/master/docs/feature_tap_dance.md
 tap_dance_action_t tap_dance_actions[] = {
-    // Tap twice for boot
-    [TD_SAFEBOOT] = ACTION_TAP_DANCE_DOUBLE(_______, QK_BOOT),
+    [TD_SAFEBOOT] = ACTION_TAP_DANCE_FN(td_safe_boot),
 };
+
+// Tap twice to flash keyboard
+void td_safe_boot(tap_dance_state_t* state, void* user_data) {
+    if (state->count >= 3) {
+        reset_keyboard();
+        reset_tap_dance(state);
+    }
+}
 
 // https://github.com/qmk/qmk_firmware/blob/master/docs/keycodes.md
 // https://github.com/qmk/qmk_firmware/blob/master/docs/feature_grave_esc.md

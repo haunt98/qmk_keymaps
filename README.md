@@ -32,7 +32,7 @@ make dztech_dz60rgb_wkl
 Currently firmware size:
 
 ```txt
-* The firmware size is fine - 16036/26624 (60%, 10588 bytes free)
+* The firmware size is fine - 15720/26624 (59%, 10904 bytes free)
 ```
 
 ### Keymap
@@ -61,6 +61,10 @@ Basic
 - [Modifier Keys](https://github.com/qmk/qmk_firmware/blob/master/docs/feature_advanced_keycodes.md)
 - [Quantum Keycodes](https://github.com/qmk/qmk_firmware/blob/master/docs/quantum_keycodes.md)
 - [Layers](https://github.com/qmk/qmk_firmware/blob/master/docs/feature_layers.md)
+
+More than Basic
+
+- [How to Customize Your Keyboard's Behavior](https://github.com/qmk/qmk_firmware/blob/master/docs/custom_quantum_functions.md)
 
 Do
 
