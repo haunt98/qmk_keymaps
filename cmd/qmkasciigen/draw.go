@@ -92,13 +92,18 @@ func Draw(
 			}
 		}
 
+		if newMaxX == 0 || newMaxY == 0 {
+			continue
+		}
+
 		// Each keymap has many layers
 		layersStr := make([]string, 0, len(keymap.Layers))
 		for iLayer, layer := range keymap.Layers {
 			// Preprocess table
 			table := make([][]string, newMaxY)
 			for i := 0; i < newMaxY; i++ {
-				table[i] = make([]string, newMaxX)
+				// Padding 1 in the right
+				table[i] = make([]string, newMaxX+1)
 			}
 
 			// Fill layout
@@ -126,21 +131,18 @@ func Draw(
 				}
 
 				// Draw strategy
-				// Only draw top -
-				// Only draw left |
-				// Only draw top left +
-				// Right and bottom is ignored
+				// TODO
 				for i := key.NewY; i < key.NewY+key.NewH; i++ {
-					for j := key.NewX; j < key.NewX+key.NewW; j++ {
-						if i == key.NewY {
-							if j == key.NewX {
+					for j := key.NewX; j <= key.NewX+key.NewW; j++ {
+						if i == key.NewY || i == key.NewY+key.NewH-1 {
+							if j == key.NewX || j == key.NewX+key.NewW {
 								table[i][j] = "+"
 							} else {
 								table[i][j] = "-"
 							}
 						} else if i == key.NewY+key.NewH/2 {
 							// Write key in the middle
-							if j == key.NewX {
+							if j == key.NewX || j == key.NewX+key.NewW {
 								table[i][j] = "|"
 							} else if j > key.NewX+padding && j < key.NewX+len(keyStr)+padding+1 && j <= key.NewX+key.NewW-padding {
 								// Only handle ASCII keyStr
@@ -149,7 +151,11 @@ func Draw(
 								table[i][j] = " "
 							}
 						} else {
-							table[i][j] = " "
+							if j == key.NewX || j == key.NewX+key.NewW {
+								table[i][j] = "|"
+							} else {
+								table[i][j] = " "
+							}
 						}
 					}
 				}
@@ -158,49 +164,34 @@ func Draw(
 			}
 
 			// Process new table
-			newTable := make([][]string, 0, newMaxY+1)
+			newTable := make([][]string, 0, newMaxY)
 
-			for i := 0; i < len(table); i++ {
-				// Remove empty row
-				isEmptyRow := true
-				for j := 0; j < len(table[i]); j++ {
-					if table[i][j] != " " {
-						isEmptyRow = false
-						break
+			for i := 0; i < newMaxY; i++ {
+				// Merge 2 row lines into 1
+				// + + ? = +
+				// Merge
+				// +--+---+
+				// +----+--
+				// Into
+				// +--+-+-+
+				if i+1 < len(table) && table[i][0] == "+" && table[i+1][0] == "+" {
+					newTableI := make([]string, newMaxX+1)
+					for j := 0; j <= newMaxX; j++ {
+						if table[i][j] == "+" || table[i+1][j] == "+" {
+							newTableI[j] = "+"
+						} else if table[i][j] == "-" || table[i+1][j] == "-" {
+							newTableI[j] = "-"
+						} else {
+							newTableI[j] = " "
+						}
 					}
-				}
 
-				if isEmptyRow {
+					newTable = append(newTable, newTableI)
+					i++
 					continue
 				}
 
-				// Padding on most right
-				paddingRight := "|"
-				if table[i][len(table[i])-1] == "-" {
-					paddingRight = "+"
-				}
-
-				newTable = append(newTable, append(table[i], paddingRight))
-			}
-
-			// Padding on bottom
-			paddingRow := make([]string, 0, newMaxX)
-			for j := 0; j < newMaxX; j++ {
-				paddingBottom := "-"
-				if newTable[len(newTable)-1][j] == "|" {
-					paddingBottom = "+"
-				}
-				paddingRow = append(paddingRow, paddingBottom)
-			}
-			newTable = append(newTable, append(paddingRow, "+"))
-
-			// Postprocess new table
-			for i := 1; i < len(newTable); i++ {
-				for j := 0; j < len(newTable[i]); j++ {
-					if newTable[i-1][j] == "|" {
-						newTable[i][j] = "+"
-					}
-				}
+				newTable = append(newTable, table[i])
 			}
 
 			layerStr := fmt.Sprintf("Layer %d\n", iLayer)
