@@ -23,6 +23,8 @@
 // https://github.com/qmk/qmk_firmware/blob/master/docs/squeezing_avr.md
 #define NO_ACTION_ONESHOT
 
+#define NO_MUSIC_MODE
+
 #define LAYER_STATE_8BIT
 
 #undef ENABLE_RGB_MATRIX_ALPHAS_MODS

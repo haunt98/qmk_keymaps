@@ -14,8 +14,8 @@ EXTRAKEY_ENABLE = yes
 SPACE_CADET_ENABLE = no
 MAGIC_ENABLE = no
 
+MUSIC_ENABLE = no
+
 # Feature
 # https://github.com/qmk/qmk_firmware/blob/master/docs/feature_bootmagic.md
 BOOTMAGIC_ENABLE = yes
-
-TAP_DANCE_ENABLE = yes

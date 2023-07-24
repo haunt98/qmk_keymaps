@@ -16,27 +16,6 @@
 
 #include QMK_KEYBOARD_H
 
-// Custom keycodes
-enum {
-    TD_SAFEBOOT,
-};
-
-// Custom functions
-void td_safe_boot(tap_dance_state_t* state, void* user_data);
-
-// https://github.com/qmk/qmk_firmware/blob/master/docs/feature_tap_dance.md
-tap_dance_action_t tap_dance_actions[] = {
-    [TD_SAFEBOOT] = ACTION_TAP_DANCE_FN(td_safe_boot),
-};
-
-// Tap twice to flash keyboard
-void td_safe_boot(tap_dance_state_t* state, void* user_data) {
-    if (state->count >= 3) {
-        reset_keyboard();
-        reset_tap_dance(state);
-    }
-}
-
 // https://github.com/qmk/qmk_firmware/blob/master/docs/keycodes.md
 // https://github.com/qmk/qmk_firmware/blob/master/docs/feature_grave_esc.md
 // https://github.com/qmk/qmk_firmware/blob/master/docs/mod_tap.md
@@ -54,7 +33,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, KC_DOWN, _______, _______,
         XXXXXXX, TG(2), _______, _______, _______, _______, XXXXXXX),
     [2] = LAYOUT_60_tsangan_hhkb(
-        TD_SAFEBOOT, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______,
+        QK_BOOT, EE_CLR, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______,
         _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______,
         KC_CAPS, RGB_HUI, RGB_SAI, RGB_VAI, _______, _______, _______, _______, KC_HOME, KC_PGUP, _______, _______, _______,
         _______, _______, _______, _______, _______, _______, _______, _______, KC_END, KC_PGDN, _______, _______, _______,

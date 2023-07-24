@@ -64,7 +64,9 @@ Basic
 
 More than Basic
 
+- [Debugging FAQ](https://github.com/qmk/qmk_firmware/blob/master/docs/faq_debug.md)
 - [How to Customize Your Keyboard's Behavior](https://github.com/qmk/qmk_firmware/blob/master/docs/custom_quantum_functions.md)
+- [List of Useful Core Functions To Make Your Keyboard Better](https://github.com/qmk/qmk_firmware/blob/master/docs/ref_functions.md)
 
 Do
 

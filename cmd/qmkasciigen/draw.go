@@ -43,7 +43,6 @@ var mapSpecialKey = map[string]string{
 	// Custom
 	"CTL_T(KC_ESC)":  "CTRL ESC",
 	"RSFT_T(KC_ENT)": "SHIFT ENTER",
-	"TD_SAFEBOOT":    "BOOT",
 }
 
 func Draw(
@@ -118,8 +117,6 @@ func Draw(
 					keyStr = strings.TrimPrefix(keyStr, "KC_")
 				} else if strings.HasPrefix(keyStr, "QK_") {
 					keyStr = strings.TrimPrefix(keyStr, "QK_")
-				} else if strings.HasPrefix(keyStr, "TD_") {
-					keyStr = strings.TrimPrefix(keyStr, "TD_")
 				}
 
 				// Padding to center key
