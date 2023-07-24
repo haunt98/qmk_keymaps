@@ -1,5 +1,33 @@
 # CHANGELOG
 
+## v0.0.2 (2023-07-24)
+
+### Added
+
+- feat: change activate layer 2 using fn ` (2023-07-24)
+
+- feat: move TG(2) from left alt to right command (2023-07-24)
+
+- feat(draw): make post process table optional (2023-07-24)
+
+- feat: remove tap dance (can not make it work) (2023-07-24)
+
+- feat: better draw strategy (wip) (2023-07-23)
+
+### Fixed
+
+- fix(draw): init table with empty space to fix think65 (2023-07-24)
+
+### Others
+
+- chore: re-organize Makefile (2023-07-24)
+
+- chore(draw): fix lint (2023-07-24)
+
+- chore(draw): explain draw strategy (2023-07-23)
+
+- chore(changelog): generate v0.0.1 (2023-07-23)
+
 ## v0.0.1 (2023-07-23)
 
 ### Added
