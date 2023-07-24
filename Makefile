@@ -1,10 +1,10 @@
-.PHONY: all format clean dztech_dz60rgb_wkl go
+.PHONY: all format clean go dztech_dz60rgb_wkl
 
 all:
-	qmk setup
 	qmk git-submodule
 	qmk doctor
 	$(MAKE) format
+	$(MAKE) go
 	$(MAKE) dztech_dz60rgb_wkl
 
 format:
@@ -14,6 +14,16 @@ clean:
 	qmk clean
 	rm -rf ~/qmk_firmware/keyboards/dztech/dz60rgb_wkl/keymaps/haunt98
 	rm -rf dztech_dz60rgb_wkl_v2_1_haunt98.bin
+
+# From changeloguru
+go:
+	go install github.com/haunt98/go-test-color@latest
+	go-test-color -race -failfast ./...
+	golangci-lint run ./...
+	go install github.com/haunt98/gofimports/cmd/gofimports@latest
+	go install mvdan.cc/gofumpt@latest
+	gofimports -w --company github.com/make-go-great,github.com/haunt98 .
+	gofumpt -w -extra .
 
 dztech_dz60rgb_wkl:
 	# Copy
@@ -30,13 +40,3 @@ dztech_dz60rgb_wkl:
 	# Draw
 	curl https://raw.githubusercontent.com/qmk/qmk_firmware/master/keyboards/dztech/dz60rgb_wkl/info.json --output dztech_dz60rgb_wkl/info.json
 	QMK_INFO=dztech_dz60rgb_wkl/info.json QMK_KEYMAP=dztech_dz60rgb_wkl/keymaps_json/haunt98/keymap.json OUT=dztech_dz60rgb_wkl/asciiart/haunt98.txt POST_PROCESS_TABLE=true go run ./cmd/qmkasciigen/*.go
-
-# From changeloguru
-go:
-	go install github.com/haunt98/go-test-color@latest
-	go-test-color -race -failfast ./...
-	golangci-lint run ./...
-	go install github.com/haunt98/gofimports/cmd/gofimports@latest
-	go install mvdan.cc/gofumpt@latest
-	gofimports -w --company github.com/make-go-great,github.com/haunt98 .
-	gofumpt -w -extra .

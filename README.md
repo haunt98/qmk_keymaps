@@ -3,7 +3,6 @@
 Before doing anything, please check QMK first:
 
 ```sh
-qmk setup
 qmk git-submodule
 qmk doctor
 ```
