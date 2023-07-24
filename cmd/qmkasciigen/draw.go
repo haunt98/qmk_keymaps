@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"log"
 	"strings"
 )
 
@@ -45,9 +46,17 @@ var mapSpecialKey = map[string]string{
 	"RSFT_T(KC_ENT)": "SHIFT ENTER",
 }
 
+type DrawConfig struct {
+	Debug bool
+	// Not all keyboards play nice with this
+	// You need to try and see for your self
+	PostProcessTable bool
+}
+
 func Draw(
 	layouts map[string]map[string][]QMKKeyDictionary,
 	keymap QMKKeymap,
+	cfg DrawConfig,
 ) string {
 	layoutsStr := make([]string, 0, len(layouts))
 
@@ -98,7 +107,7 @@ func Draw(
 		// Each keymap has many layers
 		layersStr := make([]string, 0, len(keymap.Layers))
 		for iLayer, layer := range keymap.Layers {
-			// Preprocess table with space
+			// PreProcess table with space
 			table := make([][]string, newMaxY)
 			for i := 0; i < newMaxY; i++ {
 				// Padding 1 in the right
@@ -161,58 +170,58 @@ func Draw(
 				count++
 			}
 
-			// Debug table
-			// for i := range table {
-			// 	s := ""
-			// 	for j := range table[i] {
-			// 		s += table[i][j]
-			// 	}
-			// 	fmt.Println(s)
-			// }
-
-			// Process new table
-			newTable := make([][]string, 0, newMaxY)
-
-			for i := 0; i < newMaxY; i++ {
-				// Merge 2 row lines into 1
-				// + + ? = +
-				// Merge
-				// +--+---+
-				// +----+--
-				// Into
-				// +--+-+-+
-				if i+1 < newMaxY && table[i][0] == "+" && table[i+1][0] == "+" {
-					// fmt.Println("From")
-					// fmt.Println(strings.Join(table[i], ""))
-					// fmt.Println(strings.Join(table[i+1], ""))
-
-					newTableI := make([]string, newMaxX+1)
-					for j := 0; j <= newMaxX; j++ {
-						if table[i][j] == "+" || table[i+1][j] == "+" {
-							// fmt.Printf("+ [%s] [%s] %d %d\n", table[i][j], table[i+1][j], i, j)
-							newTableI[j] = "+"
-							continue
-						}
-
-						if table[i][j] == "-" || table[i+1][j] == "-" {
-							// fmt.Printf("- [%s] [%s] %d %d\n", table[i][j], table[i+1][j], i, j)
-							newTableI[j] = "-"
-							continue
-						}
-
-						// fmt.Printf("S [%s] [%s] %d %d\n", table[i][j], table[i+1][j], i, j)
-						newTableI[j] = " "
+			if cfg.Debug {
+				s := ""
+				for i := range table {
+					for j := range table[i] {
+						s += table[i][j]
 					}
-					// fmt.Println(strings.Join(newTableI, ""))
-
-					newTable = append(newTable, newTableI)
-					i++
-					continue
+					s += "\n"
 				}
-
-				newTable = append(newTable, table[i])
+				log.Printf("Table:\n%s\n", s)
 			}
 
+			// PostProcess table
+			var newTable [][]string
+			if !cfg.PostProcessTable {
+				newTable = table
+			} else {
+				newTable = make([][]string, 0, newMaxY)
+
+				for i := 0; i < newMaxY; i++ {
+					// Merge 2 row lines into 1
+					// + + ? = +
+					// Merge
+					// +--+---+
+					// +----+--
+					// Into
+					// +--+-+-+
+					if i+1 < newMaxY && table[i][0] == "+" && table[i+1][0] == "+" {
+						newTableI := make([]string, newMaxX+1)
+						for j := 0; j <= newMaxX; j++ {
+							if table[i][j] == "+" || table[i+1][j] == "+" {
+								newTableI[j] = "+"
+								continue
+							}
+
+							if table[i][j] == "-" || table[i+1][j] == "-" {
+								newTableI[j] = "-"
+								continue
+							}
+
+							newTableI[j] = " "
+						}
+
+						newTable = append(newTable, newTableI)
+						i++
+						continue
+					}
+
+					newTable = append(newTable, table[i])
+				}
+			}
+
+			// Print
 			layerStr := fmt.Sprintf("Layer %d\n", iLayer)
 			for i := range newTable {
 				for j := range newTable[i] {
@@ -223,6 +232,7 @@ func Draw(
 			layersStr = append(layersStr, layerStr)
 		}
 
+		// Print
 		layoutStr += strings.Join(layersStr, "\n")
 		layoutsStr = append(layoutsStr, layoutStr)
 	}

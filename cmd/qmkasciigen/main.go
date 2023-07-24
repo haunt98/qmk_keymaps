@@ -2,20 +2,38 @@ package main
 
 import (
 	"encoding/json"
-	"fmt"
 	"log"
 	"os"
+	"strings"
 )
 
 func main() {
+	debug := strings.EqualFold(os.Getenv("DEBUG"), "true")
+
 	filenameInfo := os.Getenv("QMK_INFO")
 	if filenameInfo == "" {
 		log.Fatalln("ENV QMK_INFO empty")
+	}
+	if debug {
+		log.Printf("filenameInfo: [%s]\n", filenameInfo)
 	}
 
 	filenameKeymap := os.Getenv("QMK_KEYMAP")
 	if filenameKeymap == "" {
 		log.Fatalln("ENV QMK_KEYMAP empty")
+	}
+	if debug {
+		log.Printf("filenameKeymap: [%s]\n", filenameKeymap)
+	}
+
+	filenameOut := os.Getenv("OUT")
+	if debug {
+		log.Printf("filenameOut: [%s]\n", filenameOut)
+	}
+
+	postProcessTable := strings.EqualFold(os.Getenv("POST_PROCESS_TABLE"), "true")
+	if debug {
+		log.Printf("postProcessTable: [%v]\n", postProcessTable)
 	}
 
 	bytesInfo, err := os.ReadFile(filenameInfo)
@@ -41,11 +59,16 @@ func main() {
 	result := Draw(
 		qmkInfo.Layouts,
 		qmkKeymap,
+		DrawConfig{
+			Debug:            debug,
+			PostProcessTable: postProcessTable,
+		},
 	)
-	fmt.Println(result)
+	if debug {
+		log.Printf("Result:\n%s\n", result)
+	}
 
-    // Optional
-	filenameOut := os.Getenv("OUT")
+	// Optional
 	if filenameOut != "" {
 		if err := os.WriteFile(filenameOut, []byte(result), 0o644); err != nil {
 			log.Fatalln("Failed to write file", filenameOut, err)
