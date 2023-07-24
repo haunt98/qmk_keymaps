@@ -12,8 +12,8 @@ const (
 
 // https://github.com/qmk/qmk_firmware/blob/master/docs/keycodes.md
 var mapSpecialKey = map[string]string{
-	"KC_TRNS": " ",
-	"KC_NO":   " ",
+	"KC_TRNS": "",
+	"KC_NO":   "",
 	"KC_ENT":  "ENTER",
 	"KC_BSPC": "BACKSPACE",
 	"KC_SPC":  "SPACE",
@@ -98,11 +98,14 @@ func Draw(
 		// Each keymap has many layers
 		layersStr := make([]string, 0, len(keymap.Layers))
 		for iLayer, layer := range keymap.Layers {
-			// Preprocess table
+			// Preprocess table with space
 			table := make([][]string, newMaxY)
 			for i := 0; i < newMaxY; i++ {
 				// Padding 1 in the right
 				table[i] = make([]string, newMaxX+1)
+				for j := 0; j <= newMaxX; j++ {
+					table[i][j] = " "
+				}
 			}
 
 			// Fill layout
@@ -128,30 +131,28 @@ func Draw(
 				}
 
 				// Draw strategy
-				// TODO
+				// Draw 4 + in corner
+				// Draw - on top and bottom
+				// Draw | on left and right
 				for i := key.NewY; i < key.NewY+key.NewH; i++ {
 					for j := key.NewX; j <= key.NewX+key.NewW; j++ {
 						if i == key.NewY || i == key.NewY+key.NewH-1 {
 							if j == key.NewX || j == key.NewX+key.NewW {
 								table[i][j] = "+"
-							} else {
+							} else if table[i][j] != "+" {
 								table[i][j] = "-"
 							}
 						} else if i == key.NewY+key.NewH/2 {
 							// Write key in the middle
 							if j == key.NewX || j == key.NewX+key.NewW {
 								table[i][j] = "|"
-							} else if j > key.NewX+padding && j < key.NewX+len(keyStr)+padding+1 && j <= key.NewX+key.NewW-padding {
+							} else if len(keyStr) > 0 && j > key.NewX+padding && j < key.NewX+len(keyStr)+padding+1 && j <= key.NewX+key.NewW-padding {
 								// Only handle ASCII keyStr
 								table[i][j] = string(keyStr[j-key.NewX-padding-1])
-							} else {
-								table[i][j] = " "
 							}
 						} else {
 							if j == key.NewX || j == key.NewX+key.NewW {
 								table[i][j] = "|"
-							} else {
-								table[i][j] = " "
 							}
 						}
 					}
@@ -159,6 +160,15 @@ func Draw(
 
 				count++
 			}
+
+			// Debug table
+			// for i := range table {
+			// 	s := ""
+			// 	for j := range table[i] {
+			// 		s += table[i][j]
+			// 	}
+			// 	fmt.Println(s)
+			// }
 
 			// Process new table
 			newTable := make([][]string, 0, newMaxY)
@@ -171,17 +181,29 @@ func Draw(
 				// +----+--
 				// Into
 				// +--+-+-+
-				if i+1 < len(table) && table[i][0] == "+" && table[i+1][0] == "+" {
+				if i+1 < newMaxY && table[i][0] == "+" && table[i+1][0] == "+" {
+					// fmt.Println("From")
+					// fmt.Println(strings.Join(table[i], ""))
+					// fmt.Println(strings.Join(table[i+1], ""))
+
 					newTableI := make([]string, newMaxX+1)
 					for j := 0; j <= newMaxX; j++ {
 						if table[i][j] == "+" || table[i+1][j] == "+" {
+							// fmt.Printf("+ [%s] [%s] %d %d\n", table[i][j], table[i+1][j], i, j)
 							newTableI[j] = "+"
-						} else if table[i][j] == "-" || table[i+1][j] == "-" {
-							newTableI[j] = "-"
-						} else {
-							newTableI[j] = " "
+							continue
 						}
+
+						if table[i][j] == "-" || table[i+1][j] == "-" {
+							// fmt.Printf("- [%s] [%s] %d %d\n", table[i][j], table[i+1][j], i, j)
+							newTableI[j] = "-"
+							continue
+						}
+
+						// fmt.Printf("S [%s] [%s] %d %d\n", table[i][j], table[i+1][j], i, j)
+						newTableI[j] = " "
 					}
+					// fmt.Println(strings.Join(newTableI, ""))
 
 					newTable = append(newTable, newTableI)
 					i++
