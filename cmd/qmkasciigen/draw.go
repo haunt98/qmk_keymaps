@@ -8,7 +8,7 @@ import (
 
 const (
 	scaleX = 8
-	scaleY = 3
+	scaleY = 2
 )
 
 // https://github.com/qmk/qmk_firmware/blob/master/docs/keycodes.md
@@ -48,9 +48,6 @@ var mapSpecialKey = map[string]string{
 
 type DrawConfig struct {
 	Debug bool
-	// Not all keyboards play nice with this
-	// You need to try and see for your self
-	PostProcessTable bool
 }
 
 func Draw(
@@ -108,8 +105,8 @@ func Draw(
 		layersStr := make([]string, 0, len(keymap.Layers))
 		for iLayer, layer := range keymap.Layers {
 			// PreProcess table with space
-			table := make([][]string, newMaxY)
-			for i := 0; i < newMaxY; i++ {
+			table := make([][]string, newMaxY+1)
+			for i := 0; i <= newMaxY; i++ {
 				// Padding 1 in the right
 				table[i] = make([]string, newMaxX+1)
 				for j := 0; j <= newMaxX; j++ {
@@ -141,9 +138,9 @@ func Draw(
 				// Draw 4 + in corner
 				// Draw - on top and bottom
 				// Draw | on left and right
-				for i := key.NewY; i < key.NewY+key.NewH; i++ {
+				for i := key.NewY; i <= key.NewY+key.NewH; i++ {
 					for j := key.NewX; j <= key.NewX+key.NewW; j++ {
-						if i == key.NewY || i == key.NewY+key.NewH-1 {
+						if i == key.NewY || i == key.NewY+key.NewH {
 							if j == key.NewX || j == key.NewX+key.NewW {
 								table[i][j] = "+"
 							} else if table[i][j] != "+" {
@@ -179,51 +176,11 @@ func Draw(
 				log.Printf("Table:\n%s\n", s)
 			}
 
-			// PostProcess table
-			var newTable [][]string
-			if !cfg.PostProcessTable {
-				newTable = table
-			} else {
-				newTable = make([][]string, 0, newMaxY)
-
-				for i := 0; i < newMaxY; i++ {
-					// Merge 2 row lines into 1
-					// + + ? = +
-					// Merge
-					// +--+---+
-					// +----+--
-					// Into
-					// +--+-+-+
-					if i+1 < newMaxY && table[i][0] == "+" && table[i+1][0] == "+" {
-						newTableI := make([]string, newMaxX+1)
-						for j := 0; j <= newMaxX; j++ {
-							if table[i][j] == "+" || table[i+1][j] == "+" {
-								newTableI[j] = "+"
-								continue
-							}
-
-							if table[i][j] == "-" || table[i+1][j] == "-" {
-								newTableI[j] = "-"
-								continue
-							}
-
-							newTableI[j] = " "
-						}
-
-						newTable = append(newTable, newTableI)
-						i++
-						continue
-					}
-
-					newTable = append(newTable, table[i])
-				}
-			}
-
 			// Print
 			layerStr := fmt.Sprintf("Layer %d\n", iLayer)
-			for i := range newTable {
-				for j := range newTable[i] {
-					layerStr += newTable[i][j]
+			for i := range table {
+				for j := range table[i] {
+					layerStr += table[i][j]
 				}
 				layerStr += "\n"
 			}

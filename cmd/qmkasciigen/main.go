@@ -31,11 +31,6 @@ func main() {
 		log.Printf("filenameOut: [%s]\n", filenameOut)
 	}
 
-	postProcessTable := strings.EqualFold(os.Getenv("POST_PROCESS_TABLE"), "true")
-	if debug {
-		log.Printf("postProcessTable: [%v]\n", postProcessTable)
-	}
-
 	bytesInfo, err := os.ReadFile(filenameInfo)
 	if err != nil {
 		log.Fatalln("Failed to read file", filenameInfo, err)
@@ -60,8 +55,7 @@ func main() {
 		qmkInfo.Layouts,
 		qmkKeymap,
 		DrawConfig{
-			Debug:            debug,
-			PostProcessTable: postProcessTable,
+			Debug: debug,
 		},
 	)
 	if debug {
