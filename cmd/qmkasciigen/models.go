@@ -23,6 +23,6 @@ type QMKKeyDictionary struct {
 
 // https://config.qmk.fm/#/
 type QMKKeymap struct {
-	Layers [][]string `json:"layers"`
 	Layout string     `json:"layout"`
+	Layers [][]string `json:"layers"`
 }

@@ -70,7 +70,7 @@ func main() {
 
 	// Optional
 	if filenameOut != "" {
-		if err := os.WriteFile(filenameOut, []byte(result), 0o644); err != nil {
+		if err := os.WriteFile(filenameOut, []byte(result), 0o600); err != nil {
 			log.Fatalln("Failed to write file", filenameOut, err)
 		}
 	}

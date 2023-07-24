@@ -125,11 +125,9 @@ func Draw(
 				// Process keyStr
 				if newKeyStr, ok := mapSpecialKey[keyStr]; ok {
 					keyStr = newKeyStr
-				} else if strings.HasPrefix(keyStr, "KC_") {
-					keyStr = strings.TrimPrefix(keyStr, "KC_")
-				} else if strings.HasPrefix(keyStr, "QK_") {
-					keyStr = strings.TrimPrefix(keyStr, "QK_")
 				}
+				keyStr = strings.TrimPrefix(keyStr, "KC_")
+				keyStr = strings.TrimPrefix(keyStr, "QK_")
 
 				// Padding to center key
 				// Why / 2, why - 1 ?
