@@ -1,5 +1,23 @@
 # CHANGELOG
 
+## v0.0.3 (2023-07-25)
+
+### Added
+
+- feat(draw): remove post process table (2023-07-25)
+
+- feat: remove shift enter, only enter (2023-07-24)
+
+### Others
+
+- chore(qmkasciigen): cleanup (2023-07-25)
+
+- chore: simple license in code (2023-07-24)
+
+- chore: add LICENSE (2023-07-24)
+
+- chore(changelog): generate v0.0.2 (2023-07-24)
+
 ## v0.0.2 (2023-07-24)
 
 ### Added
