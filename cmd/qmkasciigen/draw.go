@@ -2,7 +2,6 @@ package main
 
 import (
 	"fmt"
-	"log"
 	"strings"
 )
 
@@ -46,14 +45,9 @@ var mapSpecialKey = map[string]string{
 	"RSFT_T(KC_ENT)": "SHIFT ENTER",
 }
 
-type DrawConfig struct {
-	Debug bool
-}
-
 func Draw(
 	layouts map[string]map[string][]QMKKeyDictionary,
 	keymap QMKKeymap,
-	cfg DrawConfig,
 ) string {
 	layoutsStr := make([]string, 0, len(layouts))
 
@@ -163,17 +157,6 @@ func Draw(
 				}
 
 				count++
-			}
-
-			if cfg.Debug {
-				s := ""
-				for i := range table {
-					for j := range table[i] {
-						s += table[i][j]
-					}
-					s += "\n"
-				}
-				log.Printf("Table:\n%s\n", s)
 			}
 
 			// Print

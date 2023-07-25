@@ -102,9 +102,21 @@ Interesting
 - [Miryoku](https://github.com/manna-harbour/miryoku)
 - [Toward a more useful keyboard](https://github.com/jasonrudolph/keyboard)
 
+## qmkasciigen
+
+Install:
+
+```sh
+go install github.com/haunt98/qmk_keymaps/cmd/qmkasciigen@latest
+```
+
 ## TODO
 
 - [x] How to flash
 - [x] Add stock firmware/docs
 - [x] Add qmk lint
 - [x] Visualize
+- [ ] qmkasciigen
+  - [ ] Use flag
+  - [ ] Add docs
+  - [ ] Get data directly from qmk

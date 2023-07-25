@@ -54,9 +54,6 @@ func main() {
 	result := Draw(
 		qmkInfo.Layouts,
 		qmkKeymap,
-		DrawConfig{
-			Debug: debug,
-		},
 	)
 	if debug {
 		log.Printf("Result:\n%s\n", result)
