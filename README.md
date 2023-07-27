@@ -2,11 +2,6 @@
 
 Before doing anything, please check QMK first:
 
-```sh
-qmk git-submodule
-qmk doctor
-```
-
 ## [dztech/dz60rgb_wkl](https://github.com/qmk/qmk_firmware/tree/master/keyboards/dztech/dz60rgb_wkl)
 
 > V2.1: ATmega32U4 (AVR), takes .bin files Started shipping in June 2021 as a slightly modified version of v2.
@@ -120,4 +115,3 @@ go install github.com/haunt98/qmk_keymaps/cmd/qmkasciigen@latest
   - [ ] Use flag
   - [ ] Add docs
   - [ ] Get data directly from qmk
-- [ ] Build using Dockerfile

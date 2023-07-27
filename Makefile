@@ -1,6 +1,7 @@
 .PHONY: all format clean go dztech_dz60rgb_wkl
 
 all:
+	qmk setup -H ~/qmk_firmware
 	qmk git-submodule
 	qmk doctor
 	$(MAKE) format
