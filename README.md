@@ -38,7 +38,7 @@ See [asciiart](dztech_dz60rgb_wkl/asciiart/haunt98.txt).
 
 ## Install
 
-Locate firmware file after compile successfully.
+Locate firmware file after compile successfully or download from [QMK action workflow](https://github.com/haunt98/qmk_keymaps/actions/workflows/qmk.yml)
 
 Put keyboard into bootloader mode in 2 ways:
 
