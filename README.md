@@ -120,3 +120,4 @@ go install github.com/haunt98/qmk_keymaps/cmd/qmkasciigen@latest
   - [ ] Use flag
   - [ ] Add docs
   - [ ] Get data directly from qmk
+- [ ] Build using Dockerfile
