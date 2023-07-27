@@ -18,7 +18,7 @@ jobs:
         uses: actions/checkout@v3
         with:
           sparse-checkout: dztech_dz60rgb_wkl/keymaps/haunt98
-          path: ~/qmk_firmware/keyboards/dztech/dz60rgb_wkl/keymaps
+          path: ~/qmk_firmware/keyboards/dztech/dz60rgb_wkl/keymaps/haunt98
       - name: Build firmware
         run: qmk compile -j 8 -kb dztech/dz60rgb_wkl/v2_1 -km haunt98
       - name: Archive firmware
