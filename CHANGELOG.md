@@ -1,5 +1,31 @@
 # CHANGELOG
 
+## v0.0.4 (2023-07-28)
+
+### Others
+
+- chore: guide qmk gh action workflow (2023-07-28)
+
+- chore: use gh action badge (2023-07-28)
+
+- chore: change artifact name (2023-07-28)
+
+- chore: fix qmk gh action (2023-07-28)
+
+- chore: fix qmk gh action (2023-07-28)
+
+- chore: fix git checkout gh action (2023-07-28)
+
+- chore: fix qmk github action (2023-07-28)
+
+- chore: add qmk github action (2023-07-28)
+
+- chore: add github action (2023-07-28)
+
+- chore: Docker todo (2023-07-28)
+
+- chore(changelog): generate v0.0.3 (2023-07-25)
+
 ## v0.0.3 (2023-07-25)
 
 ### Added
