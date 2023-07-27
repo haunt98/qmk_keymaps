@@ -17,8 +17,9 @@ jobs:
       - name: Checkout personal keymaps
         uses: actions/checkout@v3
         with:
-          sparse-checkout: dztech_dz60rgb_wkl/keymaps/haunt98
-          path: ~/qmk_firmware/keyboards/dztech/dz60rgb_wkl/keymaps/haunt98
+          path: haunt98_qmk_keymaps
+      - name: Copy keymaps
+        run: cp -rf haunt98_qmk_keymaps/dztech_dz60rgb_wkl/keymaps/haunt98 qmk_firmware/keyboards/dztech/dz60rgb_wkl/keymaps/
       - name: Build firmware
         run: qmk compile -j 8 -kb dztech/dz60rgb_wkl/v2_1 -km haunt98
       - name: Archive firmware
