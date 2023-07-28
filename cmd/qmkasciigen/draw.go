@@ -11,40 +11,54 @@ const (
 )
 
 // https://github.com/qmk/qmk_firmware/blob/master/docs/keycodes.md
-var mapSpecialKey = map[string]string{
-	"KC_TRNS": "",
-	"_______": "",
-	"KC_NO":   "",
-	"XXXXXXX": "",
-	"KC_ENT":  "ENTER",
-	"KC_BSPC": "BACKSPACE",
-	"KC_SPC":  "SPACE",
-	"KC_MINS": "-",
-	"KC_EQL":  "=",
-	"KC_LBRC": "[",
-	"KC_RBRC": "]",
-	"KC_BSLS": "\\",
-	"KC_SCLN": ";",
-	"KC_QUOT": "'",
-	"KC_GRV":  "`",
-	"KC_COMM": ",",
-	"KC_DOT":  ".",
-	"KC_SLSH": "/",
-	"KC_CAPS": "CAPSLOCK",
-	"KC_LALT": "ALT",
-	"KC_RALT": "ALT",
-	"KC_LGUI": "CMD",
-	"KC_RGUI": "CMD",
-	"KC_LSFT": "SHIFT",
-	"KC_RSFT": "SHIFT",
-	"RGB_TOG": "RGBTO",
-	"RGB_MOD": "RGBMO",
-	"RGB_HUI": "RGBH",
-	"RGB_SAI": "RGBS",
-	"RGB_VAI": "RGBV",
-	// Custom
-	"CTL_T(KC_ESC)":  "CTRL ESC",
-	"RSFT_T(KC_ENT)": "SHIFT ENTER",
+var mapFromTo = []map[string]string{
+	{
+		// Basic
+		"KC_TRNS": "",
+		"_______": "",
+		"KC_NO":   "",
+		"XXXXXXX": "",
+		"KC_ENT":  "ENTER",
+		"KC_BSPC": "BACK",
+		"KC_SPC":  "SPACE",
+		"KC_MINS": "-",
+		"KC_EQL":  "=",
+		"KC_LBRC": "[",
+		"KC_RBRC": "]",
+		"KC_BSLS": "\\",
+		"KC_SCLN": ";",
+		"KC_QUOT": "'",
+		"KC_GRV":  "`",
+		"KC_COMM": ",",
+		"KC_DOT":  ".",
+		"KC_SLSH": "/",
+		"KC_CAPS": "CAPSLOCK",
+		"KC_LCTL": "CTRL",
+		"KC_RCTL": "CTRL",
+		"KC_LALT": "ALT",
+		"KC_RALT": "ALT",
+		"KC_LGUI": "CMD",
+		"KC_RGUI": "CMD",
+		"KC_LSFT": "SHIFT",
+		"KC_RSFT": "SHIFT",
+		"RGB_TOG": "RGBTO",
+		"RGB_MOD": "RGBMO",
+		"RGB_HUI": "RGBH",
+		"RGB_SAI": "RGBS",
+		"RGB_VAI": "RGBV",
+		// Advance
+		"LCTL_T": "CTRL",
+		"RCTL_T": "CTRL",
+		"CTL_T":  "CTRL",
+		"LSFT_T": "SHIFT",
+		"RSFT_T": "SHIFT",
+		"SFT_T":  "SHIFT",
+	},
+	{
+		// Custom
+		"KC_": "",
+		"QK_": "",
+	},
 }
 
 func Draw(
@@ -115,12 +129,12 @@ func Draw(
 			for _, key := range keys {
 				keyStr := layer[count]
 
-				// Process keyStr
-				if newKeyStr, ok := mapSpecialKey[keyStr]; ok {
-					keyStr = newKeyStr
+				// Convert keyStr
+				for _, m := range mapFromTo {
+					for from, to := range m {
+						keyStr = strings.ReplaceAll(keyStr, from, to)
+					}
 				}
-				keyStr = strings.TrimPrefix(keyStr, "KC_")
-				keyStr = strings.TrimPrefix(keyStr, "QK_")
 
 				// Padding to center key
 				// Why / 2, why - 1 ?
