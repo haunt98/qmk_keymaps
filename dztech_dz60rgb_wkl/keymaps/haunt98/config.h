@@ -55,7 +55,3 @@
 // https://github.com/qmk/qmk_firmware/blob/master/docs/feature_rgb_matrix.md
 #define RGB_MATRIX_MAXIMUM_BRIGHTNESS 200
 #define RGB_MATRIX_DEFAULT_VAL RGB_MATRIX_MAXIMUM_BRIGHTNESS
-
-// IS31FL3733
-#define ISSI_SWPULLUP PUR_05KR
-#define ISSI_CSPULLUP PUR_05KR
