@@ -89,6 +89,7 @@ Interesting
 - [Measure and reduce keyboard input latency with QMK on the Kinesis Advantage (2021)](https://michael.stapelberg.ch/posts/2021-05-08-keyboard-input-latency-qmk-kinesis/)
 - [A guide to home row mods](https://precondition.github.io/home-row-mods)
 - [A Modern Space Cadet](https://stevelosh.com/blog/2012/10/a-modern-space-cadet/)
+- [QMK debounce masterclass](https://kbd.news/QMK-debounce-masterclass-1435.html)
 - [The SpaceFN layout: trying to end keyboard inflation](https://geekhack.org/index.php?topic=51069.0)
 - [Pascal Getreuer's QMK keymap](https://github.com/getreuer/qmk-keymap)
 - [Miryoku](https://github.com/manna-harbour/miryoku)
