@@ -19,7 +19,7 @@ var mapFromTo = []map[string]string{
 		"KC_NO":   "",
 		"XXXXXXX": "",
 		"KC_ENT":  "ENTER",
-		"KC_BSPC": "BACK",
+		"KC_BSPC": "BACKSPACE",
 		"KC_SPC":  "SPACE",
 		"KC_MINS": "-",
 		"KC_EQL":  "=",

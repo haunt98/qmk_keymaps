@@ -129,3 +129,4 @@ Thanks:
   - [x] Use flag
   - [x] Add docs
   - [x] Get data directly from qmk
+  - [ ] Use backspace/back depends on space allow
