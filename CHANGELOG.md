@@ -1,5 +1,35 @@
 # CHANGELOG
 
+## v0.0.6 (2023-07-28)
+
+### Added
+
+- feat(qmkasciigen): get remote keymap (2023-07-28)
+
+- feat(qmkasciigen): get info json from qmk repo (2023-07-28)
+
+- feat(qmkasciigen): use flag instead of os.ENV (2023-07-28)
+
+- feat: set RGB_MATRIX_LED_FLUSH_LIMIT (2023-07-28)
+
+### Fixed
+
+- Revert "fix: ghosting rgb led (wip)" (2023-07-28)
+
+- fix: ghosting rgb led (wip) (2023-07-28)
+
+### Others
+
+- chore(qmkasciigen): update docs (2023-07-28)
+
+- chore: default make only format and compile (2023-07-28)
+
+- chore: update readme (2023-07-28)
+
+- chore: set debounce sym_eager_pr (2023-07-28)
+
+- chore(changelog): generate v0.0.5 (2023-07-28)
+
 ## v0.0.5 (2023-07-28)
 
 ### Added
