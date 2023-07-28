@@ -1,5 +1,21 @@
 # CHANGELOG
 
+## v0.0.5 (2023-07-28)
+
+### Added
+
+- feat: limit rgb matrix brightness (2023-07-28)
+
+### Others
+
+- chore: fix gh action (2023-07-28)
+
+- chore: only run qmk gh action on c, h, mk files changed (2023-07-28)
+
+- chore: remove firmware size (2023-07-28)
+
+- chore(changelog): generate v0.0.4 (2023-07-28)
+
 ## v0.0.4 (2023-07-28)
 
 ### Others
