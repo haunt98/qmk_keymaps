@@ -1,6 +1,15 @@
 # https://github.com/qmk/qmk_firmware/blob/master/docs/newbs_building_firmware_workflow.md
 name: QMK
 on: [push, workflow_dispatch]
+  push:
+    branches:
+      - main
+    paths:
+      - "**.c"
+      - "**.h"
+      - "**.mk"
+  workflow_dispatch:
+
 
 jobs:
   build:
