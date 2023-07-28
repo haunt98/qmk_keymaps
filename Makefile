@@ -26,6 +26,10 @@ go:
 	gofimports -w --company github.com/make-go-great,github.com/haunt98 .
 	gofumpt -w -extra .
 
+draw:
+	curl https://raw.githubusercontent.com/qmk/qmk_firmware/master/keyboards/dztech/dz60rgb_wkl/info.json --output dztech_dz60rgb_wkl/info.json
+	go run ./cmd/qmkasciigen/*.go -debug -qmk-info dztech_dz60rgb_wkl/info.json -qmk-keymap=dztech_dz60rgb_wkl/keymaps_json/haunt98/keymap.json -out dztech_dz60rgb_wkl/asciiart/haunt98.txt
+
 dztech_dz60rgb_wkl:
 	# Copy
 	rm -rf ~/qmk_firmware/keyboards/dztech/dz60rgb_wkl/keymaps/haunt98
@@ -38,6 +42,3 @@ dztech_dz60rgb_wkl:
 	# JSON
 	rm -rf dztech_dz60rgb_wkl/keymaps_json/haunt98/keymap.json
 	qmk c2json -kb dztech/dz60rgb_wkl/v2_1 -km haunt98 -o dztech_dz60rgb_wkl/keymaps_json/haunt98/keymap.json dztech_dz60rgb_wkl/keymaps/haunt98/keymap.c
-	# Draw
-	curl https://raw.githubusercontent.com/qmk/qmk_firmware/master/keyboards/dztech/dz60rgb_wkl/info.json --output dztech_dz60rgb_wkl/info.json
-	QMK_INFO=dztech_dz60rgb_wkl/info.json QMK_KEYMAP=dztech_dz60rgb_wkl/keymaps_json/haunt98/keymap.json OUT=dztech_dz60rgb_wkl/asciiart/haunt98.txt POST_PROCESS_TABLE=true go run ./cmd/qmkasciigen/*.go
