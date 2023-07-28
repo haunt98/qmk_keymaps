@@ -13,7 +13,9 @@ const (
 // https://github.com/qmk/qmk_firmware/blob/master/docs/keycodes.md
 var mapSpecialKey = map[string]string{
 	"KC_TRNS": "",
+	"_______": "",
 	"KC_NO":   "",
+	"XXXXXXX": "",
 	"KC_ENT":  "ENTER",
 	"KC_BSPC": "BACKSPACE",
 	"KC_SPC":  "SPACE",
