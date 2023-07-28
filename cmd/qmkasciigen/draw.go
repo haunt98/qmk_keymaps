@@ -49,10 +49,13 @@ var mapFromTo = []map[string]string{
 		// Advance
 		"LCTL_T": "CTRL",
 		"RCTL_T": "CTRL",
-		"CTL_T":  "CTRL",
 		"LSFT_T": "SHIFT",
 		"RSFT_T": "SHIFT",
-		"SFT_T":  "SHIFT",
+	},
+	{
+		// Prevent colliding with previous map
+		"CTL_T": "CTRL",
+		"SFT_T": "SHIFT",
 	},
 	{
 		// Custom
