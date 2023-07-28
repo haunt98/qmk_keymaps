@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## v0.0.7 (2023-07-28)
+
+### Added
+
+- feat(qmkasciigen): hide _______, XXXXXXX (2023-07-28)
+
+### Others
+
+- chore(changelog): generate v0.0.6 (2023-07-28)
+
 ## v0.0.6 (2023-07-28)
 
 ### Added
