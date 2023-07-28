@@ -26,12 +26,6 @@ make dztech_dz60rgb_wkl
 # Output is dztech_dz60rgb_wkl_v2_1_haunt98.bin
 ```
 
-Currently firmware size:
-
-```txt
-* The firmware size is fine - 15326/26624 (57%, 11298 bytes free)
-```
-
 ### Keymap
 
 See [asciiart](dztech_dz60rgb_wkl/asciiart/haunt98.txt).
