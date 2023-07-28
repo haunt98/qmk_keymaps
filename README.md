@@ -103,13 +103,29 @@ Install:
 go install github.com/haunt98/qmk_keymaps/cmd/qmkasciigen@latest
 ```
 
+Usage:
+
+```sh
+# Generate from QMK repo
+# Keymap must be JSON (exist keymap.json)
+qmkasciigen -qmk-keyboard ymdk/id75 -qmk-keymap via -out ascii.txt
+
+# Generate from local keymap.json
+qmkasciigen -qmk-keyboard dztech/dz60rgb_wkl/v2_1 -qmk-keymap-file dztech_dz60rgb_wkl/keymaps_json/haunt98/keymap.json -out ascii.txt
+```
+
+Thanks:
+
+- [yskoht/keymapviz](https://github.com/yskoht/keymapviz)
+- [caksoylar/keymap-drawer](https://github.com/caksoylar/keymap-drawer)
+
 ## TODO
 
 - [x] How to flash
 - [x] Add stock firmware/docs
 - [x] Add qmk lint
 - [x] Visualize
-- [ ] qmkasciigen
-  - [ ] Use flag
-  - [ ] Add docs
-  - [ ] Get data directly from qmk
+- [x] qmkasciigen
+  - [x] Use flag
+  - [x] Add docs
+  - [x] Get data directly from qmk
