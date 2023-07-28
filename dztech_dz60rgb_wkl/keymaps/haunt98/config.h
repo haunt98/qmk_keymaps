@@ -51,3 +51,7 @@
 // https://github.com/qmk/qmk_firmware/blob/master/docs/feature_debounce_type.md
 #undef DEBOUNCE
 #define DEBOUNCE 10
+
+// https://github.com/qmk/qmk_firmware/blob/master/docs/feature_rgb_matrix.md
+#define RGB_MATRIX_MAXIMUM_BRIGHTNESS 200
+#define RGB_MATRIX_DEFAULT_VAL RGB_MATRIX_MAXIMUM_BRIGHTNESS
