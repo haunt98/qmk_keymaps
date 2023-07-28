@@ -106,13 +106,13 @@ func wrapGetQMKInfo(qmkKeyboardStr, qmkInfoFile string, debug bool) (QMKInfo, er
 	return qmkInfo, nil
 }
 
-func getQMKInfo(qmkKeyboard string, debug bool) (QMKInfo, error) {
-	qmkKeyboard = strings.TrimSpace(qmkKeyboard)
-	if qmkKeyboard == "" {
+func getQMKInfo(qmkKeyboardStr string, debug bool) (QMKInfo, error) {
+	qmkKeyboardStr = strings.TrimSpace(qmkKeyboardStr)
+	if qmkKeyboardStr == "" {
 		return QMKInfo{}, ErrEmptyQMKInfo
 	}
 
-	kbParts := strings.Split(qmkKeyboard, "/")
+	kbParts := strings.Split(qmkKeyboardStr, "/")
 	for i := 1; i <= len(kbParts); i++ {
 		kb := strings.Join(kbParts[:i], "/")
 
@@ -190,18 +190,18 @@ func wrapGetQMKKeymap(qmkKeyboardStr, qmkKeymapStr, qmkKeymapFile string, debug 
 	return qmkKeymap, nil
 }
 
-func getQMKKeymap(qmkKeyboard, qmkKeymap string, debug bool) (QMKKeymap, error) {
-	qmkKeyboard = strings.TrimSpace(qmkKeyboard)
-	qmkKeymap = strings.TrimSpace(qmkKeymap)
-	if qmkKeyboard == "" || qmkKeymap == "" {
+func getQMKKeymap(qmkKeyboardStr, qmkKeymapStr string, debug bool) (QMKKeymap, error) {
+	qmkKeyboardStr = strings.TrimSpace(qmkKeyboardStr)
+	qmkKeymapStr = strings.TrimSpace(qmkKeymapStr)
+	if qmkKeyboardStr == "" || qmkKeymapStr == "" {
 		return QMKKeymap{}, ErrEmptyQMKKeymap
 	}
 
-	kbParts := strings.Split(qmkKeyboard, "/")
+	kbParts := strings.Split(qmkKeyboardStr, "/")
 	for i := 1; i <= len(kbParts); i++ {
 		kb := strings.Join(kbParts[:i], "/")
 
-		url := fmt.Sprintf(qmkKeymapURL, kb, qmkKeymap)
+		url := fmt.Sprintf(qmkKeymapURL, kb, qmkKeymapStr)
 
 		// nolint:noctx,gosec
 		httpRsp, err := http.Get(url)
