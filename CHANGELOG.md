@@ -1,5 +1,17 @@
 # CHANGELOG
 
+## v0.0.8 (2023-07-28)
+
+### Added
+
+- feat: revert back to backspace for now (2023-07-28)
+
+- feat(qmkasciigen): split from to keycodes (2023-07-28)
+
+### Others
+
+- chore(changelog): generate v0.0.7 (2023-07-28)
+
 ## v0.0.7 (2023-07-28)
 
 ### Added
