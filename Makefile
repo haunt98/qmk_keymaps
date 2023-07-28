@@ -1,11 +1,10 @@
-.PHONY: all format clean go dztech_dz60rgb_wkl
+.PHONY: all format clean go draw dztech_dz60rgb_wkl
 
 all:
 	qmk setup -H ~/qmk_firmware
 	qmk git-submodule
 	qmk doctor
 	$(MAKE) format
-	$(MAKE) go
 	$(MAKE) dztech_dz60rgb_wkl
 
 format:
@@ -27,6 +26,7 @@ go:
 	gofumpt -w -extra .
 
 draw:
+	$(MAKE) go
 	curl https://raw.githubusercontent.com/qmk/qmk_firmware/master/keyboards/dztech/dz60rgb_wkl/info.json --output dztech_dz60rgb_wkl/info.json
 	go run ./cmd/qmkasciigen/*.go -debug -qmk-info dztech_dz60rgb_wkl/info.json -qmk-keymap=dztech_dz60rgb_wkl/keymaps_json/haunt98/keymap.json -out dztech_dz60rgb_wkl/asciiart/haunt98.txt
 
