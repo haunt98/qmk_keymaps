@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## v0.0.9 (2023-07-28)
+
+### Fixed
+
+- fix: prevent colliding draw map (2023-07-28)
+
+### Others
+
+- chore(changelog): generate v0.0.8 (2023-07-28)
+
 ## v0.0.8 (2023-07-28)
 
 ### Added
