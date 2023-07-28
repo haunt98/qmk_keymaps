@@ -50,7 +50,7 @@
 
 // https://github.com/qmk/qmk_firmware/blob/master/docs/feature_debounce_type.md
 #undef DEBOUNCE
-#define DEBOUNCE 10
+#define DEBOUNCE 5
 
 // https://github.com/qmk/qmk_firmware/blob/master/docs/feature_rgb_matrix.md
 #define RGB_MATRIX_LED_FLUSH_LIMIT 16
