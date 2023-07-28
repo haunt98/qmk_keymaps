@@ -27,8 +27,7 @@ go:
 
 draw:
 	$(MAKE) go
-	curl https://raw.githubusercontent.com/qmk/qmk_firmware/master/keyboards/dztech/dz60rgb_wkl/info.json --output dztech_dz60rgb_wkl/info.json
-	go run ./cmd/qmkasciigen/*.go -debug -qmk-info dztech_dz60rgb_wkl/info.json -qmk-keymap=dztech_dz60rgb_wkl/keymaps_json/haunt98/keymap.json -out dztech_dz60rgb_wkl/asciiart/haunt98.txt
+	go run ./cmd/qmkasciigen/*.go -debug -qmk-keyboard dztech/dz60rgb_wkl/v2_1 -qmk-keymap-file dztech_dz60rgb_wkl/keymaps_json/haunt98/keymap.json -out dztech_dz60rgb_wkl/asciiart/haunt98.txt
 
 dztech_dz60rgb_wkl:
 	# Copy
