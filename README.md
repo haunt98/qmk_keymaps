@@ -91,9 +91,14 @@ Interesting
 - [A Modern Space Cadet](https://stevelosh.com/blog/2012/10/a-modern-space-cadet/)
 - [QMK debounce masterclass](https://kbd.news/QMK-debounce-masterclass-1435.html)
 - [The SpaceFN layout: trying to end keyboard inflation](https://geekhack.org/index.php?topic=51069.0)
+- [Yet another keyboard post, or, introducing ErgoNICE](https://val.packett.cool/blog/ergonice/)
+- [Keyboard Matrix Scanning and Debouncing](https://summivox.wordpress.com/2016/06/03/keyboard-matrix-scanning-and-debouncing/)
+- [QMK USB to USB Keyboard Protocol Converter](https://yaowei.dev/posts/usb-to-usb-converter/)
+
 - [Pascal Getreuer's QMK keymap](https://github.com/getreuer/qmk-keymap)
 - [Miryoku](https://github.com/manna-harbour/miryoku)
 - [Toward a more useful keyboard](https://github.com/jasonrudolph/keyboard)
+- [rvaiya/keyd](https://github.com/rvaiya/keyd)
 
 ## qmkasciigen
 
