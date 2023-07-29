@@ -1,5 +1,19 @@
 # CHANGELOG
 
+## v0.0.10 (2023-07-29)
+
+### Added
+
+- feat(qmk): adjust macOS brigthness (2023-07-29)
+
+### Others
+
+- chore(asciiart): redraw (2023-07-29)
+
+- chore(qmkasciigen): consistent naming (2023-07-28)
+
+- chore(changelog): generate v0.0.9 (2023-07-28)
+
 ## v0.0.9 (2023-07-28)
 
 ### Fixed
