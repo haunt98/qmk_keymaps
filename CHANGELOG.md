@@ -1,5 +1,23 @@
 # CHANGELOG
 
+## v0.0.11 (2023-07-30)
+
+### Added
+
+- feat(qmk): split 4 layer (2023-07-30)
+
+- feat(qmk): uncomment via config (2023-07-30)
+
+- feat(qmk): remove music because its default is already no (2023-07-30)
+
+### Others
+
+- chore: re gen asciiart (2023-07-30)
+
+- chore: more interesting (2023-07-30)
+
+- chore(changelog): generate v0.0.10 (2023-07-29)
+
 ## v0.0.10 (2023-07-29)
 
 ### Added
