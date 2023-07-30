@@ -123,7 +123,7 @@ func getQMKInfo(qmkKeyboardStr string, debug bool) (QMKInfo, error) {
 	}
 
 	kbParts := strings.Split(qmkKeyboardStr, "/")
-	for i := 1; i <= len(kbParts); i++ {
+	for i := len(kbParts); i >= 1; i-- {
 		kb := strings.Join(kbParts[:i], "/")
 
 		url := fmt.Sprintf(qmkKeyboardInfoURL, kb)
@@ -208,7 +208,7 @@ func getQMKKeymap(qmkKeyboardStr, qmkKeymapStr string, debug bool) (QMKKeymap, e
 	}
 
 	kbParts := strings.Split(qmkKeyboardStr, "/")
-	for i := 1; i <= len(kbParts); i++ {
+	for i := len(kbParts); i >= 1; i-- {
 		kb := strings.Join(kbParts[:i], "/")
 
 		url := fmt.Sprintf(qmkKeymapURL, kb, qmkKeymapStr)
