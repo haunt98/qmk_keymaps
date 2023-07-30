@@ -1,18 +1,12 @@
-.PHONY: all format clean go draw dztech_dz60rgb_wkl
+.PHONY: all format clean go draw qmk_init qmk_clean dztech_dz60rgb_wkl
 
 all:
-	qmk setup -H ~/qmk_firmware
-	qmk git-submodule
-	qmk doctor
 	$(MAKE) format
-	$(MAKE) dztech_dz60rgb_wkl
 
 format:
 	clang-format -i dztech_dz60rgb_wkl/keymaps/haunt98/*.c dztech_dz60rgb_wkl/keymaps/haunt98/*.h
 
 clean:
-	qmk clean
-	rm -rf ~/qmk_firmware/keyboards/dztech/dz60rgb_wkl/keymaps/haunt98
 	rm -rf dztech_dz60rgb_wkl_v2_1_haunt98.bin
 
 # From changeloguru
@@ -29,7 +23,17 @@ draw:
 	$(MAKE) go
 	go run ./cmd/qmkasciigen/*.go -qmk-keyboard dztech/dz60rgb_wkl/v2_1 -qmk-keymap-file dztech_dz60rgb_wkl/keymaps_json/haunt98/keymap.json -out dztech_dz60rgb_wkl/asciiart/haunt98.txt
 
+qmk_init:
+	qmk setup -H ~/qmk_firmware
+	qmk git-submodule
+	qmk doctor
+
+qmk_clean:
+	qmk clean
+	rm -rf ~/qmk_firmware/keyboards/dztech/dz60rgb_wkl/keymaps/haunt98
+
 dztech_dz60rgb_wkl:
+	$(MAKE) qmk
 	# Copy
 	rm -rf ~/qmk_firmware/keyboards/dztech/dz60rgb_wkl/keymaps/haunt98
 	cp -rf dztech_dz60rgb_wkl/keymaps/haunt98 ~/qmk_firmware/keyboards/dztech/dz60rgb_wkl/keymaps/
