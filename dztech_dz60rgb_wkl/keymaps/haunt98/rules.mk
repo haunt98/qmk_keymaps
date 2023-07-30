@@ -1,3 +1,5 @@
+# https://github.com/qmk/qmk_firmware/blob/master/docs/config_options.md
+
 # VIA
 # https://www.caniusevia.com/docs/configuring_qmk
 VIA_ENABLE = no
@@ -13,8 +15,6 @@ EXTRAKEY_ENABLE = yes
 
 SPACE_CADET_ENABLE = no
 MAGIC_ENABLE = no
-
-MUSIC_ENABLE = no
 
 # Feature
 # https://github.com/qmk/qmk_firmware/blob/master/docs/feature_bootmagic.md

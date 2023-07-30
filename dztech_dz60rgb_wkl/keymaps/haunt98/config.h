@@ -2,14 +2,14 @@
 
 #pragma once
 
+// https://github.com/qmk/qmk_firmware/blob/master/docs/config_options.md
+
 // VIA
 #define DYNAMIC_KEYMAP_LAYER_COUNT 3
 
 // Optimize
 // https://github.com/qmk/qmk_firmware/blob/master/docs/squeezing_avr.md
 #define NO_ACTION_ONESHOT
-
-#define NO_MUSIC_MODE
 
 #define LAYER_STATE_8BIT
 
