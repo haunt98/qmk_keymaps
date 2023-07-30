@@ -3,8 +3,6 @@
 [![Go](https://github.com/haunt98/qmk_keymaps/actions/workflows/go.yml/badge.svg)](https://github.com/haunt98/qmk_keymaps/actions/workflows/go.yml)
 [![QMK](https://github.com/haunt98/qmk_keymaps/actions/workflows/qmk.yml/badge.svg)](https://github.com/haunt98/qmk_keymaps/actions/workflows/qmk.yml)
 
-Before doing anything, please check QMK first:
-
 ## [dztech/dz60rgb_wkl](https://github.com/qmk/qmk_firmware/tree/master/keyboards/dztech/dz60rgb_wkl)
 
 > V2.1: ATmega32U4 (AVR), takes .bin files Started shipping in June 2021 as a slightly modified version of v2.
@@ -40,6 +38,18 @@ Put keyboard into bootloader mode in 2 ways:
 - Unplug cable, then hold `ESC` and plug cable.
 
 Use [QMK Toolbox](https://github.com/qmk/qmk_toolbox) to flash.
+
+## Maintain
+
+Step by steps:
+
+1. Make changes to keymaps: `*.c`, `*.h`, `*.mk`
+2. Push changes to GitHub
+3. Download firmware + keymaps JSON
+4. Replace repo keymaps JSON
+5. Generate ascii: `make draw`
+
+You don't need to install [QMK CLI](https://github.com/qmk/qmk_cli) but still need QMK Toolbox.
 
 ## Features
 
