@@ -5,7 +5,7 @@
 // https://github.com/qmk/qmk_firmware/blob/master/docs/config_options.md
 
 // VIA
-#define DYNAMIC_KEYMAP_LAYER_COUNT 3
+// #define DYNAMIC_KEYMAP_LAYER_COUNT 4
 
 // Optimize
 // https://github.com/qmk/qmk_firmware/blob/master/docs/squeezing_avr.md
