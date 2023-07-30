@@ -29,6 +29,8 @@ var (
 	flagQMKInfoFile   string
 	flagQMKKeymapFile string
 	flagOutput        string
+	flagPrintLayout   bool
+	flagPrintLayer    bool
 )
 
 func init() {
@@ -38,6 +40,8 @@ func init() {
 	flag.StringVar(&flagQMKInfoFile, "qmk-info-file", "", "QMK info json file")
 	flag.StringVar(&flagQMKKeymapFile, "qmk-keymap-file", "", "QMK keymap json file")
 	flag.StringVar(&flagOutput, "out", "", "Output file")
+	flag.BoolVar(&flagPrintLayout, "print-layout", false, "Print layout name")
+	flag.BoolVar(&flagPrintLayer, "print-layer", false, "Print layer name")
 }
 
 func main() {
@@ -48,6 +52,8 @@ func main() {
 		log.Printf("flagQMKInfoFile: [%s]\n", flagQMKInfoFile)
 		log.Printf("flagQMKKeymapFile: [%s]\n", flagQMKKeymapFile)
 		log.Printf("flagOutput: [%s]\n", flagOutput)
+		log.Printf("flagPrintLayout: [%v]\n", flagPrintLayout)
+		log.Printf("flagPrintLayer: [%v]\n", flagPrintLayer)
 	}
 
 	qmkInfo, err := wrapGetQMKInfo(flagQMKKeyboard, flagQMKInfoFile, flagDebug)
@@ -63,6 +69,10 @@ func main() {
 	result := Draw(
 		qmkInfo.Layouts,
 		qmkKeymap,
+		DrawConfig{
+			PrintLayout: flagPrintLayout,
+			PrintLayer:  flagPrintLayer,
+		},
 	)
 	if flagDebug {
 		log.Printf("Result:\n%s\n", result)

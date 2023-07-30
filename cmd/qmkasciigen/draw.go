@@ -64,9 +64,15 @@ var mapFromTo = []map[string]string{
 	},
 }
 
+type DrawConfig struct {
+	PrintLayout bool
+	PrintLayer  bool
+}
+
 func Draw(
 	layouts map[string]map[string][]QMKKeyDictionary,
 	keymap QMKKeymap,
+	cfg DrawConfig,
 ) string {
 	layoutsStr := make([]string, 0, len(layouts))
 
@@ -81,7 +87,10 @@ func Draw(
 			continue
 		}
 
-		layoutStr := fmt.Sprintf("Layout %s\n", layout)
+		layoutStr := ""
+		if cfg.PrintLayout {
+			layoutStr += fmt.Sprintf("Layout %s\n", layout)
+		}
 
 		// Preprocess keys
 		// Y aka row -> X aka col
@@ -179,7 +188,11 @@ func Draw(
 			}
 
 			// Print
-			layerStr := fmt.Sprintf("Layer %d\n", iLayer)
+			layerStr := ""
+			if cfg.PrintLayer {
+				layerStr += fmt.Sprintf("Layer %d\n", iLayer)
+			}
+
 			for i := range table {
 				for j := range table[i] {
 					layerStr += table[i][j]
