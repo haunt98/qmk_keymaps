@@ -18,10 +18,8 @@ const (
 )
 
 var (
-	ErrEmptyQMKInfo       = errors.New("empty QMK info")
-	ErrEmptyQMKKeymap     = errors.New("empty QMK keymap")
-	ErrEmptyQMKInfoFile   = errors.New("empty QMK info file")
-	ErrEmptyQMKKeymapFile = errors.New("empty QMK keymap file")
+	ErrEmptyQMKInfo   = errors.New("empty QMK info")
+	ErrEmptyQMKKeymap = errors.New("empty QMK keymap")
 
 	flagDebug         bool
 	flagQMKKeyboard   string
@@ -86,34 +84,34 @@ func main() {
 	}
 }
 
-// Remote first, fallback local later
+// Local first, remote later
 func wrapGetQMKInfo(qmkKeyboardStr, qmkInfoFile string, debug bool) (QMKInfo, error) {
+	// Try to get local file
+	if qmkInfoFile != "" {
+		bytesInfo, err := os.ReadFile(qmkInfoFile)
+		if err != nil {
+			return QMKInfo{}, fmt.Errorf("os: failed to read file [%s]: %w", qmkInfoFile, err)
+		}
+
+		qmkInfo := QMKInfo{}
+		if err := json.Unmarshal(bytesInfo, &qmkInfo); err != nil {
+			return QMKInfo{}, fmt.Errorf("json: failed to unmarshal [%s]: %w", qmkInfoFile, err)
+		}
+
+		return qmkInfo, nil
+	}
+
+	// Try to get remote file
 	if qmkKeyboardStr != "" {
 		qmkInfo, err := getQMKInfo(qmkKeyboardStr, debug)
 		if err != nil {
-			if debug {
-				log.Printf("Failed to get QMK info [%s]: %s\n", qmkKeyboardStr, err)
-			}
-		} else {
-			return qmkInfo, nil
+			return QMKInfo{}, err
 		}
+
+		return qmkInfo, nil
 	}
 
-	if qmkInfoFile == "" {
-		return QMKInfo{}, ErrEmptyQMKInfoFile
-	}
-
-	bytesInfo, err := os.ReadFile(qmkInfoFile)
-	if err != nil {
-		return QMKInfo{}, fmt.Errorf("os: failed to read file [%s]: %w", qmkInfoFile, err)
-	}
-
-	qmkInfo := QMKInfo{}
-	if err := json.Unmarshal(bytesInfo, &qmkInfo); err != nil {
-		return QMKInfo{}, fmt.Errorf("json: failed to unmarshal [%s]: %w", qmkInfoFile, err)
-	}
-
-	return qmkInfo, nil
+	return QMKInfo{}, ErrEmptyQMKInfo
 }
 
 func getQMKInfo(qmkKeyboardStr string, debug bool) (QMKInfo, error) {
@@ -170,39 +168,37 @@ func getQMKInfo(qmkKeyboardStr string, debug bool) (QMKInfo, error) {
 	return QMKInfo{}, ErrEmptyQMKInfo
 }
 
-// Remote first, fallback local later
+// Local first, remote later
 func wrapGetQMKKeymap(qmkKeyboardStr, qmkKeymapStr, qmkKeymapFile string, debug bool) (QMKKeymap, error) {
+	// Try to get local file
+	if qmkKeymapFile != "" {
+		bytesKeymap, err := os.ReadFile(qmkKeymapFile)
+		if err != nil {
+			return QMKKeymap{}, fmt.Errorf("os: failed to read file [%s]: %w", qmkKeymapFile, err)
+		}
+
+		qmkKeymap := QMKKeymap{}
+		if err := json.Unmarshal(bytesKeymap, &qmkKeymap); err != nil {
+			return QMKKeymap{}, fmt.Errorf("json: failed to unmarshal [%s]: %w", qmkKeymapFile, err)
+		}
+
+		return qmkKeymap, nil
+	}
+
+	// Try to get remote file
 	if qmkKeyboardStr != "" && qmkKeymapStr != "" {
 		qmkKeymap, err := getQMKKeymap(qmkKeyboardStr, qmkKeymapStr, debug)
 		if err != nil {
-			if debug {
-				log.Printf("Failed to get QMK keymap [%s] [%s]: %s\n", qmkKeyboardStr, qmkKeymapStr, err)
-			}
-		} else {
-			return qmkKeymap, nil
+			return QMKKeymap{}, err
 		}
+
+		return qmkKeymap, nil
 	}
 
-	if qmkKeymapFile == "" {
-		return QMKKeymap{}, ErrEmptyQMKKeymapFile
-	}
-
-	bytesKeymap, err := os.ReadFile(qmkKeymapFile)
-	if err != nil {
-		return QMKKeymap{}, fmt.Errorf("os: failed to read file [%s]: %w", qmkKeymapFile, err)
-	}
-
-	qmkKeymap := QMKKeymap{}
-	if err := json.Unmarshal(bytesKeymap, &qmkKeymap); err != nil {
-		return QMKKeymap{}, fmt.Errorf("json: failed to unmarshal [%s]: %w", qmkKeymapFile, err)
-	}
-
-	return qmkKeymap, nil
+	return QMKKeymap{}, ErrEmptyQMKKeymap
 }
 
 func getQMKKeymap(qmkKeyboardStr, qmkKeymapStr string, debug bool) (QMKKeymap, error) {
-	qmkKeyboardStr = strings.TrimSpace(qmkKeyboardStr)
-	qmkKeymapStr = strings.TrimSpace(qmkKeymapStr)
 	if qmkKeyboardStr == "" || qmkKeymapStr == "" {
 		return QMKKeymap{}, ErrEmptyQMKKeymap
 	}
