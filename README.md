@@ -109,6 +109,8 @@ Interesting
 - [Miryoku](https://github.com/manna-harbour/miryoku)
 - [Toward a more useful keyboard](https://github.com/jasonrudolph/keyboard)
 - [rvaiya/keyd](https://github.com/rvaiya/keyd)
+- [kmonad/kmonad](https://github.com/kmonad/kmonad)
+- [manna-harbour/xmk](https://github.com/manna-harbour/xmk)
 
 ## qmkasciigen
 
