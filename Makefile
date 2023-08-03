@@ -4,7 +4,8 @@ all:
 	$(MAKE) format
 
 format:
-	clang-format -i dztech_dz60rgb_wkl/keymaps/haunt98/*.c dztech_dz60rgb_wkl/keymaps/haunt98/*.h
+	clang-format -i dztech_dz60rgb_wkl/keymaps/haunt98/*.c dztech_dz60rgb_wkl/keymaps/haunt98/*.h & \
+		clang-format-mp-15 -i dztech_dz60rgb_wkl/keymaps/haunt98/*.c dztech_dz60rgb_wkl/keymaps/haunt98/*.h
 
 clean:
 	rm -rf dztech_dz60rgb_wkl_v2_1_haunt98.bin

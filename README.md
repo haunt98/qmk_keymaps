@@ -104,6 +104,7 @@ Interesting
 - [Yet another keyboard post, or, introducing ErgoNICE](https://val.packett.cool/blog/ergonice/)
 - [Keyboard Matrix Scanning and Debouncing](https://summivox.wordpress.com/2016/06/03/keyboard-matrix-scanning-and-debouncing/)
 - [QMK USB to USB Keyboard Protocol Converter](https://yaowei.dev/posts/usb-to-usb-converter/)
+- [Programming On 34 Keys](https://peppe.rs/posts/programming_on_34_keys/)
 
 - [Pascal Getreuer's QMK keymap](https://github.com/getreuer/qmk-keymap)
 - [Miryoku](https://github.com/manna-harbour/miryoku)
