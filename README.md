@@ -106,12 +106,14 @@ Interesting
 - [QMK USB to USB Keyboard Protocol Converter](https://yaowei.dev/posts/usb-to-usb-converter/)
 - [Programming On 34 Keys](https://peppe.rs/posts/programming_on_34_keys/)
 
-- [Pascal Getreuer's QMK keymap](https://github.com/getreuer/qmk-keymap)
 - [Miryoku](https://github.com/manna-harbour/miryoku)
+- [Pascal Getreuer's QMK keymap](https://github.com/getreuer/qmk-keymap)
+- [Sweep](https://github.com/davidphilipbarr/Sweep)
 - [Toward a more useful keyboard](https://github.com/jasonrudolph/keyboard)
+- [manna-harbour/xmk](https://github.com/manna-harbour/xmk)
+
 - [rvaiya/keyd](https://github.com/rvaiya/keyd)
 - [kmonad/kmonad](https://github.com/kmonad/kmonad)
-- [manna-harbour/xmk](https://github.com/manna-harbour/xmk)
 
 ## qmkasciigen
 
