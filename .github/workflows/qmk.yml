@@ -32,6 +32,8 @@ jobs:
         run: qmk compile -j 8 -kb dztech/dz60rgb_wkl/v2_1 -km haunt98
       - name: Convert keymaps JSON
         run: qmk c2json -kb dztech/dz60rgb_wkl/v2_1 -km haunt98 -o dztech_dz60rgb_wkl_haunt98_keymap.json haunt98_qmk_keymaps/dztech_dz60rgb_wkl/keymaps/haunt98/keymap.c
+      - name: Extra
+        run: qmk info -m -l -kb dztech/dz60rgb_wkl/v2_1 -km haunt98
       - name: Archive firmware
         uses: actions/upload-artifact@v3
         with:
