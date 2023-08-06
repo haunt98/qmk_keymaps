@@ -27,9 +27,11 @@ make dztech_dz60rgb_wkl
 
 ### Keymap
 
-[asciiart using qmkasciigen](dztech_dz60rgb_wkl/asciiart/haunt98.txt).
+#### qmkasciigen
 
-Using **caksoylar/keymap-drawer**:
+[asciiart](dztech_dz60rgb_wkl/asciiart/haunt98.txt)
+
+#### caksoylar/keymap-drawer
 
 ![caksoylar_keymap_drawer](dztech_dz60rgb_wkl/caksoylar_keymap_drawer/keymap.svg)
 
