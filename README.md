@@ -5,7 +5,8 @@
 
 ## [dztech/dz60rgb_wkl](https://github.com/qmk/qmk_firmware/tree/master/keyboards/dztech/dz60rgb_wkl)
 
-> V2.1: ATmega32U4 (AVR), takes .bin files Started shipping in June 2021 as a slightly modified version of v2.
+> V2.1: ATmega32U4 (AVR), takes .bin files Started shipping in June 2021 as a
+> slightly modified version of v2.
 
 ### Stock
 
@@ -28,9 +29,12 @@ make dztech_dz60rgb_wkl
 
 See [asciiart](dztech_dz60rgb_wkl/asciiart/haunt98.txt).
 
+![caksoylar_keymap_drawer](dztech_dz60rgb_wkl/caksoylar_keymap_drawer/keymap.svg)
+
 ## Install
 
-Locate firmware file after compile successfully or download from [QMK action workflow](https://github.com/haunt98/qmk_keymaps/actions/workflows/qmk.yml)
+Locate firmware file after compile successfully or download from
+[QMK action workflow](https://github.com/haunt98/qmk_keymaps/actions/workflows/qmk.yml)
 
 Put keyboard into bootloader mode in 2 ways:
 
@@ -49,7 +53,8 @@ Step by steps:
 4. Replace repo keymaps JSON
 5. Generate ascii: `make draw`
 
-You don't need to install [QMK CLI](https://github.com/qmk/qmk_cli) but still need QMK Toolbox.
+You don't need to install [QMK CLI](https://github.com/qmk/qmk_cli) but still
+need QMK Toolbox.
 
 ## Features
 

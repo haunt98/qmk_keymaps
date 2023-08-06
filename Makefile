@@ -2,6 +2,7 @@
 
 all:
 	$(MAKE) format
+	$(MAKE) draw
 
 format:
 	clang-format -i dztech_dz60rgb_wkl/keymaps/haunt98/*.c dztech_dz60rgb_wkl/keymaps/haunt98/*.h & \
@@ -23,6 +24,10 @@ go:
 draw:
 	$(MAKE) go
 	go run ./cmd/qmkasciigen/*.go -qmk-keyboard dztech/dz60rgb_wkl/v2_1 -qmk-keymap-file dztech_dz60rgb_wkl/keymaps_json/haunt98/keymap.json -out dztech_dz60rgb_wkl/asciiart/haunt98.txt
+	# https://github.com/caksoylar/keymap-drawer
+	pipx install keymap-drawer
+	keymap parse -q dztech_dz60rgb_wkl/keymaps_json/haunt98/keymap.json > dztech_dz60rgb_wkl/caksoylar_keymap_drawer/keymap.yaml
+	keymap draw dztech_dz60rgb_wkl/caksoylar_keymap_drawer/keymap.yaml > dztech_dz60rgb_wkl/caksoylar_keymap_drawer/keymap.svg
 
 qmk_init:
 	qmk setup -H ~/qmk_firmware
