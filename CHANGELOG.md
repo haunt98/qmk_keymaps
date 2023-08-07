@@ -1,5 +1,63 @@
 # CHANGELOG
 
+## v0.0.12 (2023-08-07)
+
+### Added
+
+- feat(qmkasciigen): support space cadet (2023-08-07)
+
+- feat: increase tapping term (2023-08-07)
+
+- feat(qmk): try to re-enable space cadet (2023-08-07)
+
+- feat(qmk): add quick tap term and retro tapping (2023-08-07)
+
+- Revert "feat(qmk): re-enable space cadet" (2023-08-07)
+
+- feat(qmk): re-enable space cadet (2023-08-07)
+
+- feat(qmk): prefer opt to alt, cmd to gui (2023-08-07)
+
+- feat(qmk): remove retro tapping (2023-08-07)
+
+- feat: move vol, brightness to layer 2 (2023-07-30)
+
+- feat(qmkasciigen): local first, remote later (2023-07-30)
+
+- feat(qmkasciigen): get qmk info from longest qmk keyboard name first (2023-07-30)
+
+- feat(qmkasciigen): add flag to print layout, layer (2023-07-30)
+
+### Others
+
+- chore: fix typo (2023-08-06)
+
+- chore: edit keymap (2023-08-06)
+
+- chore: re-add caksoylar/keymap-drawer (2023-08-06)
+
+- chore: add qmk info (2023-08-06)
+
+- chore: split intetresting (2023-08-03)
+
+- chore: more interesting (2023-08-03)
+
+- chore: more interesting (2023-07-31)
+
+- chore: remove default qmk compare from Makefile (2023-07-30)
+
+- chore: add maintain (2023-07-30)
+
+- chore: fix failed gh action (2023-07-30)
+
+- chore: convert keymaps json using gh action (2023-07-30)
+
+- chore: re gen ascii (2023-07-30)
+
+- chore: re-gen asciiart (2023-07-30)
+
+- chore(changelog): generate v0.0.11 (2023-07-30)
+
 ## v0.0.11 (2023-07-30)
 
 ### Added
