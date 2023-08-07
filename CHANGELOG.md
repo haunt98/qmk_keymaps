@@ -1,5 +1,27 @@
 # CHANGELOG
 
+## v0.0.13 (2023-08-07)
+
+### Added
+
+- feat: add tap dance (wip 4/?) (2023-08-07)
+
+- Revert "feat: add tap dance (wip 3/?)" (2023-08-07)
+
+- feat: add tap dance (wip 3/?) (2023-08-07)
+
+- feat: add tap dance (wip 2/?) (2023-08-07)
+
+- feat: add tap dance (wip 1/?) (2023-08-07)
+
+### Others
+
+- chore: fix typo (2023-08-07)
+
+- chore: redraw (2023-08-07)
+
+- chore(changelog): generate v0.0.12 (2023-08-07)
+
 ## v0.0.12 (2023-08-07)
 
 ### Added
