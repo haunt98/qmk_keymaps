@@ -55,7 +55,7 @@ Step by steps:
 2. Push changes to GitHub
 3. Download firmware + keymaps JSON
 4. Replace repo keymaps JSON
-5. Generate ascii: `make draw`
+5. Visualize keymap: `make draw`
 
 You don't need to install [QMK CLI](https://github.com/qmk/qmk_cli) but still
 need QMK Toolbox.
