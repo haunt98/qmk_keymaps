@@ -77,6 +77,7 @@ More than Basic
 - [Debugging FAQ](https://github.com/qmk/qmk_firmware/blob/master/docs/faq_debug.md)
 - [How to Customize Your Keyboard's Behavior](https://github.com/qmk/qmk_firmware/blob/master/docs/custom_quantum_functions.md)
 - [List of Useful Core Functions To Make Your Keyboard Better](https://github.com/qmk/qmk_firmware/blob/master/docs/ref_functions.md)
+- [Userspace: Sharing Code Between Keymaps](https://github.com/qmk/qmk_firmware/blob/master/docs/feature_userspace.md)
 
 Do
 
@@ -114,12 +115,13 @@ Interesting
 - [Keyboard Matrix Scanning and Debouncing](https://summivox.wordpress.com/2016/06/03/keyboard-matrix-scanning-and-debouncing/)
 - [QMK USB to USB Keyboard Protocol Converter](https://yaowei.dev/posts/usb-to-usb-converter/)
 - [Programming On 34 Keys](https://peppe.rs/posts/programming_on_34_keys/)
-
 - [Miryoku](https://github.com/manna-harbour/miryoku)
 - [Pascal Getreuer's QMK keymap](https://github.com/getreuer/qmk-keymap)
 - [Sweep](https://github.com/davidphilipbarr/Sweep)
 - [Toward a more useful keyboard](https://github.com/jasonrudolph/keyboard)
 - [manna-harbour/xmk](https://github.com/manna-harbour/xmk)
+
+Tools:
 
 - [rvaiya/keyd](https://github.com/rvaiya/keyd)
 - [kmonad/kmonad](https://github.com/kmonad/kmonad)
