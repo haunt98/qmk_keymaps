@@ -37,8 +37,12 @@ var mapFromTo = []map[string]string{
 		"KC_RCTL": "CTRL",
 		"KC_LALT": "ALT",
 		"KC_RALT": "ALT",
+		"KC_LOPT": "OPT",
+		"KC_ROPT": "OPT",
 		"KC_LGUI": "CMD",
 		"KC_RGUI": "CMD",
+		"KC_LCMD": "CMD",
+		"KC_RCMD": "CMD",
 		"KC_LSFT": "SHIFT",
 		"KC_RSFT": "SHIFT",
 		"RGB_TOG": "RGBTO",
@@ -47,13 +51,23 @@ var mapFromTo = []map[string]string{
 		"RGB_SAI": "RGBS",
 		"RGB_VAI": "RGBV",
 		// Advance
+		// Mod tap
 		"LCTL_T": "CTRL",
 		"RCTL_T": "CTRL",
 		"LSFT_T": "SHIFT",
 		"RSFT_T": "SHIFT",
+		// Space cadet
+		"SC_LCPO": "CTRL (",
+		"SC_RCPC": "CTRL )",
+		"SC_LSPO": "SHIFT (",
+		"SC_RSPC": "SHIFT )",
+		"SC_LAPO": "OPT (",
+		"SC_RAPC": "OPT )",
+		"SC_SENT": "SHIFT ENTER",
 	},
 	{
 		// Prevent colliding with previous map
+		// Mod tap
 		"CTL_T": "CTRL",
 		"SFT_T": "SHIFT",
 	},

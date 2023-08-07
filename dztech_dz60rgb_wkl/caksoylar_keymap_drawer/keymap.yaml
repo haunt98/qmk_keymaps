@@ -57,11 +57,11 @@ layers:
   - RSFT
   - L1
   - ''
-  - LALT
-  - LGUI
+  - SC LAPO
+  - LCMD
   - SPC
-  - RGUI
-  - RALT
+  - RCMD
+  - SC RAPC
   - ''
   L1:
   - '`'
