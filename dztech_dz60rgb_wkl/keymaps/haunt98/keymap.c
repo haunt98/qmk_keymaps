@@ -22,7 +22,7 @@ enum layers {
     LAYER_COMMON,
     LAYER_RARELY,
     LAYER_RECOVERY,
-}
+};
 
 // https://github.com/qmk/qmk_firmware/blob/master/docs/keycodes.md
 // https://github.com/qmk/qmk_firmware/blob/master/docs/feature_grave_esc.md
