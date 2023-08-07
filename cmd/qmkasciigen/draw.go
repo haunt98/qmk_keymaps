@@ -13,7 +13,14 @@ const (
 // https://github.com/qmk/qmk_firmware/blob/master/docs/keycodes.md
 var mapFromTo = []map[string]string{
 	{
+		// My custom
+		"CTL_T(KC_ESC)":    "CTRL ESC",
+		"TD(TD_SAFE_BOOT)": "BOOT",
+	},
+	{
 		// Basic
+		// Prefer OPT > ALT
+		// Prefer CMD > GUI, WIN
 		"KC_TRNS": "",
 		"_______": "",
 		"KC_NO":   "",
@@ -35,8 +42,8 @@ var mapFromTo = []map[string]string{
 		"KC_CAPS": "CAPSLOCK",
 		"KC_LCTL": "CTRL",
 		"KC_RCTL": "CTRL",
-		"KC_LALT": "ALT",
-		"KC_RALT": "ALT",
+		"KC_LALT": "OPT",
+		"KC_RALT": "OPT",
 		"KC_LOPT": "OPT",
 		"KC_ROPT": "OPT",
 		"KC_LGUI": "CMD",
@@ -51,11 +58,8 @@ var mapFromTo = []map[string]string{
 		"RGB_SAI": "RGBS",
 		"RGB_VAI": "RGBV",
 		// Advance
-		// Mod tap
-		"LCTL_T": "CTRL",
-		"RCTL_T": "CTRL",
-		"LSFT_T": "SHIFT",
-		"RSFT_T": "SHIFT",
+		// Grave Escape
+		"QK_GESC": "ESC",
 		// Space cadet
 		"SC_LCPO": "CTRL (",
 		"SC_RCPC": "CTRL )",
@@ -66,15 +70,8 @@ var mapFromTo = []map[string]string{
 		"SC_SENT": "SHIFT ENTER",
 	},
 	{
-		// Prevent colliding with previous map
-		// Mod tap
-		"CTL_T": "CTRL",
-		"SFT_T": "SHIFT",
-	},
-	{
-		// Custom
+		// Prefix
 		"KC_": "",
-		"QK_": "",
 	},
 }
 
