@@ -1,5 +1,25 @@
 # CHANGELOG
 
+## v0.0.14 (2023-08-08)
+
+### Added
+
+- feat(qmk): naming layers (2023-08-07)
+
+### Fixed
+
+- fix(qmk): missing ; in define enum (2023-08-07)
+
+### Others
+
+- chore: add bloznelis/kbt (2023-08-08)
+
+- chore: goody for gh action (2023-08-08)
+
+- chore: add qmk lint in gh action (2023-08-08)
+
+- chore(changelog): generate v0.0.13 (2023-08-07)
+
 ## v0.0.13 (2023-08-07)
 
 ### Added
