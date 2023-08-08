@@ -125,6 +125,7 @@ Tools:
 
 - [rvaiya/keyd](https://github.com/rvaiya/keyd)
 - [kmonad/kmonad](https://github.com/kmonad/kmonad)
+- [bloznelis/kbt](https://github.com/bloznelis/kbt)
 
 ## qmkasciigen
 
