@@ -8,6 +8,15 @@ on:
       - "**.c"
       - "**.h"
       - "**.mk"
+      - ".github/workflows/qmk.yml"
+  pull_request:
+    branches:
+      - main
+    paths:
+      - "**.c"
+      - "**.h"
+      - "**.mk"
+      - ".github/workflows/qmk.yml"
   workflow_dispatch:
 
 jobs:
