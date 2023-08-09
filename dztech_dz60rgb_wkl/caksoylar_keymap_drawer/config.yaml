@@ -1,0 +1,2 @@
+parse_config:
+  raw_binding_map: { "TD(TD_SAFE_BOOT)": "SAFE BOOT" }

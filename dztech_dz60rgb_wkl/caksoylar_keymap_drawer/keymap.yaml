@@ -190,7 +190,7 @@ layers:
   - RGB MOD
   - ''
   L3:
-  - BOOT
+  - SAFE BOOT
   - EE CLR
   - ''
   - ''
