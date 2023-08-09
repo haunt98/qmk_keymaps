@@ -35,6 +35,7 @@ draw:
 	keymap -c dztech_dz60rgb_wkl/caksoylar_keymap_drawer/config.yaml \
 		draw dztech_dz60rgb_wkl/caksoylar_keymap_drawer/keymap.yaml > \
 		dztech_dz60rgb_wkl/caksoylar_keymap_drawer/keymap.svg
+	$(MAKE) format
 
 qmk_upstream:
 	curl https://raw.githubusercontent.com/qmk/qmk_firmware/master/.clang-format --output .clang-format
