@@ -43,7 +43,7 @@ layers:
   - ;
   - ''''
   - ENT
-  - LSFT
+  - SC LSPO
   - Z
   - X
   - C
@@ -54,14 +54,14 @@ layers:
   - ','
   - .
   - /
-  - RSFT
+  - SC RSPC
   - L1
   - ''
-  - SC LAPO
+  - LOPT
   - LCMD
   - SPC
   - RCMD
-  - SC RAPC
+  - ROPT
   - ''
   L1:
   - '`'

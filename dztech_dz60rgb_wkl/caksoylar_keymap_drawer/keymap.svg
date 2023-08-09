@@ -182,7 +182,8 @@ path.combo {
 <rect rx="6.0" ry="6.0" x="746.0" y="170.0" width="122.0" height="52.0" class="key"/>
 <text x="807.0" y="196.0" class="tap">ENT</text>
 <rect rx="6.0" ry="6.0" x="32.0" y="226.0" width="122.0" height="52.0" class="key"/>
-<text x="93.0" y="252.0" class="tap">LSFT</text>
+<text x="93.0" y="252.0" class="tap">
+<tspan x="93.0" dy="-0.6em">SC</tspan><tspan x="93.0" dy="1.2em">LSPO</tspan></text>
 <rect rx="6.0" ry="6.0" x="158.0" y="226.0" width="52.0" height="52.0" class="key"/>
 <text x="184.0" y="252.0" class="tap">Z</text>
 <rect rx="6.0" ry="6.0" x="214.0" y="226.0" width="52.0" height="52.0" class="key"/>
@@ -204,13 +205,13 @@ path.combo {
 <rect rx="6.0" ry="6.0" x="662.0" y="226.0" width="52.0" height="52.0" class="key"/>
 <text x="688.0" y="252.0" class="tap">/</text>
 <rect rx="6.0" ry="6.0" x="718.0" y="226.0" width="94.0" height="52.0" class="key"/>
-<text x="765.0" y="252.0" class="tap">RSFT</text>
+<text x="765.0" y="252.0" class="tap">
+<tspan x="765.0" dy="-0.6em">SC</tspan><tspan x="765.0" dy="1.2em">RSPC</tspan></text>
 <rect rx="6.0" ry="6.0" x="816.0" y="226.0" width="52.0" height="52.0" class="key"/>
 <text x="842.0" y="252.0" class="tap">L1</text>
 <rect rx="6.0" ry="6.0" x="32.0" y="282.0" width="80.0" height="52.0" class="key"/>
 <rect rx="6.0" ry="6.0" x="116.0" y="282.0" width="52.0" height="52.0" class="key"/>
-<text x="142.0" y="308.0" class="tap">
-<tspan x="142.0" dy="-0.6em">SC</tspan><tspan x="142.0" dy="1.2em">LAPO</tspan></text>
+<text x="142.0" y="308.0" class="tap">LOPT</text>
 <rect rx="6.0" ry="6.0" x="172.0" y="282.0" width="80.0" height="52.0" class="key"/>
 <text x="212.0" y="308.0" class="tap">LCMD</text>
 <rect rx="6.0" ry="6.0" x="256.0" y="282.0" width="388.0" height="52.0" class="key"/>
@@ -218,8 +219,7 @@ path.combo {
 <rect rx="6.0" ry="6.0" x="648.0" y="282.0" width="80.0" height="52.0" class="key"/>
 <text x="688.0" y="308.0" class="tap">RCMD</text>
 <rect rx="6.0" ry="6.0" x="732.0" y="282.0" width="52.0" height="52.0" class="key"/>
-<text x="758.0" y="308.0" class="tap">
-<tspan x="758.0" dy="-0.6em">SC</tspan><tspan x="758.0" dy="1.2em">RAPC</tspan></text>
+<text x="758.0" y="308.0" class="tap">ROPT</text>
 <rect rx="6.0" ry="6.0" x="788.0" y="282.0" width="80.0" height="52.0" class="key"/>
 </g>
 <g class="layer-L1">
