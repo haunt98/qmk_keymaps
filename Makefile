@@ -28,7 +28,9 @@ draw:
 	go run ./cmd/qmkasciigen/*.go -qmk-keyboard dztech/dz60rgb_wkl/v2_1 -qmk-keymap-file dztech_dz60rgb_wkl/keymaps_json/haunt98/keymap.json -out dztech_dz60rgb_wkl/asciiart/haunt98.txt
 	# https://github.com/caksoylar/keymap-drawer
 	pipx install keymap-drawer
-	keymap parse -q dztech_dz60rgb_wkl/keymaps_json/haunt98/keymap.json > dztech_dz60rgb_wkl/caksoylar_keymap_drawer/keymap.yaml
+	KEYMAP_raw_binding_map='{"TD(TD_SAFE_BOOT)": "BOOT"}' \
+		keymap parse -q dztech_dz60rgb_wkl/keymaps_json/haunt98/keymap.json > \
+		dztech_dz60rgb_wkl/caksoylar_keymap_drawer/keymap.yaml
 	keymap draw dztech_dz60rgb_wkl/caksoylar_keymap_drawer/keymap.yaml > dztech_dz60rgb_wkl/caksoylar_keymap_drawer/keymap.svg
 
 qmk_upstream:
