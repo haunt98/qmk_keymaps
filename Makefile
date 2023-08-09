@@ -7,9 +7,6 @@ format:
 	clang-format -i dztech_dz60rgb_wkl/keymaps/haunt98/*.c dztech_dz60rgb_wkl/keymaps/haunt98/*.h & \
 		clang-format-mp-15 -i dztech_dz60rgb_wkl/keymaps/haunt98/*.c dztech_dz60rgb_wkl/keymaps/haunt98/*.h
 	deno fmt dztech_dz60rgb_wkl/keymaps_json/haunt98/keymap.json
-	bun upgrade
-	bun install --global prettier
-	prettier --write ./dztech_dz60rgb_wkl/caksoylar_keymap_drawer/*.yaml
 
 clean:
 	rm -rf dztech_dz60rgb_wkl_v2_1_haunt98.bin
@@ -24,6 +21,11 @@ go:
 	gofimports -w --company github.com/make-go-great,github.com/haunt98 .
 	gofumpt -w -extra .
 
+format_draw:
+	bun upgrade
+	bun install --global prettier
+	prettier --write ./dztech_dz60rgb_wkl/caksoylar_keymap_drawer/*.yaml
+
 draw:
 	$(MAKE) go
 	go run ./cmd/qmkasciigen/*.go -qmk-keyboard dztech/dz60rgb_wkl/v2_1 -qmk-keymap-file dztech_dz60rgb_wkl/keymaps_json/haunt98/keymap.json -out dztech_dz60rgb_wkl/asciiart/haunt98.txt
@@ -35,7 +37,7 @@ draw:
 	keymap -c dztech_dz60rgb_wkl/caksoylar_keymap_drawer/config.yaml \
 		draw dztech_dz60rgb_wkl/caksoylar_keymap_drawer/keymap.yaml > \
 		dztech_dz60rgb_wkl/caksoylar_keymap_drawer/keymap.svg
-	$(MAKE) format
+	$(MAKE) format_draw
 
 qmk_upstream:
 	curl https://raw.githubusercontent.com/qmk/qmk_firmware/master/.clang-format --output .clang-format
