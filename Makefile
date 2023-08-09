@@ -8,6 +8,7 @@ all:
 format:
 	clang-format -i dztech_dz60rgb_wkl/keymaps/haunt98/*.c dztech_dz60rgb_wkl/keymaps/haunt98/*.h & \
 		clang-format-mp-15 -i dztech_dz60rgb_wkl/keymaps/haunt98/*.c dztech_dz60rgb_wkl/keymaps/haunt98/*.h
+	deno fmt dztech_dz60rgb_wkl/keymaps_json/haunt98/keymap.json
 
 clean:
 	rm -rf dztech_dz60rgb_wkl_v2_1_haunt98.bin
