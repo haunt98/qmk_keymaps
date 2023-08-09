@@ -1,14 +1,15 @@
 .PHONY: all format clean go draw qmk_upstream qmk_init qmk_clean dztech_dz60rgb_wkl
 
 all:
-	$(MAKE) format
-	$(MAKE) draw
-	$(MAKE) qmk_upstream
+	@echo Please read Makefile to understand!!!
 
 format:
 	clang-format -i dztech_dz60rgb_wkl/keymaps/haunt98/*.c dztech_dz60rgb_wkl/keymaps/haunt98/*.h & \
 		clang-format-mp-15 -i dztech_dz60rgb_wkl/keymaps/haunt98/*.c dztech_dz60rgb_wkl/keymaps/haunt98/*.h
 	deno fmt dztech_dz60rgb_wkl/keymaps_json/haunt98/keymap.json
+	bun upgrade
+	bun install --global prettier
+	prettier --write ./dztech_dz60rgb_wkl/caksoylar_keymap_drawer/*.yaml
 
 clean:
 	rm -rf dztech_dz60rgb_wkl_v2_1_haunt98.bin
