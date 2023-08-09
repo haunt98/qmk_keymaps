@@ -96,6 +96,8 @@ Don't
 - [Mouse keys](https://github.com/qmk/qmk_firmware/blob/master/docs/feature_mouse_keys.md)
 - [One Shot Keys](https://github.com/qmk/qmk_firmware/blob/master/docs/one_shot_keys.md)
 - [RGB Matrix Lighting](https://docs.qmk.fm/#/feature_rgb_matrix)
+- [Auto Shift: Why Do We Need a Shift Key?](https://github.com/qmk/qmk_firmware/blob/master/docs/feature_auto_shift.md):
+  Conflict with space cadet when using vim `:w` -> `:)w`
 
 Build/Optimize
 
