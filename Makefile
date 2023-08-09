@@ -1,8 +1,9 @@
-.PHONY: all format clean go draw qmk_init qmk_clean dztech_dz60rgb_wkl
+.PHONY: all format clean go draw qmk_upstream qmk_init qmk_clean dztech_dz60rgb_wkl
 
 all:
 	$(MAKE) format
 	$(MAKE) draw
+	$(MAKE) qmk_upstream
 
 format:
 	clang-format -i dztech_dz60rgb_wkl/keymaps/haunt98/*.c dztech_dz60rgb_wkl/keymaps/haunt98/*.h & \
@@ -29,6 +30,9 @@ draw:
 	keymap parse -q dztech_dz60rgb_wkl/keymaps_json/haunt98/keymap.json > dztech_dz60rgb_wkl/caksoylar_keymap_drawer/keymap.yaml
 	keymap draw dztech_dz60rgb_wkl/caksoylar_keymap_drawer/keymap.yaml > dztech_dz60rgb_wkl/caksoylar_keymap_drawer/keymap.svg
 
+qmk_upstream:
+	curl https://raw.githubusercontent.com/qmk/qmk_firmware/master/.clang-format --output .clang-format
+
 qmk_init:
 	qmk setup -H ~/qmk_firmware
 	qmk git-submodule
@@ -39,7 +43,7 @@ qmk_clean:
 	rm -rf ~/qmk_firmware/keyboards/dztech/dz60rgb_wkl/keymaps/haunt98
 
 dztech_dz60rgb_wkl:
-	$(MAKE) qmk
+	$(MAKE) qmk_init
 	# Copy
 	rm -rf ~/qmk_firmware/keyboards/dztech/dz60rgb_wkl/keymaps/haunt98
 	cp -rf dztech_dz60rgb_wkl/keymaps/haunt98 ~/qmk_firmware/keyboards/dztech/dz60rgb_wkl/keymaps/
