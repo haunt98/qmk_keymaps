@@ -93,7 +93,7 @@ Do
   replace `CAPSLOCK` with `CTRL` when hold and `ESC` when tap.
 - [Tap-Hold Configuration Options](https://github.com/qmk/qmk_firmware/blob/master/docs/tap_hold.md)
 - [Tap Dance: A Single Key Can Do 3, 5, or 100 Different Things](https://github.com/qmk/qmk_firmware/blob/master/docs/feature_tap_dance.md):
-  I use it for `QK_BOOT`.
+  I use it for safely `QK_BOOT`.
 - [Space Cadet: The Future, Built In](https://github.com/qmk/qmk_firmware/blob/master/docs/feature_space_cadet.md):
   Quickly press `(`, `)`.
   - [A Modern Space Cadet](https://stevelosh.com/blog/2012/10/a-modern-space-cadet/)
