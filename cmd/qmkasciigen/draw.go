@@ -17,6 +17,22 @@ var mapRawBinding = []map[string]string{
 		"CTL_T(KC_ESC)":    "ESC CTRL",
 		"TD(TD_SAFE_BOOT)": "BOOT",
 	},
+}
+
+var mapTransform = []map[string]string{
+	{
+		// My custom
+		"LAYER_QWERTY":   "0",
+		"LAYER_COMMON":   "1",
+		"LAYER_RARELY":   "2",
+		"LAYER_RECOVERY": "3",
+	},
+	{
+		"MO(0)": "L0",
+		"MO(1)": "L1",
+		"MO(2)": "L2",
+		"MO(3)": "L3",
+	},
 	{
 		// Basic
 		// Prefer OPT > ALT
@@ -63,31 +79,15 @@ var mapRawBinding = []map[string]string{
 		// Quantum
 		"EE_CLR": "EECLR",
 	},
-}
-
-var mapTransform = []map[string]string{
-	{
-		// Layer enum
-		"LAYER_QWERTY":   "0",
-		"LAYER_COMMON":   "1",
-		"LAYER_RARELY":   "2",
-		"LAYER_RECOVERY": "3",
-	},
 	{
 		// Prefix
 		"KC_": "",
 		"QK_": "",
 	},
-	{
-		"MO(0)": "L0",
-		"MO(1)": "L1",
-		"MO(2)": "L2",
-		"MO(3)": "L3",
-	},
 }
 
 // Only use this as last resort
-var mapBindingTiny = []map[string]string{
+var mapTransformTiny = []map[string]string{
 	{
 		"BACKSPACE": "BACK",
 	},
@@ -207,10 +207,9 @@ func Draw(
 
 				if len(keyStr)+2*padding > key.NewW {
 					// Make it smaller
-					for _, m := range mapBindingTiny {
-						if _, ok := m[keyStr]; ok {
-							keyStr = m[keyStr]
-							break
+					for _, m := range mapTransformTiny {
+						for from, to := range m {
+							keyStr = strings.ReplaceAll(keyStr, from, to)
 						}
 					}
 
