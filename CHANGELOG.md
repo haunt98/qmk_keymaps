@@ -1,5 +1,81 @@
 # CHANGELOG
 
+## v0.0.15 (2023-08-10)
+
+### Added
+
+- feat(qmkasciigen): re add support mod tap (2023-08-10)
+
+- feat(qmkasciigen): re-order draw transform (2023-08-10)
+
+- feat(qmkasciigen): add flag allow layers (2023-08-10)
+
+- feat(qmkasciigen): add print-out flag (2023-08-10)
+
+- feat(qmkasciigen): support add binding tiny (2023-08-10)
+
+- feat(qmkasciigen): split raw binding and transform (2023-08-10)
+
+- feat(qmk): change to sym_eager_pk (2023-08-10)
+
+- feat(qmk): use layer name in keymaps (2023-08-09)
+
+- Revert "feat(qmk): enable auto shift" (2023-08-09)
+
+- feat(qmk): enable auto shift (2023-08-09)
+
+- feat(qmk): use shift for space cadet not alt (2023-08-09)
+
+### Fixed
+
+- fix(qmk): remove redundant , in layout fn (2023-08-09)
+
+### Others
+
+- chore: better demo (2023-08-10)
+
+- chore: add draw demo (2023-08-10)
+
+- chore: sync latest json (2023-08-10)
+
+- chore: more TODO (2023-08-10)
+
+- chore(draw): docs (2023-08-10)
+
+- chore: re draw (2023-08-10)
+
+- chore: reformat (2023-08-10)
+
+- chore(draw): big changes (2023-08-10)
+
+- chore: format draw (2023-08-10)
+
+- chore: format after draw (2023-08-10)
+
+- chore: format yaml (2023-08-10)
+
+- chore(draw): bare bone config (2023-08-10)
+
+- chore(draw): map safe boot when (2023-08-10)
+
+- chore: format keymap.json (2023-08-09)
+
+- chore(qmk): reorder keymap by hand (2023-08-09)
+
+- chore: add qmk upstream to sync with qmk master (2023-08-09)
+
+- chore: sync clang format with upstream qmk (2023-08-09)
+
+- chore(qmk): ignore clang format keymaps (2023-08-09)
+
+- chore: don't space cadet (2023-08-09)
+
+- chore: re draw (2023-08-09)
+
+- chore: sync keymap json (2023-08-09)
+
+- chore(changelog): generate v0.0.14 (2023-08-08)
+
 ## v0.0.14 (2023-08-08)
 
 ### Added
