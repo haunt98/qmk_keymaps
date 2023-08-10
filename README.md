@@ -81,13 +81,22 @@ More than Basic
 
 Do
 
-- [Bootmagic Lite](https://github.com/qmk/qmk_firmware/blob/master/docs/feature_bootmagic.md)
+- [Bootmagic Lite](https://github.com/qmk/qmk_firmware/blob/master/docs/feature_bootmagic.md):
+  I use `QK_BOOT` with `EE_CLR`.
 - [Contact bounce / contact chatter](https://github.com/qmk/qmk_firmware/blob/master/docs/feature_debounce_type.md)
-- [Grave Escape](https://github.com/qmk/qmk_firmware/blob/master/docs/feature_grave_esc.md)
-- [Mod-Tap](https://github.com/qmk/qmk_firmware/blob/master/docs/mod_tap.md)
+  - [Measure and reduce keyboard input latency with QMK on the Kinesis Advantage (2021)](https://michael.stapelberg.ch/posts/2021-05-08-keyboard-input-latency-qmk-kinesis/)
+  - [QMK debounce masterclass](https://kbd.news/QMK-debounce-masterclass-1435.html)
+  - [Keyboard Matrix Scanning and Debouncing](https://summivox.wordpress.com/2016/06/03/keyboard-matrix-scanning-and-debouncing/)
+- [Grave Escape](https://github.com/qmk/qmk_firmware/blob/master/docs/feature_grave_esc.md):
+  Useful on layout <= 60%, because of missing Fn row.
+- [Mod-Tap](https://github.com/qmk/qmk_firmware/blob/master/docs/mod_tap.md): To
+  replace `CAPSLOCK` with `CTRL` when hold and `ESC` when tap.
 - [Tap-Hold Configuration Options](https://github.com/qmk/qmk_firmware/blob/master/docs/tap_hold.md)
-- [Tap Dance: A Single Key Can Do 3, 5, or 100 Different Things](https://github.com/qmk/qmk_firmware/blob/master/docs/feature_tap_dance.md)
-- [Space Cadet: The Future, Built In](https://github.com/qmk/qmk_firmware/blob/master/docs/feature_space_cadet.md)
+- [Tap Dance: A Single Key Can Do 3, 5, or 100 Different Things](https://github.com/qmk/qmk_firmware/blob/master/docs/feature_tap_dance.md):
+  I use it for `QK_BOOT`.
+- [Space Cadet: The Future, Built In](https://github.com/qmk/qmk_firmware/blob/master/docs/feature_space_cadet.md):
+  Quickly press `(`, `)`.
+  - [A Modern Space Cadet](https://stevelosh.com/blog/2012/10/a-modern-space-cadet/)
 
 Don't
 
@@ -97,7 +106,9 @@ Don't
 - [One Shot Keys](https://github.com/qmk/qmk_firmware/blob/master/docs/one_shot_keys.md)
 - [RGB Matrix Lighting](https://docs.qmk.fm/#/feature_rgb_matrix)
 - [Auto Shift: Why Do We Need a Shift Key?](https://github.com/qmk/qmk_firmware/blob/master/docs/feature_auto_shift.md):
-  Conflict with space cadet when using vim `:w` -> `:)w`
+  Conflict with space cadet when using vim `:w` -> `:)w`.
+- [A guide to home row mods](https://precondition.github.io/home-row-mods): Hard
+  to get it right, so ignore it for now.
 
 Build/Optimize
 
@@ -106,27 +117,16 @@ Build/Optimize
 - [Reducing firmware size](https://get.vial.today/docs/firmware-size.html)
 - [Configuring QMK](https://www.caniusevia.com/docs/configuring_qmk)
 
-Interesting
+More
 
-- [Measure and reduce keyboard input latency with QMK on the Kinesis Advantage (2021)](https://michael.stapelberg.ch/posts/2021-05-08-keyboard-input-latency-qmk-kinesis/)
-- [A guide to home row mods](https://precondition.github.io/home-row-mods)
-- [A Modern Space Cadet](https://stevelosh.com/blog/2012/10/a-modern-space-cadet/)
-- [QMK debounce masterclass](https://kbd.news/QMK-debounce-masterclass-1435.html)
-- [The SpaceFN layout: trying to end keyboard inflation](https://geekhack.org/index.php?topic=51069.0)
 - [Yet another keyboard post, or, introducing ErgoNICE](https://val.packett.cool/blog/ergonice/)
-- [Keyboard Matrix Scanning and Debouncing](https://summivox.wordpress.com/2016/06/03/keyboard-matrix-scanning-and-debouncing/)
-- [QMK USB to USB Keyboard Protocol Converter](https://yaowei.dev/posts/usb-to-usb-converter/)
 - [Programming On 34 Keys](https://peppe.rs/posts/programming_on_34_keys/)
 - [Miryoku](https://github.com/manna-harbour/miryoku)
 - [Pascal Getreuer's QMK keymap](https://github.com/getreuer/qmk-keymap)
 - [Sweep](https://github.com/davidphilipbarr/Sweep)
-- [Toward a more useful keyboard](https://github.com/jasonrudolph/keyboard)
-- [manna-harbour/xmk](https://github.com/manna-harbour/xmk)
 
 Tools:
 
-- [rvaiya/keyd](https://github.com/rvaiya/keyd)
-- [kmonad/kmonad](https://github.com/kmonad/kmonad)
 - [bloznelis/kbt](https://github.com/bloznelis/kbt)
 
 ## qmkasciigen
@@ -163,5 +163,6 @@ Thanks:
   - [x] Use flag
   - [x] Add docs
   - [x] Get data directly from qmk
-  - [ ] Split transform keycodes to raw binding/transform (same as
+  - [x] Split transform keycodes to raw binding/transform (same as
         keymap-drawer)
+  - [ ] Unicode support ?
