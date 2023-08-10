@@ -86,6 +86,13 @@ var mapTransform = []map[string]string{
 	},
 }
 
+// Only use this as last resort
+var mapBindingTiny = []map[string]string{
+	{
+		"BACKSPACE": "BACK",
+	},
+}
+
 type DrawConfig struct {
 	PrintLayout bool
 	PrintLayer  bool
@@ -189,6 +196,22 @@ func Draw(
 					padding = 1
 				}
 
+				if len(keyStr)+2*padding > key.NewW {
+					// Make it smaller
+					for _, m := range mapBindingTiny {
+						if _, ok := m[keyStr]; ok {
+							keyStr = m[keyStr]
+							break
+						}
+					}
+
+					// Re calc padding
+					padding = (key.NewW-len(keyStr))/2 - 1
+					if padding <= 0 {
+						padding = 1
+					}
+				}
+
 				// Draw strategy
 				// Draw 4 + in corner
 				// Draw - on top and bottom
@@ -197,13 +220,16 @@ func Draw(
 					for j := key.NewX; j <= key.NewX+key.NewW; j++ {
 						if i == key.NewY || i == key.NewY+key.NewH {
 							if j == key.NewX || j == key.NewX+key.NewW {
+								// Draw corner
 								table[i][j] = "+"
 							} else if table[i][j] != "+" {
+								// Draw top/bottom
 								table[i][j] = "-"
 							}
 						} else if i == key.NewY+key.NewH/2 {
 							// Write key in the middle
 							if j == key.NewX || j == key.NewX+key.NewW {
+								// Draw left/right
 								table[i][j] = "|"
 							} else if len(keyStr) > 0 && j > key.NewX+padding && j < key.NewX+len(keyStr)+padding+1 && j <= key.NewX+key.NewW-padding {
 								// Only handle ASCII keyStr
