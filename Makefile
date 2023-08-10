@@ -25,6 +25,11 @@ draw_qmkasciigen:
 	$(MAKE) go
 	go run ./cmd/qmkasciigen/*.go -qmk-keyboard dztech/dz60rgb_wkl/v2_1 -qmk-keymap-file dztech_dz60rgb_wkl/keymaps_json/haunt98/keymap.json -out dztech_dz60rgb_wkl/asciiart/haunt98.txt
 
+draw_qmkasciigen_demo:
+	go run ./cmd/qmkasciigen/*.go -print-out -qmk-keyboard matthewdias/minim
+	go run ./cmd/qmkasciigen/*.go -print-out -qmk-keyboard moondrop/dash75
+	go run ./cmd/qmkasciigen/*.go -print-out -qmk-keyboard matthewdias/m3n3van
+
 format_draw_caksoylar_keymap_drawer:
 	bun upgrade
 	bun install --global prettier
