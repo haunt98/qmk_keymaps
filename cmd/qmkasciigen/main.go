@@ -10,6 +10,8 @@ import (
 	"net/http"
 	"os"
 	"strings"
+
+	"github.com/spf13/cast"
 )
 
 const (
@@ -30,6 +32,7 @@ var (
 	flagPrintOutput   bool
 	flagPrintLayout   bool
 	flagPrintLayer    bool
+	flagAllowLayers   string
 )
 
 func init() {
@@ -42,6 +45,7 @@ func init() {
 	flag.BoolVar(&flagPrintOutput, "print-out", false, "Print output")
 	flag.BoolVar(&flagPrintLayout, "print-layout", false, "Print layout name")
 	flag.BoolVar(&flagPrintLayer, "print-layer", false, "Print layer name")
+	flag.StringVar(&flagAllowLayers, "allow-layers", "", "Allow layers to print aka 0 or 0,2,3. Use , to split. Empty mean all")
 }
 
 func main() {
@@ -55,6 +59,19 @@ func main() {
 		log.Printf("flagPrintOutput: [%v]\n", flagPrintOutput)
 		log.Printf("flagPrintLayout: [%v]\n", flagPrintLayout)
 		log.Printf("flagPrintLayer: [%v]\n", flagPrintLayer)
+		log.Printf("flagAllowLayers: [%s]\n", flagAllowLayers)
+	}
+
+	// 0,2,3 -> [0, 2, 3]
+	allowLayers := make(map[int]struct{})
+	for _, l := range strings.Split(flagAllowLayers, ",") {
+		l = strings.TrimSpace(l)
+		if l == "" {
+			continue
+		}
+
+		lInt := cast.ToInt(l)
+		allowLayers[lInt] = struct{}{}
 	}
 
 	qmkInfo, err := wrapGetQMKInfo(flagQMKKeyboard, flagQMKInfoFile, flagDebug)
@@ -71,6 +88,7 @@ func main() {
 		qmkInfo.Layouts,
 		qmkKeymap,
 		DrawConfig{
+			AllowLayers: allowLayers,
 			PrintLayout: flagPrintLayout,
 			PrintLayer:  flagPrintLayer,
 		},

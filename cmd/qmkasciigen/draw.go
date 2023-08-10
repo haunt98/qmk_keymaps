@@ -94,6 +94,7 @@ var mapBindingTiny = []map[string]string{
 }
 
 type DrawConfig struct {
+	AllowLayers map[int]struct{}
 	PrintLayout bool
 	PrintLayer  bool
 }
@@ -155,6 +156,14 @@ func Draw(
 		// Each keymap has many layers
 		layersStr := make([]string, 0, len(keymap.Layers))
 		for iLayer, layer := range keymap.Layers {
+			if len(cfg.AllowLayers) > 0 {
+				// Only check if valid
+				if _, ok := cfg.AllowLayers[iLayer]; !ok {
+					// Skip if not in list
+					continue
+				}
+			}
+
 			// PreProcess table with space
 			table := make([][]string, newMaxY+1)
 			for i := 0; i <= newMaxY; i++ {
