@@ -10,7 +10,6 @@ const (
 	scaleY = 2
 )
 
-// https://github.com/qmk/qmk_firmware/blob/master/docs/keycodes.md
 var mapRawBinding = []map[string]string{
 	{
 		// My custom
@@ -19,6 +18,7 @@ var mapRawBinding = []map[string]string{
 	},
 }
 
+// https://github.com/qmk/qmk_firmware/blob/master/docs/keycodes.md
 var mapTransform = []map[string]string{
 	{
 		// My custom
@@ -55,6 +55,7 @@ var mapTransform = []map[string]string{
 		"KC_COMM": ",",
 		"KC_DOT":  ".",
 		"KC_SLSH": "/",
+		"KC_CAPS": "CAPSLOCK",
 		"KC_LCTL": "CTRL",
 		"KC_RCTL": "CTRL",
 		"KC_LALT": "OPT",
@@ -96,6 +97,7 @@ var mapTransform = []map[string]string{
 var mapTransformTiny = []map[string]string{
 	{
 		"BACKSPACE": "BACK",
+		"CAPSLOCK":  "CAPS",
 	},
 }
 
