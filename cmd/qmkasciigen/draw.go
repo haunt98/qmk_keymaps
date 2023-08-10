@@ -73,11 +73,17 @@ var mapTransform = []map[string]string{
 		"RGB_SAI": "RGBS",
 		"RGB_VAI": "RGBV",
 		// Advance
+		// Mod-Tap
+		"LCTL_T": "CTRL",
 		// Space cadet
 		"SC_LSPO": "( SHIFT",
 		"SC_RSPC": ") SHIFT",
 		// Quantum
 		"EE_CLR": "EECLR",
+	},
+	{
+		// Mod-Tap
+		"CTL_T": "CTRL",
 	},
 	{
 		// Prefix
