@@ -11,7 +11,7 @@ const (
 )
 
 // https://github.com/qmk/qmk_firmware/blob/master/docs/keycodes.md
-var mapFromTo = []map[string]string{
+var mapRawBinding = []map[string]string{
 	{
 		// My custom
 		"CTL_T(KC_ESC)":    "ESC CTRL",
@@ -60,11 +60,29 @@ var mapFromTo = []map[string]string{
 		// Space cadet
 		"SC_LSPO": "( SHIFT",
 		"SC_RSPC": ") SHIFT",
+		// Quantum
+		"EE_CLR": "EECLR",
+	},
+}
+
+var mapTransform = []map[string]string{
+	{
+		// Layer enum
+		"LAYER_QWERTY":   "0",
+		"LAYER_COMMON":   "1",
+		"LAYER_RARELY":   "2",
+		"LAYER_RECOVERY": "3",
 	},
 	{
 		// Prefix
 		"KC_": "",
 		"QK_": "",
+	},
+	{
+		"MO(0)": "L0",
+		"MO(1)": "L1",
+		"MO(2)": "L2",
+		"MO(3)": "L3",
 	},
 }
 
@@ -146,9 +164,20 @@ func Draw(
 				keyStr := layer[count]
 
 				// Convert keyStr
-				for _, m := range mapFromTo {
-					for from, to := range m {
-						keyStr = strings.ReplaceAll(keyStr, from, to)
+				isRaw := false
+				for _, m := range mapRawBinding {
+					if _, ok := m[keyStr]; ok {
+						isRaw = true
+						keyStr = m[keyStr]
+						break
+					}
+				}
+
+				if !isRaw {
+					for _, m := range mapTransform {
+						for from, to := range m {
+							keyStr = strings.ReplaceAll(keyStr, from, to)
+						}
 					}
 				}
 
