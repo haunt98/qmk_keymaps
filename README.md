@@ -153,6 +153,12 @@ Thanks:
 - [yskoht/keymapviz](https://github.com/yskoht/keymapviz)
 - [caksoylar/keymap-drawer](https://github.com/caksoylar/keymap-drawer)
 
+## [Karabiner-Elements](https://github.com/pqrs-org/Karabiner-Elements)
+
+Copycat QMK features with software.
+
+- [Modern Space Cadet (rev 3)](https://ke-complex-modifications.pqrs.org/json/space_cadet.json)
+
 ## TODO
 
 - [x] How to flash
