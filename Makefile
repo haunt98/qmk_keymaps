@@ -1,4 +1,4 @@
-.PHONY: all format clean go draw qmk_upstream qmk_init qmk_clean dztech_dz60rgb_wkl
+.PHONY: all format clean go draw_qmkasciigen format_draw_caksoylar_keymap_drawer draw_caksoylar_keymap_drawer draw qmk_upstream qmk_init qmk_clean dztech_dz60rgb_wkl
 
 all:
 	@echo Please read Makefile to understand!!!
@@ -21,14 +21,16 @@ go:
 	gofimports -w --company github.com/make-go-great,github.com/haunt98 .
 	gofumpt -w -extra .
 
-format_draw:
+draw_qmkasciigen:
+	$(MAKE) go
+	go run ./cmd/qmkasciigen/*.go -qmk-keyboard dztech/dz60rgb_wkl/v2_1 -qmk-keymap-file dztech_dz60rgb_wkl/keymaps_json/haunt98/keymap.json -out dztech_dz60rgb_wkl/asciiart/haunt98.txt
+
+format_draw_caksoylar_keymap_drawer:
 	bun upgrade
 	bun install --global prettier
 	prettier --write ./dztech_dz60rgb_wkl/caksoylar_keymap_drawer/*.yaml
 
-draw:
-	$(MAKE) go
-	go run ./cmd/qmkasciigen/*.go -qmk-keyboard dztech/dz60rgb_wkl/v2_1 -qmk-keymap-file dztech_dz60rgb_wkl/keymaps_json/haunt98/keymap.json -out dztech_dz60rgb_wkl/asciiart/haunt98.txt
+draw_caksoylar_keymap_drawer:
 	# https://github.com/caksoylar/keymap-drawer
 	pipx install keymap-drawer
 	keymap -c dztech_dz60rgb_wkl/caksoylar_keymap_drawer/config.yaml \
@@ -37,7 +39,11 @@ draw:
 	keymap -c dztech_dz60rgb_wkl/caksoylar_keymap_drawer/config.yaml \
 		draw dztech_dz60rgb_wkl/caksoylar_keymap_drawer/keymap.yaml > \
 		dztech_dz60rgb_wkl/caksoylar_keymap_drawer/keymap.svg
-	$(MAKE) format_draw
+
+draw:
+	$(MAKE) draw_qmkasciigen
+	$(MAKE) draw_caksoylar_keymap_drawer
+	$(MAKE) format_draw_caksoylar_keymap_drawer
 
 qmk_upstream:
 	curl https://raw.githubusercontent.com/qmk/qmk_firmware/master/.clang-format --output .clang-format

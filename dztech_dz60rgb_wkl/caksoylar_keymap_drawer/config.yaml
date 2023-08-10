@@ -1,2 +1,78 @@
+# Sync with draw.go as much as possible
+draw_config:
+  key_h: 60
+  glyph_tap_size: 18
+  glyph_hold_size: 16
+  append_colon_to_layer_header: false
+  svg_style: |
+    /* Colors https://materialui.co/colors */
+    svg path {
+      fill: inherit;
+    }
+    svg.keymap {
+      font-family: JetBrains Mono, monospace;
+      font-size: 14px;
+      font-kerning: normal;
+      text-rendering: optimizeLegibility;
+      fill: rgb(44, 62, 80);
+    }
+    rect.key {
+      fill: rgb(250, 250, 250);
+      stroke: rgb(176, 190, 197);
+      stroke-width: 1;
+    }
+    text {
+      font-weight: bold;
+      text-anchor: middle;
+      dominant-baseline: middle;
+    }
+    text.label {
+      font-size: 14px;
+      text-anchor: start;
+      stroke: white;
+      stroke-width: 2;
+      paint-order: stroke;
+    }
+    text.hold {
+      font-size: 12px;
+    }
+    text.hold {
+      text-anchor: middle;
+      dominant-baseline: text-after-edge;
+    }
+    rect.held, rect.enter, rect.space {
+      fill: rgb(255, 205, 210);
+    }
+    rect.esc, rect.vim {
+      fill: rgb(200, 230, 201);
+    }
 parse_config:
-  raw_binding_map: { "TD(TD_SAFE_BOOT)": "SAFE BOOT" }
+  trans_legend:
+    tap: $$mdi:transfer$$
+    type: trans
+  raw_binding_map: {
+      "TD(TD_SAFE_BOOT)": "BOOT",
+      "CTL_T(KC_ESC)":
+        { "t": "ESC", "h": "$$mdi:apple-keyboard-control$$", "type": "esc" },
+      "KC_H": { "t": "H", "type": "vim" },
+      "KC_J": { "t": "J", "type": "vim" },
+      "KC_K": { "t": "K", "type": "vim" },
+      "KC_L": { "t": "L", "type": "vim" },
+      "KC_ENT": { "t": "$$mdi:keyboard-return$$", "type": "enter" },
+      "KC_BSPC": "$$mdi:keyboard-backspace$$",
+      "KC_TAB": "$$mdi:keyboard-tab$$",
+      "KC_SPC": { "t": "$$mdi:keyboard-space$$", "type": "space" },
+      "KC_UP": "$$mdi:arrow-up$$",
+      "KC_DOWN": "$$mdi:arrow-down$$",
+      "KC_LEFT": "$$mdi:arrow-left$$",
+      "KC_RGHT": "$$mdi:arrow-right$$",
+      "KC_CAPS": "$$mdi:apple-keyboard-caps$$",
+      "KC_LOPT": "$$mdi:apple-keyboard-option$$",
+      "KC_ROPT": "$$mdi:apple-keyboard-option$$",
+      "KC_LCMD": "$$mdi:apple-keyboard-command$$",
+      "KC_RCMD": "$$mdi:apple-keyboard-command$$",
+      # Advance
+      "QK_GESC": { "t": "GESC", "type": "esc" },
+      "SC_LSPO": { "t": "(", "h": "$$mdi:apple-keyboard-shift$$" },
+      "SC_RSPC": { "t": ")", "h": "$$mdi:apple-keyboard-shift$$" },
+    }

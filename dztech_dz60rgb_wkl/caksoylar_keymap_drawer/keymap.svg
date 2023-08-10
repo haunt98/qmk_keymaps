@@ -1,468 +1,458 @@
-<svg width="900.0" height="1400.0" viewBox="0 0 900.0 1400.0" class="keymap" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<style>/* inherit to force styles through use tags*/
+<svg width="960.0" height="1480.0" viewBox="0 0 960.0 1480.0" class="keymap" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>/* start glyphs */
+<svg id="mdi:arrow-up">
+<svg xmlns="http://www.w3.org/2000/svg" id="mdi-arrow-up" viewBox="0 0 24 24"><path d="M13,20H11V8L5.5,13.5L4.08,12.08L12,4.16L19.92,12.08L18.5,13.5L13,8V20Z" /></svg>
+</svg>
+<svg id="mdi:apple-keyboard-control">
+<svg xmlns="http://www.w3.org/2000/svg" id="mdi-apple-keyboard-control" viewBox="0 0 24 24"><path d="M19.78,11.78L18.36,13.19L12,6.83L5.64,13.19L4.22,11.78L12,4L19.78,11.78Z" /></svg>
+</svg>
+<svg id="mdi:arrow-left">
+<svg xmlns="http://www.w3.org/2000/svg" id="mdi-arrow-left" viewBox="0 0 24 24"><path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z" /></svg>
+</svg>
+<svg id="mdi:keyboard-backspace">
+<svg xmlns="http://www.w3.org/2000/svg" id="mdi-keyboard-backspace" viewBox="0 0 24 24"><path d="M21,11H6.83L10.41,7.41L9,6L3,12L9,18L10.41,16.58L6.83,13H21V11Z" /></svg>
+</svg>
+<svg id="mdi:keyboard-tab">
+<svg xmlns="http://www.w3.org/2000/svg" id="mdi-keyboard-tab" viewBox="0 0 24 24"><path d="M20,18H22V6H20M11.59,7.41L15.17,11H1V13H15.17L11.59,16.58L13,18L19,12L13,6L11.59,7.41Z" /></svg>
+</svg>
+<svg id="mdi:apple-keyboard-caps">
+<svg xmlns="http://www.w3.org/2000/svg" id="mdi-apple-keyboard-caps" viewBox="0 0 24 24"><path d="M15,14V8H17.17L12,2.83L6.83,8H9V14H15M12,0L22,10H17V16H7V10H2L12,0M7,18H17V24H7V18M15,20H9V22H15V20Z" /></svg>
+</svg>
+<svg id="mdi:arrow-down">
+<svg xmlns="http://www.w3.org/2000/svg" id="mdi-arrow-down" viewBox="0 0 24 24"><path d="M11,4H13V16L18.5,10.5L19.92,11.92L12,19.84L4.08,11.92L5.5,10.5L11,16V4Z" /></svg>
+</svg>
+<svg id="mdi:transfer">
+<svg xmlns="http://www.w3.org/2000/svg" id="mdi-transfer" viewBox="0 0 24 24"><path d="M8 4A2 2 0 0 0 6 6V10H8V6H16V9H13.5L17 12.5L20.5 9H18V6A2 2 0 0 0 16 4H8M3 12V14H11V12H3M3 15V17H11V15H3M13 15V17H21V15H13M3 18V20H11V18H3M13 18V20H21V18H13Z" /></svg>
+</svg>
+<svg id="mdi:keyboard-return">
+<svg xmlns="http://www.w3.org/2000/svg" id="mdi-keyboard-return" viewBox="0 0 24 24"><path d="M19,7V11H5.83L9.41,7.41L8,6L2,12L8,18L9.41,16.58L5.83,13H21V7H19Z" /></svg>
+</svg>
+<svg id="mdi:apple-keyboard-shift">
+<svg xmlns="http://www.w3.org/2000/svg" id="mdi-apple-keyboard-shift" viewBox="0 0 24 24"><path d="M15,18V12H17.17L12,6.83L6.83,12H9V18H15M12,4L22,14H17V20H7V14H2L12,4Z" /></svg>
+</svg>
+<svg id="mdi:keyboard-space">
+<svg xmlns="http://www.w3.org/2000/svg" id="mdi-keyboard-space" viewBox="0 0 24 24"><path d="M3 15H5V19H19V15H21V19C21 20.1 20.1 21 19 21H5C3.9 21 3 20.1 3 19V15Z" /></svg>
+</svg>
+<svg id="mdi:apple-keyboard-option">
+<svg xmlns="http://www.w3.org/2000/svg" id="mdi-apple-keyboard-option" viewBox="0 0 24 24"><path d="M3,4H9.11L16.15,18H21V20H14.88L7.84,6H3V4M14,4H21V6H14V4Z" /></svg>
+</svg>
+<svg id="mdi:arrow-right">
+<svg xmlns="http://www.w3.org/2000/svg" id="mdi-arrow-right" viewBox="0 0 24 24"><path d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z" /></svg>
+</svg>
+<svg id="mdi:apple-keyboard-command">
+<svg xmlns="http://www.w3.org/2000/svg" id="mdi-apple-keyboard-command" viewBox="0 0 24 24"><path d="M6,2A4,4 0 0,1 10,6V8H14V6A4,4 0 0,1 18,2A4,4 0 0,1 22,6A4,4 0 0,1 18,10H16V14H18A4,4 0 0,1 22,18A4,4 0 0,1 18,22A4,4 0 0,1 14,18V16H10V18A4,4 0 0,1 6,22A4,4 0 0,1 2,18A4,4 0 0,1 6,14H8V10H6A4,4 0 0,1 2,6A4,4 0 0,1 6,2M16,18A2,2 0 0,0 18,20A2,2 0 0,0 20,18A2,2 0 0,0 18,16H16V18M14,10H10V14H14V10M6,16A2,2 0 0,0 4,18A2,2 0 0,0 6,20A2,2 0 0,0 8,18V16H6M8,6A2,2 0 0,0 6,4A2,2 0 0,0 4,6A2,2 0 0,0 6,8H8V6M18,8A2,2 0 0,0 20,6A2,2 0 0,0 18,4A2,2 0 0,0 16,6V8H18Z" /></svg>
+</svg>
+</defs>/* end glyphs */
+<style>/* Colors https://materialui.co/colors */
 svg path {
-    fill: inherit;
+  fill: inherit;
 }
-/* font and background color specifications */
 svg.keymap {
-    font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
-    font-size: 14px;
-    font-kerning: normal;
-    text-rendering: optimizeLegibility;
-    fill: #24292e;
+  font-family: JetBrains Mono, monospace;
+  font-size: 14px;
+  font-kerning: normal;
+  text-rendering: optimizeLegibility;
+  fill: rgb(44, 62, 80);
 }
-
-/* default key styling */
 rect.key {
-    fill: #f6f8fa;
-    stroke: #c9cccf;
-    stroke-width: 1;
+  fill: rgb(250, 250, 250);
+  stroke: rgb(176, 190, 197);
+  stroke-width: 1;
 }
-
-/* color accent for combo boxes */
-rect.combo {
-    fill: #cdf;
-}
-
-/* color accent for held keys */
-rect.held, rect.combo.held {
-    fill: #fdd;
-}
-
-/* color accent for ghost (optional) keys */
-rect.ghost, rect.combo.ghost {
-    stroke-dasharray: 4, 4;
-    stroke-width: 2;
-}
-
 text {
-    text-anchor: middle;
-    dominant-baseline: middle;
+  font-weight: bold;
+  text-anchor: middle;
+  dominant-baseline: middle;
 }
-
-/* styling for layer labels */
 text.label {
-    font-weight: bold;
-    text-anchor: start;
-    stroke: white;
-    stroke-width: 2;
-    paint-order: stroke;
+  font-size: 14px;
+  text-anchor: start;
+  stroke: white;
+  stroke-width: 2;
+  paint-order: stroke;
 }
-
-/* styling for combo tap, and key hold/shifted label text */
-text.combo, text.hold, text.shifted {
-    font-size: 11px;
-}
-
 text.hold {
-    text-anchor: middle;
-    dominant-baseline: auto;
+  font-size: 12px;
 }
-
-text.shifted {
-    text-anchor: middle;
-    dominant-baseline: hanging;
+text.hold {
+  text-anchor: middle;
+  dominant-baseline: text-after-edge;
 }
-
-/* styling for hold/shifted label text in combo box */
-text.combo.hold, text.combo.shifted {
-    font-size: 8px;
+rect.held, rect.enter, rect.space {
+  fill: rgb(255, 205, 210);
 }
-
-/* lighter symbol for transparent keys */
-text.trans {
-    fill: #7b7e81;
+rect.esc, rect.vim {
+  fill: rgb(200, 230, 201);
 }
-
-/* styling for combo dendrons */
-path.combo {
-    stroke-width: 1;
-    stroke: gray;
-    fill: none;
-}
-
-/* Start Tabler Icons Cleanup */
-/* cannot use height/width with glyphs */
-.icon-tabler > path {
-    fill: inherit;
-    stroke: inherit;
-}
-/* hide tabler's default box */
-.icon-tabler > path[stroke="none"][fill="none"] {
-    visibility: collapse;
-}
-/* End Tabler Icons Cleanup */
 </style>
 <g class="layer-L0">
-<text x="30.0" y="28.0" class="label">L0:</text>
-<rect rx="6.0" ry="6.0" x="32.0" y="58.0" width="52.0" height="52.0" class="key"/>
-<text x="58.0" y="84.0" class="tap">
-<tspan x="58.0" dy="-0.6em">QK</tspan><tspan x="58.0" dy="1.2em">GESC</tspan></text>
-<rect rx="6.0" ry="6.0" x="88.0" y="58.0" width="52.0" height="52.0" class="key"/>
-<text x="114.0" y="84.0" class="tap">1</text>
-<rect rx="6.0" ry="6.0" x="144.0" y="58.0" width="52.0" height="52.0" class="key"/>
-<text x="170.0" y="84.0" class="tap">2</text>
-<rect rx="6.0" ry="6.0" x="200.0" y="58.0" width="52.0" height="52.0" class="key"/>
-<text x="226.0" y="84.0" class="tap">3</text>
-<rect rx="6.0" ry="6.0" x="256.0" y="58.0" width="52.0" height="52.0" class="key"/>
-<text x="282.0" y="84.0" class="tap">4</text>
-<rect rx="6.0" ry="6.0" x="312.0" y="58.0" width="52.0" height="52.0" class="key"/>
-<text x="338.0" y="84.0" class="tap">5</text>
-<rect rx="6.0" ry="6.0" x="368.0" y="58.0" width="52.0" height="52.0" class="key"/>
-<text x="394.0" y="84.0" class="tap">6</text>
-<rect rx="6.0" ry="6.0" x="424.0" y="58.0" width="52.0" height="52.0" class="key"/>
-<text x="450.0" y="84.0" class="tap">7</text>
-<rect rx="6.0" ry="6.0" x="480.0" y="58.0" width="52.0" height="52.0" class="key"/>
-<text x="506.0" y="84.0" class="tap">8</text>
-<rect rx="6.0" ry="6.0" x="536.0" y="58.0" width="52.0" height="52.0" class="key"/>
-<text x="562.0" y="84.0" class="tap">9</text>
-<rect rx="6.0" ry="6.0" x="592.0" y="58.0" width="52.0" height="52.0" class="key"/>
-<text x="618.0" y="84.0" class="tap">0</text>
-<rect rx="6.0" ry="6.0" x="648.0" y="58.0" width="52.0" height="52.0" class="key"/>
-<text x="674.0" y="84.0" class="tap">-</text>
-<rect rx="6.0" ry="6.0" x="704.0" y="58.0" width="52.0" height="52.0" class="key"/>
-<text x="730.0" y="84.0" class="tap">=</text>
-<rect rx="6.0" ry="6.0" x="760.0" y="58.0" width="52.0" height="52.0" class="key"/>
-<text x="786.0" y="84.0" class="tap">\</text>
-<rect rx="6.0" ry="6.0" x="816.0" y="58.0" width="52.0" height="52.0" class="key"/>
-<text x="842.0" y="84.0" class="tap">`</text>
-<rect rx="6.0" ry="6.0" x="32.0" y="114.0" width="80.0" height="52.0" class="key"/>
-<text x="72.0" y="140.0" class="tap">TAB</text>
-<rect rx="6.0" ry="6.0" x="116.0" y="114.0" width="52.0" height="52.0" class="key"/>
-<text x="142.0" y="140.0" class="tap">Q</text>
-<rect rx="6.0" ry="6.0" x="172.0" y="114.0" width="52.0" height="52.0" class="key"/>
-<text x="198.0" y="140.0" class="tap">W</text>
-<rect rx="6.0" ry="6.0" x="228.0" y="114.0" width="52.0" height="52.0" class="key"/>
-<text x="254.0" y="140.0" class="tap">E</text>
-<rect rx="6.0" ry="6.0" x="284.0" y="114.0" width="52.0" height="52.0" class="key"/>
-<text x="310.0" y="140.0" class="tap">R</text>
-<rect rx="6.0" ry="6.0" x="340.0" y="114.0" width="52.0" height="52.0" class="key"/>
-<text x="366.0" y="140.0" class="tap">T</text>
-<rect rx="6.0" ry="6.0" x="396.0" y="114.0" width="52.0" height="52.0" class="key"/>
-<text x="422.0" y="140.0" class="tap">Y</text>
-<rect rx="6.0" ry="6.0" x="452.0" y="114.0" width="52.0" height="52.0" class="key"/>
-<text x="478.0" y="140.0" class="tap">U</text>
-<rect rx="6.0" ry="6.0" x="508.0" y="114.0" width="52.0" height="52.0" class="key"/>
-<text x="534.0" y="140.0" class="tap">I</text>
-<rect rx="6.0" ry="6.0" x="564.0" y="114.0" width="52.0" height="52.0" class="key"/>
-<text x="590.0" y="140.0" class="tap">O</text>
-<rect rx="6.0" ry="6.0" x="620.0" y="114.0" width="52.0" height="52.0" class="key"/>
-<text x="646.0" y="140.0" class="tap">P</text>
-<rect rx="6.0" ry="6.0" x="676.0" y="114.0" width="52.0" height="52.0" class="key"/>
-<text x="702.0" y="140.0" class="tap">[</text>
-<rect rx="6.0" ry="6.0" x="732.0" y="114.0" width="52.0" height="52.0" class="key"/>
-<text x="758.0" y="140.0" class="tap">]</text>
-<rect rx="6.0" ry="6.0" x="788.0" y="114.0" width="80.0" height="52.0" class="key"/>
-<text x="828.0" y="140.0" class="tap">BSPC</text>
-<rect rx="6.0" ry="6.0" x="32.0" y="170.0" width="94.0" height="52.0" class="key"/>
-<text x="79.0" y="196.0" class="tap">ESC</text>
-<text x="79.0" y="220.0" class="hold">CTL</text>
-<rect rx="6.0" ry="6.0" x="130.0" y="170.0" width="52.0" height="52.0" class="key"/>
-<text x="156.0" y="196.0" class="tap">A</text>
-<rect rx="6.0" ry="6.0" x="186.0" y="170.0" width="52.0" height="52.0" class="key"/>
-<text x="212.0" y="196.0" class="tap">S</text>
-<rect rx="6.0" ry="6.0" x="242.0" y="170.0" width="52.0" height="52.0" class="key"/>
-<text x="268.0" y="196.0" class="tap">D</text>
-<rect rx="6.0" ry="6.0" x="298.0" y="170.0" width="52.0" height="52.0" class="key"/>
-<text x="324.0" y="196.0" class="tap">F</text>
-<rect rx="6.0" ry="6.0" x="354.0" y="170.0" width="52.0" height="52.0" class="key"/>
-<text x="380.0" y="196.0" class="tap">G</text>
-<rect rx="6.0" ry="6.0" x="410.0" y="170.0" width="52.0" height="52.0" class="key"/>
-<text x="436.0" y="196.0" class="tap">H</text>
-<rect rx="6.0" ry="6.0" x="466.0" y="170.0" width="52.0" height="52.0" class="key"/>
-<text x="492.0" y="196.0" class="tap">J</text>
-<rect rx="6.0" ry="6.0" x="522.0" y="170.0" width="52.0" height="52.0" class="key"/>
-<text x="548.0" y="196.0" class="tap">K</text>
-<rect rx="6.0" ry="6.0" x="578.0" y="170.0" width="52.0" height="52.0" class="key"/>
-<text x="604.0" y="196.0" class="tap">L</text>
-<rect rx="6.0" ry="6.0" x="634.0" y="170.0" width="52.0" height="52.0" class="key"/>
-<text x="660.0" y="196.0" class="tap">;</text>
-<rect rx="6.0" ry="6.0" x="690.0" y="170.0" width="52.0" height="52.0" class="key"/>
-<text x="716.0" y="196.0" class="tap">&#x27;</text>
-<rect rx="6.0" ry="6.0" x="746.0" y="170.0" width="122.0" height="52.0" class="key"/>
-<text x="807.0" y="196.0" class="tap">ENT</text>
-<rect rx="6.0" ry="6.0" x="32.0" y="226.0" width="122.0" height="52.0" class="key"/>
-<text x="93.0" y="252.0" class="tap">
-<tspan x="93.0" dy="-0.6em">SC</tspan><tspan x="93.0" dy="1.2em">LSPO</tspan></text>
-<rect rx="6.0" ry="6.0" x="158.0" y="226.0" width="52.0" height="52.0" class="key"/>
-<text x="184.0" y="252.0" class="tap">Z</text>
-<rect rx="6.0" ry="6.0" x="214.0" y="226.0" width="52.0" height="52.0" class="key"/>
-<text x="240.0" y="252.0" class="tap">X</text>
-<rect rx="6.0" ry="6.0" x="270.0" y="226.0" width="52.0" height="52.0" class="key"/>
-<text x="296.0" y="252.0" class="tap">C</text>
-<rect rx="6.0" ry="6.0" x="326.0" y="226.0" width="52.0" height="52.0" class="key"/>
-<text x="352.0" y="252.0" class="tap">V</text>
-<rect rx="6.0" ry="6.0" x="382.0" y="226.0" width="52.0" height="52.0" class="key"/>
-<text x="408.0" y="252.0" class="tap">B</text>
-<rect rx="6.0" ry="6.0" x="438.0" y="226.0" width="52.0" height="52.0" class="key"/>
-<text x="464.0" y="252.0" class="tap">N</text>
-<rect rx="6.0" ry="6.0" x="494.0" y="226.0" width="52.0" height="52.0" class="key"/>
-<text x="520.0" y="252.0" class="tap">M</text>
-<rect rx="6.0" ry="6.0" x="550.0" y="226.0" width="52.0" height="52.0" class="key"/>
-<text x="576.0" y="252.0" class="tap">,</text>
-<rect rx="6.0" ry="6.0" x="606.0" y="226.0" width="52.0" height="52.0" class="key"/>
-<text x="632.0" y="252.0" class="tap">.</text>
-<rect rx="6.0" ry="6.0" x="662.0" y="226.0" width="52.0" height="52.0" class="key"/>
-<text x="688.0" y="252.0" class="tap">/</text>
-<rect rx="6.0" ry="6.0" x="718.0" y="226.0" width="94.0" height="52.0" class="key"/>
-<text x="765.0" y="252.0" class="tap">
-<tspan x="765.0" dy="-0.6em">SC</tspan><tspan x="765.0" dy="1.2em">RSPC</tspan></text>
-<rect rx="6.0" ry="6.0" x="816.0" y="226.0" width="52.0" height="52.0" class="key"/>
-<text x="842.0" y="252.0" class="tap">L1</text>
-<rect rx="6.0" ry="6.0" x="32.0" y="282.0" width="80.0" height="52.0" class="key"/>
-<rect rx="6.0" ry="6.0" x="116.0" y="282.0" width="52.0" height="52.0" class="key"/>
-<text x="142.0" y="308.0" class="tap">LOPT</text>
-<rect rx="6.0" ry="6.0" x="172.0" y="282.0" width="80.0" height="52.0" class="key"/>
-<text x="212.0" y="308.0" class="tap">LCMD</text>
-<rect rx="6.0" ry="6.0" x="256.0" y="282.0" width="388.0" height="52.0" class="key"/>
-<text x="450.0" y="308.0" class="tap">SPC</text>
-<rect rx="6.0" ry="6.0" x="648.0" y="282.0" width="80.0" height="52.0" class="key"/>
-<text x="688.0" y="308.0" class="tap">RCMD</text>
-<rect rx="6.0" ry="6.0" x="732.0" y="282.0" width="52.0" height="52.0" class="key"/>
-<text x="758.0" y="308.0" class="tap">ROPT</text>
-<rect rx="6.0" ry="6.0" x="788.0" y="282.0" width="80.0" height="52.0" class="key"/>
+<text x="30.0" y="28.0" class="label">L0</text>
+<rect rx="6.0" ry="6.0" x="32.0" y="58.0" width="56.0" height="56.0" class="esc key"/>
+<text x="60.0" y="86.0" class="esc tap">GESC</text>
+<rect rx="6.0" ry="6.0" x="92.0" y="58.0" width="56.0" height="56.0" class="key"/>
+<text x="120.0" y="86.0" class="tap">1</text>
+<rect rx="6.0" ry="6.0" x="152.0" y="58.0" width="56.0" height="56.0" class="key"/>
+<text x="180.0" y="86.0" class="tap">2</text>
+<rect rx="6.0" ry="6.0" x="212.0" y="58.0" width="56.0" height="56.0" class="key"/>
+<text x="240.0" y="86.0" class="tap">3</text>
+<rect rx="6.0" ry="6.0" x="272.0" y="58.0" width="56.0" height="56.0" class="key"/>
+<text x="300.0" y="86.0" class="tap">4</text>
+<rect rx="6.0" ry="6.0" x="332.0" y="58.0" width="56.0" height="56.0" class="key"/>
+<text x="360.0" y="86.0" class="tap">5</text>
+<rect rx="6.0" ry="6.0" x="392.0" y="58.0" width="56.0" height="56.0" class="key"/>
+<text x="420.0" y="86.0" class="tap">6</text>
+<rect rx="6.0" ry="6.0" x="452.0" y="58.0" width="56.0" height="56.0" class="key"/>
+<text x="480.0" y="86.0" class="tap">7</text>
+<rect rx="6.0" ry="6.0" x="512.0" y="58.0" width="56.0" height="56.0" class="key"/>
+<text x="540.0" y="86.0" class="tap">8</text>
+<rect rx="6.0" ry="6.0" x="572.0" y="58.0" width="56.0" height="56.0" class="key"/>
+<text x="600.0" y="86.0" class="tap">9</text>
+<rect rx="6.0" ry="6.0" x="632.0" y="58.0" width="56.0" height="56.0" class="key"/>
+<text x="660.0" y="86.0" class="tap">0</text>
+<rect rx="6.0" ry="6.0" x="692.0" y="58.0" width="56.0" height="56.0" class="key"/>
+<text x="720.0" y="86.0" class="tap">-</text>
+<rect rx="6.0" ry="6.0" x="752.0" y="58.0" width="56.0" height="56.0" class="key"/>
+<text x="780.0" y="86.0" class="tap">=</text>
+<rect rx="6.0" ry="6.0" x="812.0" y="58.0" width="56.0" height="56.0" class="key"/>
+<text x="840.0" y="86.0" class="tap">\</text>
+<rect rx="6.0" ry="6.0" x="872.0" y="58.0" width="56.0" height="56.0" class="key"/>
+<text x="900.0" y="86.0" class="tap">`</text>
+<rect rx="6.0" ry="6.0" x="32.0" y="118.0" width="86.0" height="56.0" class="key"/>
+<use href="#mdi:keyboard-tab" xlink:href="#mdi:keyboard-tab" x="66.0" y="137.0" height="18" width="18.0" class="tap glyph mdi:keyboard-tab"/>
+<rect rx="6.0" ry="6.0" x="122.0" y="118.0" width="56.0" height="56.0" class="key"/>
+<text x="150.0" y="146.0" class="tap">Q</text>
+<rect rx="6.0" ry="6.0" x="182.0" y="118.0" width="56.0" height="56.0" class="key"/>
+<text x="210.0" y="146.0" class="tap">W</text>
+<rect rx="6.0" ry="6.0" x="242.0" y="118.0" width="56.0" height="56.0" class="key"/>
+<text x="270.0" y="146.0" class="tap">E</text>
+<rect rx="6.0" ry="6.0" x="302.0" y="118.0" width="56.0" height="56.0" class="key"/>
+<text x="330.0" y="146.0" class="tap">R</text>
+<rect rx="6.0" ry="6.0" x="362.0" y="118.0" width="56.0" height="56.0" class="key"/>
+<text x="390.0" y="146.0" class="tap">T</text>
+<rect rx="6.0" ry="6.0" x="422.0" y="118.0" width="56.0" height="56.0" class="key"/>
+<text x="450.0" y="146.0" class="tap">Y</text>
+<rect rx="6.0" ry="6.0" x="482.0" y="118.0" width="56.0" height="56.0" class="key"/>
+<text x="510.0" y="146.0" class="tap">U</text>
+<rect rx="6.0" ry="6.0" x="542.0" y="118.0" width="56.0" height="56.0" class="key"/>
+<text x="570.0" y="146.0" class="tap">I</text>
+<rect rx="6.0" ry="6.0" x="602.0" y="118.0" width="56.0" height="56.0" class="key"/>
+<text x="630.0" y="146.0" class="tap">O</text>
+<rect rx="6.0" ry="6.0" x="662.0" y="118.0" width="56.0" height="56.0" class="key"/>
+<text x="690.0" y="146.0" class="tap">P</text>
+<rect rx="6.0" ry="6.0" x="722.0" y="118.0" width="56.0" height="56.0" class="key"/>
+<text x="750.0" y="146.0" class="tap">[</text>
+<rect rx="6.0" ry="6.0" x="782.0" y="118.0" width="56.0" height="56.0" class="key"/>
+<text x="810.0" y="146.0" class="tap">]</text>
+<rect rx="6.0" ry="6.0" x="842.0" y="118.0" width="86.0" height="56.0" class="key"/>
+<use href="#mdi:keyboard-backspace" xlink:href="#mdi:keyboard-backspace" x="876.0" y="137.0" height="18" width="18.0" class="tap glyph mdi:keyboard-backspace"/>
+<rect rx="6.0" ry="6.0" x="32.0" y="178.0" width="101.0" height="56.0" class="esc key"/>
+<text x="82.5" y="206.0" class="esc tap">ESC</text>
+<use href="#mdi:apple-keyboard-control" xlink:href="#mdi:apple-keyboard-control" x="74.5" y="216.0" height="16" width="16.0" class="esc hold glyph mdi:apple-keyboard-control"/>
+<rect rx="6.0" ry="6.0" x="137.0" y="178.0" width="56.0" height="56.0" class="key"/>
+<text x="165.0" y="206.0" class="tap">A</text>
+<rect rx="6.0" ry="6.0" x="197.0" y="178.0" width="56.0" height="56.0" class="key"/>
+<text x="225.0" y="206.0" class="tap">S</text>
+<rect rx="6.0" ry="6.0" x="257.0" y="178.0" width="56.0" height="56.0" class="key"/>
+<text x="285.0" y="206.0" class="tap">D</text>
+<rect rx="6.0" ry="6.0" x="317.0" y="178.0" width="56.0" height="56.0" class="key"/>
+<text x="345.0" y="206.0" class="tap">F</text>
+<rect rx="6.0" ry="6.0" x="377.0" y="178.0" width="56.0" height="56.0" class="key"/>
+<text x="405.0" y="206.0" class="tap">G</text>
+<rect rx="6.0" ry="6.0" x="437.0" y="178.0" width="56.0" height="56.0" class="vim key"/>
+<text x="465.0" y="206.0" class="vim tap">H</text>
+<rect rx="6.0" ry="6.0" x="497.0" y="178.0" width="56.0" height="56.0" class="vim key"/>
+<text x="525.0" y="206.0" class="vim tap">J</text>
+<rect rx="6.0" ry="6.0" x="557.0" y="178.0" width="56.0" height="56.0" class="vim key"/>
+<text x="585.0" y="206.0" class="vim tap">K</text>
+<rect rx="6.0" ry="6.0" x="617.0" y="178.0" width="56.0" height="56.0" class="vim key"/>
+<text x="645.0" y="206.0" class="vim tap">L</text>
+<rect rx="6.0" ry="6.0" x="677.0" y="178.0" width="56.0" height="56.0" class="key"/>
+<text x="705.0" y="206.0" class="tap">;</text>
+<rect rx="6.0" ry="6.0" x="737.0" y="178.0" width="56.0" height="56.0" class="key"/>
+<text x="765.0" y="206.0" class="tap">&#x27;</text>
+<rect rx="6.0" ry="6.0" x="797.0" y="178.0" width="131.0" height="56.0" class="enter key"/>
+<use href="#mdi:keyboard-return" xlink:href="#mdi:keyboard-return" x="853.5" y="197.0" height="18" width="18.0" class="enter tap glyph mdi:keyboard-return"/>
+<rect rx="6.0" ry="6.0" x="32.0" y="238.0" width="131.0" height="56.0" class="key"/>
+<text x="97.5" y="266.0" class="tap">(</text>
+<use href="#mdi:apple-keyboard-shift" xlink:href="#mdi:apple-keyboard-shift" x="89.5" y="276.0" height="16" width="16.0" class="hold glyph mdi:apple-keyboard-shift"/>
+<rect rx="6.0" ry="6.0" x="167.0" y="238.0" width="56.0" height="56.0" class="key"/>
+<text x="195.0" y="266.0" class="tap">Z</text>
+<rect rx="6.0" ry="6.0" x="227.0" y="238.0" width="56.0" height="56.0" class="key"/>
+<text x="255.0" y="266.0" class="tap">X</text>
+<rect rx="6.0" ry="6.0" x="287.0" y="238.0" width="56.0" height="56.0" class="key"/>
+<text x="315.0" y="266.0" class="tap">C</text>
+<rect rx="6.0" ry="6.0" x="347.0" y="238.0" width="56.0" height="56.0" class="key"/>
+<text x="375.0" y="266.0" class="tap">V</text>
+<rect rx="6.0" ry="6.0" x="407.0" y="238.0" width="56.0" height="56.0" class="key"/>
+<text x="435.0" y="266.0" class="tap">B</text>
+<rect rx="6.0" ry="6.0" x="467.0" y="238.0" width="56.0" height="56.0" class="key"/>
+<text x="495.0" y="266.0" class="tap">N</text>
+<rect rx="6.0" ry="6.0" x="527.0" y="238.0" width="56.0" height="56.0" class="key"/>
+<text x="555.0" y="266.0" class="tap">M</text>
+<rect rx="6.0" ry="6.0" x="587.0" y="238.0" width="56.0" height="56.0" class="key"/>
+<text x="615.0" y="266.0" class="tap">,</text>
+<rect rx="6.0" ry="6.0" x="647.0" y="238.0" width="56.0" height="56.0" class="key"/>
+<text x="675.0" y="266.0" class="tap">.</text>
+<rect rx="6.0" ry="6.0" x="707.0" y="238.0" width="56.0" height="56.0" class="key"/>
+<text x="735.0" y="266.0" class="tap">/</text>
+<rect rx="6.0" ry="6.0" x="767.0" y="238.0" width="101.0" height="56.0" class="key"/>
+<text x="817.5" y="266.0" class="tap">)</text>
+<use href="#mdi:apple-keyboard-shift" xlink:href="#mdi:apple-keyboard-shift" x="809.5" y="276.0" height="16" width="16.0" class="hold glyph mdi:apple-keyboard-shift"/>
+<rect rx="6.0" ry="6.0" x="872.0" y="238.0" width="56.0" height="56.0" class="key"/>
+<text x="900.0" y="266.0" class="tap">L1</text>
+<rect rx="6.0" ry="6.0" x="32.0" y="298.0" width="86.0" height="56.0" class="key"/>
+<rect rx="6.0" ry="6.0" x="122.0" y="298.0" width="56.0" height="56.0" class="key"/>
+<use href="#mdi:apple-keyboard-option" xlink:href="#mdi:apple-keyboard-option" x="141.0" y="317.0" height="18" width="18.0" class="tap glyph mdi:apple-keyboard-option"/>
+<rect rx="6.0" ry="6.0" x="182.0" y="298.0" width="86.0" height="56.0" class="key"/>
+<use href="#mdi:apple-keyboard-command" xlink:href="#mdi:apple-keyboard-command" x="216.0" y="317.0" height="18" width="18.0" class="tap glyph mdi:apple-keyboard-command"/>
+<rect rx="6.0" ry="6.0" x="272.0" y="298.0" width="416.0" height="56.0" class="space key"/>
+<use href="#mdi:keyboard-space" xlink:href="#mdi:keyboard-space" x="471.0" y="317.0" height="18" width="18.0" class="space tap glyph mdi:keyboard-space"/>
+<rect rx="6.0" ry="6.0" x="692.0" y="298.0" width="86.0" height="56.0" class="key"/>
+<use href="#mdi:apple-keyboard-command" xlink:href="#mdi:apple-keyboard-command" x="726.0" y="317.0" height="18" width="18.0" class="tap glyph mdi:apple-keyboard-command"/>
+<rect rx="6.0" ry="6.0" x="782.0" y="298.0" width="56.0" height="56.0" class="key"/>
+<use href="#mdi:apple-keyboard-option" xlink:href="#mdi:apple-keyboard-option" x="801.0" y="317.0" height="18" width="18.0" class="tap glyph mdi:apple-keyboard-option"/>
+<rect rx="6.0" ry="6.0" x="842.0" y="298.0" width="86.0" height="56.0" class="key"/>
 </g>
 <g class="layer-L1">
-<text x="30.0" y="364.0" class="label">L1:</text>
-<rect rx="6.0" ry="6.0" x="32.0" y="394.0" width="52.0" height="52.0" class="key"/>
-<text x="58.0" y="420.0" class="tap">`</text>
-<rect rx="6.0" ry="6.0" x="88.0" y="394.0" width="52.0" height="52.0" class="key"/>
-<text x="114.0" y="420.0" class="tap">F1</text>
-<rect rx="6.0" ry="6.0" x="144.0" y="394.0" width="52.0" height="52.0" class="key"/>
-<text x="170.0" y="420.0" class="tap">F2</text>
-<rect rx="6.0" ry="6.0" x="200.0" y="394.0" width="52.0" height="52.0" class="key"/>
-<text x="226.0" y="420.0" class="tap">F3</text>
-<rect rx="6.0" ry="6.0" x="256.0" y="394.0" width="52.0" height="52.0" class="key"/>
-<text x="282.0" y="420.0" class="tap">F4</text>
-<rect rx="6.0" ry="6.0" x="312.0" y="394.0" width="52.0" height="52.0" class="key"/>
-<text x="338.0" y="420.0" class="tap">F5</text>
-<rect rx="6.0" ry="6.0" x="368.0" y="394.0" width="52.0" height="52.0" class="key"/>
-<text x="394.0" y="420.0" class="tap">F6</text>
-<rect rx="6.0" ry="6.0" x="424.0" y="394.0" width="52.0" height="52.0" class="key"/>
-<text x="450.0" y="420.0" class="tap">F7</text>
-<rect rx="6.0" ry="6.0" x="480.0" y="394.0" width="52.0" height="52.0" class="key"/>
-<text x="506.0" y="420.0" class="tap">F8</text>
-<rect rx="6.0" ry="6.0" x="536.0" y="394.0" width="52.0" height="52.0" class="key"/>
-<text x="562.0" y="420.0" class="tap">F9</text>
-<rect rx="6.0" ry="6.0" x="592.0" y="394.0" width="52.0" height="52.0" class="key"/>
-<text x="618.0" y="420.0" class="tap">F10</text>
-<rect rx="6.0" ry="6.0" x="648.0" y="394.0" width="52.0" height="52.0" class="key"/>
-<text x="674.0" y="420.0" class="tap">F11</text>
-<rect rx="6.0" ry="6.0" x="704.0" y="394.0" width="52.0" height="52.0" class="key"/>
-<text x="730.0" y="420.0" class="tap">F12</text>
-<rect rx="6.0" ry="6.0" x="760.0" y="394.0" width="52.0" height="52.0" class="key"/>
-<rect rx="6.0" ry="6.0" x="816.0" y="394.0" width="52.0" height="52.0" class="key"/>
-<text x="842.0" y="420.0" class="tap">TG(2)</text>
-<rect rx="6.0" ry="6.0" x="32.0" y="450.0" width="80.0" height="52.0" class="key"/>
-<rect rx="6.0" ry="6.0" x="116.0" y="450.0" width="52.0" height="52.0" class="key"/>
-<rect rx="6.0" ry="6.0" x="172.0" y="450.0" width="52.0" height="52.0" class="key"/>
-<rect rx="6.0" ry="6.0" x="228.0" y="450.0" width="52.0" height="52.0" class="key"/>
-<rect rx="6.0" ry="6.0" x="284.0" y="450.0" width="52.0" height="52.0" class="key"/>
-<rect rx="6.0" ry="6.0" x="340.0" y="450.0" width="52.0" height="52.0" class="key"/>
-<rect rx="6.0" ry="6.0" x="396.0" y="450.0" width="52.0" height="52.0" class="key"/>
-<rect rx="6.0" ry="6.0" x="452.0" y="450.0" width="52.0" height="52.0" class="key"/>
-<rect rx="6.0" ry="6.0" x="508.0" y="450.0" width="52.0" height="52.0" class="key"/>
-<rect rx="6.0" ry="6.0" x="564.0" y="450.0" width="52.0" height="52.0" class="key"/>
-<rect rx="6.0" ry="6.0" x="620.0" y="450.0" width="52.0" height="52.0" class="key"/>
-<rect rx="6.0" ry="6.0" x="676.0" y="450.0" width="52.0" height="52.0" class="key"/>
-<text x="702.0" y="476.0" class="tap">UP</text>
-<rect rx="6.0" ry="6.0" x="732.0" y="450.0" width="52.0" height="52.0" class="key"/>
-<rect rx="6.0" ry="6.0" x="788.0" y="450.0" width="80.0" height="52.0" class="key"/>
-<rect rx="6.0" ry="6.0" x="32.0" y="506.0" width="94.0" height="52.0" class="key"/>
-<rect rx="6.0" ry="6.0" x="130.0" y="506.0" width="52.0" height="52.0" class="key"/>
-<rect rx="6.0" ry="6.0" x="186.0" y="506.0" width="52.0" height="52.0" class="key"/>
-<rect rx="6.0" ry="6.0" x="242.0" y="506.0" width="52.0" height="52.0" class="key"/>
-<rect rx="6.0" ry="6.0" x="298.0" y="506.0" width="52.0" height="52.0" class="key"/>
-<rect rx="6.0" ry="6.0" x="354.0" y="506.0" width="52.0" height="52.0" class="key"/>
-<rect rx="6.0" ry="6.0" x="410.0" y="506.0" width="52.0" height="52.0" class="key"/>
-<rect rx="6.0" ry="6.0" x="466.0" y="506.0" width="52.0" height="52.0" class="key"/>
-<rect rx="6.0" ry="6.0" x="522.0" y="506.0" width="52.0" height="52.0" class="key"/>
-<rect rx="6.0" ry="6.0" x="578.0" y="506.0" width="52.0" height="52.0" class="key"/>
-<rect rx="6.0" ry="6.0" x="634.0" y="506.0" width="52.0" height="52.0" class="key"/>
-<text x="660.0" y="532.0" class="tap">LEFT</text>
-<rect rx="6.0" ry="6.0" x="690.0" y="506.0" width="52.0" height="52.0" class="key"/>
-<text x="716.0" y="532.0" class="tap">RGHT</text>
-<rect rx="6.0" ry="6.0" x="746.0" y="506.0" width="122.0" height="52.0" class="key"/>
-<rect rx="6.0" ry="6.0" x="32.0" y="562.0" width="122.0" height="52.0" class="trans key"/>
-<text x="93.0" y="588.0" class="trans tap">▽</text>
-<rect rx="6.0" ry="6.0" x="158.0" y="562.0" width="52.0" height="52.0" class="key"/>
-<rect rx="6.0" ry="6.0" x="214.0" y="562.0" width="52.0" height="52.0" class="key"/>
-<rect rx="6.0" ry="6.0" x="270.0" y="562.0" width="52.0" height="52.0" class="key"/>
-<rect rx="6.0" ry="6.0" x="326.0" y="562.0" width="52.0" height="52.0" class="key"/>
-<rect rx="6.0" ry="6.0" x="382.0" y="562.0" width="52.0" height="52.0" class="key"/>
-<rect rx="6.0" ry="6.0" x="438.0" y="562.0" width="52.0" height="52.0" class="key"/>
-<rect rx="6.0" ry="6.0" x="494.0" y="562.0" width="52.0" height="52.0" class="key"/>
-<rect rx="6.0" ry="6.0" x="550.0" y="562.0" width="52.0" height="52.0" class="key"/>
-<rect rx="6.0" ry="6.0" x="606.0" y="562.0" width="52.0" height="52.0" class="key"/>
-<rect rx="6.0" ry="6.0" x="662.0" y="562.0" width="52.0" height="52.0" class="key"/>
-<text x="688.0" y="588.0" class="tap">DOWN</text>
-<rect rx="6.0" ry="6.0" x="718.0" y="562.0" width="94.0" height="52.0" class="trans key"/>
-<text x="765.0" y="588.0" class="trans tap">▽</text>
-<rect rx="6.0" ry="6.0" x="816.0" y="562.0" width="52.0" height="52.0" class="held key"/>
-<rect rx="6.0" ry="6.0" x="32.0" y="618.0" width="80.0" height="52.0" class="key"/>
-<rect rx="6.0" ry="6.0" x="116.0" y="618.0" width="52.0" height="52.0" class="key"/>
-<rect rx="6.0" ry="6.0" x="172.0" y="618.0" width="80.0" height="52.0" class="key"/>
-<rect rx="6.0" ry="6.0" x="256.0" y="618.0" width="388.0" height="52.0" class="key"/>
-<rect rx="6.0" ry="6.0" x="648.0" y="618.0" width="80.0" height="52.0" class="key"/>
-<rect rx="6.0" ry="6.0" x="732.0" y="618.0" width="52.0" height="52.0" class="key"/>
-<rect rx="6.0" ry="6.0" x="788.0" y="618.0" width="80.0" height="52.0" class="key"/>
+<text x="30.0" y="384.0" class="label">L1</text>
+<rect rx="6.0" ry="6.0" x="32.0" y="414.0" width="56.0" height="56.0" class="key"/>
+<text x="60.0" y="442.0" class="tap">`</text>
+<rect rx="6.0" ry="6.0" x="92.0" y="414.0" width="56.0" height="56.0" class="key"/>
+<text x="120.0" y="442.0" class="tap">F1</text>
+<rect rx="6.0" ry="6.0" x="152.0" y="414.0" width="56.0" height="56.0" class="key"/>
+<text x="180.0" y="442.0" class="tap">F2</text>
+<rect rx="6.0" ry="6.0" x="212.0" y="414.0" width="56.0" height="56.0" class="key"/>
+<text x="240.0" y="442.0" class="tap">F3</text>
+<rect rx="6.0" ry="6.0" x="272.0" y="414.0" width="56.0" height="56.0" class="key"/>
+<text x="300.0" y="442.0" class="tap">F4</text>
+<rect rx="6.0" ry="6.0" x="332.0" y="414.0" width="56.0" height="56.0" class="key"/>
+<text x="360.0" y="442.0" class="tap">F5</text>
+<rect rx="6.0" ry="6.0" x="392.0" y="414.0" width="56.0" height="56.0" class="key"/>
+<text x="420.0" y="442.0" class="tap">F6</text>
+<rect rx="6.0" ry="6.0" x="452.0" y="414.0" width="56.0" height="56.0" class="key"/>
+<text x="480.0" y="442.0" class="tap">F7</text>
+<rect rx="6.0" ry="6.0" x="512.0" y="414.0" width="56.0" height="56.0" class="key"/>
+<text x="540.0" y="442.0" class="tap">F8</text>
+<rect rx="6.0" ry="6.0" x="572.0" y="414.0" width="56.0" height="56.0" class="key"/>
+<text x="600.0" y="442.0" class="tap">F9</text>
+<rect rx="6.0" ry="6.0" x="632.0" y="414.0" width="56.0" height="56.0" class="key"/>
+<text x="660.0" y="442.0" class="tap">F10</text>
+<rect rx="6.0" ry="6.0" x="692.0" y="414.0" width="56.0" height="56.0" class="key"/>
+<text x="720.0" y="442.0" class="tap">F11</text>
+<rect rx="6.0" ry="6.0" x="752.0" y="414.0" width="56.0" height="56.0" class="key"/>
+<text x="780.0" y="442.0" class="tap">F12</text>
+<rect rx="6.0" ry="6.0" x="812.0" y="414.0" width="56.0" height="56.0" class="key"/>
+<rect rx="6.0" ry="6.0" x="872.0" y="414.0" width="56.0" height="56.0" class="key"/>
+<text x="900.0" y="442.0" class="tap">TG(2)</text>
+<rect rx="6.0" ry="6.0" x="32.0" y="474.0" width="86.0" height="56.0" class="key"/>
+<rect rx="6.0" ry="6.0" x="122.0" y="474.0" width="56.0" height="56.0" class="key"/>
+<rect rx="6.0" ry="6.0" x="182.0" y="474.0" width="56.0" height="56.0" class="key"/>
+<rect rx="6.0" ry="6.0" x="242.0" y="474.0" width="56.0" height="56.0" class="key"/>
+<rect rx="6.0" ry="6.0" x="302.0" y="474.0" width="56.0" height="56.0" class="key"/>
+<rect rx="6.0" ry="6.0" x="362.0" y="474.0" width="56.0" height="56.0" class="key"/>
+<rect rx="6.0" ry="6.0" x="422.0" y="474.0" width="56.0" height="56.0" class="key"/>
+<rect rx="6.0" ry="6.0" x="482.0" y="474.0" width="56.0" height="56.0" class="key"/>
+<rect rx="6.0" ry="6.0" x="542.0" y="474.0" width="56.0" height="56.0" class="key"/>
+<rect rx="6.0" ry="6.0" x="602.0" y="474.0" width="56.0" height="56.0" class="key"/>
+<rect rx="6.0" ry="6.0" x="662.0" y="474.0" width="56.0" height="56.0" class="key"/>
+<rect rx="6.0" ry="6.0" x="722.0" y="474.0" width="56.0" height="56.0" class="key"/>
+<use href="#mdi:arrow-up" xlink:href="#mdi:arrow-up" x="741.0" y="493.0" height="18" width="18.0" class="tap glyph mdi:arrow-up"/>
+<rect rx="6.0" ry="6.0" x="782.0" y="474.0" width="56.0" height="56.0" class="key"/>
+<rect rx="6.0" ry="6.0" x="842.0" y="474.0" width="86.0" height="56.0" class="key"/>
+<rect rx="6.0" ry="6.0" x="32.0" y="534.0" width="101.0" height="56.0" class="key"/>
+<rect rx="6.0" ry="6.0" x="137.0" y="534.0" width="56.0" height="56.0" class="key"/>
+<rect rx="6.0" ry="6.0" x="197.0" y="534.0" width="56.0" height="56.0" class="key"/>
+<rect rx="6.0" ry="6.0" x="257.0" y="534.0" width="56.0" height="56.0" class="key"/>
+<rect rx="6.0" ry="6.0" x="317.0" y="534.0" width="56.0" height="56.0" class="key"/>
+<rect rx="6.0" ry="6.0" x="377.0" y="534.0" width="56.0" height="56.0" class="key"/>
+<rect rx="6.0" ry="6.0" x="437.0" y="534.0" width="56.0" height="56.0" class="key"/>
+<rect rx="6.0" ry="6.0" x="497.0" y="534.0" width="56.0" height="56.0" class="key"/>
+<rect rx="6.0" ry="6.0" x="557.0" y="534.0" width="56.0" height="56.0" class="key"/>
+<rect rx="6.0" ry="6.0" x="617.0" y="534.0" width="56.0" height="56.0" class="key"/>
+<rect rx="6.0" ry="6.0" x="677.0" y="534.0" width="56.0" height="56.0" class="key"/>
+<use href="#mdi:arrow-left" xlink:href="#mdi:arrow-left" x="696.0" y="553.0" height="18" width="18.0" class="tap glyph mdi:arrow-left"/>
+<rect rx="6.0" ry="6.0" x="737.0" y="534.0" width="56.0" height="56.0" class="key"/>
+<use href="#mdi:arrow-right" xlink:href="#mdi:arrow-right" x="756.0" y="553.0" height="18" width="18.0" class="tap glyph mdi:arrow-right"/>
+<rect rx="6.0" ry="6.0" x="797.0" y="534.0" width="131.0" height="56.0" class="key"/>
+<rect rx="6.0" ry="6.0" x="32.0" y="594.0" width="131.0" height="56.0" class="trans key"/>
+<use href="#mdi:transfer" xlink:href="#mdi:transfer" x="88.5" y="613.0" height="18" width="18.0" class="trans tap glyph mdi:transfer"/>
+<rect rx="6.0" ry="6.0" x="167.0" y="594.0" width="56.0" height="56.0" class="key"/>
+<rect rx="6.0" ry="6.0" x="227.0" y="594.0" width="56.0" height="56.0" class="key"/>
+<rect rx="6.0" ry="6.0" x="287.0" y="594.0" width="56.0" height="56.0" class="key"/>
+<rect rx="6.0" ry="6.0" x="347.0" y="594.0" width="56.0" height="56.0" class="key"/>
+<rect rx="6.0" ry="6.0" x="407.0" y="594.0" width="56.0" height="56.0" class="key"/>
+<rect rx="6.0" ry="6.0" x="467.0" y="594.0" width="56.0" height="56.0" class="key"/>
+<rect rx="6.0" ry="6.0" x="527.0" y="594.0" width="56.0" height="56.0" class="key"/>
+<rect rx="6.0" ry="6.0" x="587.0" y="594.0" width="56.0" height="56.0" class="key"/>
+<rect rx="6.0" ry="6.0" x="647.0" y="594.0" width="56.0" height="56.0" class="key"/>
+<rect rx="6.0" ry="6.0" x="707.0" y="594.0" width="56.0" height="56.0" class="key"/>
+<use href="#mdi:arrow-down" xlink:href="#mdi:arrow-down" x="726.0" y="613.0" height="18" width="18.0" class="tap glyph mdi:arrow-down"/>
+<rect rx="6.0" ry="6.0" x="767.0" y="594.0" width="101.0" height="56.0" class="trans key"/>
+<use href="#mdi:transfer" xlink:href="#mdi:transfer" x="808.5" y="613.0" height="18" width="18.0" class="trans tap glyph mdi:transfer"/>
+<rect rx="6.0" ry="6.0" x="872.0" y="594.0" width="56.0" height="56.0" class="held key"/>
+<rect rx="6.0" ry="6.0" x="32.0" y="654.0" width="86.0" height="56.0" class="key"/>
+<rect rx="6.0" ry="6.0" x="122.0" y="654.0" width="56.0" height="56.0" class="key"/>
+<rect rx="6.0" ry="6.0" x="182.0" y="654.0" width="86.0" height="56.0" class="key"/>
+<rect rx="6.0" ry="6.0" x="272.0" y="654.0" width="416.0" height="56.0" class="key"/>
+<rect rx="6.0" ry="6.0" x="692.0" y="654.0" width="86.0" height="56.0" class="key"/>
+<rect rx="6.0" ry="6.0" x="782.0" y="654.0" width="56.0" height="56.0" class="key"/>
+<rect rx="6.0" ry="6.0" x="842.0" y="654.0" width="86.0" height="56.0" class="key"/>
 </g>
 <g class="layer-L2">
-<text x="30.0" y="700.0" class="label">L2:</text>
-<rect rx="6.0" ry="6.0" x="32.0" y="730.0" width="52.0" height="52.0" class="key"/>
-<rect rx="6.0" ry="6.0" x="88.0" y="730.0" width="52.0" height="52.0" class="key"/>
-<rect rx="6.0" ry="6.0" x="144.0" y="730.0" width="52.0" height="52.0" class="key"/>
-<rect rx="6.0" ry="6.0" x="200.0" y="730.0" width="52.0" height="52.0" class="key"/>
-<rect rx="6.0" ry="6.0" x="256.0" y="730.0" width="52.0" height="52.0" class="key"/>
-<rect rx="6.0" ry="6.0" x="312.0" y="730.0" width="52.0" height="52.0" class="key"/>
-<rect rx="6.0" ry="6.0" x="368.0" y="730.0" width="52.0" height="52.0" class="key"/>
-<rect rx="6.0" ry="6.0" x="424.0" y="730.0" width="52.0" height="52.0" class="key"/>
-<rect rx="6.0" ry="6.0" x="480.0" y="730.0" width="52.0" height="52.0" class="key"/>
-<rect rx="6.0" ry="6.0" x="536.0" y="730.0" width="52.0" height="52.0" class="key"/>
-<rect rx="6.0" ry="6.0" x="592.0" y="730.0" width="52.0" height="52.0" class="key"/>
-<rect rx="6.0" ry="6.0" x="648.0" y="730.0" width="52.0" height="52.0" class="key"/>
-<rect rx="6.0" ry="6.0" x="704.0" y="730.0" width="52.0" height="52.0" class="key"/>
-<rect rx="6.0" ry="6.0" x="760.0" y="730.0" width="52.0" height="52.0" class="key"/>
-<rect rx="6.0" ry="6.0" x="816.0" y="730.0" width="52.0" height="52.0" class="key"/>
-<text x="842.0" y="756.0" class="tap">TO(0)</text>
-<rect rx="6.0" ry="6.0" x="32.0" y="786.0" width="80.0" height="52.0" class="key"/>
-<rect rx="6.0" ry="6.0" x="116.0" y="786.0" width="52.0" height="52.0" class="key"/>
-<text x="142.0" y="812.0" class="tap">BRMD</text>
-<rect rx="6.0" ry="6.0" x="172.0" y="786.0" width="52.0" height="52.0" class="key"/>
-<text x="198.0" y="812.0" class="tap">BRMU</text>
-<rect rx="6.0" ry="6.0" x="228.0" y="786.0" width="52.0" height="52.0" class="key"/>
-<rect rx="6.0" ry="6.0" x="284.0" y="786.0" width="52.0" height="52.0" class="key"/>
-<rect rx="6.0" ry="6.0" x="340.0" y="786.0" width="52.0" height="52.0" class="key"/>
-<rect rx="6.0" ry="6.0" x="396.0" y="786.0" width="52.0" height="52.0" class="key"/>
-<rect rx="6.0" ry="6.0" x="452.0" y="786.0" width="52.0" height="52.0" class="key"/>
-<rect rx="6.0" ry="6.0" x="508.0" y="786.0" width="52.0" height="52.0" class="key"/>
-<rect rx="6.0" ry="6.0" x="564.0" y="786.0" width="52.0" height="52.0" class="key"/>
-<rect rx="6.0" ry="6.0" x="620.0" y="786.0" width="52.0" height="52.0" class="key"/>
-<rect rx="6.0" ry="6.0" x="676.0" y="786.0" width="52.0" height="52.0" class="key"/>
-<rect rx="6.0" ry="6.0" x="732.0" y="786.0" width="52.0" height="52.0" class="key"/>
-<rect rx="6.0" ry="6.0" x="788.0" y="786.0" width="80.0" height="52.0" class="key"/>
-<rect rx="6.0" ry="6.0" x="32.0" y="842.0" width="94.0" height="52.0" class="key"/>
-<text x="79.0" y="868.0" class="tap">CAPS</text>
-<rect rx="6.0" ry="6.0" x="130.0" y="842.0" width="52.0" height="52.0" class="key"/>
-<text x="156.0" y="868.0" class="tap">VOLD</text>
-<rect rx="6.0" ry="6.0" x="186.0" y="842.0" width="52.0" height="52.0" class="key"/>
-<text x="212.0" y="868.0" class="tap">VOLU</text>
-<rect rx="6.0" ry="6.0" x="242.0" y="842.0" width="52.0" height="52.0" class="key"/>
-<text x="268.0" y="868.0" class="tap">MUTE</text>
-<rect rx="6.0" ry="6.0" x="298.0" y="842.0" width="52.0" height="52.0" class="key"/>
-<rect rx="6.0" ry="6.0" x="354.0" y="842.0" width="52.0" height="52.0" class="key"/>
-<rect rx="6.0" ry="6.0" x="410.0" y="842.0" width="52.0" height="52.0" class="key"/>
-<rect rx="6.0" ry="6.0" x="466.0" y="842.0" width="52.0" height="52.0" class="key"/>
-<rect rx="6.0" ry="6.0" x="522.0" y="842.0" width="52.0" height="52.0" class="key"/>
-<text x="548.0" y="868.0" class="tap">HOME</text>
-<rect rx="6.0" ry="6.0" x="578.0" y="842.0" width="52.0" height="52.0" class="key"/>
-<text x="604.0" y="868.0" class="tap">PGUP</text>
-<rect rx="6.0" ry="6.0" x="634.0" y="842.0" width="52.0" height="52.0" class="key"/>
-<rect rx="6.0" ry="6.0" x="690.0" y="842.0" width="52.0" height="52.0" class="key"/>
-<rect rx="6.0" ry="6.0" x="746.0" y="842.0" width="122.0" height="52.0" class="key"/>
-<rect rx="6.0" ry="6.0" x="32.0" y="898.0" width="122.0" height="52.0" class="trans key"/>
-<text x="93.0" y="924.0" class="trans tap">▽</text>
-<rect rx="6.0" ry="6.0" x="158.0" y="898.0" width="52.0" height="52.0" class="key"/>
-<text x="184.0" y="924.0" class="tap">
-<tspan x="184.0" dy="-0.6em">RGB</tspan><tspan x="184.0" dy="1.2em">HUI</tspan></text>
-<rect rx="6.0" ry="6.0" x="214.0" y="898.0" width="52.0" height="52.0" class="key"/>
-<text x="240.0" y="924.0" class="tap">
-<tspan x="240.0" dy="-0.6em">RGB</tspan><tspan x="240.0" dy="1.2em">SAI</tspan></text>
-<rect rx="6.0" ry="6.0" x="270.0" y="898.0" width="52.0" height="52.0" class="key"/>
-<text x="296.0" y="924.0" class="tap">
-<tspan x="296.0" dy="-0.6em">RGB</tspan><tspan x="296.0" dy="1.2em">VAI</tspan></text>
-<rect rx="6.0" ry="6.0" x="326.0" y="898.0" width="52.0" height="52.0" class="key"/>
-<rect rx="6.0" ry="6.0" x="382.0" y="898.0" width="52.0" height="52.0" class="key"/>
-<rect rx="6.0" ry="6.0" x="438.0" y="898.0" width="52.0" height="52.0" class="key"/>
-<rect rx="6.0" ry="6.0" x="494.0" y="898.0" width="52.0" height="52.0" class="key"/>
-<rect rx="6.0" ry="6.0" x="550.0" y="898.0" width="52.0" height="52.0" class="key"/>
-<text x="576.0" y="924.0" class="tap">END</text>
-<rect rx="6.0" ry="6.0" x="606.0" y="898.0" width="52.0" height="52.0" class="key"/>
-<text x="632.0" y="924.0" class="tap">PGDN</text>
-<rect rx="6.0" ry="6.0" x="662.0" y="898.0" width="52.0" height="52.0" class="key"/>
-<rect rx="6.0" ry="6.0" x="718.0" y="898.0" width="94.0" height="52.0" class="trans key"/>
-<text x="765.0" y="924.0" class="trans tap">▽</text>
-<rect rx="6.0" ry="6.0" x="816.0" y="898.0" width="52.0" height="52.0" class="key"/>
-<text x="842.0" y="924.0" class="tap">L3</text>
-<rect rx="6.0" ry="6.0" x="32.0" y="954.0" width="80.0" height="52.0" class="key"/>
-<rect rx="6.0" ry="6.0" x="116.0" y="954.0" width="52.0" height="52.0" class="key"/>
-<rect rx="6.0" ry="6.0" x="172.0" y="954.0" width="80.0" height="52.0" class="key"/>
-<rect rx="6.0" ry="6.0" x="256.0" y="954.0" width="388.0" height="52.0" class="key"/>
-<rect rx="6.0" ry="6.0" x="648.0" y="954.0" width="80.0" height="52.0" class="key"/>
-<text x="688.0" y="980.0" class="tap">
-<tspan x="688.0" dy="-0.6em">RGB</tspan><tspan x="688.0" dy="1.2em">TOG</tspan></text>
-<rect rx="6.0" ry="6.0" x="732.0" y="954.0" width="52.0" height="52.0" class="key"/>
-<text x="758.0" y="980.0" class="tap">
-<tspan x="758.0" dy="-0.6em">RGB</tspan><tspan x="758.0" dy="1.2em">MOD</tspan></text>
-<rect rx="6.0" ry="6.0" x="788.0" y="954.0" width="80.0" height="52.0" class="key"/>
+<text x="30.0" y="740.0" class="label">L2</text>
+<rect rx="6.0" ry="6.0" x="32.0" y="770.0" width="56.0" height="56.0" class="key"/>
+<rect rx="6.0" ry="6.0" x="92.0" y="770.0" width="56.0" height="56.0" class="key"/>
+<rect rx="6.0" ry="6.0" x="152.0" y="770.0" width="56.0" height="56.0" class="key"/>
+<rect rx="6.0" ry="6.0" x="212.0" y="770.0" width="56.0" height="56.0" class="key"/>
+<rect rx="6.0" ry="6.0" x="272.0" y="770.0" width="56.0" height="56.0" class="key"/>
+<rect rx="6.0" ry="6.0" x="332.0" y="770.0" width="56.0" height="56.0" class="key"/>
+<rect rx="6.0" ry="6.0" x="392.0" y="770.0" width="56.0" height="56.0" class="key"/>
+<rect rx="6.0" ry="6.0" x="452.0" y="770.0" width="56.0" height="56.0" class="key"/>
+<rect rx="6.0" ry="6.0" x="512.0" y="770.0" width="56.0" height="56.0" class="key"/>
+<rect rx="6.0" ry="6.0" x="572.0" y="770.0" width="56.0" height="56.0" class="key"/>
+<rect rx="6.0" ry="6.0" x="632.0" y="770.0" width="56.0" height="56.0" class="key"/>
+<rect rx="6.0" ry="6.0" x="692.0" y="770.0" width="56.0" height="56.0" class="key"/>
+<rect rx="6.0" ry="6.0" x="752.0" y="770.0" width="56.0" height="56.0" class="key"/>
+<rect rx="6.0" ry="6.0" x="812.0" y="770.0" width="56.0" height="56.0" class="key"/>
+<rect rx="6.0" ry="6.0" x="872.0" y="770.0" width="56.0" height="56.0" class="key"/>
+<text x="900.0" y="798.0" class="tap">TO(0)</text>
+<rect rx="6.0" ry="6.0" x="32.0" y="830.0" width="86.0" height="56.0" class="key"/>
+<rect rx="6.0" ry="6.0" x="122.0" y="830.0" width="56.0" height="56.0" class="key"/>
+<text x="150.0" y="858.0" class="tap">BRMD</text>
+<rect rx="6.0" ry="6.0" x="182.0" y="830.0" width="56.0" height="56.0" class="key"/>
+<text x="210.0" y="858.0" class="tap">BRMU</text>
+<rect rx="6.0" ry="6.0" x="242.0" y="830.0" width="56.0" height="56.0" class="key"/>
+<rect rx="6.0" ry="6.0" x="302.0" y="830.0" width="56.0" height="56.0" class="key"/>
+<rect rx="6.0" ry="6.0" x="362.0" y="830.0" width="56.0" height="56.0" class="key"/>
+<rect rx="6.0" ry="6.0" x="422.0" y="830.0" width="56.0" height="56.0" class="key"/>
+<rect rx="6.0" ry="6.0" x="482.0" y="830.0" width="56.0" height="56.0" class="key"/>
+<rect rx="6.0" ry="6.0" x="542.0" y="830.0" width="56.0" height="56.0" class="key"/>
+<rect rx="6.0" ry="6.0" x="602.0" y="830.0" width="56.0" height="56.0" class="key"/>
+<rect rx="6.0" ry="6.0" x="662.0" y="830.0" width="56.0" height="56.0" class="key"/>
+<rect rx="6.0" ry="6.0" x="722.0" y="830.0" width="56.0" height="56.0" class="key"/>
+<rect rx="6.0" ry="6.0" x="782.0" y="830.0" width="56.0" height="56.0" class="key"/>
+<rect rx="6.0" ry="6.0" x="842.0" y="830.0" width="86.0" height="56.0" class="key"/>
+<rect rx="6.0" ry="6.0" x="32.0" y="890.0" width="101.0" height="56.0" class="key"/>
+<use href="#mdi:apple-keyboard-caps" xlink:href="#mdi:apple-keyboard-caps" x="73.5" y="909.0" height="18" width="18.0" class="tap glyph mdi:apple-keyboard-caps"/>
+<rect rx="6.0" ry="6.0" x="137.0" y="890.0" width="56.0" height="56.0" class="key"/>
+<text x="165.0" y="918.0" class="tap">VOLD</text>
+<rect rx="6.0" ry="6.0" x="197.0" y="890.0" width="56.0" height="56.0" class="key"/>
+<text x="225.0" y="918.0" class="tap">VOLU</text>
+<rect rx="6.0" ry="6.0" x="257.0" y="890.0" width="56.0" height="56.0" class="key"/>
+<text x="285.0" y="918.0" class="tap">MUTE</text>
+<rect rx="6.0" ry="6.0" x="317.0" y="890.0" width="56.0" height="56.0" class="key"/>
+<rect rx="6.0" ry="6.0" x="377.0" y="890.0" width="56.0" height="56.0" class="key"/>
+<rect rx="6.0" ry="6.0" x="437.0" y="890.0" width="56.0" height="56.0" class="key"/>
+<rect rx="6.0" ry="6.0" x="497.0" y="890.0" width="56.0" height="56.0" class="key"/>
+<rect rx="6.0" ry="6.0" x="557.0" y="890.0" width="56.0" height="56.0" class="key"/>
+<text x="585.0" y="918.0" class="tap">HOME</text>
+<rect rx="6.0" ry="6.0" x="617.0" y="890.0" width="56.0" height="56.0" class="key"/>
+<text x="645.0" y="918.0" class="tap">PGUP</text>
+<rect rx="6.0" ry="6.0" x="677.0" y="890.0" width="56.0" height="56.0" class="key"/>
+<rect rx="6.0" ry="6.0" x="737.0" y="890.0" width="56.0" height="56.0" class="key"/>
+<rect rx="6.0" ry="6.0" x="797.0" y="890.0" width="131.0" height="56.0" class="key"/>
+<rect rx="6.0" ry="6.0" x="32.0" y="950.0" width="131.0" height="56.0" class="trans key"/>
+<use href="#mdi:transfer" xlink:href="#mdi:transfer" x="88.5" y="969.0" height="18" width="18.0" class="trans tap glyph mdi:transfer"/>
+<rect rx="6.0" ry="6.0" x="167.0" y="950.0" width="56.0" height="56.0" class="key"/>
+<text x="195.0" y="978.0" class="tap">
+<tspan x="195.0" dy="-0.6em">RGB</tspan><tspan x="195.0" dy="1.2em">HUI</tspan></text>
+<rect rx="6.0" ry="6.0" x="227.0" y="950.0" width="56.0" height="56.0" class="key"/>
+<text x="255.0" y="978.0" class="tap">
+<tspan x="255.0" dy="-0.6em">RGB</tspan><tspan x="255.0" dy="1.2em">SAI</tspan></text>
+<rect rx="6.0" ry="6.0" x="287.0" y="950.0" width="56.0" height="56.0" class="key"/>
+<text x="315.0" y="978.0" class="tap">
+<tspan x="315.0" dy="-0.6em">RGB</tspan><tspan x="315.0" dy="1.2em">VAI</tspan></text>
+<rect rx="6.0" ry="6.0" x="347.0" y="950.0" width="56.0" height="56.0" class="key"/>
+<rect rx="6.0" ry="6.0" x="407.0" y="950.0" width="56.0" height="56.0" class="key"/>
+<rect rx="6.0" ry="6.0" x="467.0" y="950.0" width="56.0" height="56.0" class="key"/>
+<rect rx="6.0" ry="6.0" x="527.0" y="950.0" width="56.0" height="56.0" class="key"/>
+<rect rx="6.0" ry="6.0" x="587.0" y="950.0" width="56.0" height="56.0" class="key"/>
+<text x="615.0" y="978.0" class="tap">END</text>
+<rect rx="6.0" ry="6.0" x="647.0" y="950.0" width="56.0" height="56.0" class="key"/>
+<text x="675.0" y="978.0" class="tap">PGDN</text>
+<rect rx="6.0" ry="6.0" x="707.0" y="950.0" width="56.0" height="56.0" class="key"/>
+<rect rx="6.0" ry="6.0" x="767.0" y="950.0" width="101.0" height="56.0" class="trans key"/>
+<use href="#mdi:transfer" xlink:href="#mdi:transfer" x="808.5" y="969.0" height="18" width="18.0" class="trans tap glyph mdi:transfer"/>
+<rect rx="6.0" ry="6.0" x="872.0" y="950.0" width="56.0" height="56.0" class="key"/>
+<text x="900.0" y="978.0" class="tap">L3</text>
+<rect rx="6.0" ry="6.0" x="32.0" y="1010.0" width="86.0" height="56.0" class="key"/>
+<rect rx="6.0" ry="6.0" x="122.0" y="1010.0" width="56.0" height="56.0" class="key"/>
+<rect rx="6.0" ry="6.0" x="182.0" y="1010.0" width="86.0" height="56.0" class="key"/>
+<rect rx="6.0" ry="6.0" x="272.0" y="1010.0" width="416.0" height="56.0" class="key"/>
+<rect rx="6.0" ry="6.0" x="692.0" y="1010.0" width="86.0" height="56.0" class="key"/>
+<text x="735.0" y="1038.0" class="tap">
+<tspan x="735.0" dy="-0.6em">RGB</tspan><tspan x="735.0" dy="1.2em">TOG</tspan></text>
+<rect rx="6.0" ry="6.0" x="782.0" y="1010.0" width="56.0" height="56.0" class="key"/>
+<text x="810.0" y="1038.0" class="tap">
+<tspan x="810.0" dy="-0.6em">RGB</tspan><tspan x="810.0" dy="1.2em">MOD</tspan></text>
+<rect rx="6.0" ry="6.0" x="842.0" y="1010.0" width="86.0" height="56.0" class="key"/>
 </g>
 <g class="layer-L3">
-<text x="30.0" y="1036.0" class="label">L3:</text>
-<rect rx="6.0" ry="6.0" x="32.0" y="1066.0" width="52.0" height="52.0" class="key"/>
-<text x="58.0" y="1092.0" class="tap">
-<tspan x="58.0" dy="-0.6em">SAFE</tspan><tspan x="58.0" dy="1.2em">BOOT</tspan></text>
-<rect rx="6.0" ry="6.0" x="88.0" y="1066.0" width="52.0" height="52.0" class="key"/>
-<text x="114.0" y="1092.0" class="tap">
-<tspan x="114.0" dy="-0.6em">EE</tspan><tspan x="114.0" dy="1.2em">CLR</tspan></text>
-<rect rx="6.0" ry="6.0" x="144.0" y="1066.0" width="52.0" height="52.0" class="key"/>
-<rect rx="6.0" ry="6.0" x="200.0" y="1066.0" width="52.0" height="52.0" class="key"/>
-<rect rx="6.0" ry="6.0" x="256.0" y="1066.0" width="52.0" height="52.0" class="key"/>
-<rect rx="6.0" ry="6.0" x="312.0" y="1066.0" width="52.0" height="52.0" class="key"/>
-<rect rx="6.0" ry="6.0" x="368.0" y="1066.0" width="52.0" height="52.0" class="key"/>
-<rect rx="6.0" ry="6.0" x="424.0" y="1066.0" width="52.0" height="52.0" class="key"/>
-<rect rx="6.0" ry="6.0" x="480.0" y="1066.0" width="52.0" height="52.0" class="key"/>
-<rect rx="6.0" ry="6.0" x="536.0" y="1066.0" width="52.0" height="52.0" class="key"/>
-<rect rx="6.0" ry="6.0" x="592.0" y="1066.0" width="52.0" height="52.0" class="key"/>
-<rect rx="6.0" ry="6.0" x="648.0" y="1066.0" width="52.0" height="52.0" class="key"/>
-<rect rx="6.0" ry="6.0" x="704.0" y="1066.0" width="52.0" height="52.0" class="key"/>
-<rect rx="6.0" ry="6.0" x="760.0" y="1066.0" width="52.0" height="52.0" class="key"/>
-<rect rx="6.0" ry="6.0" x="816.0" y="1066.0" width="52.0" height="52.0" class="key"/>
-<rect rx="6.0" ry="6.0" x="32.0" y="1122.0" width="80.0" height="52.0" class="key"/>
-<rect rx="6.0" ry="6.0" x="116.0" y="1122.0" width="52.0" height="52.0" class="key"/>
-<rect rx="6.0" ry="6.0" x="172.0" y="1122.0" width="52.0" height="52.0" class="key"/>
-<rect rx="6.0" ry="6.0" x="228.0" y="1122.0" width="52.0" height="52.0" class="key"/>
-<rect rx="6.0" ry="6.0" x="284.0" y="1122.0" width="52.0" height="52.0" class="key"/>
-<rect rx="6.0" ry="6.0" x="340.0" y="1122.0" width="52.0" height="52.0" class="key"/>
-<rect rx="6.0" ry="6.0" x="396.0" y="1122.0" width="52.0" height="52.0" class="key"/>
-<rect rx="6.0" ry="6.0" x="452.0" y="1122.0" width="52.0" height="52.0" class="key"/>
-<rect rx="6.0" ry="6.0" x="508.0" y="1122.0" width="52.0" height="52.0" class="key"/>
-<rect rx="6.0" ry="6.0" x="564.0" y="1122.0" width="52.0" height="52.0" class="key"/>
-<rect rx="6.0" ry="6.0" x="620.0" y="1122.0" width="52.0" height="52.0" class="key"/>
-<rect rx="6.0" ry="6.0" x="676.0" y="1122.0" width="52.0" height="52.0" class="key"/>
-<rect rx="6.0" ry="6.0" x="732.0" y="1122.0" width="52.0" height="52.0" class="key"/>
-<rect rx="6.0" ry="6.0" x="788.0" y="1122.0" width="80.0" height="52.0" class="key"/>
-<rect rx="6.0" ry="6.0" x="32.0" y="1178.0" width="94.0" height="52.0" class="key"/>
-<rect rx="6.0" ry="6.0" x="130.0" y="1178.0" width="52.0" height="52.0" class="key"/>
-<rect rx="6.0" ry="6.0" x="186.0" y="1178.0" width="52.0" height="52.0" class="key"/>
-<rect rx="6.0" ry="6.0" x="242.0" y="1178.0" width="52.0" height="52.0" class="key"/>
-<rect rx="6.0" ry="6.0" x="298.0" y="1178.0" width="52.0" height="52.0" class="key"/>
-<rect rx="6.0" ry="6.0" x="354.0" y="1178.0" width="52.0" height="52.0" class="key"/>
-<rect rx="6.0" ry="6.0" x="410.0" y="1178.0" width="52.0" height="52.0" class="key"/>
-<rect rx="6.0" ry="6.0" x="466.0" y="1178.0" width="52.0" height="52.0" class="key"/>
-<rect rx="6.0" ry="6.0" x="522.0" y="1178.0" width="52.0" height="52.0" class="key"/>
-<rect rx="6.0" ry="6.0" x="578.0" y="1178.0" width="52.0" height="52.0" class="key"/>
-<rect rx="6.0" ry="6.0" x="634.0" y="1178.0" width="52.0" height="52.0" class="key"/>
-<rect rx="6.0" ry="6.0" x="690.0" y="1178.0" width="52.0" height="52.0" class="key"/>
-<rect rx="6.0" ry="6.0" x="746.0" y="1178.0" width="122.0" height="52.0" class="key"/>
-<rect rx="6.0" ry="6.0" x="32.0" y="1234.0" width="122.0" height="52.0" class="key"/>
-<rect rx="6.0" ry="6.0" x="158.0" y="1234.0" width="52.0" height="52.0" class="key"/>
-<rect rx="6.0" ry="6.0" x="214.0" y="1234.0" width="52.0" height="52.0" class="key"/>
-<rect rx="6.0" ry="6.0" x="270.0" y="1234.0" width="52.0" height="52.0" class="key"/>
-<rect rx="6.0" ry="6.0" x="326.0" y="1234.0" width="52.0" height="52.0" class="key"/>
-<rect rx="6.0" ry="6.0" x="382.0" y="1234.0" width="52.0" height="52.0" class="key"/>
-<rect rx="6.0" ry="6.0" x="438.0" y="1234.0" width="52.0" height="52.0" class="key"/>
-<rect rx="6.0" ry="6.0" x="494.0" y="1234.0" width="52.0" height="52.0" class="key"/>
-<rect rx="6.0" ry="6.0" x="550.0" y="1234.0" width="52.0" height="52.0" class="key"/>
-<rect rx="6.0" ry="6.0" x="606.0" y="1234.0" width="52.0" height="52.0" class="key"/>
-<rect rx="6.0" ry="6.0" x="662.0" y="1234.0" width="52.0" height="52.0" class="key"/>
-<rect rx="6.0" ry="6.0" x="718.0" y="1234.0" width="94.0" height="52.0" class="key"/>
-<rect rx="6.0" ry="6.0" x="816.0" y="1234.0" width="52.0" height="52.0" class="held key"/>
-<rect rx="6.0" ry="6.0" x="32.0" y="1290.0" width="80.0" height="52.0" class="key"/>
-<rect rx="6.0" ry="6.0" x="116.0" y="1290.0" width="52.0" height="52.0" class="key"/>
-<rect rx="6.0" ry="6.0" x="172.0" y="1290.0" width="80.0" height="52.0" class="key"/>
-<rect rx="6.0" ry="6.0" x="256.0" y="1290.0" width="388.0" height="52.0" class="key"/>
-<rect rx="6.0" ry="6.0" x="648.0" y="1290.0" width="80.0" height="52.0" class="key"/>
-<rect rx="6.0" ry="6.0" x="732.0" y="1290.0" width="52.0" height="52.0" class="key"/>
-<rect rx="6.0" ry="6.0" x="788.0" y="1290.0" width="80.0" height="52.0" class="key"/>
+<text x="30.0" y="1096.0" class="label">L3</text>
+<rect rx="6.0" ry="6.0" x="32.0" y="1126.0" width="56.0" height="56.0" class="key"/>
+<text x="60.0" y="1154.0" class="tap">BOOT</text>
+<rect rx="6.0" ry="6.0" x="92.0" y="1126.0" width="56.0" height="56.0" class="key"/>
+<text x="120.0" y="1154.0" class="tap">
+<tspan x="120.0" dy="-0.6em">EE</tspan><tspan x="120.0" dy="1.2em">CLR</tspan></text>
+<rect rx="6.0" ry="6.0" x="152.0" y="1126.0" width="56.0" height="56.0" class="key"/>
+<rect rx="6.0" ry="6.0" x="212.0" y="1126.0" width="56.0" height="56.0" class="key"/>
+<rect rx="6.0" ry="6.0" x="272.0" y="1126.0" width="56.0" height="56.0" class="key"/>
+<rect rx="6.0" ry="6.0" x="332.0" y="1126.0" width="56.0" height="56.0" class="key"/>
+<rect rx="6.0" ry="6.0" x="392.0" y="1126.0" width="56.0" height="56.0" class="key"/>
+<rect rx="6.0" ry="6.0" x="452.0" y="1126.0" width="56.0" height="56.0" class="key"/>
+<rect rx="6.0" ry="6.0" x="512.0" y="1126.0" width="56.0" height="56.0" class="key"/>
+<rect rx="6.0" ry="6.0" x="572.0" y="1126.0" width="56.0" height="56.0" class="key"/>
+<rect rx="6.0" ry="6.0" x="632.0" y="1126.0" width="56.0" height="56.0" class="key"/>
+<rect rx="6.0" ry="6.0" x="692.0" y="1126.0" width="56.0" height="56.0" class="key"/>
+<rect rx="6.0" ry="6.0" x="752.0" y="1126.0" width="56.0" height="56.0" class="key"/>
+<rect rx="6.0" ry="6.0" x="812.0" y="1126.0" width="56.0" height="56.0" class="key"/>
+<rect rx="6.0" ry="6.0" x="872.0" y="1126.0" width="56.0" height="56.0" class="key"/>
+<rect rx="6.0" ry="6.0" x="32.0" y="1186.0" width="86.0" height="56.0" class="key"/>
+<rect rx="6.0" ry="6.0" x="122.0" y="1186.0" width="56.0" height="56.0" class="key"/>
+<rect rx="6.0" ry="6.0" x="182.0" y="1186.0" width="56.0" height="56.0" class="key"/>
+<rect rx="6.0" ry="6.0" x="242.0" y="1186.0" width="56.0" height="56.0" class="key"/>
+<rect rx="6.0" ry="6.0" x="302.0" y="1186.0" width="56.0" height="56.0" class="key"/>
+<rect rx="6.0" ry="6.0" x="362.0" y="1186.0" width="56.0" height="56.0" class="key"/>
+<rect rx="6.0" ry="6.0" x="422.0" y="1186.0" width="56.0" height="56.0" class="key"/>
+<rect rx="6.0" ry="6.0" x="482.0" y="1186.0" width="56.0" height="56.0" class="key"/>
+<rect rx="6.0" ry="6.0" x="542.0" y="1186.0" width="56.0" height="56.0" class="key"/>
+<rect rx="6.0" ry="6.0" x="602.0" y="1186.0" width="56.0" height="56.0" class="key"/>
+<rect rx="6.0" ry="6.0" x="662.0" y="1186.0" width="56.0" height="56.0" class="key"/>
+<rect rx="6.0" ry="6.0" x="722.0" y="1186.0" width="56.0" height="56.0" class="key"/>
+<rect rx="6.0" ry="6.0" x="782.0" y="1186.0" width="56.0" height="56.0" class="key"/>
+<rect rx="6.0" ry="6.0" x="842.0" y="1186.0" width="86.0" height="56.0" class="key"/>
+<rect rx="6.0" ry="6.0" x="32.0" y="1246.0" width="101.0" height="56.0" class="key"/>
+<rect rx="6.0" ry="6.0" x="137.0" y="1246.0" width="56.0" height="56.0" class="key"/>
+<rect rx="6.0" ry="6.0" x="197.0" y="1246.0" width="56.0" height="56.0" class="key"/>
+<rect rx="6.0" ry="6.0" x="257.0" y="1246.0" width="56.0" height="56.0" class="key"/>
+<rect rx="6.0" ry="6.0" x="317.0" y="1246.0" width="56.0" height="56.0" class="key"/>
+<rect rx="6.0" ry="6.0" x="377.0" y="1246.0" width="56.0" height="56.0" class="key"/>
+<rect rx="6.0" ry="6.0" x="437.0" y="1246.0" width="56.0" height="56.0" class="key"/>
+<rect rx="6.0" ry="6.0" x="497.0" y="1246.0" width="56.0" height="56.0" class="key"/>
+<rect rx="6.0" ry="6.0" x="557.0" y="1246.0" width="56.0" height="56.0" class="key"/>
+<rect rx="6.0" ry="6.0" x="617.0" y="1246.0" width="56.0" height="56.0" class="key"/>
+<rect rx="6.0" ry="6.0" x="677.0" y="1246.0" width="56.0" height="56.0" class="key"/>
+<rect rx="6.0" ry="6.0" x="737.0" y="1246.0" width="56.0" height="56.0" class="key"/>
+<rect rx="6.0" ry="6.0" x="797.0" y="1246.0" width="131.0" height="56.0" class="key"/>
+<rect rx="6.0" ry="6.0" x="32.0" y="1306.0" width="131.0" height="56.0" class="key"/>
+<rect rx="6.0" ry="6.0" x="167.0" y="1306.0" width="56.0" height="56.0" class="key"/>
+<rect rx="6.0" ry="6.0" x="227.0" y="1306.0" width="56.0" height="56.0" class="key"/>
+<rect rx="6.0" ry="6.0" x="287.0" y="1306.0" width="56.0" height="56.0" class="key"/>
+<rect rx="6.0" ry="6.0" x="347.0" y="1306.0" width="56.0" height="56.0" class="key"/>
+<rect rx="6.0" ry="6.0" x="407.0" y="1306.0" width="56.0" height="56.0" class="key"/>
+<rect rx="6.0" ry="6.0" x="467.0" y="1306.0" width="56.0" height="56.0" class="key"/>
+<rect rx="6.0" ry="6.0" x="527.0" y="1306.0" width="56.0" height="56.0" class="key"/>
+<rect rx="6.0" ry="6.0" x="587.0" y="1306.0" width="56.0" height="56.0" class="key"/>
+<rect rx="6.0" ry="6.0" x="647.0" y="1306.0" width="56.0" height="56.0" class="key"/>
+<rect rx="6.0" ry="6.0" x="707.0" y="1306.0" width="56.0" height="56.0" class="key"/>
+<rect rx="6.0" ry="6.0" x="767.0" y="1306.0" width="101.0" height="56.0" class="key"/>
+<rect rx="6.0" ry="6.0" x="872.0" y="1306.0" width="56.0" height="56.0" class="held key"/>
+<rect rx="6.0" ry="6.0" x="32.0" y="1366.0" width="86.0" height="56.0" class="key"/>
+<rect rx="6.0" ry="6.0" x="122.0" y="1366.0" width="56.0" height="56.0" class="key"/>
+<rect rx="6.0" ry="6.0" x="182.0" y="1366.0" width="86.0" height="56.0" class="key"/>
+<rect rx="6.0" ry="6.0" x="272.0" y="1366.0" width="416.0" height="56.0" class="key"/>
+<rect rx="6.0" ry="6.0" x="692.0" y="1366.0" width="86.0" height="56.0" class="key"/>
+<rect rx="6.0" ry="6.0" x="782.0" y="1366.0" width="56.0" height="56.0" class="key"/>
+<rect rx="6.0" ry="6.0" x="842.0" y="1366.0" width="86.0" height="56.0" class="key"/>
 </g>
 </svg>

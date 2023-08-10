@@ -14,7 +14,7 @@ const (
 var mapFromTo = []map[string]string{
 	{
 		// My custom
-		"CTL_T(KC_ESC)":    "CTRL ESC",
+		"CTL_T(KC_ESC)":    "ESC CTRL",
 		"TD(TD_SAFE_BOOT)": "BOOT",
 	},
 	{
@@ -39,7 +39,6 @@ var mapFromTo = []map[string]string{
 		"KC_COMM": ",",
 		"KC_DOT":  ".",
 		"KC_SLSH": "/",
-		"KC_CAPS": "CAPSLOCK",
 		"KC_LCTL": "CTRL",
 		"KC_RCTL": "CTRL",
 		"KC_LALT": "OPT",
@@ -58,20 +57,14 @@ var mapFromTo = []map[string]string{
 		"RGB_SAI": "RGBS",
 		"RGB_VAI": "RGBV",
 		// Advance
-		// Grave Escape
-		"QK_GESC": "ESC",
 		// Space cadet
-		"SC_LCPO": "CTRL (",
-		"SC_RCPC": "CTRL )",
-		"SC_LSPO": "SHIFT (",
-		"SC_RSPC": "SHIFT )",
-		"SC_LAPO": "OPT (",
-		"SC_RAPC": "OPT )",
-		"SC_SENT": "SHIFT ENTER",
+		"SC_LSPO": "( SHIFT",
+		"SC_RSPC": ") SHIFT",
 	},
 	{
 		// Prefix
 		"KC_": "",
+		"QK_": "",
 	},
 }
 

@@ -2,7 +2,7 @@ layout:
   { qmk_keyboard: dztech/dz60rgb_wkl/v2_1, qmk_layout: LAYOUT_60_tsangan_hhkb }
 layers:
   L0:
-    - QK GESC
+    - { t: GESC, type: esc }
     - "1"
     - "2"
     - "3"
@@ -17,7 +17,7 @@ layers:
     - "="
     - \
     - "`"
-    - TAB
+    - $$mdi:keyboard-tab$$
     - Q
     - W
     - E
@@ -30,21 +30,21 @@ layers:
     - P
     - "["
     - "]"
-    - BSPC
-    - { t: ESC, h: CTL }
+    - $$mdi:keyboard-backspace$$
+    - { t: ESC, h: "$$mdi:apple-keyboard-control$$", type: esc }
     - A
     - S
     - D
     - F
     - G
-    - H
-    - J
-    - K
-    - L
+    - { t: H, type: vim }
+    - { t: J, type: vim }
+    - { t: K, type: vim }
+    - { t: L, type: vim }
     - ;
     - "'"
-    - ENT
-    - SC LSPO
+    - { t: "$$mdi:keyboard-return$$", type: enter }
+    - { t: (, h: "$$mdi:apple-keyboard-shift$$" }
     - Z
     - X
     - C
@@ -55,14 +55,14 @@ layers:
     - ","
     - .
     - /
-    - SC RSPC
+    - { t: ), h: "$$mdi:apple-keyboard-shift$$" }
     - L1
     - ""
-    - LOPT
-    - LCMD
-    - SPC
-    - RCMD
-    - ROPT
+    - $$mdi:apple-keyboard-option$$
+    - $$mdi:apple-keyboard-command$$
+    - { t: "$$mdi:keyboard-space$$", type: space }
+    - $$mdi:apple-keyboard-command$$
+    - $$mdi:apple-keyboard-option$$
     - ""
   L1:
     - "`"
@@ -91,7 +91,7 @@ layers:
     - ""
     - ""
     - ""
-    - UP
+    - $$mdi:arrow-up$$
     - ""
     - ""
     - ""
@@ -104,12 +104,10 @@ layers:
     - ""
     - ""
     - ""
-    - LEFT
-    - RGHT
+    - $$mdi:arrow-left$$
+    - $$mdi:arrow-right$$
     - ""
-    - { t: ▽, type: trans }
-    - ""
-    - ""
+    - { t: "$$mdi:transfer$$", type: trans }
     - ""
     - ""
     - ""
@@ -117,8 +115,10 @@ layers:
     - ""
     - ""
     - ""
-    - DOWN
-    - { t: ▽, type: trans }
+    - ""
+    - ""
+    - $$mdi:arrow-down$$
+    - { t: "$$mdi:transfer$$", type: trans }
     - { type: held }
     - ""
     - ""
@@ -157,7 +157,7 @@ layers:
     - ""
     - ""
     - ""
-    - CAPS
+    - $$mdi:apple-keyboard-caps$$
     - VOLD
     - VOLU
     - MUTE
@@ -170,7 +170,7 @@ layers:
     - ""
     - ""
     - ""
-    - { t: ▽, type: trans }
+    - { t: "$$mdi:transfer$$", type: trans }
     - RGB HUI
     - RGB SAI
     - RGB VAI
@@ -181,7 +181,7 @@ layers:
     - END
     - PGDN
     - ""
-    - { t: ▽, type: trans }
+    - { t: "$$mdi:transfer$$", type: trans }
     - L3
     - ""
     - ""
@@ -191,7 +191,7 @@ layers:
     - RGB MOD
     - ""
   L3:
-    - SAFE BOOT
+    - BOOT
     - EE CLR
     - ""
     - ""
