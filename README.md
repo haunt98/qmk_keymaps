@@ -163,3 +163,5 @@ Thanks:
   - [x] Use flag
   - [x] Add docs
   - [x] Get data directly from qmk
+  - [ ] Split transform keycodes to raw binding/transform (same as
+        keymap-drawer)
