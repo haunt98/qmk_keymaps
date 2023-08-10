@@ -20,7 +20,7 @@ MAGIC_ENABLE = no
 BOOTMAGIC_ENABLE = yes
 
 # https://github.com/qmk/qmk_firmware/blob/master/docs/feature_debounce_type.md
-DEBOUNCE_TYPE = sym_eager_pr
+DEBOUNCE_TYPE = sym_eager_pk
 
 # https://github.com/qmk/qmk_firmware/blob/master/docs/feature_tap_dance.md
 TAP_DANCE_ENABLE = yes
