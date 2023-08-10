@@ -1,4 +1,5 @@
-// Copyright 2023 haunt98
+// SPDX-FileCopyrightText: Copyright 2023 haunt98
+// SPDX-License-Identifier: MIT
 
 #include QMK_KEYBOARD_H
 
