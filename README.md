@@ -17,6 +17,7 @@ Links:
 
 - [DZ60RGB-WKL Hot-Swap PCB](https://kbdfans.com/products/dz60rgb-wkl-hot-swap-pcb)
 - [USB Drive Flash Manual (New Flash Manual)](https://docs.google.com/document/d/111qx6Qec4JqtIhWaZlMND-VuRnFtn9a-gJaHN8fsL7M/edit?usp=sharing)
+- [moyi4681/firmware](https://github.com/moyi4681/firmware)
 
 ### Compile
 
