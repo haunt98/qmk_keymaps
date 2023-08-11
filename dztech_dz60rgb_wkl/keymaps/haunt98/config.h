@@ -58,3 +58,6 @@
 #define RGB_MATRIX_LED_FLUSH_LIMIT 16
 #define RGB_MATRIX_MAXIMUM_BRIGHTNESS 200
 #define RGB_MATRIX_DEFAULT_VAL RGB_MATRIX_MAXIMUM_BRIGHTNESS
+
+// https://github.com/qmk/qmk_firmware/blob/master/docs/config_options.md
+#define USB_SUSPEND_WAKEUP_DELAY 200
