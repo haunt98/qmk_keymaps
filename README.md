@@ -50,7 +50,7 @@ Use [QMK Toolbox](https://github.com/qmk/qmk_toolbox) to flash.
 
 ## Maintain
 
-Step by steps:
+Step by step:
 
 1. Make changes to keymaps: `*.c`, `*.h`, `*.mk`
 2. Push changes to GitHub
