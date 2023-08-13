@@ -125,6 +125,7 @@ More
 - [Miryoku](https://github.com/manna-harbour/miryoku)
 - [Pascal Getreuer's QMK keymap](https://github.com/getreuer/qmk-keymap)
 - [Sweep](https://github.com/davidphilipbarr/Sweep)
+- [filterpaper/qmk_userspace](https://github.com/filterpaper/qmk_userspace)
 
 Tools:
 
