@@ -122,6 +122,10 @@ More
 
 - [Yet another keyboard post, or, introducing ErgoNICE](https://val.packett.cool/blog/ergonice/)
 - [Programming On 34 Keys](https://peppe.rs/posts/programming_on_34_keys/)
+- [RP2040 Controller is now the default option](https://ergomech.store/blog/ergomech-blog-1/rp2040-controller-is-now-the-default-option-3):
+  Limit of ATmega32U4 aka Pro Micro:
+  - Limited storage
+  - Do not work well with USB-C to USB-C cable.
 - [Miryoku](https://github.com/manna-harbour/miryoku)
 - [Pascal Getreuer's QMK keymap](https://github.com/getreuer/qmk-keymap)
 - [Sweep](https://github.com/davidphilipbarr/Sweep)
