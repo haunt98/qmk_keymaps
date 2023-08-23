@@ -129,21 +129,6 @@ More
   - Limited storage
   - Do not work well with USB-C to USB-C cable.
 
-Design:
-
-- [Yet another keyboard post, or, introducing ErgoNICE](https://val.packett.cool/blog/ergonice/)
-- [System76 Launch Configurable Keyboard](https://github.com/system76/launch)
-- [Sweep](https://github.com/davidphilipbarr/Sweep)
-  - [ferricy](https://github.com/icyphox/ferricy)
-- [ScottoKeebs](https://github.com/joe-scotto/scottokeebs)
-- [Corne keyboard](https://github.com/foostan/crkbd)
-- [Unix60](https://github.com/mkdl/Unix60)
-- [Kong](https://github.com/weteor/Kong)
-  - [casekong](https://github.com/freya-irl/casekong)
-- [Tanuki 40% keyboard](https://github.com/SethSenpai/Tanuki)
-  - [Tanuki-Ext OLED edition](https://github.com/SethSenpai/Tanuki-Ext)
-- [Lily58](https://github.com/kata0510/Lily58)
-
 Tools:
 
 - [bloznelis/kbt](https://github.com/bloznelis/kbt)
