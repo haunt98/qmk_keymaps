@@ -39,6 +39,7 @@ format_draw_caksoylar_keymap_drawer:
 draw_caksoylar_keymap_drawer:
 	# https://github.com/caksoylar/keymap-drawer
 	pipx install keymap-drawer
+	pipx upgrade keymap-drawer
 	keymap -c dztech_dz60rgb_wkl/caksoylar_keymap_drawer/config.yaml \
 		parse -q dztech_dz60rgb_wkl/keymaps_json/haunt98/keymap.json > \
 		dztech_dz60rgb_wkl/caksoylar_keymap_drawer/keymap.yaml
