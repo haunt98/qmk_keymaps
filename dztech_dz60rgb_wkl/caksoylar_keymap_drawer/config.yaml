@@ -10,7 +10,7 @@ draw_config:
       fill: inherit;
     }
     svg.keymap {
-      font-family: JetBrains Mono, monospace;
+      font-family: SF Mono, JetBrains Mono, monospace;
       font-size: 14px;
       font-kerning: normal;
       text-rendering: optimizeLegibility;
@@ -22,7 +22,6 @@ draw_config:
       stroke-width: 1;
     }
     text {
-      font-weight: bold;
       text-anchor: middle;
       dominant-baseline: middle;
     }
@@ -40,7 +39,7 @@ draw_config:
       text-anchor: middle;
       dominant-baseline: text-after-edge;
     }
-    rect.held, rect.enter, rect.space {
+    rect.held, rect.enter, rect.space, rect.arrow {
       fill: rgb(255, 205, 210);
     }
     rect.esc, rect.vim {
@@ -68,10 +67,10 @@ parse_config:
       "KC_BSPC": "$$mdi:keyboard-backspace$$",
       "KC_TAB": "$$mdi:keyboard-tab$$",
       "KC_SPC": { "t": "$$mdi:keyboard-space$$", "type": "space" },
-      "KC_UP": "$$mdi:arrow-up$$",
-      "KC_DOWN": "$$mdi:arrow-down$$",
-      "KC_LEFT": "$$mdi:arrow-left$$",
-      "KC_RGHT": "$$mdi:arrow-right$$",
+      "KC_UP": { "t": "$$mdi:arrow-up$$", "type": "arrow" },
+      "KC_DOWN": { "t": "$$mdi:arrow-down$$", "type": "arrow" },
+      "KC_LEFT": { "t": "$$mdi:arrow-left$$", "type": "arrow" },
+      "KC_RGHT": { "t": "$$mdi:arrow-right$$", "type": "arrow" },
       "KC_CAPS": "$$mdi:apple-keyboard-caps$$",
       "KC_LOPT": "$$mdi:apple-keyboard-option$$",
       "KC_ROPT": "$$mdi:apple-keyboard-option$$",

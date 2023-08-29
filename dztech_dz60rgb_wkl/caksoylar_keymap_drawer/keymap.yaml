@@ -91,7 +91,7 @@ layers:
     - ""
     - ""
     - ""
-    - $$mdi:arrow-up$$
+    - { t: "$$mdi:arrow-up$$", type: arrow }
     - ""
     - DEL
     - ""
@@ -104,8 +104,8 @@ layers:
     - ""
     - ""
     - ""
-    - $$mdi:arrow-left$$
-    - $$mdi:arrow-right$$
+    - { t: "$$mdi:arrow-left$$", type: arrow }
+    - { t: "$$mdi:arrow-right$$", type: arrow }
     - ""
     - { t: "$$mdi:transfer$$", type: trans }
     - ""
@@ -117,7 +117,7 @@ layers:
     - ""
     - ""
     - ""
-    - $$mdi:arrow-down$$
+    - { t: "$$mdi:arrow-down$$", type: arrow }
     - { t: "$$mdi:transfer$$", type: trans }
     - ""
     - ""
