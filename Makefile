@@ -1,4 +1,4 @@
-.PHONY: all format clean go draw_qmkasciigen format_draw_caksoylar_keymap_drawer draw_caksoylar_keymap_drawer draw qmk_upstream qmk_init qmk_clean dztech_dz60rgb_wkl
+.PHONY: all format clean go draw_qmkasciigen format_draw_caksoylar_keymap_drawer draw_caksoylar_keymap_drawer draw qmk_upstream
 
 all:
 	@echo Please read Makefile to understand!!!
@@ -56,26 +56,3 @@ draw:
 
 qmk_upstream:
 	curl https://raw.githubusercontent.com/qmk/qmk_firmware/master/.clang-format --output .clang-format
-
-qmk_init:
-	qmk setup -H ~/qmk_firmware
-	qmk git-submodule
-	qmk doctor
-
-qmk_clean:
-	qmk clean
-	rm -rf ~/qmk_firmware/keyboards/dztech/dz60rgb_wkl/keymaps/haunt98
-
-dztech_dz60rgb_wkl:
-	$(MAKE) qmk_init
-	# Copy
-	rm -rf ~/qmk_firmware/keyboards/dztech/dz60rgb_wkl/keymaps/haunt98
-	cp -rf dztech_dz60rgb_wkl/keymaps/haunt98 ~/qmk_firmware/keyboards/dztech/dz60rgb_wkl/keymaps/
-	# Lint
-	qmk lint -kb dztech/dz60rgb_wkl/v2_1 -km haunt98
-	# Compile
-	qmk compile -j 8 -kb dztech/dz60rgb_wkl/v2_1 -km haunt98
-	mv ~/qmk_firmware/dztech_dz60rgb_wkl_v2_1_haunt98.bin .
-	# JSON
-	rm -rf dztech_dz60rgb_wkl/keymaps_json/haunt98/keymap.json
-	qmk c2json -kb dztech/dz60rgb_wkl/v2_1 -km haunt98 -o dztech_dz60rgb_wkl/keymaps_json/haunt98/keymap.json dztech_dz60rgb_wkl/keymaps/haunt98/keymap.c
