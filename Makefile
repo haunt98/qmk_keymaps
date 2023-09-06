@@ -1,17 +1,16 @@
-.PHONY: all format clean go draw_qmkasciigen format_draw_caksoylar_keymap_drawer draw_caksoylar_keymap_drawer draw qmk_upstream
+.PHONY: all format go draw_qmkasciigen format_draw_caksoylar_keymap_drawer draw_caksoylar_keymap_drawer draw qmk_upstream
 
 all:
-	@echo Please read Makefile to understand!!!
+	$(MAKE) format
+	$(MAKE) draw
 
 format:
 	clang-format -i dztech_dz60rgb_wkl/keymaps/haunt98/*.c dztech_dz60rgb_wkl/keymaps/haunt98/*.h & \
 		clang-format-mp-15 -i dztech_dz60rgb_wkl/keymaps/haunt98/*.c dztech_dz60rgb_wkl/keymaps/haunt98/*.h
-	deno fmt dztech_dz60rgb_wkl/keymaps_json/haunt98/keymap.json
 	clang-format -i creatkeebs_thera/keymaps/haunt98/*.c creatkeebs_thera/keymaps/haunt98/*.h & \
 		clang-format-mp-15 -i creatkeebs_thera/keymaps/haunt98/*.c creatkeebs_thera/keymaps/haunt98/*.h
-
-clean:
-	rm -rf dztech_dz60rgb_wkl_v2_1_haunt98.bin
+	deno fmt dztech_dz60rgb_wkl/keymaps_json/haunt98/keymap.json
+	deno fmt creatkeebs_thera/keymaps_json/haunt98/keymap.json
 
 # From changeloguru
 go:
@@ -25,7 +24,14 @@ go:
 
 draw_qmkasciigen:
 	$(MAKE) go
-	go run ./cmd/qmkasciigen/*.go -qmk-keyboard dztech/dz60rgb_wkl/v2_1 -qmk-keymap-file dztech_dz60rgb_wkl/keymaps_json/haunt98/keymap.json -out dztech_dz60rgb_wkl/asciiart/haunt98.txt
+	go run ./cmd/qmkasciigen/*.go \
+		-qmk-keyboard dztech/dz60rgb_wkl/v2_1 \
+		-qmk-keymap-file dztech_dz60rgb_wkl/keymaps_json/haunt98/keymap.json \
+		-out dztech_dz60rgb_wkl/asciiart/haunt98.txt
+	go run ./cmd/qmkasciigen/*.go \
+		-qmk-keyboard creatkeebs/thera \
+		-qmk-keymap-file creatkeebs_thera/keymaps_json/haunt98/keymap.json \
+		-out creatkeebs_thera/asciiart/haunt98.txt
 
 draw_qmkasciigen_demo:
 	go run ./cmd/qmkasciigen/*.go -print-out -allow-layers 0 -qmk-keyboard matthewdias/m3n3van
