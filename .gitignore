@@ -12,4 +12,5 @@ coverage.out
 vendor
 
 # QMK
-dztech_dz60rgb_wkl_v2_1_haunt98.bin
+*.bin
+*.hex

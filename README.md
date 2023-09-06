@@ -19,13 +19,6 @@ Links:
 - [USB Drive Flash Manual (New Flash Manual)](https://docs.google.com/document/d/111qx6Qec4JqtIhWaZlMND-VuRnFtn9a-gJaHN8fsL7M/edit?usp=sharing)
 - [moyi4681/firmware](https://github.com/moyi4681/firmware)
 
-### Compile
-
-```sh
-make dztech_dz60rgb_wkl
-# Output is dztech_dz60rgb_wkl_v2_1_haunt98.bin
-```
-
 ### Keymap
 
 #### qmkasciigen
@@ -35,6 +28,14 @@ make dztech_dz60rgb_wkl
 #### caksoylar/keymap-drawer
 
 ![caksoylar_keymap_drawer](dztech_dz60rgb_wkl/caksoylar_keymap_drawer/keymap.svg)
+
+## [creatkeebs/thera](https://github.com/qmk/qmk_firmware/tree/master/keyboards/creatkeebs/thera)
+
+### Keymap
+
+#### qmkasciigen
+
+[asciiart](creatkeebs_thera/asciiart/haunt98.txt)
 
 ## Install
 
