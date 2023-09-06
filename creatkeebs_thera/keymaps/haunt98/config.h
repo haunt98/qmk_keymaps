@@ -5,7 +5,13 @@
 #pragma once
 
 #define NO_ACTION_ONESHOT
+#define NO_ACTION_TAPPING
 
 #define LAYER_STATE_8BIT
+
+#ifdef DEBOUNCE
+#    undef DEBOUNCE
+#endif
+#define DEBOUNCE 5
 
 #define USB_SUSPEND_WAKEUP_DELAY 200
