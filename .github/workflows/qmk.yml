@@ -38,23 +38,18 @@ jobs:
       - name: Copy keymaps
         run: |
           cp -rf haunt98_qmk_keymaps/dztech_dz60rgb_wkl/keymaps/haunt98 keyboards/dztech/dz60rgb_wkl/keymaps/
-          cp -rf haunt98_qmk_keymaps/creatkeebs_thera/keymaps/haunt98 keyboards/creatkeebs/thera/keymaps/
       - name: Lint
         run: |
           qmk lint -kb dztech/dz60rgb_wkl/v2_1 -km haunt98
-          qmk lint -kb creatkeebs/thera -km haunt98
       - name: Build firmware
         run: |
           qmk compile -j 8 -kb dztech/dz60rgb_wkl/v2_1 -km haunt98
-          qmk compile -j 8 -kb creatkeebs/thera -km haunt98
       - name: Convert keymaps JSON
         run: |
           qmk c2json -kb dztech/dz60rgb_wkl/v2_1 -km haunt98 -o dztech_dz60rgb_wkl_haunt98_keymap.json haunt98_qmk_keymaps/dztech_dz60rgb_wkl/keymaps/haunt98/keymap.c
-          qmk c2json -kb creatkeebs/thera -km haunt98 -o creatkeebs_thera_haunt98_keymap.json haunt98_qmk_keymaps/creatkeebs_thera/keymaps/haunt98/keymap.c
       - name: Extra
         run: |
           qmk info -m -l -kb dztech/dz60rgb_wkl/v2_1 -km haunt98
-          qmk info -m -l -kb creatkeebs/thera -km haunt98
       - name: Archive firmware
         uses: actions/upload-artifact@v3
         with:
