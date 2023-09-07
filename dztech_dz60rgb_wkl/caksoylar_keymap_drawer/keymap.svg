@@ -331,7 +331,7 @@ rect.esc, rect.vim {
 </g>
 <g transform="translate(780, 270)" class="key keypos-60">
 <rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key"/>
-<use href="#mdi:apple-keyboard-option" xlink:href="#mdi:apple-keyboard-option" x="-9" y="-9" height="18" width="18.0" class="key tap glyph mdi:apple-keyboard-option"/>
+<text x="0" y="0" class="key tap">L2</text>
 </g>
 <g transform="translate(855, 270)" class="key keypos-61">
 <rect rx="6" ry="6" x="-43" y="-28" width="86" height="56" class="key"/>
@@ -398,7 +398,6 @@ rect.esc, rect.vim {
 </g>
 <g transform="translate(870, 30)" class="key keypos-14">
 <rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key"/>
-<text x="0" y="0" class="key tap">TG2</text>
 </g>
 <g transform="translate(45, 90)" class="key keypos-15">
 <rect rx="6" ry="6" x="-43" y="-28" width="86" height="56" class="key"/>
@@ -544,6 +543,7 @@ rect.esc, rect.vim {
 </g>
 <g transform="translate(780, 270)" class="key keypos-60">
 <rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key"/>
+<text x="0" y="0" class="key tap">L3</text>
 </g>
 <g transform="translate(855, 270)" class="key keypos-61">
 <rect rx="6" ry="6" x="-43" y="-28" width="86" height="56" class="key"/>
@@ -597,7 +597,6 @@ rect.esc, rect.vim {
 </g>
 <g transform="translate(870, 30)" class="key keypos-14">
 <rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key"/>
-<text x="0" y="0" class="key tap">TO0</text>
 </g>
 <g transform="translate(45, 90)" class="key keypos-15">
 <rect rx="6" ry="6" x="-43" y="-28" width="86" height="56" class="key"/>
@@ -673,11 +672,9 @@ rect.esc, rect.vim {
 </g>
 <g transform="translate(555, 150)" class="key keypos-37">
 <rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key"/>
-<text x="0" y="0" class="key tap">HOME</text>
 </g>
 <g transform="translate(615, 150)" class="key keypos-38">
 <rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key"/>
-<text x="0" y="0" class="key tap">PGUP</text>
 </g>
 <g transform="translate(675, 150)" class="key keypos-39">
 <rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key"/>
@@ -724,11 +721,9 @@ rect.esc, rect.vim {
 </g>
 <g transform="translate(585, 210)" class="key keypos-50">
 <rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key"/>
-<text x="0" y="0" class="key tap">END</text>
 </g>
 <g transform="translate(645, 210)" class="key keypos-51">
 <rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key"/>
-<text x="0" y="0" class="key tap">PGDN</text>
 </g>
 <g transform="translate(705, 210)" class="key keypos-52">
 <rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key"/>
@@ -746,24 +741,24 @@ rect.esc, rect.vim {
 </g>
 <g transform="translate(120, 270)" class="key keypos-56">
 <rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key"/>
+<text x="0" y="0" class="key tap">
+<tspan x="0" dy="-0.6em">RGB</tspan><tspan x="0" dy="1.2em">TOG</tspan>
+</text>
 </g>
 <g transform="translate(195, 270)" class="key keypos-57">
 <rect rx="6" ry="6" x="-43" y="-28" width="86" height="56" class="key"/>
+<text x="0" y="0" class="key tap">
+<tspan x="0" dy="-0.6em">RGB</tspan><tspan x="0" dy="1.2em">MOD</tspan>
+</text>
 </g>
 <g transform="translate(450, 270)" class="key keypos-58">
 <rect rx="6" ry="6" x="-208" y="-28" width="416" height="56" class="key"/>
 </g>
 <g transform="translate(705, 270)" class="key keypos-59">
 <rect rx="6" ry="6" x="-43" y="-28" width="86" height="56" class="key"/>
-<text x="0" y="0" class="key tap">
-<tspan x="0" dy="-0.6em">RGB</tspan><tspan x="0" dy="1.2em">TOG</tspan>
-</text>
 </g>
 <g transform="translate(780, 270)" class="key keypos-60">
 <rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key"/>
-<text x="0" y="0" class="key tap">
-<tspan x="0" dy="-0.6em">RGB</tspan><tspan x="0" dy="1.2em">MOD</tspan>
-</text>
 </g>
 <g transform="translate(855, 270)" class="key keypos-61">
 <rect rx="6" ry="6" x="-43" y="-28" width="86" height="56" class="key"/>

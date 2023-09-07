@@ -62,7 +62,7 @@ layers:
     - $$mdi:apple-keyboard-command$$
     - { t: "$$mdi:keyboard-space$$", type: space }
     - $$mdi:apple-keyboard-command$$
-    - $$mdi:apple-keyboard-option$$
+    - L2
     - ""
   L1:
     - "`"
@@ -79,7 +79,7 @@ layers:
     - F11
     - F12
     - ""
-    - TG2
+    - ""
     - ""
     - ""
     - ""
@@ -125,7 +125,7 @@ layers:
     - ""
     - ""
     - ""
-    - ""
+    - L3
     - ""
   L2:
     - ""
@@ -142,7 +142,7 @@ layers:
     - ""
     - ""
     - ""
-    - TO0
+    - ""
     - ""
     - BRMD
     - BRMU
@@ -165,8 +165,8 @@ layers:
     - ""
     - ""
     - ""
-    - HOME
-    - PGUP
+    - ""
+    - ""
     - ""
     - ""
     - ""
@@ -178,17 +178,17 @@ layers:
     - ""
     - ""
     - ""
-    - END
-    - PGDN
+    - ""
+    - ""
     - ""
     - { t: "$$mdi:transfer$$", type: trans }
     - L3
     - ""
-    - ""
-    - ""
-    - ""
     - RGB TOG
     - RGB MOD
+    - ""
+    - ""
+    - ""
     - ""
   L3:
     [

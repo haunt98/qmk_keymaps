@@ -23,8 +23,8 @@ var mapTransform = []map[string]string{
 	{
 		// My custom
 		"LAYER_QWERTY":   "0",
-		"LAYER_COMMON":   "1",
-		"LAYER_RARELY":   "2",
+		"LAYER_MOVE":     "1",
+		"LAYER_OPTION":   "2",
 		"LAYER_RECOVERY": "3",
 	},
 	{
