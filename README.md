@@ -29,14 +29,6 @@ Links:
 
 ![caksoylar_keymap_drawer](dztech_dz60rgb_wkl/caksoylar_keymap_drawer/keymap.svg)
 
-## [creatkeebs/thera](https://github.com/qmk/qmk_firmware/tree/master/keyboards/creatkeebs/thera)
-
-### Keymap
-
-#### qmkasciigen
-
-[asciiart](creatkeebs_thera/asciiart/haunt98.txt)
-
 ## Install
 
 Locate firmware file after compile successfully or download from
