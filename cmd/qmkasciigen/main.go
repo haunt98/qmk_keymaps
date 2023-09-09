@@ -33,6 +33,7 @@ var (
 	flagPrintLayout   bool
 	flagPrintLayer    bool
 	flagAllowLayers   string
+	flagUseCP437      bool
 )
 
 func init() {
@@ -46,6 +47,7 @@ func init() {
 	flag.BoolVar(&flagPrintLayout, "print-layout", false, "Print layout name")
 	flag.BoolVar(&flagPrintLayer, "print-layer", false, "Print layer name")
 	flag.StringVar(&flagAllowLayers, "allow-layers", "", "Allow layers to print aka 0 or 0,2,3. Use , to split. Empty mean all")
+	flag.BoolVar(&flagUseCP437, "use-cp437", false, "Use CP437 character")
 }
 
 func main() {
@@ -60,6 +62,7 @@ func main() {
 		log.Printf("flagPrintLayout: [%v]\n", flagPrintLayout)
 		log.Printf("flagPrintLayer: [%v]\n", flagPrintLayer)
 		log.Printf("flagAllowLayers: [%s]\n", flagAllowLayers)
+		log.Printf("flagUseCP437: [%v]\n", flagUseCP437)
 	}
 
 	// 0,2,3 -> [0, 2, 3]
@@ -91,6 +94,7 @@ func main() {
 			AllowLayers: allowLayers,
 			PrintLayout: flagPrintLayout,
 			PrintLayer:  flagPrintLayer,
+			UseCP437:    flagUseCP437,
 		},
 	)
 	if flagPrintOutput {

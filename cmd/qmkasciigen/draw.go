@@ -3,31 +3,12 @@ package main
 import (
 	"fmt"
 	"strings"
-	"sync"
 )
 
 const (
 	scaleX = 8
 	scaleY = 2
 )
-
-// Only get what I want
-var (
-	cp437Raws = []rune("░▒▓│┤╡╢╖╕╣║╗╝╜╛┐└┴┬├─┼╞╟╚╔╩╦╠═╬╧╨╤╥╙╘╒╓╫╪┘┌█▄▌▐▀")
-	cp437Strs []string
-	once      sync.Once
-)
-
-func init() {
-	once.Do(func() {
-		cp437Strs = make([]string, len(cp437Raws))
-		for i, r := range cp437Raws {
-			cp437Strs[i] = string(r)
-		}
-
-		fmt.Println(cp437Strs)
-	})
-}
 
 var mapRawBinding = []map[string]string{
 	{
@@ -124,6 +105,7 @@ type DrawConfig struct {
 	AllowLayers map[int]struct{}
 	PrintLayout bool
 	PrintLayer  bool
+	UseCP437    bool
 }
 
 func Draw(
@@ -256,23 +238,63 @@ func Draw(
 						if i == key.NewY || i == key.NewY+key.NewH {
 							if j == key.NewX || j == key.NewX+key.NewW {
 								// Draw corner
-								table[i][j] = "+"
-							} else if table[i][j] != "+" {
-								// Draw top/bottom
-								table[i][j] = "-"
+								if cfg.UseCP437 {
+									var temp string
+									if i == key.NewY {
+										if j == key.NewX {
+											// Corner top left
+											temp = cp437BottomVerticalRight
+										} else {
+											// Corner top right
+											temp = cp437BottomVerticalLeft
+										}
+									} else {
+										if j == key.NewX {
+											// Corner bottom left
+											temp = cp437TopVerticalRight
+										} else {
+											// Corner top right
+											temp = cp437TopVerticalLeft
+										}
+									}
+
+									// Need to combine with current
+									table[i][j] = cp437Plus(table[i][j], temp)
+								} else {
+									table[i][j] = "+"
+								}
+							} else {
+								// Draw horizontal
+								if cfg.UseCP437 {
+									table[i][j] = cp437Plus(table[i][j], cp437Horizontal)
+								} else {
+									if table[i][j] != "+" {
+										// Draw top/bottom
+										table[i][j] = "-"
+									}
+								}
 							}
 						} else if i == key.NewY+key.NewH/2 {
 							// Write key in the middle
 							if j == key.NewX || j == key.NewX+key.NewW {
-								// Draw left/right
-								table[i][j] = "|"
+								// Draw vertical most left/right
+								if cfg.UseCP437 {
+									table[i][j] = cp437Plus(table[i][j], cp437Vertical)
+								} else {
+									table[i][j] = "|"
+								}
 							} else if len(keyStr) > 0 && j > key.NewX+padding && j < key.NewX+len(keyStr)+padding+1 && j <= key.NewX+key.NewW-padding {
 								// Only handle ASCII keyStr
 								table[i][j] = string(keyStr[j-key.NewX-padding-1])
 							}
 						} else {
+							// Draw vertical most left/right
 							if j == key.NewX || j == key.NewX+key.NewW {
-								table[i][j] = "|"
+								if cfg.UseCP437 {
+									table[i][j] = cp437Plus(table[i][j], cp437Vertical)
+								} else {
+									table[i][j] = "|"
+								}
 							}
 						}
 					}
