@@ -3,12 +3,31 @@ package main
 import (
 	"fmt"
 	"strings"
+	"sync"
 )
 
 const (
 	scaleX = 8
 	scaleY = 2
 )
+
+// Only get what I want
+var (
+	cp437Raws = []rune("░▒▓│┤╡╢╖╕╣║╗╝╜╛┐└┴┬├─┼╞╟╚╔╩╦╠═╬╧╨╤╥╙╘╒╓╫╪┘┌█▄▌▐▀")
+	cp437Strs []string
+	once      sync.Once
+)
+
+func init() {
+	once.Do(func() {
+		cp437Strs = make([]string, len(cp437Raws))
+		for i, r := range cp437Raws {
+			cp437Strs[i] = string(r)
+		}
+
+		fmt.Println(cp437Strs)
+	})
+}
 
 var mapRawBinding = []map[string]string{
 	{
