@@ -168,4 +168,4 @@ Copycat QMK features with software.
   - [x] Get data directly from qmk
   - [x] Split transform keycodes to raw binding/transform (same as
         keymap-drawer)
-  - [ ] Unicode support ?
+  - [ ] Support [Code page 437](https://en.wikipedia.org/wiki/Code_page_437)
