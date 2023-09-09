@@ -178,7 +178,7 @@ func Draw(
 				// Padding 1 in the right
 				table[i] = make([]string, newMaxX+1)
 				for j := 0; j <= newMaxX; j++ {
-					table[i][j] = " "
+					table[i][j] = cp437Empty
 				}
 			}
 
@@ -237,23 +237,44 @@ func Draw(
 						if i == key.NewY || i == key.NewY+key.NewH {
 							if j == key.NewX || j == key.NewX+key.NewW {
 								// Draw corner
-								table[i][j] = "+"
-							} else if table[i][j] != "+" {
-								// Draw top/bottom
-								table[i][j] = "-"
+								var temp string
+								if i == key.NewY {
+									if j == key.NewX {
+										// Corner top left
+										temp = cp437BottomVerticalRight
+									} else {
+										// Corner top right
+										temp = cp437BottomVerticalLeft
+									}
+								} else {
+									if j == key.NewX {
+										// Corner bottom left
+										temp = cp437TopVerticalRight
+									} else {
+										// Corner top right
+										temp = cp437TopVerticalLeft
+									}
+								}
+
+								// Need to combine with current
+								table[i][j] = cp437Plus(table[i][j], temp)
+							} else {
+								// Draw horizontal
+								table[i][j] = cp437Plus(table[i][j], cp437Horizontal)
 							}
 						} else if i == key.NewY+key.NewH/2 {
 							// Write key in the middle
 							if j == key.NewX || j == key.NewX+key.NewW {
-								// Draw left/right
-								table[i][j] = "|"
+								// Draw vertical most left/right
+								table[i][j] = cp437Plus(table[i][j], cp437Vertical)
 							} else if len(keyStr) > 0 && j > key.NewX+padding && j < key.NewX+len(keyStr)+padding+1 && j <= key.NewX+key.NewW-padding {
 								// Only handle ASCII keyStr
 								table[i][j] = string(keyStr[j-key.NewX-padding-1])
 							}
 						} else {
+							// Draw vertical most left/right
 							if j == key.NewX || j == key.NewX+key.NewW {
-								table[i][j] = "|"
+								table[i][j] = cp437Plus(table[i][j], cp437Vertical)
 							}
 						}
 					}

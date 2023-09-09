@@ -1,10 +1,5 @@
 package main
 
-const (
-	DefaultQMKW = 1
-	DefaultQMKH = 1
-)
-
 // https://github.com/qmk/qmk_firmware/blob/master/docs/reference_info_json.md
 type QMKInfo struct {
 	Layouts map[string]map[string][]QMKKeyDictionary `json:"layouts"`
