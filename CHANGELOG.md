@@ -1,5 +1,79 @@
 # CHANGELOG
 
+## v0.0.16 (2023-09-09)
+
+### Added
+
+- feat: use CP437 character (#5) (2023-09-09)
+
+- feat: remove thera (2023-09-07)
+
+- feat: support thera (1/?) (2023-09-06)
+
+- feat(qmk): add kc_del (2023-08-17)
+
+- feat(qmk): add RGB_MATRIX_TIMEOUT (2023-08-15)
+
+- feat(qmk): add USB_SUSPEND_WAKEUP_DELAY 200 (2023-08-11)
+
+- feat(qmkasciigen): support caps (2023-08-10)
+
+### Others
+
+- chore: update TODO (2023-09-09)
+
+- qmk: enable rgb matrix (2023-09-09)
+
+- draw: re-draw (2023-09-07)
+
+- qmk: right alt -> mo(2) (2023-09-07)
+
+- chore: remove build locally (2023-09-06)
+
+- qmk: optimize thera more (2023-09-06)
+
+- draw: generate thera ascii art (2023-09-06)
+
+- chore: remove qmk local (2023-09-06)
+
+- chore: fix gh action (2023-09-06)
+
+- chore: bump thera using qmk cli (2023-09-06)
+
+- chore(deps): bump actions/checkout from 3 to 4 (2023-09-05)
+
+- chore(draw): update style (2023-08-29)
+
+- chore: upgrade draw (2023-08-29)
+
+- chore: move hardware out of picture (2023-08-23)
+
+- chore: more design (2023-08-20)
+
+- chore: limit pro micro (2023-08-20)
+
+- chore: re-draw (2023-08-17)
+
+- chore: more interesting (2023-08-16)
+
+- chore: more interesting (2023-08-13)
+
+- chore: fix typo (2023-08-13)
+
+- chore: add stock github repo (2023-08-11)
+
+- chore: update license to match MIT (2023-08-11)
+
+- chore: add karabiner (2023-08-11)
+
+- chore: fix typo (2023-08-10)
+
+- chore: fix typo (2023-08-10)
+
+- chore: re-order posts (2023-08-10)
+
+- chore(changelog): generate v0.0.15 (2023-08-10)
+
 ## v0.0.15 (2023-08-10)
 
 ### Added
