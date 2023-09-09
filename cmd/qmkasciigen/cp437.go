@@ -69,6 +69,7 @@ var cp437B2Str = map[int]string{
 	cp437BottomVerticalRightB:     cp437BottomVerticalRight,
 }
 
+// Return x + y with combine rule
 func cp437Plus(x, y string) string {
 	bx, ok := cp437Str2B[x]
 	if !ok {
@@ -80,6 +81,7 @@ func cp437Plus(x, y string) string {
 		return x
 	}
 
+	// Use OR because if either one has vertical -> final one has vertical and so on
 	result, ok := cp437B2Str[bx|by]
 	if !ok {
 		return cp437Empty
