@@ -23,6 +23,9 @@ jobs:
   build:
     runs-on: ubuntu-latest
     container: ghcr.io/qmk/qmk_cli
+    strategy:
+      matrix:
+        qmk_ref: [master, develop]
     steps:
       - name: Disable git safe directory checks
         run: git config --global --add safe.directory '*'
@@ -31,6 +34,7 @@ jobs:
         with:
           repository: qmk/qmk_firmware
           submodules: recursive
+          ref: ${{ matrix.qmk_ref }}
       - name: Checkout personal keymaps
         uses: actions/checkout@v4
         with:
@@ -53,7 +57,7 @@ jobs:
       - name: Archive firmware
         uses: actions/upload-artifact@v3
         with:
-          name: haunt98_firmware
+          name: haunt98_firmware_${{ matrix.qmk_ref }}
           path: |
             *.hex
             *.bin
@@ -61,6 +65,6 @@ jobs:
       - name: Archive keymaps JSON
         uses: actions/upload-artifact@v3
         with:
-          name: haunt98_keymaps
+          name: haunt98_keymaps_${{ matrix.qmk_ref }}
           path: |
             *_keymap.json
