@@ -121,6 +121,11 @@ More
   Limit of ATmega32U4 aka Pro Micro:
   - Limited storage
   - Do not work well with USB-C to USB-C cable.
+- [How to make your C codebase rusty: rewriting keyboard firmware keymap in Rust](https://about.houqp.me/posts/rusty-c/)
+- [How to talk to your QMK-based keyboard using Rust](http://rantsideasstuff.com/posts/2021/01/26-how-to-talk-to-your-qmk-based-keyboard-using-rust/)
+- [I Bought the Stack Overflow Keyboard. I Instantly Became a 10x Developer and Ended Up Writing the Default Firmware for It](https://teknologiumum.com/posts/i-bought-the-stack-overflow-keyboard-i-instantly-became-a-10x-developer-and-ended-up-writing-the-default-firmware-for-it)
+- [Building a keyboard firmware](https://matt3o.com/building-a-keyboard-firmware/)
+- [Having fun with keyboard mappings under Linux](https://pulsar17.me/2023/09/keymapping)
 
 Tools:
 
