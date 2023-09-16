@@ -2,21 +2,7 @@
 // SPDX-License-Identifier: MIT
 
 #include QMK_KEYBOARD_H
-
-// https://github.com/qmk/qmk_firmware/blob/master/docs/feature_tap_dance.md
-enum custom_tap_dance {
-    TD_SAFE_BOOT,
-};
-
-void tap_dance_safe_boot(tap_dance_state_t* state, void* user_data) {
-    if (state->count >= 3) {
-        reset_keyboard();
-    }
-}
-
-tap_dance_action_t tap_dance_actions[] = {
-    [TD_SAFE_BOOT] = ACTION_TAP_DANCE_FN(tap_dance_safe_boot),
-};
+#include "haunt98.h"
 
 enum layers {
     LAYER_QWERTY,
