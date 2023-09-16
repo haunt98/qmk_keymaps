@@ -3,8 +3,6 @@
 
 #pragma once
 
-// https://github.com/qmk/qmk_firmware/blob/master/docs/config_options.md
-
 // https://github.com/qmk/qmk_firmware/blob/master/docs/feature_rgb_matrix.md
 // https://www.youtube.com/watch?v=7f3usatOIKM
 #ifdef RGB_MATRIX_ENABLE
