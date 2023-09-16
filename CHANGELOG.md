@@ -1,5 +1,29 @@
 # CHANGELOG
 
+## v0.0.17 (2023-09-16)
+
+### Added
+
+- feat(qmk): use qmk userspace (#7) (2023-09-16)
+
+- feat(qmk): force nkro (2023-09-13)
+
+### Others
+
+- chore: more qmk read (2023-09-13)
+
+- chore(qmk): add comment (2023-09-11)
+
+- qmk: rgb matrix efffect (2023-09-11)
+
+- qmk: update rgb matrix effect (2023-09-11)
+
+- chore: add build develop qmk (#6) (2023-09-11)
+
+- chore: update copyright for C file (2023-09-10)
+
+- chore(changelog): generate v0.0.16 (2023-09-09)
+
 ## v0.0.16 (2023-09-09)
 
 ### Added
