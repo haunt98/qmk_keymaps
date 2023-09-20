@@ -18,6 +18,8 @@ on:
       - "**.mk"
       - ".github/workflows/qmk.yml"
   workflow_dispatch:
+  schedule:
+    - cron: "0 * * * *"
 
 jobs:
   build:
