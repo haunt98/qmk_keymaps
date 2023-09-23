@@ -2,6 +2,7 @@
 
 [![Go](https://github.com/haunt98/qmk_keymaps/actions/workflows/go.yml/badge.svg)](https://github.com/haunt98/qmk_keymaps/actions/workflows/go.yml)
 [![QMK](https://github.com/haunt98/qmk_keymaps/actions/workflows/qmk.yml/badge.svg)](https://github.com/haunt98/qmk_keymaps/actions/workflows/qmk.yml)
+[![Latest Version](https://img.shields.io/github/v/tag/haunt98/qmk_keymaps)](https://github.com/haunt98/qmk_keymaps/tags)
 
 ## [dztech/dz60rgb_wkl](https://github.com/qmk/qmk_firmware/tree/master/keyboards/dztech/dz60rgb_wkl)
 
