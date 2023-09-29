@@ -7,6 +7,8 @@ all:
 format:
 	clang-format -i dztech_dz60rgb_wkl/keymaps/haunt98/*.c \
 		dztech_dz60rgb_wkl/keymaps/haunt98/*.h \
+		gray_studio_think65_solder/keymaps/haunt98/*.c \
+		gray_studio_think65_solder/keymaps/haunt98/*.h \
 		users/haunt98/*.c \
 		users/haunt98/*.h
 	deno fmt dztech_dz60rgb_wkl/keymaps_json/haunt98/keymap.json
@@ -27,6 +29,10 @@ draw_qmkasciigen:
 		-qmk-keyboard dztech/dz60rgb_wkl/v2_1 \
 		-qmk-keymap-file dztech_dz60rgb_wkl/keymaps_json/haunt98/keymap.json \
 		-out dztech_dz60rgb_wkl/asciiart/haunt98.txt
+	go run ./cmd/qmkasciigen \
+		-qmk-keyboard gray_studio/think65/solder \
+		-qmk-keymap-file gray_studio_think65_solder/keymaps_json/haunt98/keymap.json \
+		-out gray_studio_think65_solder/asciiart/haunt98.txt
 
 draw_qmkasciigen_demo:
 	go run ./cmd/qmkasciigen -print-out -allow-layers 0 -qmk-keyboard matthewdias/m3n3van
