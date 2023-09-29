@@ -20,6 +20,10 @@ Links:
 - [USB Drive Flash Manual (New Flash Manual)](https://docs.google.com/document/d/111qx6Qec4JqtIhWaZlMND-VuRnFtn9a-gJaHN8fsL7M/edit?usp=sharing)
 - [moyi4681/firmware](https://github.com/moyi4681/firmware)
 
+## [gray_studio/think65/solder](https://github.com/qmk/qmk_firmware/tree/master/keyboards/gray_studio/think65/solder)
+
+> This firmware is compatible with both V1 and V2 variants of the Think 6.5 PCB.
+
 ### Keymap
 
 #### qmkasciigen
