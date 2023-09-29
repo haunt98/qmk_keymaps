@@ -1,5 +1,27 @@
 # CHANGELOG
 
+## v0.0.18 (2023-09-29)
+
+### Added
+
+- feat: support think65 (#8) (2023-09-29)
+
+### Others
+
+- chore: clena up readme (2023-09-29)
+
+- chore: use clang-format from nix (2023-09-29)
+
+- chore: add more badges (2023-09-23)
+
+- chore: qmk gh action run daily (2023-09-20)
+
+- chore: gh action run every hour (2023-09-20)
+
+- chore: update README (2023-09-19)
+
+- chore(changelog): generate v0.0.17 (2023-09-16)
+
 ## v0.0.17 (2023-09-16)
 
 ### Added
