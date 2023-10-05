@@ -128,10 +128,6 @@ More
 - [Building a keyboard firmware](https://matt3o.com/building-a-keyboard-firmware/)
 - [Having fun with keyboard mappings under Linux](https://pulsar17.me/2023/09/keymapping)
 
-Tools:
-
-- [bloznelis/kbt](https://github.com/bloznelis/kbt)
-
 ## qmkasciigen
 
 Install:
