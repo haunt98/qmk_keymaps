@@ -18,9 +18,6 @@ BOOTMAGIC_ENABLE = yes
 TAP_DANCE_ENABLE = yes
 
 # Feature
-# https://github.com/qmk/qmk_firmware/blob/master/docs/feature_debounce_type.md
-DEBOUNCE_TYPE = sym_eager_pk
-
 NKRO_ENABLE = yes
 
 # Custom C

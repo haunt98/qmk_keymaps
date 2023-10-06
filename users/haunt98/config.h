@@ -18,12 +18,6 @@
 #define HOLD_ON_OTHER_KEY_PRESS
 #define RETRO_TAPPING
 
-// https://github.com/qmk/qmk_firmware/blob/master/docs/feature_debounce_type.md
-#ifdef DEBOUNCE
-#    undef DEBOUNCE
-#endif
-#define DEBOUNCE 5
-
 // https://github.com/qmk/qmk_firmware/blob/master/docs/config_options.md
 // https://github.com/qmk/qmk_firmware/issues/17316
 #define USB_SUSPEND_WAKEUP_DELAY 200

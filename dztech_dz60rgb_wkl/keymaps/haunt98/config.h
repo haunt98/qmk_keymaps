@@ -3,6 +3,12 @@
 
 #pragma once
 
+// https://github.com/qmk/qmk_firmware/blob/master/docs/feature_debounce_type.md
+#ifdef DEBOUNCE
+#    undef DEBOUNCE
+#endif
+#define DEBOUNCE 5
+
 // https://github.com/qmk/qmk_firmware/blob/master/docs/feature_rgb_matrix.md
 // https://www.youtube.com/watch?v=7f3usatOIKM
 #ifdef RGB_MATRIX_ENABLE
