@@ -3,6 +3,7 @@
 
 #include QMK_KEYBOARD_H
 
+// Inspire from https://github.com/qmk/qmk_firmware/blob/master/keyboards/gray_studio/think65/solder/keymaps/default/keymap.c
 // clang-format off
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [0] = LAYOUT_65_ansi_blocker(

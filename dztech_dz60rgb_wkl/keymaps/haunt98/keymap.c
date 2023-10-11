@@ -11,6 +11,7 @@ enum layers {
     LAYER_RECOVERY,
 };
 
+// Inspire from https://github.com/qmk/qmk_firmware/blob/master/keyboards/dztech/dz60rgb_wkl/keymaps/hhkb/keymap.c
 // https://github.com/qmk/qmk_firmware/blob/master/docs/keycodes.md
 // https://github.com/qmk/qmk_firmware/blob/master/docs/feature_grave_esc.md
 // https://github.com/qmk/qmk_firmware/blob/master/docs/mod_tap.md
