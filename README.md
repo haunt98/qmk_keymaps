@@ -28,6 +28,10 @@ Links:
 
 > This firmware is compatible with both V1 and V2 variants of the Think 6.5 PCB.
 
+## [sofle/rev1](https://github.com/qmk/qmk_firmware/tree/master/keyboards/sofle/rev1)
+
+See [Official/Original](https://josefadamcik.github.io/SofleKeyboard/)
+
 ## Install
 
 Locate firmware file after compile successfully or download from
