@@ -32,6 +32,12 @@ Links:
 
 See [Official/Original](https://josefadamcik.github.io/SofleKeyboard/)
 
+Bought from
+[ergomech.store](https://ergomech.store/shop/sofle-v2-sandwich-style-12)
+
+> Powered by the powerful RP2040 MCU, allowing users to use more macros and
+> features from QMK
+
 ## Install
 
 Locate firmware file after compile successfully or download from
