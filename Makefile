@@ -50,12 +50,18 @@ draw_caksoylar_keymap_drawer:
 	# https://github.com/caksoylar/keymap-drawer
 	pipx install keymap-drawer
 	pipx upgrade keymap-drawer
-	keymap -c dztech_dz60rgb_wkl/caksoylar_keymap_drawer/config.yaml \
+	keymap -c caksoylar_keymap_drawer/config.yaml \
 		parse -q dztech_dz60rgb_wkl/keymaps_json/haunt98/keymap.json > \
 		dztech_dz60rgb_wkl/caksoylar_keymap_drawer/keymap.yaml
-	keymap -c dztech_dz60rgb_wkl/caksoylar_keymap_drawer/config.yaml \
+	keymap -c caksoylar_keymap_drawer/config.yaml \
 		draw dztech_dz60rgb_wkl/caksoylar_keymap_drawer/keymap.yaml > \
 		dztech_dz60rgb_wkl/caksoylar_keymap_drawer/keymap.svg
+	keymap -c caksoylar_keymap_drawer/config.yaml \
+		parse -q sofle_rev1/keymaps_json/haunt98/keymap.json > \
+		sofle_rev1/caksoylar_keymap_drawer/keymap.yaml
+	keymap -c caksoylar_keymap_drawer/config.yaml \
+		draw sofle_rev1/caksoylar_keymap_drawer/keymap.yaml > \
+		sofle_rev1/caksoylar_keymap_drawer/keymap.svg
 
 draw:
 	$(MAKE) draw_qmkasciigen

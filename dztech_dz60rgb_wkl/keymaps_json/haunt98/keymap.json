@@ -57,13 +57,13 @@
       "KC_DOT",
       "KC_SLSH",
       "SC_RSPC",
-      "MO(LAYER_MOVE)",
+      "MO(LAYER_NAV)",
       "KC_NO",
       "KC_LOPT",
       "KC_LCMD",
       "KC_SPC",
       "KC_RCMD",
-      "MO(LAYER_OPTION)",
+      "MO(LAYER_OPT)",
       "KC_NO"
     ],
     [
@@ -127,7 +127,7 @@
       "KC_NO",
       "KC_NO",
       "KC_NO",
-      "MO(LAYER_RECOVERY)",
+      "KC_TRNS",
       "KC_NO"
     ],
     [
@@ -185,7 +185,7 @@
       "KC_NO",
       "KC_NO",
       "KC_TRNS",
-      "MO(LAYER_RECOVERY)",
+      "KC_TRNS",
       "KC_NO",
       "RGB_TOG",
       "RGB_MOD",

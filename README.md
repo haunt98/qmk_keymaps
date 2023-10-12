@@ -38,6 +38,10 @@ Bought from
 > Powered by the powerful RP2040 MCU, allowing users to use more macros and
 > features from QMK
 
+### Keymap
+
+![caksoylar_keymap_drawer](sofle_rev1/caksoylar_keymap_drawer/keymap.svg)
+
 ## Install
 
 Locate firmware file after compile successfully or download from

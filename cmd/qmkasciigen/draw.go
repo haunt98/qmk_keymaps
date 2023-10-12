@@ -22,10 +22,11 @@ var mapRawBinding = []map[string]string{
 var mapTransform = []map[string]string{
 	{
 		// My custom
-		"LAYER_QWERTY":   "0",
-		"LAYER_MOVE":     "1",
-		"LAYER_OPTION":   "2",
-		"LAYER_RECOVERY": "3",
+		"LAYER_QWERTY": "0",
+		"LAYER_NAV":    "1",
+		"LAYER_SYM":    "1",
+		"LAYER_OPT":    "2",
+		"LAYER_ADJ":    "3",
 	},
 	{
 		"MO(0)": "L0",
