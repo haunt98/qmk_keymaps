@@ -54,10 +54,10 @@ layers:
   - LCTL
   - LALT
   - $$mdi:apple-keyboard-command$$
-  - L1
+  - MO(LAYER SYM)
   - {t: '$$mdi:keyboard-space$$', type: space}
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - L1
+  - MO(LAYER NAV)
   - $$mdi:apple-keyboard-command$$
   - RALT
   - RCTL

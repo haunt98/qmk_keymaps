@@ -56,13 +56,13 @@ layers:
     - .
     - /
     - { t: ), h: "$$mdi:apple-keyboard-shift$$" }
-    - L1
+    - MO(LAYER NAV)
     - ""
     - $$mdi:apple-keyboard-option$$
     - $$mdi:apple-keyboard-command$$
     - { t: "$$mdi:keyboard-space$$", type: space }
     - $$mdi:apple-keyboard-command$$
-    - L2
+    - MO(LAYER OPT)
     - ""
   L1:
     - "`"

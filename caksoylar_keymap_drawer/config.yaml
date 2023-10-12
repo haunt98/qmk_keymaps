@@ -54,9 +54,6 @@ parse_config:
       "TD(TD_SAFE_BOOT)": "BOOT",
       "CTL_T(KC_ESC)":
         { "t": "ESC", "h": "$$mdi:apple-keyboard-control$$", "type": "esc" },
-      "MO(LAYER_NAV)": "L1",
-      "MO(LAYER_SYM)": "L1",
-      "MO(LAYER_OPT)": "L2",
       # Basic
       "KC_H": { "t": "H", "type": "vim" },
       "KC_J": { "t": "J", "type": "vim" },
