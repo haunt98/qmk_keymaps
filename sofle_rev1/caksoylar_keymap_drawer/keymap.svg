@@ -45,7 +45,7 @@ svg path {
   fill: inherit;
 }
 svg.keymap {
-  font-family: JetBrains Mono, monospace;
+  font-family: Fantasque Sans Mono, JetBrains Mono, monospace;
   font-size: 14px;
   font-kerning: normal;
   text-rendering: optimizeLegibility;
