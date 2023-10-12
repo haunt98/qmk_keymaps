@@ -66,6 +66,9 @@ var mapTransform = []map[string]string{
 		"RGB_HUI": "RGBH",
 		"RGB_SAI": "RGBS",
 		"RGB_VAI": "RGBV",
+		"KC_LCBR": "{",
+		"KC_RCBR": "}",
+		"KC_PIPE": "|",
 		// Advance
 		// Mod-Tap
 		"LCTL_T": "CTRL",
@@ -93,6 +96,9 @@ var mapTransformTiny = []map[string]string{
 	{
 		"BACKSPACE": "BACK",
 		"CAPSLOCK":  "CAPS",
+		"ESC CTRL":  "ESCTL",
+		"( SHIFT":   "( SFT",
+		") SHIFT":   "( SFT",
 	},
 }
 

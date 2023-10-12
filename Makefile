@@ -35,6 +35,10 @@ draw_qmkasciigen:
 		-qmk-keyboard gray_studio/think65/solder \
 		-qmk-keymap-file gray_studio_think65_solder/keymaps_json/haunt98/keymap.json \
 		-out gray_studio_think65_solder/asciiart/haunt98.txt
+	go run ./cmd/qmkasciigen \
+		-qmk-keyboard sofle/rev1 \
+		-qmk-keymap-file sofle_rev1/keymaps_json/haunt98/keymap.json \
+		-out sofle_rev1/asciiart/haunt98.txt
 
 draw_qmkasciigen_demo:
 	go run ./cmd/qmkasciigen -print-out -allow-layers 0 -qmk-keyboard matthewdias/m3n3van
