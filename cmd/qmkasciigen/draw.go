@@ -21,6 +21,12 @@ var mapRawBinding = []map[string]string{
 // https://github.com/qmk/qmk_firmware/blob/master/docs/keycodes.md
 var mapTransform = []map[string]string{
 	{
+		"MO(0)": "L0",
+		"MO(1)": "L1",
+		"MO(2)": "L2",
+		"MO(3)": "L3",
+	},
+	{
 		// Basic
 		// Prefer OPT > ALT
 		// Prefer CMD > GUI, WIN
@@ -187,16 +193,16 @@ func Draw(
 				}
 
 				if !isRaw {
-					// Handle layer
-					if strings.HasPrefix(keyStr, "MO(") && strings.HasSuffix(keyStr, ")") {
-						keyStr = strings.TrimPrefix(keyStr, "MO(")
-						keyStr = strings.TrimSuffix(keyStr, ")")
-					}
-
 					for _, m := range mapTransform {
 						for from, to := range m {
 							keyStr = strings.ReplaceAll(keyStr, from, to)
 						}
+					}
+
+					// Handle layer
+					if strings.HasPrefix(keyStr, "MO(") && strings.HasSuffix(keyStr, ")") {
+						keyStr = strings.TrimPrefix(keyStr, "MO(")
+						keyStr = strings.TrimSuffix(keyStr, ")")
 					}
 				}
 
