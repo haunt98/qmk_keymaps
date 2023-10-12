@@ -379,8 +379,9 @@ rect.esc, rect.vim {
 <rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key"/>
 <text x="0" y="0" class="key tap">F11</text>
 </g>
-<g transform="translate(30, 120)" class="key keypos-12">
-<rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key"/>
+<g transform="translate(30, 120)" class="key trans keypos-12">
+<rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key trans"/>
+<use href="#mdi:transfer" xlink:href="#mdi:transfer" x="-9" y="-9" height="18" width="18.0" class="key trans tap glyph mdi:transfer"/>
 </g>
 <g transform="translate(90, 112)" class="key keypos-13">
 <rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key"/>
@@ -416,8 +417,9 @@ rect.esc, rect.vim {
 <rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key"/>
 <text x="0" y="0" class="key tap">F12</text>
 </g>
-<g transform="translate(30, 180)" class="key keypos-24">
-<rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key"/>
+<g transform="translate(30, 180)" class="key trans keypos-24">
+<rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key trans"/>
+<use href="#mdi:transfer" xlink:href="#mdi:transfer" x="-9" y="-9" height="18" width="18.0" class="key trans tap glyph mdi:transfer"/>
 </g>
 <g transform="translate(90, 172)" class="key keypos-25">
 <rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key"/>
@@ -504,37 +506,45 @@ rect.esc, rect.vim {
 <rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key trans"/>
 <use href="#mdi:transfer" xlink:href="#mdi:transfer" x="-9" y="-9" height="18" width="18.0" class="key trans tap glyph mdi:transfer"/>
 </g>
-<g transform="translate(120, 292)" class="key keypos-50">
-<rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key"/>
+<g transform="translate(120, 292)" class="key trans keypos-50">
+<rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key trans"/>
+<use href="#mdi:transfer" xlink:href="#mdi:transfer" x="-9" y="-9" height="18" width="18.0" class="key trans tap glyph mdi:transfer"/>
 </g>
-<g transform="translate(180, 278)" class="key keypos-51">
-<rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key"/>
+<g transform="translate(180, 278)" class="key trans keypos-51">
+<rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key trans"/>
+<use href="#mdi:transfer" xlink:href="#mdi:transfer" x="-9" y="-9" height="18" width="18.0" class="key trans tap glyph mdi:transfer"/>
 </g>
-<g transform="translate(240, 279)" class="key keypos-52">
-<rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key"/>
+<g transform="translate(240, 279)" class="key trans keypos-52">
+<rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key trans"/>
+<use href="#mdi:transfer" xlink:href="#mdi:transfer" x="-9" y="-9" height="18" width="18.0" class="key trans tap glyph mdi:transfer"/>
 </g>
 <g transform="translate(300, 285)" class="key trans keypos-53">
 <rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key trans"/>
 <use href="#mdi:transfer" xlink:href="#mdi:transfer" x="-9" y="-9" height="18" width="18.0" class="key trans tap glyph mdi:transfer"/>
 </g>
-<g transform="translate(390, 300)" class="key keypos-54">
-<rect rx="6" ry="6" x="-28" y="-43" width="56" height="86" class="key"/>
+<g transform="translate(390, 300)" class="key trans keypos-54">
+<rect rx="6" ry="6" x="-28" y="-43" width="56" height="86" class="key trans"/>
+<use href="#mdi:transfer" xlink:href="#mdi:transfer" x="-9" y="-9" height="18" width="18.0" class="key trans tap glyph mdi:transfer"/>
 </g>
-<g transform="translate(600, 300)" class="key keypos-55">
-<rect rx="6" ry="6" x="-28" y="-43" width="56" height="86" class="key"/>
+<g transform="translate(600, 300)" class="key trans keypos-55">
+<rect rx="6" ry="6" x="-28" y="-43" width="56" height="86" class="key trans"/>
+<use href="#mdi:transfer" xlink:href="#mdi:transfer" x="-9" y="-9" height="18" width="18.0" class="key trans tap glyph mdi:transfer"/>
 </g>
 <g transform="translate(690, 285)" class="key trans keypos-56">
 <rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key trans"/>
 <use href="#mdi:transfer" xlink:href="#mdi:transfer" x="-9" y="-9" height="18" width="18.0" class="key trans tap glyph mdi:transfer"/>
 </g>
-<g transform="translate(750, 279)" class="key keypos-57">
-<rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key"/>
+<g transform="translate(750, 279)" class="key trans keypos-57">
+<rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key trans"/>
+<use href="#mdi:transfer" xlink:href="#mdi:transfer" x="-9" y="-9" height="18" width="18.0" class="key trans tap glyph mdi:transfer"/>
 </g>
-<g transform="translate(810, 278)" class="key keypos-58">
-<rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key"/>
+<g transform="translate(810, 278)" class="key trans keypos-58">
+<rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key trans"/>
+<use href="#mdi:transfer" xlink:href="#mdi:transfer" x="-9" y="-9" height="18" width="18.0" class="key trans tap glyph mdi:transfer"/>
 </g>
-<g transform="translate(870, 292)" class="key keypos-59">
-<rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key"/>
+<g transform="translate(870, 292)" class="key trans keypos-59">
+<rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key trans"/>
+<use href="#mdi:transfer" xlink:href="#mdi:transfer" x="-9" y="-9" height="18" width="18.0" class="key trans tap glyph mdi:transfer"/>
 </g>
 </g>
 </g>
@@ -577,8 +587,9 @@ rect.esc, rect.vim {
 <g transform="translate(960, 60)" class="key keypos-11">
 <rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key"/>
 </g>
-<g transform="translate(30, 120)" class="key keypos-12">
-<rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key"/>
+<g transform="translate(30, 120)" class="key trans keypos-12">
+<rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key trans"/>
+<use href="#mdi:transfer" xlink:href="#mdi:transfer" x="-9" y="-9" height="18" width="18.0" class="key trans tap glyph mdi:transfer"/>
 </g>
 <g transform="translate(90, 112)" class="key keypos-13">
 <rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key"/>
@@ -700,37 +711,45 @@ rect.esc, rect.vim {
 <rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key trans"/>
 <use href="#mdi:transfer" xlink:href="#mdi:transfer" x="-9" y="-9" height="18" width="18.0" class="key trans tap glyph mdi:transfer"/>
 </g>
-<g transform="translate(120, 292)" class="key keypos-50">
-<rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key"/>
+<g transform="translate(120, 292)" class="key trans keypos-50">
+<rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key trans"/>
+<use href="#mdi:transfer" xlink:href="#mdi:transfer" x="-9" y="-9" height="18" width="18.0" class="key trans tap glyph mdi:transfer"/>
 </g>
-<g transform="translate(180, 278)" class="key keypos-51">
-<rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key"/>
+<g transform="translate(180, 278)" class="key trans keypos-51">
+<rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key trans"/>
+<use href="#mdi:transfer" xlink:href="#mdi:transfer" x="-9" y="-9" height="18" width="18.0" class="key trans tap glyph mdi:transfer"/>
 </g>
-<g transform="translate(240, 279)" class="key keypos-52">
-<rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key"/>
+<g transform="translate(240, 279)" class="key trans keypos-52">
+<rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key trans"/>
+<use href="#mdi:transfer" xlink:href="#mdi:transfer" x="-9" y="-9" height="18" width="18.0" class="key trans tap glyph mdi:transfer"/>
 </g>
 <g transform="translate(300, 285)" class="key trans keypos-53">
 <rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key trans"/>
 <use href="#mdi:transfer" xlink:href="#mdi:transfer" x="-9" y="-9" height="18" width="18.0" class="key trans tap glyph mdi:transfer"/>
 </g>
-<g transform="translate(390, 300)" class="key keypos-54">
-<rect rx="6" ry="6" x="-28" y="-43" width="56" height="86" class="key"/>
+<g transform="translate(390, 300)" class="key trans keypos-54">
+<rect rx="6" ry="6" x="-28" y="-43" width="56" height="86" class="key trans"/>
+<use href="#mdi:transfer" xlink:href="#mdi:transfer" x="-9" y="-9" height="18" width="18.0" class="key trans tap glyph mdi:transfer"/>
 </g>
-<g transform="translate(600, 300)" class="key keypos-55">
-<rect rx="6" ry="6" x="-28" y="-43" width="56" height="86" class="key"/>
+<g transform="translate(600, 300)" class="key trans keypos-55">
+<rect rx="6" ry="6" x="-28" y="-43" width="56" height="86" class="key trans"/>
+<use href="#mdi:transfer" xlink:href="#mdi:transfer" x="-9" y="-9" height="18" width="18.0" class="key trans tap glyph mdi:transfer"/>
 </g>
 <g transform="translate(690, 285)" class="key trans keypos-56">
 <rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key trans"/>
 <use href="#mdi:transfer" xlink:href="#mdi:transfer" x="-9" y="-9" height="18" width="18.0" class="key trans tap glyph mdi:transfer"/>
 </g>
-<g transform="translate(750, 279)" class="key keypos-57">
-<rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key"/>
+<g transform="translate(750, 279)" class="key trans keypos-57">
+<rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key trans"/>
+<use href="#mdi:transfer" xlink:href="#mdi:transfer" x="-9" y="-9" height="18" width="18.0" class="key trans tap glyph mdi:transfer"/>
 </g>
-<g transform="translate(810, 278)" class="key keypos-58">
-<rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key"/>
+<g transform="translate(810, 278)" class="key trans keypos-58">
+<rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key trans"/>
+<use href="#mdi:transfer" xlink:href="#mdi:transfer" x="-9" y="-9" height="18" width="18.0" class="key trans tap glyph mdi:transfer"/>
 </g>
-<g transform="translate(870, 292)" class="key keypos-59">
-<rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key"/>
+<g transform="translate(870, 292)" class="key trans keypos-59">
+<rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key trans"/>
+<use href="#mdi:transfer" xlink:href="#mdi:transfer" x="-9" y="-9" height="18" width="18.0" class="key trans tap glyph mdi:transfer"/>
 </g>
 </g>
 </g>
@@ -867,13 +886,11 @@ rect.esc, rect.vim {
 <g transform="translate(330, 225)" class="key keypos-41">
 <rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key"/>
 </g>
-<g transform="translate(390, 195)" class="key trans keypos-42">
-<rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key trans"/>
-<use href="#mdi:transfer" xlink:href="#mdi:transfer" x="-9" y="-9" height="18" width="18.0" class="key trans tap glyph mdi:transfer"/>
+<g transform="translate(390, 195)" class="key keypos-42">
+<rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key"/>
 </g>
-<g transform="translate(600, 195)" class="key trans keypos-43">
-<rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key trans"/>
-<use href="#mdi:transfer" xlink:href="#mdi:transfer" x="-9" y="-9" height="18" width="18.0" class="key trans tap glyph mdi:transfer"/>
+<g transform="translate(600, 195)" class="key keypos-43">
+<rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key"/>
 </g>
 <g transform="translate(660, 225)" class="key keypos-44">
 <rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key"/>
@@ -902,9 +919,8 @@ rect.esc, rect.vim {
 <g transform="translate(240, 279)" class="key keypos-52">
 <rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key"/>
 </g>
-<g transform="translate(300, 285)" class="key trans keypos-53">
-<rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key trans"/>
-<use href="#mdi:transfer" xlink:href="#mdi:transfer" x="-9" y="-9" height="18" width="18.0" class="key trans tap glyph mdi:transfer"/>
+<g transform="translate(300, 285)" class="key keypos-53">
+<rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key"/>
 </g>
 <g transform="translate(390, 300)" class="key keypos-54">
 <rect rx="6" ry="6" x="-28" y="-43" width="56" height="86" class="key"/>
@@ -912,9 +928,8 @@ rect.esc, rect.vim {
 <g transform="translate(600, 300)" class="key keypos-55">
 <rect rx="6" ry="6" x="-28" y="-43" width="56" height="86" class="key"/>
 </g>
-<g transform="translate(690, 285)" class="key trans keypos-56">
-<rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key trans"/>
-<use href="#mdi:transfer" xlink:href="#mdi:transfer" x="-9" y="-9" height="18" width="18.0" class="key trans tap glyph mdi:transfer"/>
+<g transform="translate(690, 285)" class="key keypos-56">
+<rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key"/>
 </g>
 <g transform="translate(750, 279)" class="key keypos-57">
 <rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key"/>

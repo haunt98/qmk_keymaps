@@ -74,7 +74,7 @@ layers:
   - F9
   - F10
   - F11
-  - ''
+  - {t: '$$mdi:transfer$$', type: trans}
   - ''
   - ''
   - ''
@@ -86,7 +86,7 @@ layers:
   - ''
   - ''
   - F12
-  - ''
+  - {t: '$$mdi:transfer$$', type: trans}
   - ''
   - ''
   - ''
@@ -112,16 +112,16 @@ layers:
   - '}'
   - ']'
   - {t: '$$mdi:transfer$$', type: trans}
-  - ''
-  - ''
-  - ''
   - {t: '$$mdi:transfer$$', type: trans}
-  - ''
-  - ''
   - {t: '$$mdi:transfer$$', type: trans}
-  - ''
-  - ''
-  - ''
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   L2:
   - ''
   - ''
@@ -135,7 +135,7 @@ layers:
   - ''
   - ''
   - ''
-  - ''
+  - {t: '$$mdi:transfer$$', type: trans}
   - ''
   - ''
   - ''
@@ -173,74 +173,15 @@ layers:
   - ''
   - ''
   - {t: '$$mdi:transfer$$', type: trans}
-  - ''
-  - ''
-  - ''
-  - {t: '$$mdi:transfer$$', type: trans}
-  - ''
-  - ''
-  - {t: '$$mdi:transfer$$', type: trans}
-  - ''
-  - ''
-  - ''
-  L3:
-  - BOOT
-  - EE CLR
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
   - {t: '$$mdi:transfer$$', type: trans}
-  - ''
-  - ''
   - {t: '$$mdi:transfer$$', type: trans}
-  - ''
-  - ''
-  - ''
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  L3: [BOOT, EE CLR, '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '',
+    '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '']
