@@ -47,16 +47,20 @@ jobs:
           cp -rf haunt98_qmk_keymaps/dztech_dz60rgb_wkl/keymaps/haunt98 keyboards/dztech/dz60rgb_wkl/keymaps/
           rm -rf keyboards/gray_studio/think65/solder/keymaps/haunt98
           cp -rf haunt98_qmk_keymaps/gray_studio_think65_solder/keymaps/haunt98 keyboards/gray_studio/think65/solder/keymaps/haunt98/
+          rm -rf keyboards/sofle/keymaps/haunt98
+          cp -rf haunt98_qmk_keymaps/sofle_rev1/keymaps/haunt98 keyboards/sofle/keymaps/haunt98/
           rm -rf users/haunt98
           cp -rf haunt98_qmk_keymaps/users/haunt98 users/
       - name: Lint
         run: |
           qmk lint -kb dztech/dz60rgb_wkl/v2_1 -km haunt98
           qmk lint -kb gray_studio/think65/solder -km haunt98
+          qmk lint -kb sofle/rev1 -km haunt98
       - name: Build firmware
         run: |
           make dztech/dz60rgb_wkl/v2_1:haunt98
           make gray_studio/think65/solder:haunt98
+          make sofle/rev1:haunt98
       - name: Convert keymaps JSON
         run: |
           qmk c2json -kb dztech/dz60rgb_wkl/v2_1 \
@@ -69,10 +73,16 @@ jobs:
             -o gray_studio_think65_solder_haunt98_keymap.json \
             --no-cpp \
             haunt98_qmk_keymaps/gray_studio_think65_solder/keymaps/haunt98/keymap.c
+          qmk c2json -kb sofle/rev1 \
+            -km haunt98 \
+            -o sofle_rev1_haunt98_keymap.json \
+            --no-cpp \
+            haunt98_qmk_keymaps/sofle_rev1/keymaps/haunt98/keymap.c
       - name: Extra
         run: |
           qmk info -m -l -kb dztech/dz60rgb_wkl/v2_1 -km haunt98
           qmk info -m -l -kb gray_studio/think65/solder -km haunt98
+          qmk info -m -l -kb sofle/rev1 -km haunt98
       - name: Archive firmware
         uses: actions/upload-artifact@v3
         with:
