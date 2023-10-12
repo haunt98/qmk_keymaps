@@ -49,7 +49,6 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 };
 // clang-format on
 
-
 // https://github.com/qmk/qmk_firmware/blob/master/docs/ref_functions.md
 layer_state_t layer_state_set_user(layer_state_t state) {
     return update_tri_layer_state(state, LAYER_NAV, LAYER_OPT, LAYER_ADJ);
