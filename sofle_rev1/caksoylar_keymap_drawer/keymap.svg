@@ -300,9 +300,7 @@ rect.esc, rect.vim {
 </g>
 <g transform="translate(300, 285)" class="key keypos-53">
 <rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key"/>
-<text x="0" y="0" class="key tap">
-<tspan x="0" dy="-0.6em" style="font-size: 88%">MO(LAYER</tspan><tspan x="0" dy="1.2em" style="font-size: 88%">SYM)</tspan>
-</text>
+<text x="0" y="0" class="key tap">_SYM</text>
 </g>
 <g transform="translate(390, 300)" class="key space keypos-54">
 <rect rx="6" ry="6" x="-28" y="-43" width="56" height="86" class="key space"/>
@@ -314,9 +312,7 @@ rect.esc, rect.vim {
 </g>
 <g transform="translate(690, 285)" class="key keypos-56">
 <rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key"/>
-<text x="0" y="0" class="key tap">
-<tspan x="0" dy="-0.6em" style="font-size: 88%">MO(LAYER</tspan><tspan x="0" dy="1.2em" style="font-size: 88%">NAV)</tspan>
-</text>
+<text x="0" y="0" class="key tap">_NAV</text>
 </g>
 <g transform="translate(750, 279)" class="key keypos-57">
 <rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key"/>
