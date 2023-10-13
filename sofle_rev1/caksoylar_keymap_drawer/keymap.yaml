@@ -52,14 +52,14 @@ layers:
   - /
   - {t: ), h: '$$mdi:apple-keyboard-shift$$'}
   - $$mdi:apple-keyboard-control$$
-  - LALT
+  - $$mdi:apple-keyboard-option$$
   - $$mdi:apple-keyboard-command$$
   - _SYM
   - {t: '$$mdi:keyboard-space$$', type: space}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - _NAV
   - $$mdi:apple-keyboard-command$$
-  - RALT
+  - $$mdi:apple-keyboard-option$$
   - $$mdi:apple-keyboard-control$$
   L1:
   - '`'

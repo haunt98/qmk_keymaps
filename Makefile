@@ -13,6 +13,7 @@ format:
 		sofle_rev1/keymaps/haunt98/*.h \
 		users/haunt98/*.c \
 		users/haunt98/*.h
+	deno upgrade
 	deno fmt dztech_dz60rgb_wkl/keymaps_json/haunt98/keymap.json
 
 # From changeloguru
