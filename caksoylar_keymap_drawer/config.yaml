@@ -71,6 +71,8 @@ parse_config:
       "KC_LEFT": { "t": "$$mdi:arrow-left$$", "type": "arrow" },
       "KC_RGHT": { "t": "$$mdi:arrow-right$$", "type": "arrow" },
       "KC_CAPS": "$$mdi:apple-keyboard-caps$$",
+      "KC_LCTL": "$$mdi:apple-keyboard-control$$",
+      "KC_RCTL": "$$mdi:apple-keyboard-control$$",
       "KC_LOPT": "$$mdi:apple-keyboard-option$$",
       "KC_ROPT": "$$mdi:apple-keyboard-option$$",
       "KC_LCMD": "$$mdi:apple-keyboard-command$$",

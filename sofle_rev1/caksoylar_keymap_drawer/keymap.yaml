@@ -51,7 +51,7 @@ layers:
   - .
   - /
   - {t: ), h: '$$mdi:apple-keyboard-shift$$'}
-  - LCTL
+  - $$mdi:apple-keyboard-control$$
   - LALT
   - $$mdi:apple-keyboard-command$$
   - _SYM
@@ -60,7 +60,7 @@ layers:
   - _NAV
   - $$mdi:apple-keyboard-command$$
   - RALT
-  - RCTL
+  - $$mdi:apple-keyboard-control$$
   L1:
   - '`'
   - F1
