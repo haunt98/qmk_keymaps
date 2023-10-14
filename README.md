@@ -28,6 +28,20 @@ Links:
 
 > This firmware is compatible with both V1 and V2 variants of the Think 6.5 PCB.
 
+## [sofle/rev1](https://github.com/qmk/qmk_firmware/tree/master/keyboards/sofle/rev1)
+
+See [Official/Original](https://josefadamcik.github.io/SofleKeyboard/)
+
+Bought from
+[ergomech.store](https://ergomech.store/shop/sofle-v2-sandwich-style-12)
+
+> Powered by the powerful RP2040 MCU, allowing users to use more macros and
+> features from QMK
+
+### Keymap
+
+![caksoylar_keymap_drawer](sofle_rev1/caksoylar_keymap_drawer/keymap.svg)
+
 ## Install
 
 Locate firmware file after compile successfully or download from

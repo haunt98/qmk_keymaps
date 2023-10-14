@@ -13,7 +13,9 @@
 
 // Feature
 // https://github.com/qmk/qmk_firmware/blob/master/docs/tap_hold.md
+#undef TAPPING_TERM
 #define TAPPING_TERM 200
+#undef QUICK_TAP_TERM
 #define QUICK_TAP_TERM 120
 #define HOLD_ON_OTHER_KEY_PRESS
 #define RETRO_TAPPING

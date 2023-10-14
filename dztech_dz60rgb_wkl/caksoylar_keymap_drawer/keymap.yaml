@@ -56,13 +56,13 @@ layers:
     - .
     - /
     - { t: ), h: "$$mdi:apple-keyboard-shift$$" }
-    - L1
+    - _NAV
     - ""
     - $$mdi:apple-keyboard-option$$
     - $$mdi:apple-keyboard-command$$
     - { t: "$$mdi:keyboard-space$$", type: space }
     - $$mdi:apple-keyboard-command$$
-    - L2
+    - _OPT
     - ""
   L1:
     - "`"
@@ -125,7 +125,7 @@ layers:
     - ""
     - ""
     - ""
-    - L3
+    - { t: "$$mdi:transfer$$", type: trans }
     - ""
   L2:
     - ""
@@ -182,7 +182,7 @@ layers:
     - ""
     - ""
     - { t: "$$mdi:transfer$$", type: trans }
-    - L3
+    - { t: "$$mdi:transfer$$", type: trans }
     - ""
     - RGB TOG
     - RGB MOD

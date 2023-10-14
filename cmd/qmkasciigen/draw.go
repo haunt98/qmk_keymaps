@@ -21,13 +21,6 @@ var mapRawBinding = []map[string]string{
 // https://github.com/qmk/qmk_firmware/blob/master/docs/keycodes.md
 var mapTransform = []map[string]string{
 	{
-		// My custom
-		"LAYER_QWERTY":   "0",
-		"LAYER_MOVE":     "1",
-		"LAYER_OPTION":   "2",
-		"LAYER_RECOVERY": "3",
-	},
-	{
 		"MO(0)": "L0",
 		"MO(1)": "L1",
 		"MO(2)": "L2",
@@ -73,6 +66,9 @@ var mapTransform = []map[string]string{
 		"RGB_HUI": "RGBH",
 		"RGB_SAI": "RGBS",
 		"RGB_VAI": "RGBV",
+		"KC_LCBR": "{",
+		"KC_RCBR": "}",
+		"KC_PIPE": "|",
 		// Advance
 		// Mod-Tap
 		"LCTL_T": "CTRL",
@@ -90,6 +86,8 @@ var mapTransform = []map[string]string{
 		// Prefix
 		"KC_": "",
 		"QK_": "",
+		// Custom
+		"LAYER_": "_",
 	},
 }
 
@@ -98,6 +96,9 @@ var mapTransformTiny = []map[string]string{
 	{
 		"BACKSPACE": "BACK",
 		"CAPSLOCK":  "CAPS",
+		"ESC CTRL":  "ESCTL",
+		"( SHIFT":   "( SFT",
+		") SHIFT":   "( SFT",
 	},
 }
 
@@ -202,6 +203,12 @@ func Draw(
 						for from, to := range m {
 							keyStr = strings.ReplaceAll(keyStr, from, to)
 						}
+					}
+
+					// Handle layer
+					if strings.HasPrefix(keyStr, "MO(") && strings.HasSuffix(keyStr, ")") {
+						keyStr = strings.TrimPrefix(keyStr, "MO(")
+						keyStr = strings.TrimSuffix(keyStr, ")")
 					}
 				}
 
