@@ -1,5 +1,19 @@
 # CHANGELOG
 
+## v0.0.19 (2023-10-14)
+
+### Added
+
+- feat: support sofle (#9) (2023-10-14)
+
+- feat(qmk): debounce on keyboard (2023-10-06)
+
+### Others
+
+- chore: move tools to my personal blogs (2023-10-06)
+
+- chore(changelog): generate v0.0.18 (2023-09-29)
+
 ## v0.0.18 (2023-09-29)
 
 ### Added
