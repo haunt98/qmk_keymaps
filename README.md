@@ -144,6 +144,7 @@ More
 - [Programming On 34 Keys](https://peppe.rs/posts/programming_on_34_keys/)
 - [Miryoku](https://github.com/manna-harbour/miryoku)
 - [Pascal Getreuer's QMK keymap](https://github.com/getreuer/qmk-keymap)
+  - [Designing a Symbol Layer](https://getreuer.info/posts/keyboards/symbol-layer/index.html)
 - [filterpaper/qmk_userspace](https://github.com/filterpaper/qmk_userspace)
 - [RP2040 Controller is now the default option](https://ergomech.store/blog/ergomech-blog-1/rp2040-controller-is-now-the-default-option-3):
   Limit of ATmega32U4 aka Pro Micro:

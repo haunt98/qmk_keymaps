@@ -70,6 +70,8 @@ var mapTransform = []map[string]string{
 		"RGB_VAI": "RGBV",
 		"KC_LCBR": "{",
 		"KC_RCBR": "}",
+		"KC_UNDS": "_",
+		"KC_PLUS": "+",
 		"KC_PIPE": "|",
 		"KC_COLN": ":",
 		// Advance

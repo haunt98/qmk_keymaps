@@ -51,7 +51,7 @@ layers:
     - .
     - /
     - { t: ), h: "$$mdi:apple-keyboard-shift$$" }
-    - $$mdi:apple-keyboard-control$$
+    - _
     - { t: "[", h: "$$mdi:apple-keyboard-option$$" }
     - $$mdi:apple-keyboard-command$$
     - LT SYM SPC
@@ -80,11 +80,11 @@ layers:
     - ""
     - ""
     - ""
-    - ""
-    - ""
-    - ""
     - "-"
+    - _
     - "="
+    - +
+    - ""
     - F12
     - { t: "$$mdi:transfer$$", type: trans }
     - ""
@@ -96,18 +96,18 @@ layers:
     - "{"
     - "}"
     - "]"
+    - ""
+    - ""
+    - { t: "$$mdi:transfer$$", type: trans }
+    - ""
+    - ""
+    - ""
+    - ""
+    - ""
+    - { t: "$$mdi:transfer$$", type: trans }
+    - { t: "$$mdi:transfer$$", type: trans }
     - \
     - "|"
-    - { t: "$$mdi:transfer$$", type: trans }
-    - ""
-    - ""
-    - ""
-    - ""
-    - ""
-    - { t: "$$mdi:transfer$$", type: trans }
-    - { t: "$$mdi:transfer$$", type: trans }
-    - ""
-    - ""
     - ""
     - ""
     - ""
