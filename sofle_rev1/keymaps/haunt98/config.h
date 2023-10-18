@@ -2,3 +2,9 @@
 // SPDX-License-Identifier: MIT
 
 #pragma once
+
+// https://github.com/qmk/qmk_firmware/blob/master/docs/feature_debounce_type.md
+#ifdef DEBOUNCE
+#    undef DEBOUNCE
+#endif
+#define DEBOUNCE 5
