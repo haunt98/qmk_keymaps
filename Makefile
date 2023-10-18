@@ -36,7 +36,9 @@ draw_qmkasciigen_demo:
 
 format_draw_caksoylar_keymap_drawer:
 	bun upgrade
-	bunx prettier --write ./dztech_dz60rgb_wkl/caksoylar_keymap_drawer/*.yaml
+	bunx prettier --write \
+		dztech_dz60rgb_wkl/caksoylar_keymap_drawer/*.yaml \
+		sofle_rev1/caksoylar_keymap_drawer/*.yaml
 
 draw_caksoylar_keymap_drawer:
 	# https://github.com/caksoylar/keymap-drawer

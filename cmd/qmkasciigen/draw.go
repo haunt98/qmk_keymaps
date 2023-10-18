@@ -13,7 +13,9 @@ const (
 var mapRawBinding = []map[string]string{
 	{
 		// My custom
-		"CTL_T(KC_ESC)":    "ESC CTRL",
+		"CTL_ESC":          "ESC CTRL",
+		"LOPT_BRC":         "OPT [",
+		"ROPT_BRC":         "OPT ]",
 		"TD(TD_SAFE_BOOT)": "BOOT",
 	},
 }
@@ -86,8 +88,6 @@ var mapTransform = []map[string]string{
 		// Prefix
 		"KC_": "",
 		"QK_": "",
-		// Custom
-		"LAYER_": "_",
 	},
 }
 
