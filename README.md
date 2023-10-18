@@ -32,14 +32,14 @@ Links:
 
 See [Official/Original](https://josefadamcik.github.io/SofleKeyboard/)
 
+> Don’t connect or disconnect the TRRS cable when the keyboard is powered. It
+> may short out. Always disconnect the USB cable first.
+
 Bought from
 [ergomech.store](https://ergomech.store/shop/sofle-v2-sandwich-style-12)
 
 > Powered by the powerful RP2040 MCU, allowing users to use more macros and
-> features from QMK
-
-> Don’t connect or disconnect the TRRS cable when the keyboard is powered. It
-> may short out. Always disconnect the USB cable first.
+> features from QMK. However, cannot be used with usb-c to usb-c cable
 
 ### Flash
 
