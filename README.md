@@ -38,11 +38,29 @@ Bought from
 > Powered by the powerful RP2040 MCU, allowing users to use more macros and
 > features from QMK
 
+> Don’t connect or disconnect the TRRS cable when the keyboard is powered. It
+> may short out. Always disconnect the USB cable first.
+
+### Flash
+
+> - Make sure halves are not connected together with TRRS cable.
+> - Connect one half to USB, flash the firmware. Use the reset button to reset
+  > the keyboard when you are asked to in console.
+> - Connect the second half and flash it in the same way as the previous one.
+> - Disconnect the USB cable. Connect both halves together with TRRS cable.
+> - Connect USB cable to the left side.
+
+There is a button below OLED/above encoder. Press 2 times to reset.
+
+```sh
+make qmk_flash_sofle_rev1
+```
+
 ### Keymap
 
 ![caksoylar_keymap_drawer](sofle_rev1/caksoylar_keymap_drawer/keymap.svg)
 
-## Install
+## Flash with QMK Toolbox
 
 Locate firmware file after compile successfully or download from
 [QMK action workflow](https://github.com/haunt98/qmk_keymaps/actions/workflows/qmk.yml)
@@ -59,13 +77,8 @@ Use [QMK Toolbox](https://github.com/qmk/qmk_toolbox) to flash.
 Step by step:
 
 1. Make changes to keymaps: `*.c`, `*.h`, `*.mk`
-2. Push changes to GitHub
-3. Download firmware + keymaps JSON
-4. Replace repo keymaps JSON
-5. Visualize keymap: `make draw`
-
-You don't need to install [QMK CLI](https://github.com/qmk/qmk_cli) but still
-need QMK Toolbox.
+2. Apply changes to keymaps JSON: `make qmk_all`
+3. Visualize keymap: `make draw`
 
 ## Features
 
