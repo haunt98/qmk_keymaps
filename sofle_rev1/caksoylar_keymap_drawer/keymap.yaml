@@ -54,11 +54,11 @@ layers:
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-option$$
   - $$mdi:apple-keyboard-command$$
-  - _SYM
+  - LT SYM SPC
   - {t: '$$mdi:keyboard-space$$', type: space}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - _NAV
-  - $$mdi:apple-keyboard-command$$
+  - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:apple-keyboard-option$$
   - $$mdi:apple-keyboard-control$$
   L1:
@@ -92,15 +92,15 @@ layers:
   - ''
   - ''
   - ''
-  - ''
-  - ''
-  - ''
-  - ''
+  - '['
+  - '{'
+  - '}'
+  - ']'
   - \
   - '|'
   - {t: '$$mdi:transfer$$', type: trans}
-  - '['
-  - '{'
+  - ''
+  - ''
   - ''
   - ''
   - ''
@@ -109,8 +109,8 @@ layers:
   - ''
   - ''
   - ''
-  - '}'
-  - ']'
+  - '-'
+  - '='
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -143,12 +143,11 @@ layers:
   - ''
   - ''
   - ''
-  - {t: '$$mdi:arrow-up$$', type: arrow}
   - ''
   - ''
   - ''
-  - $$mdi:apple-keyboard-caps$$
   - ''
+  - {t: '$$mdi:transfer$$', type: trans}
   - ''
   - ''
   - ''
@@ -156,6 +155,7 @@ layers:
   - ''
   - {t: '$$mdi:arrow-left$$', type: arrow}
   - {t: '$$mdi:arrow-down$$', type: arrow}
+  - {t: '$$mdi:arrow-up$$', type: arrow}
   - {t: '$$mdi:arrow-right$$', type: arrow}
   - ''
   - ''
@@ -183,5 +183,5 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  L3: ['', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '',
-    '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '']
+  L3: ['', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '$$mdi:apple-keyboard-caps$$', '', '', '', '', '', '', '',
+    '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '']

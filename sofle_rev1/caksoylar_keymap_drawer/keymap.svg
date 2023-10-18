@@ -303,7 +303,10 @@ rect.esc, rect.vim {
 </g>
 <g transform="translate(300, 285)" class="key keypos-53">
 <rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key"/>
-<text x="0" y="0" class="key tap">_SYM</text>
+<text x="0" y="0" class="key tap">
+<tspan x="0" dy="-1.2em">LT</tspan><tspan x="0" dy="1.2em">SYM</tspan>
+<tspan x="0" dy="1.2em">SPC</tspan>
+</text>
 </g>
 <g transform="translate(390, 300)" class="key space keypos-54">
 <rect rx="6" ry="6" x="-28" y="-43" width="56" height="86" class="key space"/>
@@ -317,9 +320,9 @@ rect.esc, rect.vim {
 <rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key"/>
 <text x="0" y="0" class="key tap">_NAV</text>
 </g>
-<g transform="translate(750, 279)" class="key keypos-57">
-<rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key"/>
-<use href="#mdi:apple-keyboard-command" xlink:href="#mdi:apple-keyboard-command" x="-9" y="-9" height="18" width="18.0" class="key tap glyph mdi:apple-keyboard-command"/>
+<g transform="translate(750, 279)" class="key enter keypos-57">
+<rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key enter"/>
+<use href="#mdi:keyboard-return" xlink:href="#mdi:keyboard-return" x="-9" y="-9" height="18" width="18.0" class="key enter tap glyph mdi:keyboard-return"/>
 </g>
 <g transform="translate(810, 278)" class="key keypos-58">
 <rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key"/>
@@ -441,15 +444,19 @@ rect.esc, rect.vim {
 </g>
 <g transform="translate(660, 165)" class="key keypos-30">
 <rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key"/>
+<text x="0" y="0" class="key tap">[</text>
 </g>
 <g transform="translate(720, 158)" class="key keypos-31">
 <rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key"/>
+<text x="0" y="0" class="key tap">{</text>
 </g>
 <g transform="translate(780, 150)" class="key keypos-32">
 <rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key"/>
+<text x="0" y="0" class="key tap">}</text>
 </g>
 <g transform="translate(840, 158)" class="key keypos-33">
 <rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key"/>
+<text x="0" y="0" class="key tap">]</text>
 </g>
 <g transform="translate(900, 172)" class="key keypos-34">
 <rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key"/>
@@ -465,11 +472,9 @@ rect.esc, rect.vim {
 </g>
 <g transform="translate(90, 232)" class="key keypos-37">
 <rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key"/>
-<text x="0" y="0" class="key tap">[</text>
 </g>
 <g transform="translate(150, 218)" class="key keypos-38">
 <rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key"/>
-<text x="0" y="0" class="key tap">{</text>
 </g>
 <g transform="translate(210, 210)" class="key keypos-39">
 <rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key"/>
@@ -499,11 +504,11 @@ rect.esc, rect.vim {
 </g>
 <g transform="translate(840, 218)" class="key keypos-47">
 <rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key"/>
-<text x="0" y="0" class="key tap">}</text>
+<text x="0" y="0" class="key tap">-</text>
 </g>
 <g transform="translate(900, 232)" class="key keypos-48">
 <rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key"/>
-<text x="0" y="0" class="key tap">]</text>
+<text x="0" y="0" class="key tap">=</text>
 </g>
 <g transform="translate(960, 240)" class="key trans keypos-49">
 <rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key trans"/>
@@ -615,9 +620,8 @@ rect.esc, rect.vim {
 <g transform="translate(720, 98)" class="key keypos-19">
 <rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key"/>
 </g>
-<g transform="translate(780, 90)" class="key arrow keypos-20">
-<rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key arrow"/>
-<use href="#mdi:arrow-up" xlink:href="#mdi:arrow-up" x="-9" y="-9" height="18" width="18.0" class="key arrow tap glyph mdi:arrow-up"/>
+<g transform="translate(780, 90)" class="key keypos-20">
+<rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key"/>
 </g>
 <g transform="translate(840, 98)" class="key keypos-21">
 <rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key"/>
@@ -628,9 +632,9 @@ rect.esc, rect.vim {
 <g transform="translate(960, 120)" class="key keypos-23">
 <rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key"/>
 </g>
-<g transform="translate(30, 180)" class="key keypos-24">
-<rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key"/>
-<use href="#mdi:apple-keyboard-caps" xlink:href="#mdi:apple-keyboard-caps" x="-9" y="-9" height="18" width="18.0" class="key tap glyph mdi:apple-keyboard-caps"/>
+<g transform="translate(30, 180)" class="key trans keypos-24">
+<rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key trans"/>
+<use href="#mdi:transfer" xlink:href="#mdi:transfer" x="-9" y="-9" height="18" width="18.0" class="key trans tap glyph mdi:transfer"/>
 </g>
 <g transform="translate(90, 172)" class="key keypos-25">
 <rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key"/>
@@ -647,16 +651,17 @@ rect.esc, rect.vim {
 <g transform="translate(330, 165)" class="key keypos-29">
 <rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key"/>
 </g>
-<g transform="translate(660, 165)" class="key keypos-30">
-<rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key"/>
-</g>
-<g transform="translate(720, 158)" class="key arrow keypos-31">
+<g transform="translate(660, 165)" class="key arrow keypos-30">
 <rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key arrow"/>
 <use href="#mdi:arrow-left" xlink:href="#mdi:arrow-left" x="-9" y="-9" height="18" width="18.0" class="key arrow tap glyph mdi:arrow-left"/>
 </g>
-<g transform="translate(780, 150)" class="key arrow keypos-32">
+<g transform="translate(720, 158)" class="key arrow keypos-31">
 <rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key arrow"/>
 <use href="#mdi:arrow-down" xlink:href="#mdi:arrow-down" x="-9" y="-9" height="18" width="18.0" class="key arrow tap glyph mdi:arrow-down"/>
+</g>
+<g transform="translate(780, 150)" class="key arrow keypos-32">
+<rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key arrow"/>
+<use href="#mdi:arrow-up" xlink:href="#mdi:arrow-up" x="-9" y="-9" height="18" width="18.0" class="key arrow tap glyph mdi:arrow-up"/>
 </g>
 <g transform="translate(840, 158)" class="key arrow keypos-33">
 <rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key arrow"/>
@@ -833,6 +838,7 @@ rect.esc, rect.vim {
 </g>
 <g transform="translate(30, 180)" class="key keypos-24">
 <rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key"/>
+<use href="#mdi:apple-keyboard-caps" xlink:href="#mdi:apple-keyboard-caps" x="-9" y="-9" height="18" width="18.0" class="key tap glyph mdi:apple-keyboard-caps"/>
 </g>
 <g transform="translate(90, 172)" class="key keypos-25">
 <rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key"/>
