@@ -761,13 +761,9 @@ rect.esc, rect.vim {
 <g transform="translate(0, 56)">
 <g transform="translate(30, 60)" class="key keypos-0">
 <rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key"/>
-<text x="0" y="0" class="key tap">BOOT</text>
 </g>
 <g transform="translate(90, 52)" class="key keypos-1">
 <rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key"/>
-<text x="0" y="0" class="key tap">
-<tspan x="0" dy="-0.6em">EE</tspan><tspan x="0" dy="1.2em">CLR</tspan>
-</text>
 </g>
 <g transform="translate(150, 38)" class="key keypos-2">
 <rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key"/>
