@@ -13,8 +13,9 @@ format:
 		sofle_rev1/keymaps/haunt98/*.h \
 		users/haunt98/*.c \
 		users/haunt98/*.h
-	deno upgrade
-	deno fmt dztech_dz60rgb_wkl/keymaps_json/haunt98/keymap.json
+	qmk format-json -i dztech_dz60rgb_wkl/keymaps_json/haunt98/keymap.json
+	qmk format-json -i gray_studio_think65_solder/keymaps_json/haunt98/keymap.json
+	qmk format-json -i sofle_rev1/keymaps_json/haunt98/keymap.json
 
 # From changeloguru
 go:
