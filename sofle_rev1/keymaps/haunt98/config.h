@@ -8,3 +8,9 @@
 #    undef DEBOUNCE
 #endif
 #define DEBOUNCE 5
+
+// https://github.com/qmk/qmk_firmware/blob/master/docs/feature_encoders.md
+#ifdef ENCODER_RESOLUTION
+#    undef ENCODER_RESOLUTION
+#endif
+#define ENCODER_RESOLUTION 4
