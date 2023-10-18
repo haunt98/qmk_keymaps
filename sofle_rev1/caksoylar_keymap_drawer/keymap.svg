@@ -332,7 +332,7 @@ rect.esc, rect.vim {
 </g>
 <g transform="translate(870, 292)" class="key keypos-59">
 <rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key"/>
-<use href="#mdi:apple-keyboard-control" xlink:href="#mdi:apple-keyboard-control" x="-9" y="-9" height="18" width="18.0" class="key tap glyph mdi:apple-keyboard-control"/>
+<text x="0" y="0" class="key tap">:</text>
 </g>
 </g>
 </g>

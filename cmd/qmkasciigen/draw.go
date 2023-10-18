@@ -71,6 +71,7 @@ var mapTransform = []map[string]string{
 		"KC_LCBR": "{",
 		"KC_RCBR": "}",
 		"KC_PIPE": "|",
+		"KC_COLN": ":",
 		// Advance
 		// Mod-Tap
 		"LCTL_T": "CTRL",

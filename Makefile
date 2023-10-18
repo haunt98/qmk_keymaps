@@ -1,6 +1,7 @@
 .PHONY: all go draw_qmkasciigen format_draw_caksoylar_keymap_drawer draw_caksoylar_keymap_drawer draw qmk_upstream qmk_format qmk_compile qmk_clean qmk_c2json qmk_flash_sofle_rev1
 
 all:
+	$(MAKE) qmk_all
 	$(MAKE) draw
 
 # From changeloguru

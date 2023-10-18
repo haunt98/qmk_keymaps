@@ -60,7 +60,7 @@ layers:
     - _NAV
     - { t: "$$mdi:keyboard-return$$", type: enter }
     - { t: "]", h: "$$mdi:apple-keyboard-option$$" }
-    - $$mdi:apple-keyboard-control$$
+    - ":"
   L1:
     - "`"
     - F1
