@@ -74,6 +74,7 @@ var mapTransform = []map[string]string{
 		"KC_PLUS": "+",
 		"KC_PIPE": "|",
 		"KC_COLN": ":",
+		"KC_DQUO": `"`,
 		// Advance
 		// Mod-Tap
 		"LCTL_T": "CTRL",

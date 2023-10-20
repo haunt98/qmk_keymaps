@@ -36,7 +36,7 @@ layers:
     - { t: K, type: vim }
     - { t: L, type: vim }
     - ;
-    - "'"
+    - { t: "$$mdi:keyboard-return$$", type: enter }
     - { t: (, h: "$$mdi:apple-keyboard-shift$$" }
     - Z
     - X
@@ -51,16 +51,16 @@ layers:
     - .
     - /
     - { t: ), h: "$$mdi:apple-keyboard-shift$$" }
-    - _
     - { t: "[", h: "$$mdi:apple-keyboard-option$$" }
     - $$mdi:apple-keyboard-command$$
+    - { t: "$$mdi:keyboard-space$$", type: space }
     - LT SYM SPC
     - { t: "$$mdi:keyboard-space$$", type: space }
     - { t: "$$mdi:keyboard-return$$", type: enter }
-    - _NAV
-    - { t: "$$mdi:keyboard-return$$", type: enter }
+    - LT NAV SPC
+    - { t: "$$mdi:keyboard-space$$", type: space }
+    - $$mdi:apple-keyboard-command$$
     - { t: "]", h: "$$mdi:apple-keyboard-option$$" }
-    - ":"
   L1:
     - "`"
     - F1
@@ -79,7 +79,7 @@ layers:
     - ""
     - ""
     - ""
-    - ""
+    - ":"
     - "-"
     - _
     - "="
@@ -108,8 +108,8 @@ layers:
     - { t: "$$mdi:transfer$$", type: trans }
     - \
     - "|"
-    - ""
-    - ""
+    - "'"
+    - '"'
     - ""
     - { t: "$$mdi:transfer$$", type: trans }
     - { t: "$$mdi:transfer$$", type: trans }
