@@ -53,6 +53,7 @@ Bought from
 There is a button below OLED/above encoder. Press 2 times to reset.
 
 ```sh
+make qmk_compile
 make qmk_flash_sofle_rev1
 ```
 
@@ -130,7 +131,6 @@ Don't
 - [A guide to home row mods](https://precondition.github.io/home-row-mods): Hard
   to get it right, so ignore it for now.
 - `qmk format-c` or `qmk format-json`: I don't want to install `qmk` on my
-  machine.
 
 Build/Optimize
 
