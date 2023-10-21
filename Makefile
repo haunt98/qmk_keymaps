@@ -51,11 +51,12 @@ draw_caksoylar_keymap_drawer:
 	keymap -c caksoylar_keymap_drawer/config.yaml \
 		draw dztech_dz60rgb_wkl/caksoylar_keymap_drawer/keymap.yaml > \
 		dztech_dz60rgb_wkl/caksoylar_keymap_drawer/keymap.svg
+	curl https://raw.githubusercontent.com/caksoylar/keymap-drawer/main/resources/qmk_layouts/sofle_rotated.json --output sofle_rev1/caksoylar_keymap_drawer/sofle_rotated.json
 	keymap -c caksoylar_keymap_drawer/config.yaml \
 		parse -q sofle_rev1/keymaps_json/haunt98/keymap.json > \
 		sofle_rev1/caksoylar_keymap_drawer/keymap.yaml
 	keymap -c caksoylar_keymap_drawer/config.yaml \
-		draw sofle_rev1/caksoylar_keymap_drawer/keymap.yaml > \
+		draw sofle_rev1/caksoylar_keymap_drawer/keymap.yaml -j sofle_rev1/caksoylar_keymap_drawer/sofle_rotated.json > \
 		sofle_rev1/caksoylar_keymap_drawer/keymap.svg
 
 draw:
