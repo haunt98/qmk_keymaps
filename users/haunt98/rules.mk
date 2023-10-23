@@ -17,9 +17,6 @@ BOOTMAGIC_ENABLE = yes
 # https://github.com/qmk/qmk_firmware/blob/master/docs/feature_tap_dance.md
 TAP_DANCE_ENABLE = yes
 
-# Feature
-NKRO_ENABLE = yes
-
 # Custom C
 SRC += haunt98.c
 SRC += tap_dance.c
