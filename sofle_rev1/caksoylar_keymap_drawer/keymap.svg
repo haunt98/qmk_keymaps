@@ -380,9 +380,12 @@ rect.esc, rect.vim {
 <rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key"/>
 <use href="#mdi:apple-keyboard-command" xlink:href="#mdi:apple-keyboard-command" x="-9" y="-9" height="18" width="18.0" class="key tap glyph mdi:apple-keyboard-command"/>
 </g>
-<g transform="translate(270, 278)" class="key space keypos-52">
-<rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key space"/>
-<use href="#mdi:keyboard-space" xlink:href="#mdi:keyboard-space" x="-9" y="-9" height="18" width="18.0" class="key space tap glyph mdi:keyboard-space"/>
+<g transform="translate(270, 278)" class="key keypos-52">
+<rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key"/>
+<text x="0" y="0" class="key tap">
+<tspan x="0" dy="-1.2em">LT</tspan><tspan x="0" dy="1.2em">SYM</tspan>
+<tspan x="0" dy="1.2em">SPC</tspan>
+</text>
 </g>
 <g transform="translate(339, 294) rotate(22.5)" class="key keypos-53">
 <rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key"/>
@@ -406,9 +409,12 @@ rect.esc, rect.vim {
 <tspan x="0" dy="1.2em">SPC</tspan>
 </text>
 </g>
-<g transform="translate(690, 278)" class="key space keypos-57">
-<rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key space"/>
-<use href="#mdi:keyboard-space" xlink:href="#mdi:keyboard-space" x="-9" y="-9" height="18" width="18.0" class="key space tap glyph mdi:keyboard-space"/>
+<g transform="translate(690, 278)" class="key keypos-57">
+<rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key"/>
+<text x="0" y="0" class="key tap">
+<tspan x="0" dy="-1.2em">LT</tspan><tspan x="0" dy="1.2em">NAV</tspan>
+<tspan x="0" dy="1.2em">SPC</tspan>
+</text>
 </g>
 <g transform="translate(750, 270)" class="key keypos-58">
 <rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key"/>
