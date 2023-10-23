@@ -72,8 +72,8 @@ qmk_all:
 	$(MAKE) qmk_clean
 
 qmk_upstream:
-	# qmk setup
-	# qmk git-submodule
+	git -C ~/qmk_firmware pull
+	qmk git-submodule
 	qmk doctor
 	curl https://raw.githubusercontent.com/qmk/qmk_firmware/master/.clang-format --output .clang-format
 
@@ -100,6 +100,7 @@ qmk_compile:
 qmk_clean:
 	rm -rf ~/qmk_firmware/users/haunt98
 	rm -rf ~/qmk_firmware/keyboards/dztech/dz60rgb_wkl/keymaps/haunt98
+	rm -rf ~/qmk_firmware/keyboards/gray_studio/think65/solder/keymaps/haunt98
 	rm -rf ~/qmk_firmware/keyboards/sofle/keymaps/haunt98
 	qmk clean
 	rm -rf *.bin *.hex
