@@ -169,9 +169,9 @@ rect.esc, rect.vim {
 <g transform="translate(30, 0)" class="layer-L0">
 <text x="0" y="28" class="label">L0</text>
 <g transform="translate(0, 56)">
-<g transform="translate(30, 68)" class="key esc keypos-0">
-<rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key esc"/>
-<text x="0" y="0" class="key esc tap">GESC</text>
+<g transform="translate(30, 68)" class="key keypos-0">
+<rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key"/>
+<text x="0" y="0" class="key tap">`</text>
 </g>
 <g transform="translate(90, 68)" class="key keypos-1">
 <rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key"/>
@@ -215,7 +215,7 @@ rect.esc, rect.vim {
 </g>
 <g transform="translate(930, 68)" class="key keypos-11">
 <rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key"/>
-<text x="0" y="0" class="key tap">`</text>
+<text x="0" y="0" class="key tap">-</text>
 </g>
 <g transform="translate(30, 128)" class="key keypos-12">
 <rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key"/>
@@ -428,9 +428,9 @@ rect.esc, rect.vim {
 <g transform="translate(30, 422)" class="layer-L1">
 <text x="0" y="28" class="label">L1</text>
 <g transform="translate(0, 56)">
-<g transform="translate(30, 68)" class="key keypos-0">
-<rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key"/>
-<text x="0" y="0" class="key tap">`</text>
+<g transform="translate(30, 68)" class="key trans keypos-0">
+<rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key trans"/>
+<use href="#mdi:transfer" xlink:href="#mdi:transfer" x="-9" y="-9" height="18" width="18.0" class="key trans tap glyph mdi:transfer"/>
 </g>
 <g transform="translate(90, 68)" class="key keypos-1">
 <rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key"/>

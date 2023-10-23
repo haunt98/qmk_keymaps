@@ -1,7 +1,7 @@
 layout: { qmk_keyboard: sofle/rev1, qmk_layout: LAYOUT }
 layers:
   L0:
-    - { t: GESC, type: esc }
+    - "`"
     - "1"
     - "2"
     - "3"
@@ -12,7 +12,7 @@ layers:
     - "8"
     - "9"
     - "0"
-    - "`"
+    - "-"
     - $$mdi:keyboard-tab$$
     - Q
     - W
@@ -62,7 +62,7 @@ layers:
     - $$mdi:apple-keyboard-command$$
     - { t: "]", h: "$$mdi:apple-keyboard-option$$" }
   L1:
-    - "`"
+    - { t: "$$mdi:transfer$$", type: trans }
     - F1
     - F2
     - F3
