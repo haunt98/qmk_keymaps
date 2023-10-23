@@ -44,7 +44,7 @@ layers:
     - V
     - B
     - MUTE
-    - ""
+    - $$mdi:apple-keyboard-caps$$
     - N
     - M
     - ","
@@ -58,7 +58,7 @@ layers:
     - { t: "$$mdi:keyboard-space$$", type: space }
     - { t: "$$mdi:keyboard-return$$", type: enter }
     - LT NAV SPC
-    - LT NAV SPC
+    - { t: "$$mdi:keyboard-space$$", type: space }
     - $$mdi:apple-keyboard-command$$
     - { t: "]", h: "$$mdi:apple-keyboard-option$$" }
   L1:
@@ -209,7 +209,7 @@ layers:
       "",
       "",
       "",
-      "$$mdi:apple-keyboard-caps$$",
+      "",
       "",
       "",
       "",
