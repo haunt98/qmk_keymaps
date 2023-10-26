@@ -53,7 +53,6 @@ Bought from
 There is a button below OLED/above encoder. Press 2 times to reset.
 
 ```sh
-make qmk_compile
 make qmk_flash_sofle_rev1
 ```
 
