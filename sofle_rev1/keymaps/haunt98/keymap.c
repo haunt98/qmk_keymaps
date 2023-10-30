@@ -99,7 +99,7 @@ bool oled_task_user(void) {
     if (is_keyboard_master()) {
         print_status_narrow();
     } else {
-        render_logo_qmk();
+        render_logo_cyberpunk();
     }
     return false;
 }

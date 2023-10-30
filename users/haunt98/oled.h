@@ -9,5 +9,6 @@
 #ifdef OLED_ENABLE
 
 void render_logo_qmk(void);
+void render_logo_cyberpunk(void);
 
 #endif
