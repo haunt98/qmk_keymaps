@@ -7,6 +7,7 @@
 
 #include QMK_KEYBOARD_H
 #include "tap_dance.h"
+#include "oled.h"
 
 // https://github.com/qmk/qmk_firmware/blob/master/docs/mod_tap.md
 #define CTL_ESC CTL_T(KC_ESC)

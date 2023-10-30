@@ -20,3 +20,4 @@ TAP_DANCE_ENABLE = yes
 # Custom C
 SRC += haunt98.c
 SRC += tap_dance.c
+SRC += oled.c
