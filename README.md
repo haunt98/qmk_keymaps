@@ -32,6 +32,8 @@ Links:
 
 See [Official/Original](https://josefadamcik.github.io/SofleKeyboard/)
 
+> 128x32 OLED display module
+
 > Don’t connect or disconnect the TRRS cable when the keyboard is powered. It
 > may short out. Always disconnect the USB cable first.
 
@@ -40,6 +42,8 @@ Bought from
 
 > Powered by the powerful RP2040 MCU, allowing users to use more macros and
 > features from QMK. However, cannot be used with usb-c to usb-c cable
+
+There is a button below the board, press twice to enter boot mode.
 
 ### Flash
 
