@@ -556,6 +556,7 @@ rect.esc, rect.vim {
 </g>
 <g transform="translate(870, 188)" class="key keypos-34">
 <rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key"/>
+<text x="0" y="0" class="key tap">:</text>
 </g>
 <g transform="translate(930, 188)" class="key trans keypos-35">
 <rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key trans"/>
@@ -771,6 +772,7 @@ rect.esc, rect.vim {
 </g>
 <g transform="translate(870, 188)" class="key keypos-34">
 <rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key"/>
+<text x="0" y="0" class="key tap">:</text>
 </g>
 <g transform="translate(930, 188)" class="key trans keypos-35">
 <rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key trans"/>

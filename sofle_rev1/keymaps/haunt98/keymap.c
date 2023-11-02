@@ -30,14 +30,14 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [LAYER_SYM] = LAYOUT(
         _______,  KC_F1,    KC_F2,    KC_F3,    KC_F4,    KC_F5,    KC_F6,    KC_F7,    KC_F8,    KC_F9,    KC_F10,   KC_F11,
         _______,  XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  KC_COLN,  KC_MINS,  KC_UNDS,  KC_EQL,   KC_PLUS,  XXXXXXX,  KC_F12,
-        _______,  XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  KC_LBRC,  KC_LCBR,  KC_RCBR,  KC_RBRC,  XXXXXXX,  _______,
+        _______,  XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  KC_LBRC,  KC_LCBR,  KC_RCBR,  KC_RBRC,  KC_COLN,  _______,
         _______,  XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  _______,  _______,  KC_BSLS,  KC_PIPE,  KC_QUOT,  KC_DQUO,  XXXXXXX,  _______,
         _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______
     ),
     [LAYER_NAV] = LAYOUT(
         XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,
         _______,  XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  KC_COLN,  KC_MINS,  KC_UNDS,  KC_EQL,   KC_PLUS,  XXXXXXX,  XXXXXXX,
-        _______,  XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  KC_LEFT,  KC_DOWN,  KC_UP,    KC_RGHT,  XXXXXXX,  _______,
+        _______,  XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  KC_LEFT,  KC_DOWN,  KC_UP,    KC_RGHT,  KC_COLN,  _______,
         _______,  XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  _______,  _______,  KC_BSLS,  KC_PIPE,  KC_QUOT,  KC_DQUO,  XXXXXXX,  _______,
         _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______
     ),
@@ -118,9 +118,9 @@ bool encoder_update_user(uint8_t index, bool clockwise) {
         }
     } else if (index == 1) {
         if (clockwise) {
-            tap_code(KC_PGDN);
+            tap_code(KC_BRMU);
         } else {
-            tap_code(KC_PGUP);
+            tap_code(KC_BRMD);
         }
     }
     return false;
