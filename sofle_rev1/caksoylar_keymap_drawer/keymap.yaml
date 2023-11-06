@@ -57,7 +57,7 @@ layers:
     - LT SYM SPC
     - { t: "$$mdi:keyboard-space$$", type: space }
     - { t: "$$mdi:keyboard-return$$", type: enter }
-    - LT NAV SPC
+    - _NAV
     - { t: "$$mdi:keyboard-space$$", type: space }
     - $$mdi:apple-keyboard-command$$
     - { t: "]", h: "$$mdi:apple-keyboard-option$$" }
