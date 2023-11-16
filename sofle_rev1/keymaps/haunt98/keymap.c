@@ -16,7 +16,6 @@ enum layers {
 
 // Inspire from https://github.com/qmk/qmk_firmware/blob/master/keyboards/sofle/keymaps/default/keymap.c
 // https://github.com/qmk/qmk_firmware/blob/master/docs/keycodes.md
-// https://github.com/qmk/qmk_firmware/blob/master/docs/mod_tap.md
 // https://github.com/qmk/qmk_firmware/blob/master/docs/feature_space_cadet.md
 // clang-format off
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
@@ -29,15 +28,15 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     ),
     [LAYER_SYM] = LAYOUT(
         _______,  KC_F1,    KC_F2,    KC_F3,    KC_F4,    KC_F5,    KC_F6,    KC_F7,    KC_F8,    KC_F9,    KC_F10,   KC_F11,
-        _______,  XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  KC_MINS,  KC_UNDS,  KC_EQL,   KC_PLUS,  XXXXXXX,  KC_F12,
-        _______,  XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  KC_LBRC,  KC_LCBR,  KC_RCBR,  KC_RBRC,  KC_COLN,  _______,
+        _______,  XXXXXXX,  XXXXXXX,  XXXXXXX,  KC_LBRC,  KC_RBRC,  KC_LCBR,  KC_RCBR,  KC_EQL,   KC_PLUS,  XXXXXXX,  KC_F12,
+        _______,  XXXXXXX,  XXXXXXX,  XXXXXXX,  KC_LT,    KC_GT,    _______,  _______,  _______,  _______,  KC_COLN,  _______,
         _______,  XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  _______,  _______,  KC_BSLS,  KC_PIPE,  KC_QUOT,  KC_DQUO,  XXXXXXX,  _______,
         _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______
     ),
     [LAYER_NAV] = LAYOUT(
         _______,  KC_F1,    KC_F2,    KC_F3,    KC_F4,    KC_F5,    KC_F6,    KC_F7,    KC_F8,    KC_F9,    KC_F10,   KC_F11,
-        _______,  XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  KC_MINS,  KC_UNDS,  KC_EQL,   KC_PLUS,  XXXXXXX,  KC_F12,
-        _______,  XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  KC_LEFT,  KC_DOWN,  KC_UP,    KC_RGHT,  KC_COLN,  _______,
+        _______,  XXXXXXX,  XXXXXXX,  XXXXXXX,  KC_LBRC,  KC_RBRC,  KC_LCBR,  KC_RCBR,  KC_EQL,   KC_PLUS,  XXXXXXX,  KC_F12,
+        _______,  XXXXXXX,  XXXXXXX,  XXXXXXX,  KC_LT,    KC_GT,    KC_LEFT,  KC_DOWN,  KC_UP,    KC_RGHT,  KC_COLN,  _______,
         _______,  XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  _______,  _______,  KC_BSLS,  KC_PIPE,  KC_QUOT,  KC_DQUO,  XXXXXXX,  _______,
         _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______
     ),

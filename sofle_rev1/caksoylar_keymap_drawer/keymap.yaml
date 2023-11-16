@@ -78,10 +78,10 @@ layers:
     - ""
     - ""
     - ""
-    - ""
-    - ""
-    - "-"
-    - _
+    - "["
+    - "]"
+    - "{"
+    - "}"
     - "="
     - +
     - ""
@@ -90,12 +90,12 @@ layers:
     - ""
     - ""
     - ""
-    - ""
-    - ""
-    - "["
-    - "{"
-    - "}"
-    - "]"
+    - <
+    - ">"
+    - { t: "$$mdi:transfer$$", type: trans }
+    - { t: "$$mdi:transfer$$", type: trans }
+    - { t: "$$mdi:transfer$$", type: trans }
+    - { t: "$$mdi:transfer$$", type: trans }
     - ":"
     - { t: "$$mdi:transfer$$", type: trans }
     - { t: "$$mdi:transfer$$", type: trans }
@@ -139,10 +139,10 @@ layers:
     - ""
     - ""
     - ""
-    - ""
-    - ""
-    - "-"
-    - _
+    - "["
+    - "]"
+    - "{"
+    - "}"
     - "="
     - +
     - ""
@@ -151,8 +151,8 @@ layers:
     - ""
     - ""
     - ""
-    - ""
-    - ""
+    - <
+    - ">"
     - { t: "$$mdi:arrow-left$$", type: arrow }
     - { t: "$$mdi:arrow-down$$", type: arrow }
     - { t: "$$mdi:arrow-up$$", type: arrow }
