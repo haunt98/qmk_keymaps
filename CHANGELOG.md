@@ -1,5 +1,95 @@
 # CHANGELOG
 
+## v0.0.20 (2023-11-29)
+
+### Added
+
+- feat(qmk): change debounce algo (2023-11-16)
+
+- feat(qmk): experiment (2023-11-16)
+
+- feat(qmk): use sym_defer_pk because noise-resistant (2023-11-14)
+
+- feat(qmk): revision sofle_rev1 (2023-11-13)
+
+- feat(qmk): sofle_rev1 tapping term 120-200 (2023-11-09)
+
+- feat(qmk): move tapping term to out of users (2023-11-09)
+
+- feat(qmk): another revision sofle_rev1 (2023-11-06)
+
+- feat(qmk): another revision for sofle_rev1 (2023-11-02)
+
+- feat(qmk): another revision sofle_rev1 (2023-11-02)
+
+- feat(qmk): another revision sofle_rev1 (2023-11-02)
+
+- feat(qmk): revision (2023-11-02)
+
+- feat(qmk): use cyberpunk logo (2023-10-30)
+
+- feat(qmk): move oled to users (2023-10-30)
+
+- feat(qmk): revision sofle_rev1 (2023-10-30)
+
+- feat(qmk): revision sofle_rev1 (2023-10-26)
+
+- feat(qmk): try to fix debounce sofle_rev1 (2023-10-23)
+
+- feat(qmk): revision sofle_rev1 (2023-10-23)
+
+- feat(qmk): revision sofle_rev1 (2023-10-23)
+
+- feat(qmk): revision sofle_rev1 (2023-10-23)
+
+- feat(qmk): revision sofle_rev1 (2023-10-21)
+
+- feat(draw): upgrade caksoylar_keymap_drawer v0.12.0 (2023-10-21)
+
+- feat(qmk): revise layout (2023-10-20)
+
+- feat(qmk): use _ in left hand sofle_rev1 (2023-10-19)
+
+- feat(qmk): use : for vim (2023-10-19)
+
+- feat(qmk): use define to reduce dupe code (2023-10-19)
+
+- feat(qmk): add ENCODER_RESOLUTION (2023-10-19)
+
+- feat(qmk): add debounce sofle_rev1 (2023-10-18)
+
+- feat(qmk): revise sofle (2023-10-18)
+
+- feat(qmk): update keymap sofle rev1 (2023-10-18)
+
+- feat(qmk): add oled for sofle rev1 (2023-10-18)
+
+### Others
+
+- chore(deps): bump github.com/spf13/cast from 1.5.1 to 1.6.0 (2023-11-29)
+
+- chore: more explain (2023-10-31)
+
+- chore: clean up (2023-10-26)
+
+- chore: sync qmk first (2023-10-23)
+
+- chore: more qmk (2023-10-20)
+
+- chore(draw): re sync (2023-10-19)
+
+- chore(draw): sofle rev1 (2023-10-18)
+
+- chore(draw): re draw sofle rev1 (2023-10-18)
+
+- chore: bring back qmk (2023-10-18)
+
+- chore: bring back qmk to Makefile (2023-10-18)
+
+- chore: replace deno fmt -> qmk format-json (2023-10-18)
+
+- chore(changelog): generate v0.0.19 (2023-10-14)
+
 ## v0.0.19 (2023-10-14)
 
 ### Added
