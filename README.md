@@ -202,4 +202,4 @@ Copycat QMK features with software.
   - [x] Split transform keycodes to raw binding/transform (same as
         keymap-drawer)
   - [x] Support [Code page 437](https://en.wikipedia.org/wiki/Code_page_437)
-  - [ ] Split draw func to multipls small func for easily maintenance
+  - [x] Split draw func to multipls small func for easily maintenance
