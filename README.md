@@ -203,3 +203,4 @@ Copycat QMK features with software.
         keymap-drawer)
   - [x] Support [Code page 437](https://en.wikipedia.org/wiki/Code_page_437)
   - [x] Split draw func to multipls small func for easily maintenance
+  - [ ] Move scaleX, scaleY to config flag
