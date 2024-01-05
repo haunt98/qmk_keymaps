@@ -474,11 +474,13 @@ rect.esc, rect.vim {
 <g transform="translate(90, 128)" class="key keypos-13">
 <rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key"/>
 </g>
-<g transform="translate(150, 98)" class="key keypos-14">
-<rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key"/>
+<g transform="translate(150, 98)" class="key arrow keypos-14">
+<rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key arrow"/>
+<use href="#mdi:arrow-down" xlink:href="#mdi:arrow-down" x="-9" y="-9" height="18" width="18.0" class="key arrow tap glyph mdi:arrow-down"/>
 </g>
-<g transform="translate(210, 90)" class="key keypos-15">
-<rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key"/>
+<g transform="translate(210, 90)" class="key arrow keypos-15">
+<rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key arrow"/>
+<use href="#mdi:arrow-up" xlink:href="#mdi:arrow-up" x="-9" y="-9" height="18" width="18.0" class="key arrow tap glyph mdi:arrow-up"/>
 </g>
 <g transform="translate(270, 98)" class="key keypos-16">
 <rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key"/>

@@ -13,3 +13,7 @@
 #define CTL_ESC CTL_T(KC_ESC)
 #define LOPT_BRC LOPT_T(KC_LBRC)
 #define ROPT_BRC ROPT_T(KC_RBRC)
+
+// https://github.com/qmk/qmk_firmware/blob/master/docs/feature_mouse_keys.md
+#define WH_UP KC_MS_WH_UP
+#define WH_DOWN KC_MS_WH_DOWN

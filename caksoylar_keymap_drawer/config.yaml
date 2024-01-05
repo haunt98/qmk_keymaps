@@ -60,6 +60,9 @@ parse_config:
       "KC_ROPT": "$$mdi:apple-keyboard-option$$",
       "KC_LCMD": "$$mdi:apple-keyboard-command$$",
       "KC_RCMD": "$$mdi:apple-keyboard-command$$",
+      # Mouse wheel
+      "WH_UP": { "t": "$$mdi:arrow-up$$", "type": "arrow" },
+      "WH_DOWN": { "t": "$$mdi:arrow-down$$", "type": "arrow" },
       # Advance
       "QK_GESC": { "t": "GESC", "type": "esc" },
       "SC_LSPO": { "t": "(", "h": "$$mdi:apple-keyboard-shift$$" },
