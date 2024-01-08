@@ -136,9 +136,9 @@ layers:
     - F10
     - F11
     - { t: "$$mdi:transfer$$", type: trans }
+    - { t: "$$mdi:transfer$$", type: trans }
+    - { t: "$$mdi:transfer$$", type: trans }
     - ""
-    - { t: "$$mdi:arrow-down$$", type: arrow }
-    - { t: "$$mdi:arrow-up$$", type: arrow }
     - "["
     - "]"
     - "{"
