@@ -94,8 +94,6 @@ var mapTransform = []map[string]string{
 		// Prefix
 		"KC_": "",
 		"QK_": "",
-		// Mouse wheel
-		"WH_": "",
 	},
 }
 

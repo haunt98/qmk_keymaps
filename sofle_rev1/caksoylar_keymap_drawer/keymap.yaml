@@ -76,8 +76,8 @@ layers:
     - F11
     - { t: "$$mdi:transfer$$", type: trans }
     - ""
-    - { t: "$$mdi:arrow-down$$", type: arrow }
-    - { t: "$$mdi:arrow-up$$", type: arrow }
+    - WH D
+    - WH U
     - "["
     - "]"
     - "{"
