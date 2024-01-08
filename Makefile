@@ -36,15 +36,15 @@ draw_qmkasciigen_demo:
 	go run ./cmd/qmkasciigen -print-out -allow-layers 0 -qmk-keyboard ymdk/id75 -qmk-keymap via
 
 format_draw_caksoylar_keymap_drawer:
-	bun upgrade
+	# bun upgrade
 	bunx prettier@latest --write \
 		dztech_dz60rgb_wkl/caksoylar_keymap_drawer/*.yaml \
 		sofle_rev1/caksoylar_keymap_drawer/*.yaml
 
 draw_caksoylar_keymap_drawer:
 	# https://github.com/caksoylar/keymap-drawer
-	pipx install keymap-drawer
-	pipx upgrade keymap-drawer
+	# pipx install keymap-drawer
+	# pipx upgrade keymap-drawer
 	keymap -c caksoylar_keymap_drawer/config.yaml \
 		parse -q dztech_dz60rgb_wkl/keymaps_json/haunt98/keymap.json > \
 		dztech_dz60rgb_wkl/caksoylar_keymap_drawer/keymap.yaml
