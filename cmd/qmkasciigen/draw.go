@@ -280,7 +280,8 @@ func drawKey(
 				if j == key.NewX || j == key.NewX+key.NewW {
 					// Draw vertical most left/right
 					table[i][j] = cp437Plus(table[i][j], cp437Vertical)
-				} else if len(keyStr) > 0 && j > key.NewX+padding && j < key.NewX+len(keyStr)+padding+1 && j <= key.NewX+key.NewW-padding {
+				} else if keyStr != "" &&
+					j > key.NewX+padding && j < key.NewX+len(keyStr)+padding+1 && j <= key.NewX+key.NewW-padding {
 					// Only handle ASCII keyStr
 					table[i][j] = string(keyStr[j-key.NewX-padding-1])
 				}
