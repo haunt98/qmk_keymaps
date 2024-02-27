@@ -95,9 +95,10 @@ qmk_cp:
 
 qmk_compile:
 	$(MAKE) qmk_cp
-	qmk compile -j 8 -kb dztech/dz60rgb_wkl/v2_1 -km haunt98
-	mv ~/qmk_firmware/dztech_dz60rgb_wkl_v2_1_haunt98.bin .
+	# qmk compile -j 8 -kb dztech/dz60rgb_wkl/v2_1 -km haunt98
+	# mv ~/qmk_firmware/dztech_dz60rgb_wkl_v2_1_haunt98.bin .
 	qmk compile -j 8 -kb gray_studio/think65/solder -km haunt98
+	mv ~/qmk_firmware/gray_studio_think65_solder_haunt98.hex .
 	qmk compile -j 8 -kb sofle/rev1 -km haunt98
 
 qmk_clean:
