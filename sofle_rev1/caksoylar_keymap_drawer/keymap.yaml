@@ -76,8 +76,8 @@ layers:
     - F11
     - { t: "$$mdi:transfer$$", type: trans }
     - ""
-    - WH D
-    - WH U
+    - ""
+    - ""
     - "["
     - "]"
     - "{"
@@ -199,8 +199,8 @@ layers:
       "",
       "",
       "",
-      "",
-      "",
+      WH D,
+      WH U,
       "",
       "",
       "",
