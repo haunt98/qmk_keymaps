@@ -80,6 +80,7 @@ jobs:
             haunt98_qmk_keymaps/sofle_rev1/keymaps/haunt98/keymap.c
       - name: Extra
         run: |
+          qmk doctor
           qmk info -m -l -kb dztech/dz60rgb_wkl/v2_1 -km haunt98
           qmk info -m -l -kb gray_studio/think65/solder -km haunt98
           qmk info -m -l -kb sofle/rev1 -km haunt98
