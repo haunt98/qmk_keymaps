@@ -82,7 +82,7 @@ Step by step:
 
 ## Features
 
-Basic
+Basic:
 
 - [Introduction](https://github.com/qmk/qmk_firmware/blob/master/docs/getting_started_introduction.md)
 - [Keymap FAQ](https://github.com/qmk/qmk_firmware/blob/master/docs/faq_keymap.md)
@@ -92,14 +92,14 @@ Basic
 - [Quantum Keycodes](https://github.com/qmk/qmk_firmware/blob/master/docs/quantum_keycodes.md)
 - [Layers](https://github.com/qmk/qmk_firmware/blob/master/docs/feature_layers.md)
 
-More than Basic
+More advance:
 
 - [Debugging FAQ](https://github.com/qmk/qmk_firmware/blob/master/docs/faq_debug.md)
 - [How to Customize Your Keyboard's Behavior](https://github.com/qmk/qmk_firmware/blob/master/docs/custom_quantum_functions.md)
 - [List of Useful Core Functions To Make Your Keyboard Better](https://github.com/qmk/qmk_firmware/blob/master/docs/ref_functions.md)
 - [Userspace: Sharing Code Between Keymaps](https://github.com/qmk/qmk_firmware/blob/master/docs/feature_userspace.md)
 
-Do
+Do:
 
 - [Bootmagic Lite](https://github.com/qmk/qmk_firmware/blob/master/docs/feature_bootmagic.md):
   I use `QK_BOOT` with `EE_CLR`.
@@ -118,7 +118,7 @@ Do
   Quickly press `(`, `)`.
   - [A Modern Space Cadet](https://stevelosh.com/blog/2012/10/a-modern-space-cadet/)
 
-Don't
+Don't:
 
 - [Magic Keycodes](https://github.com/qmk/qmk_firmware/blob/master/docs/keycodes_magic.md)
 - [Command](https://github.com/qmk/qmk_firmware/blob/master/docs/feature_command.md)
@@ -131,14 +131,14 @@ Don't
   to get it right, so ignore it for now.
 - `qmk format-c` or `qmk format-json`: I don't want to install `qmk` on my
 
-Build/Optimize
+Build/Optimize:
 
 - [Configuring QMK](https://github.com/qmk/qmk_firmware/blob/master/docs/config_options.md)
 - [Squeezing the most out of AVR](https://github.com/qmk/qmk_firmware/blob/master/docs/squeezing_avr.md)
 - [Reducing firmware size](https://get.vial.today/docs/firmware-size.html)
 - [Configuring QMK (VIA)](https://www.caniusevia.com/docs/configuring_qmk)
 
-More
+More:
 
 - [Programming On 34 Keys](https://peppe.rs/posts/programming_on_34_keys/)
 - [Miryoku](https://github.com/manna-harbour/miryoku)
