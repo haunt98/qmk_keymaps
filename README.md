@@ -45,7 +45,7 @@ Bought from
 
 There is a button below the board, press twice to enter boot mode.
 
-### Flash
+### Flash notes
 
 > - Make sure halves are not connected together with TRRS cable.
 > - Connect one half to USB, flash the firmware. Use the reset button to reset
@@ -64,17 +64,17 @@ make qmk_flash_sofle_rev1
 
 ![caksoylar_keymap_drawer](sofle_rev1/caksoylar_keymap_drawer/keymap.svg)
 
-## Flash with QMK Toolbox
+## Flash
 
-Locate firmware file after compile successfully or download from
-[QMK action workflow](https://github.com/haunt98/qmk_keymaps/actions/workflows/qmk.yml)
-
-Put keyboard into bootloader mode in 2 ways:
+Enter bootloader in many ways:
 
 - Press `QK_BOOT`.
-- Unplug cable, then hold `ESC` and plug cable.
+- Unplug cable, then hold key in row 0 col 1 and plug cable.
+- Read manual of your PCB, likely will have a reset button
 
-Use [QMK Toolbox](https://github.com/qmk/qmk_toolbox) to flash.
+If use [QMK Toolbox](https://github.com/qmk/qmk_toolbox), locate firmware file
+after compile successfully or download from
+[QMK action workflow](https://github.com/haunt98/qmk_keymaps/actions/workflows/qmk.yml)
 
 ## Maintain
 
