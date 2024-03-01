@@ -1,5 +1,59 @@
 # CHANGELOG
 
+## v0.0.21 (2024-03-01)
+
+### Added
+
+- feat(qmk): move mouse wheel to layer adj (2024-02-27)
+
+- feat(qmk): enable mouse key for sofle_rev1 (2024-01-08)
+
+- feat(qmk): add mouse wheel in layer 2 (2024-01-05)
+
+- feat(qmk): add mouse wheel (2024-01-05)
+
+- feat(go): split draw func (2024-01-01)
+
+### Fixed
+
+- fix(qmk): try to fix :wq when using mod (2024-01-08)
+
+### Others
+
+- chore: remove make parallel (2024-03-01)
+
+- chore: qmk clean -a (2024-03-01)
+
+- chore: more build target (2024-03-01)
+
+- chore(readme): update flash notes (2024-03-01)
+
+- chore: rerun make (2024-02-29)
+
+- Revert "chore(workflows): see qmk doctor" (2024-02-28)
+
+- chore(workflows): see qmk doctor (2024-02-28)
+
+- chore: disable dz60rgb_wkl for now until qmk nix fixed it (2024-02-28)
+
+- Merge branch 'main' of https://github.com/haunt98/qmk_keymaps (2024-02-27)
+
+- chore: disable go install (2024-02-10)
+
+- chore(qmkasciigen): fix lint (2024-02-10)
+
+- chore: go offline for bun, pipx (2024-01-08)
+
+- chore: add TODO (2024-01-01)
+
+- chore(deps): bump actions/upload-artifact from 3 to 4 (2023-12-15)
+
+- chore(deps): bump actions/setup-go from 4 to 5 (2023-12-07)
+
+- chore: prettier latest (2023-12-01)
+
+- chore(changelog): generate v0.0.20 (2023-11-29)
+
 ## v0.0.20 (2023-11-29)
 
 ### Added
