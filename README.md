@@ -56,10 +56,6 @@ There is a button below the board, press twice to enter boot mode.
 
 There is a button below OLED/above encoder. Press 2 times to reset.
 
-```sh
-make qmk_flash_sofle_rev1
-```
-
 ### Keymap
 
 ![caksoylar_keymap_drawer](sofle_rev1/caksoylar_keymap_drawer/keymap.svg)
