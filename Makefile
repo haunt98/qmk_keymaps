@@ -107,7 +107,7 @@ qmk_clean:
 	rm -rf ~/qmk_firmware/keyboards/dztech/dz60rgb_wkl/keymaps/haunt98
 	rm -rf ~/qmk_firmware/keyboards/gray_studio/think65/solder/keymaps/haunt98
 	rm -rf ~/qmk_firmware/keyboards/sofle/keymaps/haunt98
-	qmk clean
+	qmk clean -a
 	rm -rf *.bin *.hex
 
 qmk_c2json:
