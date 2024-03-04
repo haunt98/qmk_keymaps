@@ -65,7 +65,6 @@ draw:
 	$(MAKE) format_draw_caksoylar_keymap_drawer
 
 qmk_all:
-	$(MAKE) qmk_upstream
 	$(MAKE) qmk_format
 	$(MAKE) qmk_compile
 	$(MAKE) qmk_c2json
