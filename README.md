@@ -97,7 +97,7 @@ More advance:
 
 Do:
 
-- [Bootmagic Lite](https://github.com/qmk/qmk_firmware/blob/master/docs/feature_bootmagic.md):
+- [Bootmagic](https://github.com/qmk/qmk_firmware/blob/master/docs/feature_bootmagic.md):
   I use `QK_BOOT` with `EE_CLR`.
 - [Contact bounce / contact chatter](https://github.com/qmk/qmk_firmware/blob/master/docs/feature_debounce_type.md)
   - [Measure and reduce keyboard input latency with QMK on the Kinesis Advantage (2021)](https://michael.stapelberg.ch/posts/2021-05-08-keyboard-input-latency-qmk-kinesis/)
