@@ -21,10 +21,6 @@ draw_qmkasciigen:
 		-qmk-keymap-file dztech_dz60rgb_wkl/keymaps_json/haunt98/keymap.json \
 		-out dztech_dz60rgb_wkl/asciiart/haunt98.txt
 	go run ./cmd/qmkasciigen \
-		-qmk-keyboard gray_studio/think65/solder \
-		-qmk-keymap-file gray_studio_think65_solder/keymaps_json/haunt98/keymap.json \
-		-out gray_studio_think65_solder/asciiart/haunt98.txt
-	go run ./cmd/qmkasciigen \
 		-qmk-keyboard sofle/rev1 \
 		-qmk-keymap-file sofle_rev1/keymaps_json/haunt98/keymap.json \
 		-out sofle_rev1/asciiart/haunt98.txt
@@ -79,8 +75,6 @@ qmk_upstream:
 qmk_format:
 	clang-format -i dztech_dz60rgb_wkl/keymaps/haunt98/*.c \
 		dztech_dz60rgb_wkl/keymaps/haunt98/*.h \
-		gray_studio_think65_solder/keymaps/haunt98/*.c \
-		gray_studio_think65_solder/keymaps/haunt98/*.h \
 		sofle_rev1/keymaps/haunt98/*.c \
 		sofle_rev1/keymaps/haunt98/*.h \
 		users/haunt98/*.c \
@@ -90,21 +84,17 @@ qmk_cp:
 	$(MAKE) qmk_clean
 	cp -rf users/haunt98 ~/qmk_firmware/users/
 	cp -rf dztech_dz60rgb_wkl/keymaps/haunt98 ~/qmk_firmware/keyboards/dztech/dz60rgb_wkl/keymaps/
-	cp -rf gray_studio_think65_solder/keymaps/haunt98 ~/qmk_firmware/keyboards/gray_studio/think65/solder/keymaps/
 	cp -rf sofle_rev1/keymaps/haunt98 ~/qmk_firmware/keyboards/sofle/keymaps/
 
 qmk_compile:
 	$(MAKE) qmk_cp
 	# qmk compile -c -kb dztech/dz60rgb_wkl/v2_1 -km haunt98
 	# mv ~/qmk_firmware/dztech_dz60rgb_wkl_v2_1_haunt98.bin .
-	qmk compile -c -kb gray_studio/think65/solder -km haunt98
-	mv ~/qmk_firmware/gray_studio_think65_solder_haunt98.hex .
 	qmk compile -c -kb sofle/rev1 -km haunt98
 
 qmk_clean:
 	rm -rf ~/qmk_firmware/users/haunt98
 	rm -rf ~/qmk_firmware/keyboards/dztech/dz60rgb_wkl/keymaps/haunt98
-	rm -rf ~/qmk_firmware/keyboards/gray_studio/think65/solder/keymaps/haunt98
 	rm -rf ~/qmk_firmware/keyboards/sofle/keymaps/haunt98
 	qmk clean -a
 	rm -rf *.bin *.hex
@@ -114,10 +104,6 @@ qmk_c2json:
 	qmk c2json -kb dztech/dz60rgb_wkl/v2_1 -km haunt98 -o dztech_dz60rgb_wkl/keymaps_json/haunt98/keymap.json --no-cpp \
 		dztech_dz60rgb_wkl/keymaps/haunt98/keymap.c
 	qmk format-json -i dztech_dz60rgb_wkl/keymaps_json/haunt98/keymap.json
-	rm -rf gray_studio_think65_solder/keymaps_json/haunt98/keymap.json
-	qmk c2json -kb gray_studio/think65/solder -km haunt98 -o gray_studio_think65_solder/keymaps_json/haunt98/keymap.json --no-cpp \
-		gray_studio_think65_solder/keymaps/haunt98/keymap.c
-	qmk format-json -i gray_studio_think65_solder/keymaps_json/haunt98/keymap.json
 	rm -rf sofle_rev1/keymaps_json/haunt98/keymap.json
 	qmk c2json -kb sofle/rev1 -km haunt98 -o sofle_rev1/keymaps_json/haunt98/keymap.json --no-cpp \
 		sofle_rev1/keymaps/haunt98/keymap.c
@@ -126,11 +112,6 @@ qmk_c2json:
 qmk_flash_dztech_dz60rgb_wkl:
 	$(MAKE) qmk_cp
 	qmk flash -c -kb dztech/dz60rgb_wkl/v2_1 -km haunt98
-	$(MAKE) qmk_clean
-
-qmk_flash_gray_studio_think65_solder:
-	$(MAKE) qmk_cp
-	qmk flash -c -kb gray_studio/think65/solder -km haunt98
 	$(MAKE) qmk_clean
 
 qmk_flash_sofle_rev1:
