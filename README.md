@@ -22,7 +22,7 @@ Links:
 
 ### Keymap
 
-![caksoylar_keymap_drawer](dztech_dz60rgb_wkl/caksoylar_keymap_drawer/keymap.svg)
+![keymap_drawer](dztech_dz60rgb_wkl/keymap_drawer/keymap.svg)
 
 ## [sofle/rev1](https://github.com/qmk/qmk_firmware/tree/master/keyboards/sofle/rev1)
 
@@ -54,7 +54,7 @@ There is a button below OLED/above encoder. Press 2 times to reset.
 
 ### Keymap
 
-![caksoylar_keymap_drawer](sofle_rev1/caksoylar_keymap_drawer/keymap.svg)
+![keymap_drawer](sofle_rev1/keymap_drawer/keymap.svg)
 
 ## Flash
 
