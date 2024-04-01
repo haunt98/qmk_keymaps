@@ -1,4 +1,4 @@
-.PHONY: all go draw_qmkasciigen format_draw_caksoylar_keymap_drawer draw_caksoylar_keymap_drawer draw qmk_upstream qmk_format qmk_compile qmk_clean qmk_c2json qmk_flash_sofle_rev1
+.PHONY: all go draw_qmkasciigen draw_keymap_drawer draw_keymap_drawer_upstream draw_keymap_drawer_format draw qmk_upstream qmk_format qmk_compile qmk_clean qmk_c2json qmk_flash_sofle_rev1
 
 all:
 	$(MAKE) qmk_all
@@ -31,34 +31,36 @@ draw_qmkasciigen_demo:
 	go run ./cmd/qmkasciigen -print-out -allow-layers 0 -qmk-keyboard moondrop/dash75
 	go run ./cmd/qmkasciigen -print-out -allow-layers 0 -qmk-keyboard ymdk/id75 -qmk-keymap via
 
-format_draw_caksoylar_keymap_drawer:
-	# bun upgrade
-	bunx prettier@latest --write \
-		dztech_dz60rgb_wkl/caksoylar_keymap_drawer/*.yaml \
-		sofle_rev1/caksoylar_keymap_drawer/*.yaml
-
-draw_caksoylar_keymap_drawer:
+draw_keymap_drawer:
 	# https://github.com/caksoylar/keymap-drawer
 	# pipx install keymap-drawer
 	# pipx upgrade keymap-drawer
-	keymap -c caksoylar_keymap_drawer/config.yaml \
+	keymap -c keymap_drawer/config.yaml \
 		parse -q dztech_dz60rgb_wkl/keymaps_json/haunt98/keymap.json > \
-		dztech_dz60rgb_wkl/caksoylar_keymap_drawer/keymap.yaml
-	keymap -c caksoylar_keymap_drawer/config.yaml \
-		draw dztech_dz60rgb_wkl/caksoylar_keymap_drawer/keymap.yaml > \
-		dztech_dz60rgb_wkl/caksoylar_keymap_drawer/keymap.svg
-	curl https://raw.githubusercontent.com/caksoylar/keymap-drawer/main/resources/qmk_layouts/sofle_rotated.json --output sofle_rev1/caksoylar_keymap_drawer/sofle_rotated.json
-	keymap -c caksoylar_keymap_drawer/config.yaml \
+		dztech_dz60rgb_wkl/keymap_drawer/keymap.yaml
+	keymap -c keymap_drawer/config.yaml \
+		draw dztech_dz60rgb_wkl/keymap_drawer/keymap.yaml > \
+		dztech_dz60rgb_wkl/keymap_drawer/keymap.svg
+	keymap -c keymap_drawer/config.yaml \
 		parse -q sofle_rev1/keymaps_json/haunt98/keymap.json > \
-		sofle_rev1/caksoylar_keymap_drawer/keymap.yaml
-	keymap -c caksoylar_keymap_drawer/config.yaml \
-		draw sofle_rev1/caksoylar_keymap_drawer/keymap.yaml -j sofle_rev1/caksoylar_keymap_drawer/sofle_rotated.json > \
-		sofle_rev1/caksoylar_keymap_drawer/keymap.svg
+		sofle_rev1/keymap_drawer/keymap.yaml
+	keymap -c keymap_drawer/config.yaml \
+		draw sofle_rev1/keymap_drawer/keymap.yaml -j sofle_rev1/keymap_drawer/sofle_rotated.json > \
+		sofle_rev1/keymap_drawer/keymap.svg
 
+draw_keymap_drawer_upstream:
+	curl https://raw.githubusercontent.com/caksoylar/keymap-drawer/main/resources/qmk_layouts/sofle_rotated.json --output sofle_rev1/keymap_drawer/sofle_rotated.json
+
+draw_keymap_drawer_format:
+	# bun upgrade
+	bunx prettier@latest --write \
+		dztech_dz60rgb_wkl/keymap_drawer/*.yaml \
+		sofle_rev1/keymap_drawer/*.yaml
+		
 draw:
 	$(MAKE) draw_qmkasciigen
-	$(MAKE) draw_caksoylar_keymap_drawer
-	$(MAKE) format_draw_caksoylar_keymap_drawer
+	$(MAKE) draw_keymap_drawer
+	$(MAKE) draw_keymap_drawer_format
 
 qmk_all:
 	$(MAKE) qmk_format
