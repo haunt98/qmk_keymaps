@@ -69,6 +69,7 @@ qmk_all:
 	$(MAKE) qmk_clean
 
 qmk_upstream:
+	qmk doctor
 	git -C ~/qmk_firmware pull
 	qmk git-submodule
 	qmk doctor
