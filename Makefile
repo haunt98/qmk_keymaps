@@ -91,8 +91,8 @@ qmk_cp:
 
 qmk_compile:
 	$(MAKE) qmk_cp
-	# qmk compile -c -kb dztech/dz60rgb_wkl/v2_1 -km haunt98
-	# mv ~/qmk_firmware/dztech_dz60rgb_wkl_v2_1_haunt98.bin .
+	qmk compile -c -kb dztech/dz60rgb_wkl/v2_1 -km haunt98
+	mv ~/qmk_firmware/dztech_dz60rgb_wkl_v2_1_haunt98.bin .
 	qmk compile -c -kb sofle/rev1 -km haunt98
 
 qmk_clean:
@@ -111,11 +111,6 @@ qmk_c2json:
 	qmk c2json -kb sofle/rev1 -km haunt98 -o sofle_rev1/keymaps_json/haunt98/keymap.json --no-cpp \
 		sofle_rev1/keymaps/haunt98/keymap.c
 	qmk format-json -i sofle_rev1/keymaps_json/haunt98/keymap.json
-
-qmk_flash_dztech_dz60rgb_wkl:
-	$(MAKE) qmk_cp
-	qmk flash -c -kb dztech/dz60rgb_wkl/v2_1 -km haunt98
-	$(MAKE) qmk_clean
 
 qmk_flash_sofle_rev1:
 	$(MAKE) qmk_cp
