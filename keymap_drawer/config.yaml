@@ -26,6 +26,9 @@ draw_config:
     rect.esc, rect.vim {
       fill: rgb(200, 230, 201);
     }
+  draw_key_sides: true
+  dark_mode: "auto"
+  footer_text: Created by haunt98
 parse_config:
   trans_legend:
     tap: $$mdi:transfer$$
