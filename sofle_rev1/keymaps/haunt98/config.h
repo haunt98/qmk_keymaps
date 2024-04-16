@@ -31,3 +31,6 @@
 #    undef TAP_KEYCODE_DELAY
 #endif
 #define TAP_KEYCODE_DELAY 0
+
+// https://github.com/qmk/qmk_firmware/issues/9962
+#define NO_USB_STARTUP_CHECK
