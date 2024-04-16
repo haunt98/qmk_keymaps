@@ -54,5 +54,3 @@
 // https://github.com/qmk/qmk_firmware/blob/master/docs/config_options.md
 // https://github.com/qmk/qmk_firmware/issues/17316
 #define USB_SUSPEND_WAKEUP_DELAY 200
-
-#define FORCE_NKRO
