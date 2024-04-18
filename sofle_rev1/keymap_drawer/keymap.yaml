@@ -54,10 +54,10 @@ layers:
     - { t: "[", h: "$$mdi:apple-keyboard-option$$" }
     - $$mdi:apple-keyboard-command$$
     - { t: "$$mdi:keyboard-space$$", type: space }
-    - _SYM
+    - TL LOWR
     - { t: "$$mdi:keyboard-space$$", type: space }
     - { t: "$$mdi:keyboard-return$$", type: enter }
-    - _NAV
+    - TL UPPR
     - { t: "$$mdi:keyboard-space$$", type: space }
     - $$mdi:apple-keyboard-command$$
     - { t: "]", h: "$$mdi:apple-keyboard-option$$" }

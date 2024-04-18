@@ -56,13 +56,13 @@ layers:
     - .
     - /
     - { t: ), h: "$$mdi:apple-keyboard-shift$$" }
-    - _NAV
+    - TL LOWR
     - ""
     - $$mdi:apple-keyboard-option$$
     - $$mdi:apple-keyboard-command$$
     - { t: "$$mdi:keyboard-space$$", type: space }
     - $$mdi:apple-keyboard-command$$
-    - _OPT
+    - TL UPPR
     - ""
   L1:
     - "`"
