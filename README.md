@@ -125,8 +125,7 @@ Don't:
   Conflict with space cadet when using vim `:w` -> `:)w`.
 - [A guide to home row mods](https://precondition.github.io/home-row-mods): Hard
   to get it right, so ignore it for now.
-- `qmk format-c` or `qmk format-json`: I have custom `clang-format` and json
-  formatter.
+- `qmk format-c`: I have custom `clang-format`.
 
 Build/Optimize:
 
