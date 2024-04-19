@@ -180,20 +180,12 @@ path.combo {
 svg.keymap {
   font-family: Fantasque Sans Mono, JetBrains Mono, monospace;
   font-size: 14px;
-  fill: rgb(44, 62, 80);
-}
-text {
-  fill: rgb(44, 62, 80);
 }
 text.label, text.footer {
   font-size: 16px;
 }
 text.hold {
   font-size: 12px;
-}
-rect.key {
-  fill: rgb(250, 250, 250);
-  stroke: rgb(176, 190, 197);
 }
 rect.held, rect.enter, rect.space, rect.arrow {
   fill: rgb(255, 205, 210);
