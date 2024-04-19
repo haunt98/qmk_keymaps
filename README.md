@@ -72,9 +72,10 @@ after compile successfully or download from
 
 Step by step:
 
-1. Make changes to keymaps: `*.c`, `*.h`, `*.mk`
-2. Apply changes to keymaps JSON: `make qmk_all`
-3. Visualize keymap: `make draw`
+- Make changes to keymaps: `*.c`, `*.h`, `*.mk`
+  - Format `keymap.c` with `column -t`
+- Apply changes to keymaps JSON: `make qmk_all`
+- Visualize keymap: `make draw`
 
 ## Features
 
@@ -104,7 +105,7 @@ Do:
   - [QMK debounce masterclass](https://kbd.news/QMK-debounce-masterclass-1435.html)
   - [Keyboard Matrix Scanning and Debouncing](https://summivox.wordpress.com/2016/06/03/keyboard-matrix-scanning-and-debouncing/)
 - [Grave Escape](https://github.com/qmk/qmk_firmware/blob/master/docs/feature_grave_esc.md):
-  Useful on layout <= 60%, because of missing Fn row.
+  Useful on layout <= 60%, because of missing `Fn` row.
 - [Mod-Tap](https://github.com/qmk/qmk_firmware/blob/master/docs/mod_tap.md): To
   replace `CAPSLOCK` with `CTRL` when hold and `ESC` when tap.
 - [Tap-Hold Configuration Options](https://github.com/qmk/qmk_firmware/blob/master/docs/tap_hold.md)
@@ -113,6 +114,7 @@ Do:
 - [Space Cadet: The Future, Built In](https://github.com/qmk/qmk_firmware/blob/master/docs/feature_space_cadet.md):
   Quickly press `(`, `)`.
   - [A Modern Space Cadet](https://stevelosh.com/blog/2012/10/a-modern-space-cadet/)
+- [Tri Layers](https://github.com/qmk/qmk_firmware/blob/master/docs/feature_tri_layer.md)
 
 Don't:
 
@@ -120,12 +122,13 @@ Don't:
 - [Command](https://github.com/qmk/qmk_firmware/blob/master/docs/feature_command.md)
 - [Mouse keys](https://github.com/qmk/qmk_firmware/blob/master/docs/feature_mouse_keys.md)
 - [One Shot Keys](https://github.com/qmk/qmk_firmware/blob/master/docs/one_shot_keys.md)
-- [RGB Matrix Lighting](https://docs.qmk.fm/#/feature_rgb_matrix)
+- [RGB Matrix Lighting](https://github.com/qmk/qmk_firmware/blob/master/docs/feature_rgb_matrix.md)
 - [Auto Shift: Why Do We Need a Shift Key?](https://github.com/qmk/qmk_firmware/blob/master/docs/feature_auto_shift.md):
   Conflict with space cadet when using vim `:w` -> `:)w`.
+- [Swap-Hands Action](https://github.com/qmk/qmk_firmware/blob/master/docs/feature_swap_hands.md)
+- `qmk format-c`: I have custom `clang-format`.
 - [A guide to home row mods](https://precondition.github.io/home-row-mods): Hard
   to get it right, so ignore it for now.
-- `qmk format-c`: I have custom `clang-format`.
 
 Build/Optimize:
 
