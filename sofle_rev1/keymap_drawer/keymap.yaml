@@ -1,187 +1,252 @@
-layout: {qmk_keyboard: sofle/rev1, qmk_layout: LAYOUT}
+layout: { qmk_keyboard: sofle/rev1, qmk_layout: LAYOUT }
 layers:
   L0:
-  - '`'
-  - '1'
-  - '2'
-  - '3'
-  - '4'
-  - '5'
-  - '6'
-  - '7'
-  - '8'
-  - '9'
-  - '0'
-  - '-'
-  - $$mdi:keyboard-tab$$
-  - Q
-  - W
-  - E
-  - R
-  - T
-  - Y
-  - U
-  - I
-  - O
-  - P
-  - $$mdi:keyboard-backspace$$
-  - {t: '$$mdi:keyboard-esc$$', h: '$$mdi:apple-keyboard-control$$', type: esc}
-  - A
-  - S
-  - D
-  - F
-  - G
-  - {t: H, type: vim}
-  - {t: J, type: vim}
-  - {t: K, type: vim}
-  - {t: L, type: vim}
-  - ;
-  - {t: '$$mdi:keyboard-return$$', type: enter}
-  - {t: (, h: '$$mdi:apple-keyboard-shift$$'}
-  - Z
-  - X
-  - C
-  - V
-  - B
-  - $$mdi:volume-off$$
-  - ''
-  - N
-  - M
-  - ','
-  - .
-  - /
-  - {t: ), h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: '[', h: '$$mdi:apple-keyboard-option$$'}
-  - $$mdi:apple-finder$$
-  - {t: '$$mdi:keyboard-space$$', type: space}
-  - $$mdi:numeric-1-box-outline$$
-  - {t: '$$mdi:keyboard-space$$', type: space}
-  - {t: '$$mdi:keyboard-return$$', type: enter}
-  - $$mdi:numeric-2-box-outline$$
-  - {t: '$$mdi:keyboard-space$$', type: space}
-  - $$mdi:apple-keyboard-command$$
-  - {t: ']', h: '$$mdi:apple-keyboard-option$$'}
+    - "`"
+    - "1"
+    - "2"
+    - "3"
+    - "4"
+    - "5"
+    - "6"
+    - "7"
+    - "8"
+    - "9"
+    - "0"
+    - "-"
+    - $$mdi:keyboard-tab$$
+    - Q
+    - W
+    - E
+    - R
+    - T
+    - Y
+    - U
+    - I
+    - O
+    - P
+    - $$mdi:keyboard-backspace$$
+    - {
+        t: "$$mdi:keyboard-esc$$",
+        h: "$$mdi:apple-keyboard-control$$",
+        type: esc,
+      }
+    - A
+    - S
+    - D
+    - F
+    - G
+    - { t: H, type: vim }
+    - { t: J, type: vim }
+    - { t: K, type: vim }
+    - { t: L, type: vim }
+    - ;
+    - { t: "$$mdi:keyboard-return$$", type: enter }
+    - { t: (, h: "$$mdi:apple-keyboard-shift$$" }
+    - Z
+    - X
+    - C
+    - V
+    - B
+    - $$mdi:volume-off$$
+    - ""
+    - N
+    - M
+    - ","
+    - .
+    - /
+    - { t: ), h: "$$mdi:apple-keyboard-shift$$" }
+    - { t: "[", h: "$$mdi:apple-keyboard-option$$" }
+    - $$mdi:apple-finder$$
+    - { t: "$$mdi:keyboard-space$$", type: space }
+    - $$mdi:numeric-1-box-outline$$
+    - { t: "$$mdi:keyboard-space$$", type: space }
+    - { t: "$$mdi:keyboard-return$$", type: enter }
+    - $$mdi:numeric-2-box-outline$$
+    - { t: "$$mdi:keyboard-space$$", type: space }
+    - $$mdi:apple-keyboard-command$$
+    - { t: "]", h: "$$mdi:apple-keyboard-option$$" }
   L1:
-  - {t: '$$mdi:transfer-down$$', type: trans}
-  - F1
-  - F2
-  - F3
-  - F4
-  - F5
-  - F6
-  - F7
-  - F8
-  - F9
-  - F10
-  - F11
-  - {t: '$$mdi:transfer-down$$', type: trans}
-  - ''
-  - ''
-  - ''
-  - '['
-  - ']'
-  - '{'
-  - '}'
-  - '='
-  - +
-  - ''
-  - F12
-  - {t: '$$mdi:transfer-down$$', type: trans}
-  - ''
-  - ''
-  - ''
-  - <
-  - '>'
-  - {t: '$$mdi:transfer-down$$', type: trans}
-  - {t: '$$mdi:transfer-down$$', type: trans}
-  - {t: '$$mdi:transfer-down$$', type: trans}
-  - {t: '$$mdi:transfer-down$$', type: trans}
-  - ':'
-  - {t: '$$mdi:transfer-down$$', type: trans}
-  - {t: '$$mdi:transfer-down$$', type: trans}
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - {t: '$$mdi:transfer-down$$', type: trans}
-  - {t: '$$mdi:transfer-down$$', type: trans}
-  - \
-  - '|'
-  - ''''
-  - '"'
-  - ''
-  - {t: '$$mdi:transfer-down$$', type: trans}
-  - {t: '$$mdi:transfer-down$$', type: trans}
-  - {t: '$$mdi:transfer-down$$', type: trans}
-  - {t: '$$mdi:transfer-down$$', type: trans}
-  - {t: '$$mdi:transfer-down$$', type: trans}
-  - {t: '$$mdi:transfer-down$$', type: trans}
-  - {t: '$$mdi:transfer-down$$', type: trans}
-  - {t: '$$mdi:transfer-down$$', type: trans}
-  - {t: '$$mdi:transfer-down$$', type: trans}
-  - {t: '$$mdi:transfer-down$$', type: trans}
-  - {t: '$$mdi:transfer-down$$', type: trans}
+    - { t: "$$mdi:transfer-down$$", type: trans }
+    - F1
+    - F2
+    - F3
+    - F4
+    - F5
+    - F6
+    - F7
+    - F8
+    - F9
+    - F10
+    - F11
+    - { t: "$$mdi:transfer-down$$", type: trans }
+    - ""
+    - ""
+    - ""
+    - "["
+    - "]"
+    - "{"
+    - "}"
+    - "="
+    - +
+    - ""
+    - F12
+    - { t: "$$mdi:transfer-down$$", type: trans }
+    - ""
+    - ""
+    - ""
+    - <
+    - ">"
+    - { t: "$$mdi:transfer-down$$", type: trans }
+    - { t: "$$mdi:transfer-down$$", type: trans }
+    - { t: "$$mdi:transfer-down$$", type: trans }
+    - { t: "$$mdi:transfer-down$$", type: trans }
+    - ":"
+    - { t: "$$mdi:transfer-down$$", type: trans }
+    - { t: "$$mdi:transfer-down$$", type: trans }
+    - ""
+    - ""
+    - ""
+    - ""
+    - ""
+    - { t: "$$mdi:transfer-down$$", type: trans }
+    - { t: "$$mdi:transfer-down$$", type: trans }
+    - \
+    - "|"
+    - "'"
+    - '"'
+    - ""
+    - { t: "$$mdi:transfer-down$$", type: trans }
+    - { t: "$$mdi:transfer-down$$", type: trans }
+    - { t: "$$mdi:transfer-down$$", type: trans }
+    - { t: "$$mdi:transfer-down$$", type: trans }
+    - { t: "$$mdi:transfer-down$$", type: trans }
+    - { t: "$$mdi:transfer-down$$", type: trans }
+    - { t: "$$mdi:transfer-down$$", type: trans }
+    - { t: "$$mdi:transfer-down$$", type: trans }
+    - { t: "$$mdi:transfer-down$$", type: trans }
+    - { t: "$$mdi:transfer-down$$", type: trans }
+    - { t: "$$mdi:transfer-down$$", type: trans }
   L2:
-  - {t: '$$mdi:transfer-down$$', type: trans}
-  - F1
-  - F2
-  - F3
-  - F4
-  - F5
-  - F6
-  - F7
-  - F8
-  - F9
-  - F10
-  - F11
-  - {t: '$$mdi:transfer-down$$', type: trans}
-  - {t: '$$mdi:transfer-down$$', type: trans}
-  - {t: '$$mdi:transfer-down$$', type: trans}
-  - ''
-  - '['
-  - ']'
-  - '{'
-  - '}'
-  - '='
-  - +
-  - ''
-  - F12
-  - {t: '$$mdi:transfer-down$$', type: trans}
-  - ''
-  - ''
-  - ''
-  - <
-  - '>'
-  - {t: '$$mdi:chevron-left$$', type: arrow}
-  - {t: '$$mdi:chevron-down$$', type: arrow}
-  - {t: '$$mdi:chevron-up$$', type: arrow}
-  - {t: '$$mdi:chevron-right$$', type: arrow}
-  - ':'
-  - {t: '$$mdi:transfer-down$$', type: trans}
-  - {t: '$$mdi:transfer-down$$', type: trans}
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - {t: '$$mdi:transfer-down$$', type: trans}
-  - {t: '$$mdi:transfer-down$$', type: trans}
-  - \
-  - '|'
-  - ''''
-  - '"'
-  - ''
-  - {t: '$$mdi:transfer-down$$', type: trans}
-  - {t: '$$mdi:transfer-down$$', type: trans}
-  - {t: '$$mdi:transfer-down$$', type: trans}
-  - {t: '$$mdi:transfer-down$$', type: trans}
-  - {t: '$$mdi:transfer-down$$', type: trans}
-  - {t: '$$mdi:transfer-down$$', type: trans}
-  - {t: '$$mdi:transfer-down$$', type: trans}
-  - {t: '$$mdi:transfer-down$$', type: trans}
-  - {t: '$$mdi:transfer-down$$', type: trans}
-  - {t: '$$mdi:transfer-down$$', type: trans}
-  - {t: '$$mdi:transfer-down$$', type: trans}
-  L3: ['', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '$$mdi:mouse-move-up$$', '$$mdi:mouse-move-down$$', '', '', '', '', '', '', '$$mdi:apple-keyboard-caps$$',
-    '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '']
+    - { t: "$$mdi:transfer-down$$", type: trans }
+    - F1
+    - F2
+    - F3
+    - F4
+    - F5
+    - F6
+    - F7
+    - F8
+    - F9
+    - F10
+    - F11
+    - { t: "$$mdi:transfer-down$$", type: trans }
+    - { t: "$$mdi:transfer-down$$", type: trans }
+    - { t: "$$mdi:transfer-down$$", type: trans }
+    - ""
+    - "["
+    - "]"
+    - "{"
+    - "}"
+    - "="
+    - +
+    - ""
+    - F12
+    - { t: "$$mdi:transfer-down$$", type: trans }
+    - ""
+    - ""
+    - ""
+    - <
+    - ">"
+    - { t: "$$mdi:chevron-left$$", type: arrow }
+    - { t: "$$mdi:chevron-down$$", type: arrow }
+    - { t: "$$mdi:chevron-up$$", type: arrow }
+    - { t: "$$mdi:chevron-right$$", type: arrow }
+    - ":"
+    - { t: "$$mdi:transfer-down$$", type: trans }
+    - { t: "$$mdi:transfer-down$$", type: trans }
+    - ""
+    - ""
+    - ""
+    - ""
+    - ""
+    - { t: "$$mdi:transfer-down$$", type: trans }
+    - { t: "$$mdi:transfer-down$$", type: trans }
+    - \
+    - "|"
+    - "'"
+    - '"'
+    - ""
+    - { t: "$$mdi:transfer-down$$", type: trans }
+    - { t: "$$mdi:transfer-down$$", type: trans }
+    - { t: "$$mdi:transfer-down$$", type: trans }
+    - { t: "$$mdi:transfer-down$$", type: trans }
+    - { t: "$$mdi:transfer-down$$", type: trans }
+    - { t: "$$mdi:transfer-down$$", type: trans }
+    - { t: "$$mdi:transfer-down$$", type: trans }
+    - { t: "$$mdi:transfer-down$$", type: trans }
+    - { t: "$$mdi:transfer-down$$", type: trans }
+    - { t: "$$mdi:transfer-down$$", type: trans }
+    - { t: "$$mdi:transfer-down$$", type: trans }
+  L3:
+    [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "$$mdi:mouse-move-up$$",
+      "$$mdi:mouse-move-down$$",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "$$mdi:apple-keyboard-caps$$",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+    ]
