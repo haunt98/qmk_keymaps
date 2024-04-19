@@ -54,19 +54,20 @@ static void print_status_narrow(void) {
     oled_write_P(PSTR("\n\n"), false);
 
     // Print current layer
+    // Each line has 5 char width
     oled_write_ln_P(PSTR("LAYER"), false);
     switch (get_highest_layer(layer_state)) {
         case LAYER_QWERTY:
-            oled_write_ln_P(PSTR("QWERTY"), false);
+            oled_write_ln_P(PSTR("BASE"), false);
             break;
         case LAYER_LOWER:
-            oled_write_ln_P(PSTR("LOWER"), false);
+            oled_write_ln_P(PSTR("LOW"), false);
             break;
         case LAYER_UPPER:
-            oled_write_ln_P(PSTR("UPPER"), false);
+            oled_write_ln_P(PSTR("UP"), false);
             break;
         case LAYER_ADJUST:
-            oled_write_ln_P(PSTR("ADJUST"), false);
+            oled_write_ln_P(PSTR("ADJ"), false);
             break;
         default:
             oled_write_ln_P(PSTR("???"), false);
