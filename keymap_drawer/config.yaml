@@ -8,12 +8,13 @@ draw_config:
     svg.keymap {
       font-family: Fantasque Sans Mono, JetBrains Mono, monospace;
       font-size: 14px;
+      fill: rgb(44, 62, 80);
     }
     text {
       fill: rgb(44, 62, 80);
     }
     text.label, text.footer {
-      font-size: 14px;
+      font-size: 16px;
     }
     text.hold {
       font-size: 12px;
@@ -29,7 +30,6 @@ draw_config:
       fill: rgb(200, 230, 201);
     }
   draw_key_sides: true
-  dark_mode: auto
   footer_text: Created by haunt98
 parse_config:
   trans_legend:
