@@ -14,8 +14,9 @@ draw_config:
       fill: rgb(250, 250, 250);
       stroke: rgb(176, 190, 197);
     }
-    text.label {
+    text.label, text.footer {
       font-size: 14px;
+      stroke: rgb(200, 230, 201);
     }
     text.hold {
       font-size: 12px;
@@ -31,7 +32,7 @@ draw_config:
   footer_text: Created by haunt98
 parse_config:
   trans_legend:
-    tap: $$mdi:transfer$$
+    tap: $$mdi:transfer-down$$
     type: trans
   raw_binding_map: {
       # Custom
@@ -57,15 +58,22 @@ parse_config:
       "KC_DOWN": { "t": "$$mdi:chevron-down$$", "type": "arrow" },
       "KC_LEFT": { "t": "$$mdi:chevron-left$$", "type": "arrow" },
       "KC_RGHT": { "t": "$$mdi:chevron-right$$", "type": "arrow" },
-      "KC_CAPS": "$$mdi:caps-lock$$",
+      "KC_CAPS": "$$mdi:apple-keyboard-caps$$",
       "KC_LCTL": "$$mdi:apple-keyboard-control$$",
       "KC_RCTL": "$$mdi:apple-keyboard-control$$",
       "KC_LOPT": "$$mdi:apple-keyboard-option$$",
       "KC_ROPT": "$$mdi:apple-keyboard-option$$",
       "KC_LCMD": "$$mdi:apple-finder$$",
       "KC_RCMD": "$$mdi:apple-keyboard-command$$",
+      "KC_VOLD": "$$mdi:volume-minus$$",
+      "KC_VOLU": "$$mdi:volume-plus$$",
+      "KC_MUTE": "$$mdi:volume-off$$",
+      "KC_WH_U": "$$mdi:mouse-move-up$$",
+      "KC_WH_D": "$$mdi:mouse-move-down$$",
       # Advance
       "QK_GESC": { "t": "$$mdi:keyboard-esc$$", "type": "esc" },
+      "TL_LOWR": "$$mdi:numeric-1-box-outline$$",
+      "TL_UPPR": "$$mdi:numeric-2-box-outline$$",
       "SC_LSPO": { "t": "(", "h": "$$mdi:apple-keyboard-shift$$" },
       "SC_RSPC": { "t": ")", "h": "$$mdi:apple-keyboard-shift$$" },
     }
