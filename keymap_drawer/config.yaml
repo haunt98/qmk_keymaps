@@ -36,7 +36,11 @@ parse_config:
   raw_binding_map: {
       # Custom
       "CTL_ESC":
-        { "t": "ESC", "h": "$$mdi:apple-keyboard-control$$", "type": "esc" },
+        {
+          "t": "$$mdi:keyboard-esc$$",
+          "h": "$$mdi:apple-keyboard-control$$",
+          "type": "esc",
+        },
       "LOPT_BRC": { "t": "[", "h": "$$mdi:apple-keyboard-option$$" },
       "ROPT_BRC": { "t": "]", "h": "$$mdi:apple-keyboard-option$$" },
       "TD(TD_SAFE_BOOT)": "BOOT",
@@ -49,19 +53,19 @@ parse_config:
       "KC_BSPC": "$$mdi:keyboard-backspace$$",
       "KC_TAB": "$$mdi:keyboard-tab$$",
       "KC_SPC": { "t": "$$mdi:keyboard-space$$", "type": "space" },
-      "KC_UP": { "t": "$$mdi:arrow-up$$", "type": "arrow" },
-      "KC_DOWN": { "t": "$$mdi:arrow-down$$", "type": "arrow" },
-      "KC_LEFT": { "t": "$$mdi:arrow-left$$", "type": "arrow" },
-      "KC_RGHT": { "t": "$$mdi:arrow-right$$", "type": "arrow" },
-      "KC_CAPS": "$$mdi:apple-keyboard-caps$$",
+      "KC_UP": { "t": "$$mdi:chevron-up$$", "type": "arrow" },
+      "KC_DOWN": { "t": "$$mdi:chevron-down$$", "type": "arrow" },
+      "KC_LEFT": { "t": "$$mdi:chevron-left$$", "type": "arrow" },
+      "KC_RGHT": { "t": "$$mdi:chevron-right$$", "type": "arrow" },
+      "KC_CAPS": "$$mdi:caps-lock$$",
       "KC_LCTL": "$$mdi:apple-keyboard-control$$",
       "KC_RCTL": "$$mdi:apple-keyboard-control$$",
       "KC_LOPT": "$$mdi:apple-keyboard-option$$",
       "KC_ROPT": "$$mdi:apple-keyboard-option$$",
-      "KC_LCMD": "$$mdi:apple-keyboard-command$$",
+      "KC_LCMD": "$$mdi:apple-finder$$",
       "KC_RCMD": "$$mdi:apple-keyboard-command$$",
       # Advance
-      "QK_GESC": { "t": "GESC", "type": "esc" },
+      "QK_GESC": { "t": "$$mdi:keyboard-esc$$", "type": "esc" },
       "SC_LSPO": { "t": "(", "h": "$$mdi:apple-keyboard-shift$$" },
       "SC_RSPC": { "t": ")", "h": "$$mdi:apple-keyboard-shift$$" },
     }
