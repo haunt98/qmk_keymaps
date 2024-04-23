@@ -115,6 +115,8 @@ Do:
   Quickly press `(`, `)`.
   - [A Modern Space Cadet](https://stevelosh.com/blog/2012/10/a-modern-space-cadet/)
 - [Tri Layers](https://github.com/qmk/qmk_firmware/blob/master/docs/feature_tri_layer.md)
+- [Encoders](https://github.com/qmk/qmk_firmware/blob/master/docs/feature_encoders.md)
+  - [How can I use a rotary encoder?](https://docs.splitkb.com/hc/en-us/articles/360010513760-How-can-I-use-a-rotary-encoder)
 
 Don't:
 
