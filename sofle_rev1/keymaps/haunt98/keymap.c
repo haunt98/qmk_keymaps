@@ -103,16 +103,36 @@ bool oled_task_user(void) {
 
 bool encoder_update_user(uint8_t index, bool clockwise) {
     if (index == 0) {
-        if (clockwise) {
-            tap_code(KC_VOLU);
-        } else {
-            tap_code(KC_VOLD);
+        switch (get_highest_layer(layer_state)) {
+            case LAYER_UPPER:
+                if (clockwise) {
+                    tap_code(KC_BRMU);
+                } else {
+                    tap_code(KC_BRMD);
+                }
+                break;
+            default:
+                if (clockwise) {
+                    tap_code(KC_VOLU);
+                } else {
+                    tap_code(KC_VOLD);
+                }
         }
     } else if (index == 1) {
-        if (clockwise) {
-            tap_code(KC_BRMU);
-        } else {
-            tap_code(KC_BRMD);
+        switch (get_highest_layer(layer_state)) {
+            case LAYER_LOWER:
+                if (clockwise) {
+                    tap_code(KC_BRMU);
+                } else {
+                    tap_code(KC_BRMD);
+                }
+                break;
+            default:
+                if (clockwise) {
+                    tap_code(KC_PGDN);
+                } else {
+                    tap_code(KC_PGUP);
+                }
         }
     }
     return false;
