@@ -45,7 +45,7 @@ There is a button below the board, press twice to enter boot mode.
 
 > - Make sure halves are not connected together with TRRS cable.
 > - Connect one half to USB, flash the firmware. Use the reset button to reset
-  > the keyboard when you are asked to in console.
+>   the keyboard when you are asked to in console.
 > - Connect the second half and flash it in the same way as the previous one.
 > - Disconnect the USB cable. Connect both halves together with TRRS cable.
 > - Connect USB cable to the left side.
@@ -60,9 +60,10 @@ There is a button below OLED/above encoder. Press 2 times to reset.
 
 Enter bootloader in many ways:
 
-- Press `QK_BOOT`.
-- Unplug cable, then hold key in row 0 col 1 and plug cable.
-- Read manual of your PCB, likely will have a reset button
+- Bootmagic reset: Unplug cable, then hold key in row 0 col 0 and plug cable.
+- Keycode: Press `QK_BOOT`.
+- Physical reset button: Read manual of your PCB, likely will have a reset
+  button
 
 If use [QMK Toolbox](https://github.com/qmk/qmk_toolbox), locate firmware file
 after compile successfully or download from
