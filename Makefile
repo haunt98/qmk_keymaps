@@ -33,8 +33,6 @@ draw_qmkasciigen_demo:
 
 draw_keymap_drawer:
 	# https://github.com/caksoylar/keymap-drawer
-	# pipx install keymap-drawer
-	# pipx upgrade keymap-drawer
 	keymap -c keymap_drawer/config.yaml \
 		parse -q dztech_dz60rgb_wkl/keymaps_json/haunt98/keymap.json > \
 		dztech_dz60rgb_wkl/keymap_drawer/keymap.yaml
