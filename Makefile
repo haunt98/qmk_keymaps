@@ -74,12 +74,7 @@ qmk_upstream:
 	curl https://raw.githubusercontent.com/qmk/qmk_firmware/master/.clang-format --output .clang-format
 
 qmk_format:
-	clang-format -i dztech_dz60rgb_wkl/keymaps/haunt98/*.c \
-		dztech_dz60rgb_wkl/keymaps/haunt98/*.h \
-		sofle_rev1/keymaps/haunt98/*.c \
-		sofle_rev1/keymaps/haunt98/*.h \
-		users/haunt98/*.c \
-		users/haunt98/*.h
+	fd --extension c --extension h --exec clang-format -i
 
 qmk_cp:
 	$(MAKE) qmk_clean
@@ -101,14 +96,12 @@ qmk_clean:
 	rm -rf *.bin *.hex
 
 qmk_c2json:
-	rm -rf dztech_dz60rgb_wkl/keymaps_json/haunt98/keymap.json
+	fd "keymap.json" --exec-batch rm
 	qmk c2json -kb dztech/dz60rgb_wkl/v2_1 -km haunt98 -o dztech_dz60rgb_wkl/keymaps_json/haunt98/keymap.json --no-cpp \
 		dztech_dz60rgb_wkl/keymaps/haunt98/keymap.c
-	qmk format-json -i dztech_dz60rgb_wkl/keymaps_json/haunt98/keymap.json
-	rm -rf sofle_rev1/keymaps_json/haunt98/keymap.json
 	qmk c2json -kb sofle/rev1 -km haunt98 -o sofle_rev1/keymaps_json/haunt98/keymap.json --no-cpp \
 		sofle_rev1/keymaps/haunt98/keymap.c
-	qmk format-json -i sofle_rev1/keymaps_json/haunt98/keymap.json
+	fd "keymap.json" --exec qmk format-json -i
 
 qmk_flash_sofle_rev1:
 	$(MAKE) qmk_cp
