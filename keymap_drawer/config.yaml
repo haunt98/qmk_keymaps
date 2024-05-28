@@ -6,7 +6,7 @@ draw_config:
   append_colon_to_layer_header: false
   svg_extra_style: |
     svg.keymap {
-      font-family: Fantasque Sans Mono, JetBrains Mono, monospace;
+      font-family: Iosevka Pacman, monospace;
       font-size: 14px;
     }
     text.label, text.footer {

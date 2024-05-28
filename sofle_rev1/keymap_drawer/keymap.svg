@@ -178,7 +178,7 @@ path.combo {
 /* End Tabler Icons Cleanup */
 
 svg.keymap {
-  font-family: Fantasque Sans Mono, JetBrains Mono, monospace;
+  font-family: Iosevka Pacman, monospace;
   font-size: 14px;
 }
 text.label, text.footer {
