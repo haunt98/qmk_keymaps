@@ -15,9 +15,15 @@ import (
 )
 
 const (
-	qmkKeyboardInfoURL = "https://raw.githubusercontent.com/qmk/qmk_firmware/master/keyboards/%s/info.json"
-	qmkKeymapURL       = "https://raw.githubusercontent.com/qmk/qmk_firmware/master/keyboards/%s/keymaps/%s/keymap.json"
+	// QMK template
+	qmkKeymapURL = "https://raw.githubusercontent.com/qmk/qmk_firmware/master/keyboards/%s/keymaps/%s/keymap.json"
 )
+
+// QMK template
+var qmkKeyboardInfoURLs = []string{
+	"https://raw.githubusercontent.com/qmk/qmk_firmware/master/keyboards/%s/keyboard.json",
+	"https://raw.githubusercontent.com/qmk/qmk_firmware/master/keyboards/%s/info.json",
+}
 
 var (
 	ErrEmptyQMKInfo   = errors.New("empty QMK info")
@@ -145,45 +151,51 @@ func getQMKInfo(qmkKeyboardStr string, debug bool) (QMKInfo, error) {
 	for i := len(kbParts); i >= 1; i-- {
 		kb := strings.Join(kbParts[:i], "/")
 
-		url := fmt.Sprintf(qmkKeyboardInfoURL, kb)
+		for _, uTemplate := range qmkKeyboardInfoURLs {
+			u := fmt.Sprintf(uTemplate, kb)
 
-		// nolint:noctx,gosec
-		httpRsp, err := http.Get(url)
-		if err != nil {
-			if debug {
-				log.Printf("Failed to http get [%s]: %s\n", url, err)
+			// nolint:noctx,gosec
+			httpRsp, err := http.Get(u)
+			if err != nil {
+				if debug {
+					log.Printf("Failed to http get [%s]: %s\n", u, err)
+				}
+
+				continue
 			}
 
-			continue
-		}
+			data, err := io.ReadAll(httpRsp.Body)
+			if err != nil {
+				if debug {
+					log.Printf("Failed to read all body [%s]: %s\n", u, err)
+				}
 
-		data, err := io.ReadAll(httpRsp.Body)
-		if err != nil {
-			if debug {
-				log.Printf("Failed to read all body [%s]: %s\n", url, err)
+				continue
 			}
 
-			continue
-		}
+			qmkInfo := QMKInfo{}
+			if err := json.Unmarshal(data, &qmkInfo); err != nil {
+				if debug {
+					log.Printf("Failed to json unmarshal [%s]: %s\n", u, err)
+				}
 
-		qmkInfo := QMKInfo{}
-		if err := json.Unmarshal(data, &qmkInfo); err != nil {
-			if debug {
-				log.Printf("Failed to json unmarshal [%s]: %s\n", url, err)
+				continue
 			}
 
-			continue
-		}
+			if len(qmkInfo.Layouts) == 0 {
+				if debug {
+					log.Printf("Empty layouts [%s]\n", u)
+				}
 
-		if len(qmkInfo.Layouts) == 0 {
-			continue
-		}
+				continue
+			}
 
-		if debug {
-			log.Printf("Found QMK info [%s]\n", url)
-		}
+			if debug {
+				log.Printf("Found QMK info [%s]\n", u)
+			}
 
-		return qmkInfo, nil
+			return qmkInfo, nil
+		}
 	}
 
 	return QMKInfo{}, ErrEmptyQMKInfo
