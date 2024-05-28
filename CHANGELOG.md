@@ -1,5 +1,99 @@
 # CHANGELOG
 
+## v0.0.22 (2024-05-28)
+
+### Added
+
+- feat(qmkasciigen): support new qmk keyboard.json (2024-05-28)
+
+- feat(qmk): use encoder for page up/down (2024-04-23)
+
+- feat(qmk): enable SPLIT_WATCHDOG_ENABLE for sofle_rev1 (2024-04-20)
+
+- feat(qmk): remove caps in encoder sofle (2024-04-19)
+
+- feat(qmk): correct led width (2024-04-19)
+
+- feat(qmk): use tri layers (2024-04-19)
+
+- feat(qmk): experiemnt with NO_USB_STARTUP_CHECK (2024-04-16)
+
+- feat(qmk): remove nkro (2024-04-16)
+
+- feat(qmk): re-adds KC_CAPS for sofle_rev1 (2024-04-04)
+
+- feat: put think65 to rest (2024-03-11)
+
+### Others
+
+- chore: use fd to auto find and exec (2024-05-12)
+
+- chore: remove pipx (2024-05-11)
+
+- chore: clearly explain how to flash (2024-05-08)
+
+- chore: sync golangci-lint config (2024-05-08)
+
+- chore(deps): bump golangci/golangci-lint-action from 5 to 6 (#17) (2024-05-07)
+
+- chore: update golangci-lint (2024-05-04)
+
+- chore(deps): bump golangci/golangci-lint-action from 4 to 5 (#16) (2024-04-25)
+
+- chore: add encoder docs (2024-04-23)
+
+- chore(draw): I give up dark mode for now (2024-04-19)
+
+- chore(draw): try to fix dark mode (2/?) (2024-04-19)
+
+- chore(draw): try to fix dark mode (1/?) (2024-04-19)
+
+- config: disable dark mode (2024-04-19)
+
+- chore(draw): fix dark mode (2024-04-19)
+
+- chore(draw): improve icon (1/?) (2024-04-19)
+
+- Revert "chore(draw): remove dark mode (for now)" (2024-04-19)
+
+- chore(draw): remove dark mode (for now) (2024-04-19)
+
+- chore(draw): fix dark_mode config value (2024-04-19)
+
+- chore: more docs (2024-04-19)
+
+- chore: column -t (2024-04-19)
+
+- chore: fix typo (2024-04-19)
+
+- chore: fix typo (2024-04-19)
+
+- chore: re-draw using keymap-drawer (2024-04-15)
+
+- chore: re-enable dztech/dz60rgb_wkl/v2_1 build (2024-04-07)
+
+- config: try to fix git pull freeze (2024-04-07)
+
+- chore: Add The SpaceFN concept to README.md (2024-04-05)
+
+- chore: fix preview (2024-04-01)
+
+- chore: clean up make (2024-04-01)
+
+- chore: re-draw with latest keymap-drawer (2024-03-24)
+
+- chore: change Bootmagic Lite to Bootmagic (2024-03-11)
+
+- Merge branch 'main' of https://github.com/haunt98/qmk_keymaps (2024-03-04)
+
+- chore: revert qmk to 0.23.9 (2024-03-04)
+
+- chore: typo (2024-03-01)
+
+- chore(readme): remove verbose (2024-03-01)
+
+- chore(changelog): generate v0.0.21 (2024-03-01)
+
 ## v0.0.21 (2024-03-01)
 
 ### Added
