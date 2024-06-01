@@ -51,7 +51,7 @@ draw_keymap_drawer_upstream:
 
 draw_keymap_drawer_format:
 	# bun upgrade
-	bunx prettier@latest --write \
+	bunx prettier --write \
 		dztech_dz60rgb_wkl/keymap_drawer/*.yaml \
 		sofle_rev1/keymap_drawer/*.yaml
 		
