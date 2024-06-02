@@ -99,36 +99,36 @@ More advance:
 
 Do:
 
-- [Bootmagic](https://github.com/qmk/qmk_firmware/blob/master/docs/feature_bootmagic.md):
+- [Bootmagic](https://github.com/qmk/qmk_firmware/blob/master/docs/features/bootmagic.md):
   I use `QK_BOOT` with `EE_CLR`.
 - [Contact bounce / contact chatter](https://github.com/qmk/qmk_firmware/blob/master/docs/feature_debounce_type.md)
   - [Measure and reduce keyboard input latency with QMK on the Kinesis Advantage (2021)](https://michael.stapelberg.ch/posts/2021-05-08-keyboard-input-latency-qmk-kinesis/)
   - [QMK debounce masterclass](https://kbd.news/QMK-debounce-masterclass-1435.html)
   - [Keyboard Matrix Scanning and Debouncing](https://summivox.wordpress.com/2016/06/03/keyboard-matrix-scanning-and-debouncing/)
-- [Grave Escape](https://github.com/qmk/qmk_firmware/blob/master/docs/feature_grave_esc.md):
+- [Grave Escape](https://github.com/qmk/qmk_firmware/blob/master/docs/features/grave_esc.md):
   Useful on layout <= 60%, because of missing `Fn` row.
 - [Mod-Tap](https://github.com/qmk/qmk_firmware/blob/master/docs/mod_tap.md): To
   replace `CAPSLOCK` with `CTRL` when hold and `ESC` when tap.
 - [Tap-Hold Configuration Options](https://github.com/qmk/qmk_firmware/blob/master/docs/tap_hold.md)
-- [Tap Dance: A Single Key Can Do 3, 5, or 100 Different Things](https://github.com/qmk/qmk_firmware/blob/master/docs/feature_tap_dance.md):
+- [Tap Dance: A Single Key Can Do 3, 5, or 100 Different Things](https://github.com/qmk/qmk_firmware/blob/master/docs/features/tap_dance.md):
   I use it for safely `QK_BOOT`.
-- [Space Cadet: The Future, Built In](https://github.com/qmk/qmk_firmware/blob/master/docs/feature_space_cadet.md):
+- [Space Cadet: The Future, Built In](https://github.com/qmk/qmk_firmware/blob/master/docs/features/space_cadet.md):
   Quickly press `(`, `)`.
   - [A Modern Space Cadet](https://stevelosh.com/blog/2012/10/a-modern-space-cadet/)
-- [Tri Layers](https://github.com/qmk/qmk_firmware/blob/master/docs/feature_tri_layer.md)
-- [Encoders](https://github.com/qmk/qmk_firmware/blob/master/docs/feature_encoders.md)
+- [Tri Layers](https://github.com/qmk/qmk_firmware/blob/master/docs/features/tri_layer.md)
+- [Encoders](https://github.com/qmk/qmk_firmware/blob/master/docs/features/encoders.md)
   - [How can I use a rotary encoder?](https://docs.splitkb.com/hc/en-us/articles/360010513760-How-can-I-use-a-rotary-encoder)
 
 Don't:
 
 - [Magic Keycodes](https://github.com/qmk/qmk_firmware/blob/master/docs/keycodes_magic.md)
-- [Command](https://github.com/qmk/qmk_firmware/blob/master/docs/feature_command.md)
-- [Mouse keys](https://github.com/qmk/qmk_firmware/blob/master/docs/feature_mouse_keys.md)
+- [Command](https://github.com/qmk/qmk_firmware/blob/master/docs/features/command.md)
+- [Mouse keys](https://github.com/qmk/qmk_firmware/blob/master/docs/features/mouse_keys.md)
 - [One Shot Keys](https://github.com/qmk/qmk_firmware/blob/master/docs/one_shot_keys.md)
-- [RGB Matrix Lighting](https://github.com/qmk/qmk_firmware/blob/master/docs/feature_rgb_matrix.md)
-- [Auto Shift: Why Do We Need a Shift Key?](https://github.com/qmk/qmk_firmware/blob/master/docs/feature_auto_shift.md):
+- [RGB Matrix Lighting](https://github.com/qmk/qmk_firmware/blob/master/docs/features/rgb_matrix.md)
+- [Auto Shift: Why Do We Need a Shift Key?](https://github.com/qmk/qmk_firmware/blob/master/docs/features/auto_shift.md):
   Conflict with space cadet when using vim `:w` -> `:)w`.
-- [Swap-Hands Action](https://github.com/qmk/qmk_firmware/blob/master/docs/feature_swap_hands.md)
+- [Swap-Hands Action](https://github.com/qmk/qmk_firmware/blob/master/docs/features/swap_hands.md)
 - `qmk format-c`: I have custom `clang-format`.
 - [A guide to home row mods](https://precondition.github.io/home-row-mods): Hard
   to get it right, so ignore it for now.

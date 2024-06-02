@@ -13,7 +13,7 @@ enum layers {
 
 // Inspire from https://github.com/qmk/qmk_firmware/blob/master/keyboards/sofle/keymaps/default/keymap.c
 // https://github.com/qmk/qmk_firmware/blob/master/docs/keycodes.md
-// https://github.com/qmk/qmk_firmware/blob/master/docs/feature_space_cadet.md
+// https://github.com/qmk/qmk_firmware/blob/master/docs/features/space_cadet.md
 // clang-format off
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [LAYER_QWERTY] = LAYOUT(
@@ -47,7 +47,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 };
 // clang-format on
 
-// https://github.com/qmk/qmk_firmware/blob/master/docs/feature_oled_driver.md
+// https://github.com/qmk/qmk_firmware/blob/master/docs/features/oled_driver.md
 #ifdef OLED_ENABLE
 
 static void print_status_narrow(void) {
@@ -98,7 +98,7 @@ bool oled_task_user(void) {
 
 #endif
 
-// https://github.com/qmk/qmk_firmware/blob/master/docs/feature_encoders.md
+// https://github.com/qmk/qmk_firmware/blob/master/docs/features/encoders.md
 #ifdef ENCODER_ENABLE
 
 bool encoder_update_user(uint8_t index, bool clockwise) {

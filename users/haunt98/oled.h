@@ -5,7 +5,7 @@
 
 #include QMK_KEYBOARD_H
 
-// https://github.com/qmk/qmk_firmware/blob/master/docs/feature_oled_driver.md
+// https://github.com/qmk/qmk_firmware/blob/master/docs/features/oled_driver.md
 #ifdef OLED_ENABLE
 
 void render_logo_qmk(void);

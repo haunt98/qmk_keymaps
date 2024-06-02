@@ -13,8 +13,8 @@ enum layers {
 
 // Inspire from https://github.com/qmk/qmk_firmware/blob/master/keyboards/dztech/dz60rgb_wkl/keymaps/hhkb/keymap.c
 // https://github.com/qmk/qmk_firmware/blob/master/docs/keycodes.md
-// https://github.com/qmk/qmk_firmware/blob/master/docs/feature_grave_esc.md
-// https://github.com/qmk/qmk_firmware/blob/master/docs/feature_space_cadet.md
+// https://github.com/qmk/qmk_firmware/blob/master/docs/features/grave_esc.md
+// https://github.com/qmk/qmk_firmware/blob/master/docs/features/space_cadet.md
 // clang-format off
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [LAYER_QWERTY] = LAYOUT_60_tsangan_hhkb(

@@ -20,7 +20,7 @@
 #endif
 #define QUICK_TAP_TERM 120
 
-// https://github.com/qmk/qmk_firmware/blob/master/docs/feature_encoders.md
+// https://github.com/qmk/qmk_firmware/blob/master/docs/features/encoders.md
 #ifdef ENCODER_RESOLUTION
 #    undef ENCODER_RESOLUTION
 #endif

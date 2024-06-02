@@ -15,7 +15,7 @@
 #undef QUICK_TAP_TERM
 #define QUICK_TAP_TERM 120
 
-// https://github.com/qmk/qmk_firmware/blob/master/docs/feature_rgb_matrix.md
+// https://github.com/qmk/qmk_firmware/blob/master/docs/features/rgb_matrix.md
 // https://www.youtube.com/watch?v=7f3usatOIKM
 #ifdef RGB_MATRIX_ENABLE
 #    undef ENABLE_RGB_MATRIX_ALPHAS_MODS

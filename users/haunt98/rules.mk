@@ -9,17 +9,17 @@ COMMAND_ENABLE = no
 EXTRAKEY_ENABLE = yes
 
 # Feature
-# https://github.com/qmk/qmk_firmware/blob/master/docs/feature_bootmagic.md
+# https://github.com/qmk/qmk_firmware/blob/master/docs/features/bootmagic.md
 MAGIC_ENABLE = no
 BOOTMAGIC_ENABLE = yes
 
-# https://github.com/qmk/qmk_firmware/blob/master/docs/feature_tap_dance.md
+# https://github.com/qmk/qmk_firmware/blob/master/docs/features/tap_dance.md
 TAP_DANCE_ENABLE = yes
 
-# https://github.com/qmk/qmk_firmware/blob/master/docs/feature_tri_layer.md
+# https://github.com/qmk/qmk_firmware/blob/master/docs/features/tri_layer.md
 TRI_LAYER_ENABLE = yes
 
-# https://github.com/qmk/qmk_firmware/blob/master/docs/feature_swap_hands.md
+# https://github.com/qmk/qmk_firmware/blob/master/docs/features/tri_layer.md
 SWAP_HANDS_ENABLE = no
 
 # Custom C
