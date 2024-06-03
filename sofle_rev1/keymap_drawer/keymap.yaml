@@ -59,8 +59,8 @@ layers:
     - $$mdi:apple-finder$$
     - { t: "$$mdi:keyboard-space$$", type: space }
     - $$mdi:numeric-1-box-outline$$
-    - { t: "$$mdi:keyboard-space$$", type: space }
-    - { t: "$$mdi:keyboard-return$$", type: enter }
+    - "["
+    - "]"
     - $$mdi:numeric-2-box-outline$$
     - { t: "$$mdi:keyboard-space$$", type: space }
     - $$mdi:apple-keyboard-command$$

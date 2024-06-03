@@ -469,15 +469,15 @@ rect.esc, rect.vim {
 <rect rx="4" ry="4" x="-22" y="-26" width="44" height="44" class="key"/>
 <use href="#mdi:numeric-1-box-outline" xlink:href="#mdi:numeric-1-box-outline" x="-9" y="-13" height="18" width="18.0" class="key tap glyph mdi:numeric-1-box-outline"/>
 </g>
-<g transform="translate(405, 312) rotate(30.0)" class="key space keypos-54">
-<rect rx="6" ry="6" x="-28" y="-43" width="56" height="86" class="key space side"/>
-<rect rx="4" ry="4" x="-22" y="-41" width="44" height="74" class="key space"/>
-<use href="#mdi:keyboard-space" xlink:href="#mdi:keyboard-space" x="-9" y="-13" height="18" width="18.0" class="key space tap glyph mdi:keyboard-space"/>
+<g transform="translate(405, 312) rotate(30.0)" class="key keypos-54">
+<rect rx="6" ry="6" x="-28" y="-43" width="56" height="86" class="key side"/>
+<rect rx="4" ry="4" x="-22" y="-41" width="44" height="74" class="key"/>
+<text x="0" y="-4" class="key tap">[</text>
 </g>
-<g transform="translate(555, 312) rotate(-30.0)" class="key enter keypos-55">
-<rect rx="6" ry="6" x="-28" y="-43" width="56" height="86" class="key enter side"/>
-<rect rx="4" ry="4" x="-22" y="-41" width="44" height="74" class="key enter"/>
-<use href="#mdi:keyboard-return" xlink:href="#mdi:keyboard-return" x="-9" y="-13" height="18" width="18.0" class="key enter tap glyph mdi:keyboard-return"/>
+<g transform="translate(555, 312) rotate(-30.0)" class="key keypos-55">
+<rect rx="6" ry="6" x="-28" y="-43" width="56" height="86" class="key side"/>
+<rect rx="4" ry="4" x="-22" y="-41" width="44" height="74" class="key"/>
+<text x="0" y="-4" class="key tap">]</text>
 </g>
 <g transform="translate(621, 294) rotate(-22.5)" class="key keypos-56">
 <rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key side"/>
