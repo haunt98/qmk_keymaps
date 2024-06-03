@@ -84,24 +84,24 @@ layers:
     - ""
     - "["
     - "]"
-    - "{"
-    - "}"
-    - "="
-    - +
+    - ""
+    - "7"
+    - "8"
+    - "9"
     - ""
     - F12
     - { t: "$$mdi:transfer-down$$", type: trans }
     - ""
     - ""
     - ""
-    - <
-    - ">"
-    - { t: "$$mdi:transfer-down$$", type: trans }
-    - { t: "$$mdi:transfer-down$$", type: trans }
-    - { t: "$$mdi:transfer-down$$", type: trans }
-    - { t: "$$mdi:transfer-down$$", type: trans }
-    - ":"
-    - { t: "$$mdi:transfer-down$$", type: trans }
+    - ""
+    - ""
+    - ""
+    - "4"
+    - "5"
+    - "6"
+    - ""
+    - ""
     - { t: "$$mdi:transfer-down$$", type: trans }
     - ""
     - ""
@@ -110,10 +110,10 @@ layers:
     - ""
     - { t: "$$mdi:transfer-down$$", type: trans }
     - { t: "$$mdi:transfer-down$$", type: trans }
-    - \
-    - "|"
-    - "'"
-    - '"'
+    - "0"
+    - "1"
+    - "2"
+    - "3"
     - ""
     - { t: "$$mdi:transfer-down$$", type: trans }
     - { t: "$$mdi:transfer-down$$", type: trans }
@@ -142,9 +142,9 @@ layers:
     - { t: "$$mdi:transfer-down$$", type: trans }
     - { t: "$$mdi:transfer-down$$", type: trans }
     - { t: "$$mdi:transfer-down$$", type: trans }
-    - ""
-    - "["
-    - "]"
+    - F7
+    - F8
+    - F9
     - "{"
     - "}"
     - "="
@@ -154,9 +154,9 @@ layers:
     - { t: "$$mdi:transfer-down$$", type: trans }
     - ""
     - ""
-    - ""
-    - <
-    - ">"
+    - F4
+    - F5
+    - F6
     - { t: "$$mdi:chevron-left$$", type: arrow }
     - { t: "$$mdi:chevron-down$$", type: arrow }
     - { t: "$$mdi:chevron-up$$", type: arrow }
@@ -166,9 +166,9 @@ layers:
     - { t: "$$mdi:transfer-down$$", type: trans }
     - ""
     - ""
-    - ""
-    - ""
-    - ""
+    - F1
+    - F2
+    - F3
     - { t: "$$mdi:transfer-down$$", type: trans }
     - { t: "$$mdi:transfer-down$$", type: trans }
     - \

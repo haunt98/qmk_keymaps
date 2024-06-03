@@ -24,17 +24,17 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_LOPT,  KC_LCMD,  KC_SPC,  TL_LOWR,  KC_SPC,  KC_ENT,  TL_UPPR,  KC_SPC,   KC_RCMD,  KC_ROPT
     ),
     [LAYER_LOWER] = LAYOUT(
-        _______,  KC_F1,    KC_F2,    KC_F3,    KC_F4,    KC_F5,    KC_F6,    KC_F7,    KC_F8,    KC_F9,    KC_F10,   KC_F11,
-        _______,  XXXXXXX,  XXXXXXX,  XXXXXXX,  KC_LBRC,  KC_RBRC,  KC_LCBR,  KC_RCBR,  KC_EQL,   KC_PLUS,  XXXXXXX,  KC_F12,
-        _______,  XXXXXXX,  XXXXXXX,  XXXXXXX,  KC_LT,    KC_GT,    _______,  _______,  _______,  _______,  KC_COLN,  _______,
-        _______,  XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  _______,  _______,  KC_BSLS,  KC_PIPE,  KC_QUOT,  KC_DQUO,  XXXXXXX,  _______,
+        _______,  KC_F1,    KC_F2,    KC_F3,    KC_F4,    KC_F5,    KC_F6,    KC_F7,    KC_F8,    KC_F9,   KC_F10,   KC_F11,
+        _______,  XXXXXXX,  XXXXXXX,  XXXXXXX,  KC_LBRC,  KC_RBRC,  XXXXXXX,  KC_7,     KC_8,     KC_9,    XXXXXXX,  KC_F12,
+        _______,  XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  KC_4,     KC_5,     KC_6,    XXXXXXX,  XXXXXXX,
+        _______,  XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  _______,  _______,  KC_0,     KC_1,    KC_2,     KC_3,     XXXXXXX,  _______,
         _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______
     ),
     [LAYER_UPPER] = LAYOUT(
         _______,  KC_F1,    KC_F2,    KC_F3,    KC_F4,    KC_F5,    KC_F6,    KC_F7,    KC_F8,    KC_F9,    KC_F10,   KC_F11,
-        _______,  _______,  _______,  XXXXXXX,  KC_LBRC,  KC_RBRC,  KC_LCBR,  KC_RCBR,  KC_EQL,   KC_PLUS,  XXXXXXX,  KC_F12,
-        _______,  XXXXXXX,  XXXXXXX,  XXXXXXX,  KC_LT,    KC_GT,    KC_LEFT,  KC_DOWN,  KC_UP,    KC_RGHT,  KC_COLN,  _______,
-        _______,  XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  _______,  _______,  KC_BSLS,  KC_PIPE,  KC_QUOT,  KC_DQUO,  XXXXXXX,  _______,
+        _______,  _______,  _______,  KC_F7,    KC_F8,    KC_F9,    KC_LCBR,  KC_RCBR,  KC_EQL,   KC_PLUS,  XXXXXXX,  KC_F12,
+        _______,  XXXXXXX,  XXXXXXX,  KC_F4,    KC_F5,    KC_F6,    KC_LEFT,  KC_DOWN,  KC_UP,    KC_RGHT,  KC_COLN,  _______,
+        _______,  XXXXXXX,  XXXXXXX,  KC_F1,    KC_F2,    KC_F3,    _______,  _______,  KC_BSLS,  KC_PIPE,  KC_QUOT,  KC_DQUO,  XXXXXXX,  _______,
         _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______
     ),
     [LAYER_ADJUST] = LAYOUT(
