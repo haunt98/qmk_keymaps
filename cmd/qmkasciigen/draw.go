@@ -14,8 +14,6 @@ var mapRawBinding = []map[string]string{
 	{
 		// My custom
 		"CTL_ESC":          "ESC CTRL",
-		"LOPT_BRC":         "OPT [",
-		"ROPT_BRC":         "OPT ]",
 		"TD(TD_SAFE_BOOT)": "BOOT",
 	},
 }

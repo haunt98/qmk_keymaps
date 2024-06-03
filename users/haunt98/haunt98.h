@@ -11,5 +11,3 @@
 
 // https://github.com/qmk/qmk_firmware/blob/master/docs/mod_tap.md
 #define CTL_ESC CTL_T(KC_ESC)
-#define LOPT_BRC LOPT_T(KC_LBRC)
-#define ROPT_BRC ROPT_T(KC_RBRC)

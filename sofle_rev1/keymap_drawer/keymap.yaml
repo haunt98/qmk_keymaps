@@ -55,7 +55,7 @@ layers:
     - .
     - /
     - { t: ), h: "$$mdi:apple-keyboard-shift$$" }
-    - { t: "[", h: "$$mdi:apple-keyboard-option$$" }
+    - $$mdi:apple-keyboard-option$$
     - $$mdi:apple-finder$$
     - { t: "$$mdi:keyboard-space$$", type: space }
     - $$mdi:numeric-1-box-outline$$
@@ -64,7 +64,7 @@ layers:
     - $$mdi:numeric-2-box-outline$$
     - { t: "$$mdi:keyboard-space$$", type: space }
     - $$mdi:apple-keyboard-command$$
-    - { t: "]", h: "$$mdi:apple-keyboard-option$$" }
+    - $$mdi:apple-keyboard-option$$
   L1:
     - { t: "$$mdi:transfer-down$$", type: trans }
     - F1

@@ -35,8 +35,6 @@ parse_config:
           "h": "$$mdi:apple-keyboard-control$$",
           "type": "esc",
         },
-      "LOPT_BRC": { "t": "[", "h": "$$mdi:apple-keyboard-option$$" },
-      "ROPT_BRC": { "t": "]", "h": "$$mdi:apple-keyboard-option$$" },
       "TD(TD_SAFE_BOOT)": "BOOT",
       # Basic
       "KC_H": { "t": "H", "type": "vim" },
