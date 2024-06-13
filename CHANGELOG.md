@@ -1,5 +1,31 @@
 # CHANGELOG
 
+## v0.0.23 (2024-06-13)
+
+### Added
+
+- feat(qmk): use [] for vim (2024-06-03)
+
+- feat(qmk): move numpad to the left (2024-06-03)
+
+- feat(qmk): add extra numpad layer (2024-06-03)
+
+- feat(qmk): no need LOPT_BRC, ROPT_BRC (2024-06-03)
+
+### Others
+
+- chore: add badges (2024-06-08)
+
+- chore: add gitleaks (2024-06-08)
+
+- chore: update qmk docs (2024-06-02)
+
+- chore: remove prettier latest (2024-06-02)
+
+- chore: use custom font (2024-05-28)
+
+- chore(changelog): generate v0.0.22 (2024-05-28)
+
 ## v0.0.22 (2024-05-28)
 
 ### Added
