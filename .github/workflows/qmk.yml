@@ -27,7 +27,7 @@ jobs:
     container: ghcr.io/qmk/qmk_cli
     strategy:
       matrix:
-        qmk_ref: [master, develop]
+        qmk_ref: [master]
     steps:
       - name: Disable git safe directory checks
         run: git config --global --add safe.directory '*'
