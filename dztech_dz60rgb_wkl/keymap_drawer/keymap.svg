@@ -147,6 +147,10 @@ text.shifted {
     dominant-baseline: hanging;
 }
 
+text.layer-activator {
+    text-decoration: underline;
+}
+
 /* styling for hold/shifted label text in combo box */
 text.combo.hold, text.combo.shifted {
     font-size: 8px;
@@ -195,7 +199,7 @@ rect.esc, rect.vim {
 }
 </style>
 <g transform="translate(30, 0)" class="layer-L0">
-<text x="0" y="28" class="label">L0</text>
+<text x="0" y="28" class="label" id="L0">L0</text>
 <g transform="translate(0, 56)">
 <g transform="translate(30, 30)" class="key esc keypos-0">
 <rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key esc side"/>
@@ -511,7 +515,7 @@ rect.esc, rect.vim {
 </g>
 </g>
 <g transform="translate(30, 356)" class="layer-L1">
-<text x="0" y="28" class="label">L1</text>
+<text x="0" y="28" class="label" id="L1">L1</text>
 <g transform="translate(0, 56)">
 <g transform="translate(30, 30)" class="key keypos-0">
 <rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key side"/>
@@ -785,7 +789,7 @@ rect.esc, rect.vim {
 </g>
 </g>
 <g transform="translate(30, 712)" class="layer-L2">
-<text x="0" y="28" class="label">L2</text>
+<text x="0" y="28" class="label" id="L2">L2</text>
 <g transform="translate(0, 56)">
 <g transform="translate(30, 30)" class="key keypos-0">
 <rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key side"/>
@@ -1062,7 +1066,7 @@ rect.esc, rect.vim {
 </g>
 </g>
 <g transform="translate(30, 1068)" class="layer-L3">
-<text x="0" y="28" class="label">L3</text>
+<text x="0" y="28" class="label" id="L3">L3</text>
 <g transform="translate(0, 56)">
 <g transform="translate(30, 30)" class="key keypos-0">
 <rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key side"/>
