@@ -158,6 +158,8 @@ More:
 - [I Bought the Stack Overflow Keyboard. I Instantly Became a 10x Developer and Ended Up Writing the Default Firmware for It](https://teknologiumum.com/posts/i-bought-the-stack-overflow-keyboard-i-instantly-became-a-10x-developer-and-ended-up-writing-the-default-firmware-for-it)
 - [Building a keyboard firmware](https://matt3o.com/building-a-keyboard-firmware/)
 - [Having fun with keyboard mappings under Linux](https://pulsar17.me/2023/09/keymapping)
+- [My personalised 55% split keyboard](https://leanrada.com/notes/my-personalised-keyboard/)
+  - [Bitwise keyboard input method](https://leanrada.com/notes/developing-bitwise-input-method/)
 
 ## qmkasciigen
 
