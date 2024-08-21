@@ -1,5 +1,21 @@
 # CHANGELOG
 
+## v0.0.24 (2024-08-21)
+
+### Others
+
+- feat(sofle_rev1): keep . / when use with numbers (2024-08-21)
+
+- chhore: more keeb (2024-08-16)
+
+- chore(deps): bump github.com/spf13/cast from 1.6.0 to 1.7.0 (#18) (2024-08-07)
+
+- chore: re-draw (2024-08-06)
+
+- chore: off ci qmk branch develop (2024-07-06)
+
+- chore(changelog): generate v0.0.23 (2024-06-13)
+
 ## v0.0.23 (2024-06-13)
 
 ### Added
