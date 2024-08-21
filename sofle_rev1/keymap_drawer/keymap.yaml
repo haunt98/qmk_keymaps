@@ -113,8 +113,8 @@ layers:
     - "1"
     - "2"
     - "3"
-    - ""
-    - ""
+    - { t: "$$mdi:transfer-down$$", type: trans }
+    - { t: "$$mdi:transfer-down$$", type: trans }
     - { t: "$$mdi:transfer-down$$", type: trans }
     - { t: "$$mdi:transfer-down$$", type: trans }
     - { t: "$$mdi:transfer-down$$", type: trans }
@@ -175,7 +175,7 @@ layers:
     - "|"
     - "'"
     - '"'
-    - ""
+    - { t: "$$mdi:transfer-down$$", type: trans }
     - { t: "$$mdi:transfer-down$$", type: trans }
     - { t: "$$mdi:transfer-down$$", type: trans }
     - { t: "$$mdi:transfer-down$$", type: trans }

@@ -726,13 +726,15 @@ rect.esc, rect.vim {
 <rect rx="4" ry="4" x="-22" y="-26" width="44" height="44" class="key"/>
 <text x="0" y="-4" class="key tap">3</text>
 </g>
-<g transform="translate(810, 218)" class="key keypos-47">
-<rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key side"/>
-<rect rx="4" ry="4" x="-22" y="-26" width="44" height="44" class="key"/>
+<g transform="translate(810, 218)" class="key trans keypos-47">
+<rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key trans side"/>
+<rect rx="4" ry="4" x="-22" y="-26" width="44" height="44" class="key trans"/>
+<use href="#mdi:transfer-down" xlink:href="#mdi:transfer-down" x="-9" y="-13" height="18" width="18.0" class="key trans tap glyph mdi:transfer-down"/>
 </g>
-<g transform="translate(870, 248)" class="key keypos-48">
-<rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key side"/>
-<rect rx="4" ry="4" x="-22" y="-26" width="44" height="44" class="key"/>
+<g transform="translate(870, 248)" class="key trans keypos-48">
+<rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key trans side"/>
+<rect rx="4" ry="4" x="-22" y="-26" width="44" height="44" class="key trans"/>
+<use href="#mdi:transfer-down" xlink:href="#mdi:transfer-down" x="-9" y="-13" height="18" width="18.0" class="key trans tap glyph mdi:transfer-down"/>
 </g>
 <g transform="translate(930, 248)" class="key trans keypos-49">
 <rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key trans side"/>
@@ -1029,9 +1031,10 @@ rect.esc, rect.vim {
 <rect rx="4" ry="4" x="-22" y="-26" width="44" height="44" class="key"/>
 <text x="0" y="-4" class="key tap">&quot;</text>
 </g>
-<g transform="translate(870, 248)" class="key keypos-48">
-<rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key side"/>
-<rect rx="4" ry="4" x="-22" y="-26" width="44" height="44" class="key"/>
+<g transform="translate(870, 248)" class="key trans keypos-48">
+<rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key trans side"/>
+<rect rx="4" ry="4" x="-22" y="-26" width="44" height="44" class="key trans"/>
+<use href="#mdi:transfer-down" xlink:href="#mdi:transfer-down" x="-9" y="-13" height="18" width="18.0" class="key trans tap glyph mdi:transfer-down"/>
 </g>
 <g transform="translate(930, 248)" class="key trans keypos-49">
 <rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key trans side"/>
