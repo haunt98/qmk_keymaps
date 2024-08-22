@@ -3,18 +3,6 @@
 
 #pragma once
 
-// https://github.com/qmk/qmk_firmware/blob/master/docs/feature_debounce_type.md
-#ifdef DEBOUNCE
-#    undef DEBOUNCE
-#endif
-#define DEBOUNCE 5
-
-// https://github.com/qmk/qmk_firmware/blob/master/docs/tap_hold.md
-#undef TAPPING_TERM
-#define TAPPING_TERM 200
-#undef QUICK_TAP_TERM
-#define QUICK_TAP_TERM 120
-
 // https://github.com/qmk/qmk_firmware/blob/master/docs/features/rgblight.md
 // https://www.youtube.com/watch?v=VKrpPAHlisY
 #ifdef RGBLIGHT_ENABLE
