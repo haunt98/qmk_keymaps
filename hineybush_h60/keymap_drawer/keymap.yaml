@@ -1,5 +1,4 @@
-layout:
-  { qmk_keyboard: dztech/dz60rgb_wkl/v2_1, qmk_layout: LAYOUT_60_tsangan_hhkb }
+layout: { qmk_keyboard: hineybush/h60, qmk_layout: LAYOUT_60_tsangan_hhkb }
 layers:
   L0:
     - { t: "$$mdi:keyboard-esc$$", type: esc }
@@ -175,10 +174,10 @@ layers:
     - ""
     - ""
     - { t: "$$mdi:transfer-down$$", type: trans }
-    - RGB HUI
-    - RGB SAI
-    - RGB VAI
-    - ""
+    - UG HUEU
+    - UG SATU
+    - UG VALU
+    - UG SPDU
     - ""
     - ""
     - ""
@@ -188,15 +187,15 @@ layers:
     - { t: "$$mdi:transfer-down$$", type: trans }
     - { t: "$$mdi:transfer-down$$", type: trans }
     - ""
-    - RGB TOG
-    - RGB MOD
+    - UG TOGG
+    - UG NEXT
     - ""
     - ""
     - ""
     - ""
   L3:
     [
-      BOOT,
+      QK BOOT,
       EE CLR,
       "",
       "",
