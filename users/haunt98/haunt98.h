@@ -11,3 +11,11 @@
 
 // https://github.com/qmk/qmk_firmware/blob/master/docs/mod_tap.md
 #define CTL_ESC CTL_T(KC_ESC)
+
+// Use only 4 layers
+enum layers {
+    LAYER_QWERTY,
+    LAYER_LOWER,
+    LAYER_UPPER,
+    LAYER_ADJUST,
+};

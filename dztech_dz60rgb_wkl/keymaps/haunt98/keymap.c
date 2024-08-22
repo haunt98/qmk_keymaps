@@ -4,13 +4,6 @@
 #include QMK_KEYBOARD_H
 #include "haunt98.h"
 
-enum layers {
-    LAYER_QWERTY,
-    LAYER_LOWER,
-    LAYER_UPPER,
-    LAYER_ADJUST,
-};
-
 // Inspire from https://github.com/qmk/qmk_firmware/blob/master/keyboards/dztech/dz60rgb_wkl/keymaps/hhkb/keymap.c
 // https://github.com/qmk/qmk_firmware/blob/master/docs/keycodes.md
 // https://github.com/qmk/qmk_firmware/blob/master/docs/features/grave_esc.md
