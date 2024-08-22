@@ -13,8 +13,7 @@ const (
 var mapRawBinding = []map[string]string{
 	{
 		// My custom
-		"CTL_ESC":          "ESC CTRL",
-		"TD(TD_SAFE_BOOT)": "BOOT",
+		"CTL_ESC": "ESC CTRL",
 	},
 }
 

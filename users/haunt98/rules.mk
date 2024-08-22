@@ -13,9 +13,6 @@ EXTRAKEY_ENABLE = yes
 MAGIC_ENABLE = no
 BOOTMAGIC_ENABLE = yes
 
-# https://github.com/qmk/qmk_firmware/blob/master/docs/features/tap_dance.md
-TAP_DANCE_ENABLE = yes
-
 # https://github.com/qmk/qmk_firmware/blob/master/docs/features/tri_layer.md
 TRI_LAYER_ENABLE = yes
 
@@ -24,5 +21,4 @@ SWAP_HANDS_ENABLE = no
 
 # Custom C
 SRC += haunt98.c
-SRC += tap_dance.c
 SRC += oled.c

@@ -196,7 +196,7 @@ layers:
     - ""
   L3:
     [
-      BOOT,
+      QK BOOT,
       EE CLR,
       "",
       "",

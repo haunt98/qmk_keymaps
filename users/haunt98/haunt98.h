@@ -6,7 +6,6 @@
 // https://github.com/qmk/qmk_firmware/blob/master/docs/feature_userspace.md
 
 #include QMK_KEYBOARD_H
-#include "tap_dance.h"
 #include "oled.h"
 
 // https://github.com/qmk/qmk_firmware/blob/master/docs/mod_tap.md
