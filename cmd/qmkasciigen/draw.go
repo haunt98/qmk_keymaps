@@ -65,6 +65,7 @@ var mapTransform = []map[string]string{
 		"UG_HUEU": "UGH",
 		"UG_SATU": "UGS",
 		"UG_VALU": "UGV",
+		"UG_SPDU": "UGSPD",
 		"RGB_TOG": "RGBTO",
 		"RGB_MOD": "RGBMO",
 		"RGB_HUI": "RGBH",
