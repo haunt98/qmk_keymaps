@@ -23,6 +23,7 @@ draw_config:
     }
   draw_key_sides: true
   footer_text: Created by haunt98
+  use_local_cache: false
 parse_config:
   trans_legend:
     tap: $$mdi:transfer-down$$

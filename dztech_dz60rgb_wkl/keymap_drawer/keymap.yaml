@@ -1,5 +1,8 @@
 layout:
-  { qmk_keyboard: dztech/dz60rgb_wkl/v2_1, qmk_layout: LAYOUT_60_tsangan_hhkb }
+  {
+    qmk_keyboard: dztech/dz60rgb_wkl/v2_1,
+    qmk_layout: LAYOUT_60_ansi_tsangan_split_bs_rshift,
+  }
 layers:
   L0:
     - { t: "$$mdi:keyboard-esc$$", type: esc }
