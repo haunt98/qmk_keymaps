@@ -18,14 +18,14 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     ),
     [LAYER_LOWER] = LAYOUT(
         _______,  KC_F1,    KC_F2,    KC_F3,    KC_F4,    KC_F5,    KC_F6,    KC_F7,    KC_F8,    KC_F9,    KC_F10,   KC_F11,
-        _______,  XXXXXXX,  XXXXXXX,  XXXXXXX,  KC_LBRC,  KC_RBRC,  KC_7,     KC_8,     KC_9,     KC_0,     XXXXXXX,  KC_F12,
+        _______,  XXXXXXX,  XXXXXXX,  XXXXXXX,  KC_LBRC,  KC_RBRC,  KC_7,     KC_8,     KC_9,     KC_0,     XXXXXXX,  _______,
         _______,  XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  KC_4,     KC_5,     KC_6,     XXXXXXX,  XXXXXXX,  XXXXXXX,
         _______,  XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  _______,  _______,  KC_1,     KC_2,     KC_3,     _______,  _______,  _______,
         _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______
     ),
     [LAYER_UPPER] = LAYOUT(
         _______,  KC_F1,    KC_F2,    KC_F3,    KC_F4,    KC_F5,    KC_F6,    KC_F7,    KC_F8,    KC_F9,    KC_F10,   KC_F11,
-        _______,  _______,  _______,  KC_F7,    KC_F8,    KC_F9,    KC_LCBR,  KC_RCBR,  KC_EQL,   KC_PLUS,  XXXXXXX,  KC_F12,
+        _______,  _______,  _______,  KC_F7,    KC_F8,    KC_F9,    KC_LCBR,  KC_RCBR,  KC_EQL,   KC_PLUS,  XXXXXXX,  _______,
         _______,  XXXXXXX,  XXXXXXX,  KC_F4,    KC_F5,    KC_F6,    KC_LEFT,  KC_DOWN,  KC_UP,    KC_RGHT,  KC_COLN,  _______,
         _______,  XXXXXXX,  XXXXXXX,  KC_F1,    KC_F2,    KC_F3,    _______,  _______,  KC_BSLS,  KC_PIPE,  KC_QUOT,  KC_DQUO,  _______,  _______,
         _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______
