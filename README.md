@@ -119,12 +119,13 @@ Do:
 - [Tri Layers](https://github.com/qmk/qmk_firmware/blob/master/docs/features/tri_layer.md)
 - [Encoders](https://github.com/qmk/qmk_firmware/blob/master/docs/features/encoders.md)
   - [How can I use a rotary encoder?](https://docs.splitkb.com/hc/en-us/articles/360010513760-How-can-I-use-a-rotary-encoder)
+- [Mouse keys](https://github.com/qmk/qmk_firmware/blob/master/docs/features/mouse_keys.md)
+- [Combos](https://github.com/qmk/qmk_firmware/blob/master/docs/features/combo.md)
 
 Don't:
 
 - [Magic Keycodes](https://github.com/qmk/qmk_firmware/blob/master/docs/keycodes_magic.md)
 - [Command](https://github.com/qmk/qmk_firmware/blob/master/docs/features/command.md)
-- [Mouse keys](https://github.com/qmk/qmk_firmware/blob/master/docs/features/mouse_keys.md)
 - [One Shot Keys](https://github.com/qmk/qmk_firmware/blob/master/docs/one_shot_keys.md)
 - [RGB Matrix Lighting](https://github.com/qmk/qmk_firmware/blob/master/docs/features/rgb_matrix.md)
 - [Auto Shift: Why Do We Need a Shift Key?](https://github.com/qmk/qmk_firmware/blob/master/docs/features/auto_shift.md):

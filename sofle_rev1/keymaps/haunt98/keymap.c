@@ -4,6 +4,13 @@
 #include QMK_KEYBOARD_H
 #include "haunt98.h"
 
+// https://github.com/qmk/qmk_firmware/blob/master/docs/features/combo.md
+const uint16_t PROGMEM combo_F12[] = {KC_F1, KC_F2, COMBO_END};
+
+combo_t key_combos[] = {
+    COMBO(combo_F12, KC_F12),
+};
+
 // Inspire from https://github.com/qmk/qmk_firmware/blob/master/keyboards/sofle/keymaps/default/keymap.c
 // https://github.com/qmk/qmk_firmware/blob/master/docs/keycodes.md
 // https://github.com/qmk/qmk_firmware/blob/master/docs/features/space_cadet.md
