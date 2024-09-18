@@ -178,9 +178,9 @@ layers:
     - ""
     - ""
     - { t: "$$mdi:transfer-down$$", type: trans }
-    - RGB HUI
-    - RGB SAI
-    - RGB VAI
+    - ""
+    - ""
+    - ""
     - ""
     - ""
     - ""
@@ -191,8 +191,8 @@ layers:
     - { t: "$$mdi:transfer-down$$", type: trans }
     - { t: "$$mdi:transfer-down$$", type: trans }
     - ""
-    - RGB TOG
-    - RGB MOD
+    - ""
+    - ""
     - ""
     - ""
     - ""
