@@ -100,7 +100,7 @@ layers:
     - ""
     - { t: "$$mdi:chevron-up$$", type: arrow }
     - ""
-    - DEL
+    - { t: "$$mdi:transfer-down$$", type: trans }
     - ""
     - ""
     - ""
