@@ -1,0 +1,191 @@
+<svg width="240" height="352" viewBox="0 0 240 352" class="keymap" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>/* start glyphs */
+<svg id="mdi:apple-finder">
+<svg xmlns="http://www.w3.org/2000/svg" id="mdi-apple-finder" viewBox="0 0 24 24"><path d="M8 11C7.45 11 7 10.55 7 10V8C7 7.45 7.45 7 8 7C8.55 7 9 7.45 9 8V10C9 10.55 8.55 11 8 11M17 10V8C17 7.45 16.55 7 16 7C15.45 7 15 7.45 15 8V10C15 10.55 15.45 11 16 11C16.55 11 17 10.55 17 10M22 5V20C22 21.1 21.1 22 20 22H4C2.9 22 2 21.1 2 20V5C2 3.9 2.9 3 4 3H20C21.1 3 22 3.9 22 5M4 20L13.06 20C12.96 19.35 12.89 18.64 12.83 17.94C12.56 17.96 12.3 18 12 18C8.24 18 6.31 15.73 6.23 15.63C5.88 15.21 5.94 14.58 6.36 14.22C6.78 13.87 7.41 13.93 7.77 14.35C7.83 14.43 9.23 16 12 16C12.27 16 12.5 15.97 12.74 15.95C12.71 14.75 12.73 13.74 12.74 13.26H10.93C10.28 13.26 9.75 12.7 9.75 12C9.77 11.75 10.07 7.82 11 5H4L4 20M20 20L20 5H12.6C11.74 7.19 11.37 10.73 11.27 11.76H13.08C13.72 11.76 14.25 12.32 14.25 13C14.25 13.04 14.21 14.15 14.24 15.6C15.54 15.11 16.22 14.35 16.23 14.34C16.58 13.92 17.21 13.85 17.63 14.2C18.06 14.55 18.12 15.18 17.77 15.61C17.71 15.68 16.55 17.05 14.32 17.68C14.38 18.5 14.46 19.29 14.58 20H20Z" /></svg>
+</svg>
+<svg id="mdi:keyboard-return">
+<svg xmlns="http://www.w3.org/2000/svg" id="mdi-keyboard-return" viewBox="0 0 24 24"><path d="M19,7V11H5.83L9.41,7.41L8,6L2,12L8,18L9.41,16.58L5.83,13H21V7H19Z" /></svg>
+</svg>
+<svg id="mdi:volume-off">
+<svg xmlns="http://www.w3.org/2000/svg" id="mdi-volume-off" viewBox="0 0 24 24"><path d="M12,4L9.91,6.09L12,8.18M4.27,3L3,4.27L7.73,9H3V15H7L12,20V13.27L16.25,17.53C15.58,18.04 14.83,18.46 14,18.7V20.77C15.38,20.45 16.63,19.82 17.68,18.96L19.73,21L21,19.73L12,10.73M19,12C19,12.94 18.8,13.82 18.46,14.64L19.97,16.15C20.62,14.91 21,13.5 21,12C21,7.72 18,4.14 14,3.23V5.29C16.89,6.15 19,8.83 19,12M16.5,12C16.5,10.23 15.5,8.71 14,7.97V10.18L16.45,12.63C16.5,12.43 16.5,12.21 16.5,12Z" /></svg>
+</svg>
+</defs>/* end glyphs */
+<style>/* inherit to force styles through use tags */
+svg path {
+    fill: inherit;
+}
+
+/* font and background color specifications */
+svg.keymap {
+    font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
+    font-size: 14px;
+    font-kerning: normal;
+    text-rendering: optimizeLegibility;
+    fill: #24292e;
+}
+
+/* default key styling */
+rect.key {
+    fill: #f6f8fa;
+}
+
+rect.key, rect.combo {
+    stroke: #c9cccf;
+    stroke-width: 1;
+}
+
+/* default key side styling, only used is draw_key_sides is set */
+rect.side {
+    filter: brightness(90%);
+}
+
+/* color accent for combo boxes */
+rect.combo, rect.combo-separate {
+    fill: #cdf;
+}
+
+/* color accent for held keys */
+rect.held, rect.combo.held {
+    fill: #fdd;
+}
+
+/* color accent for ghost (optional) keys */
+rect.ghost, rect.combo.ghost {
+    stroke-dasharray: 4, 4;
+    stroke-width: 2;
+}
+
+text {
+    text-anchor: middle;
+    dominant-baseline: middle;
+}
+
+/* styling for layer labels */
+text.label {
+    font-weight: bold;
+    text-anchor: start;
+    stroke: white;
+    stroke-width: 4;
+    paint-order: stroke;
+}
+
+/* styling for optional footer */
+text.footer {
+    text-anchor: end;
+    dominant-baseline: auto;
+    stroke: white;
+    stroke-width: 4;
+    paint-order: stroke;
+}
+
+/* styling for combo tap, and key hold/shifted label text */
+text.combo, text.hold, text.shifted {
+    font-size: 11px;
+}
+
+text.hold {
+    text-anchor: middle;
+    dominant-baseline: auto;
+}
+
+text.shifted {
+    text-anchor: middle;
+    dominant-baseline: hanging;
+}
+
+text.layer-activator {
+    text-decoration: underline;
+}
+
+/* styling for hold/shifted label text in combo box */
+text.combo.hold, text.combo.shifted {
+    font-size: 8px;
+}
+
+/* lighter symbol for transparent keys */
+text.trans {
+    fill: #7b7e81;
+}
+
+/* styling for combo dendrons */
+path.combo {
+    stroke-width: 1;
+    stroke: gray;
+    fill: none;
+}
+
+/* Start Tabler Icons Cleanup */
+/* cannot use height/width with glyphs */
+.icon-tabler > path {
+    fill: inherit;
+    stroke: inherit;
+    stroke-width: 2;
+}
+/* hide tabler's default box */
+.icon-tabler > path[stroke="none"][fill="none"] {
+    visibility: hidden;
+}
+/* End Tabler Icons Cleanup */
+
+svg.keymap {
+  font-family: Iosevka Pacman, monospace;
+  font-size: 14px;
+}
+text.label, text.footer {
+  font-size: 16px;
+}
+text.hold {
+  font-size: 12px;
+}
+rect.held, rect.enter, rect.space, rect.arrow {
+  fill: rgb(255, 205, 210);
+}
+rect.esc, rect.vim {
+  fill: rgb(200, 230, 201);
+}
+</style>
+<g transform="translate(30, 0)" class="layer-L0">
+<text x="0" y="28" class="label" id="L0">L0</text>
+<g transform="translate(0, 56)">
+<g transform="translate(30, 30)" class="key keypos-0">
+<rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key side"/>
+<rect rx="4" ry="4" x="-22" y="-26" width="44" height="44" class="key"/>
+<use href="#mdi:volume-off" xlink:href="#mdi:volume-off" x="-9" y="-13" height="18" width="18.0" class="key tap glyph mdi:volume-off"/>
+</g>
+<g transform="translate(150, 30)" class="key keypos-1">
+<rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key side"/>
+<rect rx="4" ry="4" x="-22" y="-26" width="44" height="44" class="key"/>
+</g>
+<g transform="translate(30, 90)" class="key keypos-2">
+<rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key side"/>
+<rect rx="4" ry="4" x="-22" y="-26" width="44" height="44" class="key"/>
+<text x="0" y="-4" class="key tap">F12</text>
+</g>
+<g transform="translate(90, 90)" class="key keypos-3">
+<rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key side"/>
+<rect rx="4" ry="4" x="-22" y="-26" width="44" height="44" class="key"/>
+<text x="0" y="-4" class="key tap">C</text>
+</g>
+<g transform="translate(150, 90)" class="key keypos-4">
+<rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key side"/>
+<rect rx="4" ry="4" x="-22" y="-26" width="44" height="44" class="key"/>
+<text x="0" y="-4" class="key tap">V</text>
+</g>
+<g transform="translate(30, 150)" class="key keypos-5">
+<rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key side"/>
+<rect rx="4" ry="4" x="-22" y="-26" width="44" height="44" class="key"/>
+<text x="0" y="-4" class="key tap">ESC</text>
+</g>
+<g transform="translate(90, 150)" class="key keypos-6">
+<rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key side"/>
+<rect rx="4" ry="4" x="-22" y="-26" width="44" height="44" class="key"/>
+<use href="#mdi:apple-finder" xlink:href="#mdi:apple-finder" x="-9" y="-13" height="18" width="18.0" class="key tap glyph mdi:apple-finder"/>
+</g>
+<g transform="translate(150, 210)" class="key enter keypos-7">
+<rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key enter side"/>
+<rect rx="4" ry="4" x="-22" y="-26" width="44" height="44" class="key enter"/>
+<use href="#mdi:keyboard-return" xlink:href="#mdi:keyboard-return" x="-9" y="-13" height="18" width="18.0" class="key enter tap glyph mdi:keyboard-return"/>
+</g>
+</g>
+</g>
+<text x="210.0" y="324.0" class="footer">Created by haunt98</text></svg>

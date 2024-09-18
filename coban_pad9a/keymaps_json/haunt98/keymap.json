@@ -1,0 +1,8 @@
+{
+    "keyboard": "coban/pad9a",
+    "keymap": "haunt98",
+    "layers": [
+        ["KC_MUTE", "KC_NO", "KC_F12", "KC_C", "KC_V", "KC_ESC", "KC_LCMD", "KC_ENT"]
+    ],
+    "layout": "LAYOUT"
+}

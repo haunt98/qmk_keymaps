@@ -38,11 +38,11 @@ Bought from
 [ergomech.store](https://ergomech.store/shop/sofle-v2-sandwich-style-12)
 
 > Powered by the powerful RP2040 MCU, allowing users to use more macros and
-> features from QMK. However, cannot be used with usb-c to usb-c cable
+> features from QMK.
+>
+> USB-C port - However, cannot be used with usb-c to usb-c cable
 
-There is a button below the board, press twice to enter boot mode.
-
-### Flash notes
+### [Flash notes](https://josefadamcik.github.io/SofleKeyboard/build_guide.html)
 
 > - Make sure halves are not connected together with TRRS cable.
 > - Connect one half to USB, flash the firmware. Use the reset button to reset
@@ -51,11 +51,18 @@ There is a button below the board, press twice to enter boot mode.
 > - Disconnect the USB cable. Connect both halves together with TRRS cable.
 > - Connect USB cable to the left side.
 
-There is a button below OLED/above encoder. Press 2 times to reset.
-
 ### Keymap
 
 ![keymap_drawer](sofle_rev1/keymap_drawer/keymap.svg)
+
+## [coban/pad9a](https://github.com/qmk/qmk_firmware/tree/master/keyboards/coban/pad9a)
+
+Bought from
+[COBAN STATIONERY](https://cobanstationery.com/product/coban-pad-9a-banh-chung/)
+
+### Keymap
+
+![keymap_drawer](coban_pad9a/keymap_drawer/keymap.svg)
 
 ## Flash
 

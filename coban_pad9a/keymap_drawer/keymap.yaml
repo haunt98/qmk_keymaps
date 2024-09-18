@@ -1,0 +1,11 @@
+layout: { qmk_keyboard: coban/pad9a, qmk_layout: LAYOUT }
+layers:
+  L0:
+    - $$mdi:volume-off$$
+    - ""
+    - F12
+    - C
+    - V
+    - ESC
+    - $$mdi:apple-finder$$
+    - { t: "$$mdi:keyboard-return$$", type: enter }
