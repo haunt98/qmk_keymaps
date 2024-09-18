@@ -178,10 +178,10 @@ layers:
     - ""
     - ""
     - { t: "$$mdi:transfer-down$$", type: trans }
-    - UG HUEU
-    - UG SATU
-    - UG VALU
-    - UG SPDU
+    - ""
+    - ""
+    - ""
+    - ""
     - ""
     - ""
     - ""
@@ -191,8 +191,8 @@ layers:
     - { t: "$$mdi:transfer-down$$", type: trans }
     - { t: "$$mdi:transfer-down$$", type: trans }
     - ""
-    - UG TOGG
-    - UG NEXT
+    - ""
+    - ""
     - ""
     - ""
     - ""
