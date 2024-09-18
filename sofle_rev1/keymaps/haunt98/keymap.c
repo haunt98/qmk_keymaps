@@ -101,41 +101,13 @@ bool oled_task_user(void) {
 // https://github.com/qmk/qmk_firmware/blob/master/docs/features/encoders.md
 #ifdef ENCODER_ENABLE
 
-bool encoder_update_user(uint8_t index, bool clockwise) {
-    if (index == 0) {
-        switch (get_highest_layer(layer_state)) {
-            case LAYER_UPPER:
-                if (clockwise) {
-                    tap_code(KC_BRMU);
-                } else {
-                    tap_code(KC_BRMD);
-                }
-                break;
-            default:
-                if (clockwise) {
-                    tap_code(KC_VOLU);
-                } else {
-                    tap_code(KC_VOLD);
-                }
-        }
-    } else if (index == 1) {
-        switch (get_highest_layer(layer_state)) {
-            case LAYER_LOWER:
-                if (clockwise) {
-                    tap_code(KC_BRMU);
-                } else {
-                    tap_code(KC_BRMD);
-                }
-                break;
-            default:
-                if (clockwise) {
-                    tap_code(KC_PGDN);
-                } else {
-                    tap_code(KC_PGUP);
-                }
-        }
-    }
-    return false;
-}
+#    if defined(ENCODER_MAP_ENABLE)
+const uint16_t PROGMEM encoder_map[][NUM_ENCODERS][NUM_DIRECTIONS] = {
+    [0] = {ENCODER_CCW_CW(KC_VOLD, KC_VOLU), ENCODER_CCW_CW(KC_PGDN, KC_PGUP)},
+    [1] = {ENCODER_CCW_CW(KC_VOLD, KC_VOLU), ENCODER_CCW_CW(KC_BRMD, KC_BRMU)},
+    [2] = {ENCODER_CCW_CW(KC_BRMD, KC_BRMU), ENCODER_CCW_CW(KC_PGDN, KC_PGUP)},
+    [3] = {ENCODER_CCW_CW(XXXXXXX, XXXXXXX), ENCODER_CCW_CW(XXXXXXX, XXXXXXX)},
+};
+#    endif
 
 #endif
