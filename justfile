@@ -16,6 +16,10 @@ draw_qmkasciigen: go
     	-qmk-keymap-file dztech_dz60rgb_wkl/keymaps_json/haunt98/keymap.json \
     	-out dztech_dz60rgb_wkl/asciiart/haunt98.txt
     go run ./cmd/qmkasciigen \
+    	-qmk-keyboard hineybush/h60 \
+    	-qmk-keymap-file hineybush_h60/keymaps_json/haunt98/keymap.json \
+    	-out hineybush_h60/asciiart/haunt98.txt
+    go run ./cmd/qmkasciigen \
     	-qmk-keyboard sofle/rev1 \
     	-qmk-keymap-file sofle_rev1/keymaps_json/haunt98/keymap.json \
     	-out sofle_rev1/asciiart/haunt98.txt
@@ -39,6 +43,12 @@ draw_keymap_drawer:
     	draw dztech_dz60rgb_wkl/keymap_drawer/keymap.yaml > \
     	dztech_dz60rgb_wkl/keymap_drawer/keymap.svg
     keymap -c keymap_drawer/config.yaml \
+    	parse -q hineybush_h60/keymaps_json/haunt98/keymap.json > \
+    	hineybush_h60/keymap_drawer/keymap.yaml
+    keymap -c keymap_drawer/config.yaml \
+    	draw hineybush_h60/keymap_drawer/keymap.yaml > \
+    	hineybush_h60/keymap_drawer/keymap.svg
+    keymap -c keymap_drawer/config.yaml \
     	parse -q sofle_rev1/keymaps_json/haunt98/keymap.json > \
     	sofle_rev1/keymap_drawer/keymap.yaml
     keymap -c keymap_drawer/config.yaml \
@@ -58,6 +68,7 @@ draw_keymap_drawer_format:
     # bun upgrade
     bunx prettier --write \
     	dztech_dz60rgb_wkl/keymap_drawer/*.yaml \
+        hineybush_h60/keymap_drawer/*.yaml \
     	sofle_rev1/keymap_drawer/*.yaml \
         coban_pad9a/keymap_drawer/*.yaml
 
@@ -78,18 +89,22 @@ qmk_format:
 qmk_cp:
     cp -rf users/haunt98 ~/qmk_firmware/users/
     cp -rf dztech_dz60rgb_wkl/keymaps/haunt98 ~/qmk_firmware/keyboards/dztech/dz60rgb_wkl/keymaps/
+    cp -rf hineybush_h60/keymaps/haunt98 ~/qmk_firmware/keyboards/hineybush/h60/keymaps/
     cp -rf sofle_rev1/keymaps/haunt98 ~/qmk_firmware/keyboards/sofle/keymaps/
     cp -rf coban_pad9a/keymaps/haunt98 ~/qmk_firmware/keyboards/coban/pad9a/keymaps/
 
 qmk_compile: qmk_cp
     qmk compile -c -kb dztech/dz60rgb_wkl/v2_1 -km haunt98
     mv ~/qmk_firmware/dztech_dz60rgb_wkl_v2_1_haunt98.bin .
+    qmk compile -c -kb hineybush/h60 -km haunt98
+    mv ~/qmk_firmware/hineybush_h60_haunt98.hex .
     qmk compile -c -kb sofle/rev1 -km haunt98
     qmk compile -c -kb coban/pad9a -km haunt98
 
 qmk_clean:
     rm -rf ~/qmk_firmware/users/haunt98
     rm -rf ~/qmk_firmware/keyboards/dztech/dz60rgb_wkl/keymaps/haunt98
+    rm -rf ~/qmk_firmware/keyboards/hineybush/h60/keymaps/haunt98
     rm -rf ~/qmk_firmware/keyboards/sofle/keymaps/haunt98
     rm -rf ~/qmk_firmware/keyboards/coban/pad9a/keymaps/haunt98
     qmk clean -a
@@ -99,6 +114,8 @@ qmk_c2json:
     fd "keymap.json" --exec-batch rm
     qmk c2json -kb dztech/dz60rgb_wkl/v2_1 -km haunt98 -o dztech_dz60rgb_wkl/keymaps_json/haunt98/keymap.json --no-cpp \
     	dztech_dz60rgb_wkl/keymaps/haunt98/keymap.c
+    qmk c2json -kb hineybush/h60 -km haunt98 -o hineybush_h60/keymaps_json/haunt98/keymap.json --no-cpp \
+    	hineybush_h60/keymaps/haunt98/keymap.c
     qmk c2json -kb sofle/rev1 -km haunt98 -o sofle_rev1/keymaps_json/haunt98/keymap.json --no-cpp \
     	sofle_rev1/keymaps/haunt98/keymap.c
     qmk c2json -kb coban/pad9a -km haunt98 -o coban_pad9a/keymaps_json/haunt98/keymap.json --no-cpp \

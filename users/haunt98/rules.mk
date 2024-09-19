@@ -11,6 +11,9 @@ EXTRAKEY_ENABLE = yes
 # https://github.com/qmk/qmk_firmware/blob/master/docs/features/rgb_matrix.md
 RGB_MATRIX_ENABLE = no
 
+# https://github.com/qmk/qmk_firmware/blob/master/docs/features/rgblight.md
+RGBLIGHT_ENABLE = no
+
 # Feature
 # https://github.com/qmk/qmk_firmware/blob/master/docs/features/bootmagic.md
 MAGIC_ENABLE = no
