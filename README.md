@@ -25,6 +25,16 @@ Links:
 
 ![keymap_drawer](dztech_dz60rgb_wkl/keymap_drawer/keymap.svg)
 
+## [hineybush/h60](https://github.com/qmk/qmk_firmware/tree/master/keyboards/hineybush/h60)
+
+Links:
+
+- [hineybush h60](https://hineybush.com/collections/pcbs/products/h60)
+
+### Keymap
+
+![keymap_drawer](hineybush_h60/keymap_drawer/keymap.svg)
+
 ## [sofle/rev1](https://github.com/qmk/qmk_firmware/tree/master/keyboards/sofle/rev1)
 
 See [Official/Original](https://josefadamcik.github.io/SofleKeyboard/)
