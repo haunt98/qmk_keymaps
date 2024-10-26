@@ -154,51 +154,60 @@ func getQMKInfo(qmkKeyboardStr string, debug bool) (QMKInfo, error) {
 		for _, uTemplate := range qmkKeyboardInfoURLs {
 			u := fmt.Sprintf(uTemplate, kb)
 
-			// nolint:noctx,gosec
-			httpRsp, err := http.Get(u)
-			if err != nil {
-				if debug {
-					log.Printf("Failed to http get [%s]: %s\n", u, err)
-				}
-
-				continue
+			qmkInfo, found := getQMKInfoByURL(u, debug)
+			if found {
+				return qmkInfo, nil
 			}
-
-			data, err := io.ReadAll(httpRsp.Body)
-			if err != nil {
-				if debug {
-					log.Printf("Failed to read all body [%s]: %s\n", u, err)
-				}
-
-				continue
-			}
-
-			qmkInfo := QMKInfo{}
-			if err := json.Unmarshal(data, &qmkInfo); err != nil {
-				if debug {
-					log.Printf("Failed to json unmarshal [%s]: %s\n", u, err)
-				}
-
-				continue
-			}
-
-			if len(qmkInfo.Layouts) == 0 {
-				if debug {
-					log.Printf("Empty layouts [%s]\n", u)
-				}
-
-				continue
-			}
-
-			if debug {
-				log.Printf("Found QMK info [%s]\n", u)
-			}
-
-			return qmkInfo, nil
 		}
 	}
 
 	return QMKInfo{}, ErrEmptyQMKInfo
+}
+
+// Ignore error because we try to find where that url is
+func getQMKInfoByURL(u string, debug bool) (QMKInfo, bool) {
+	// nolint:noctx,gosec
+	httpRsp, err := http.Get(u)
+	if err != nil {
+		if debug {
+			log.Printf("Failed to http get [%s]: %s\n", u, err)
+		}
+
+		return QMKInfo{}, false
+	}
+	defer httpRsp.Body.Close()
+
+	data, err := io.ReadAll(httpRsp.Body)
+	if err != nil {
+		if debug {
+			log.Printf("Failed to read all body [%s]: %s\n", u, err)
+		}
+
+		return QMKInfo{}, false
+	}
+
+	qmkInfo := QMKInfo{}
+	if err := json.Unmarshal(data, &qmkInfo); err != nil {
+		if debug {
+			log.Printf("Failed to json unmarshal [%s]: %s\n", u, err)
+		}
+
+		return QMKInfo{}, false
+	}
+
+	if len(qmkInfo.Layouts) == 0 {
+		if debug {
+			log.Printf("Empty layouts [%s]\n", u)
+		}
+
+		return QMKInfo{}, false
+	}
+
+	if debug {
+		log.Printf("Found QMK info [%s]\n", u)
+	}
+
+	return qmkInfo, true
 }
 
 // Local first, remote later
@@ -236,50 +245,59 @@ func getQMKKeymap(qmkKeyboardStr, qmkKeymapStr string, debug bool) (QMKKeymap, e
 		return QMKKeymap{}, ErrEmptyQMKKeymap
 	}
 
+	// See qmk url
 	kbParts := strings.Split(qmkKeyboardStr, "/")
 	for i := len(kbParts); i >= 1; i-- {
 		kb := strings.Join(kbParts[:i], "/")
+		u := fmt.Sprintf(qmkKeymapURL, kb, qmkKeymapStr)
 
-		url := fmt.Sprintf(qmkKeymapURL, kb, qmkKeymapStr)
-
-		// nolint:noctx,gosec
-		httpRsp, err := http.Get(url)
-		if err != nil {
-			if debug {
-				log.Printf("Failed to http get [%s]: %s\n", url, err)
-			}
-
-			continue
+		qmkKeymap, found := getQMKKeymapByURL(u, debug)
+		if found {
+			return qmkKeymap, nil
 		}
-
-		data, err := io.ReadAll(httpRsp.Body)
-		if err != nil {
-			if debug {
-				log.Printf("Failed to read all body [%s]: %s\n", url, err)
-			}
-
-			continue
-		}
-
-		qmkKeymap := QMKKeymap{}
-		if err := json.Unmarshal(data, &qmkKeymap); err != nil {
-			if debug {
-				log.Printf("Failed to json unmarshal [%s]: %s\n", url, err)
-			}
-
-			continue
-		}
-
-		if len(qmkKeymap.Layers) == 0 {
-			continue
-		}
-
-		if debug {
-			log.Printf("Found QMK keymap [%s]\n", url)
-		}
-
-		return qmkKeymap, nil
 	}
 
 	return QMKKeymap{}, ErrEmptyQMKKeymap
+}
+
+// Ignore error because we try to find where that url is
+func getQMKKeymapByURL(u string, debug bool) (QMKKeymap, bool) {
+	// nolint:noctx,gosec
+	httpRsp, err := http.Get(u)
+	if err != nil {
+		if debug {
+			log.Printf("Failed to http get [%s]: %s\n", u, err)
+		}
+
+		return QMKKeymap{}, false
+	}
+	defer httpRsp.Body.Close()
+
+	data, err := io.ReadAll(httpRsp.Body)
+	if err != nil {
+		if debug {
+			log.Printf("Failed to read all body [%s]: %s\n", u, err)
+		}
+
+		return QMKKeymap{}, false
+	}
+
+	qmkKeymap := QMKKeymap{}
+	if err := json.Unmarshal(data, &qmkKeymap); err != nil {
+		if debug {
+			log.Printf("Failed to json unmarshal [%s]: %s\n", u, err)
+		}
+
+		return QMKKeymap{}, false
+	}
+
+	if len(qmkKeymap.Layers) == 0 {
+		return QMKKeymap{}, false
+	}
+
+	if debug {
+		log.Printf("Found QMK keymap [%s]\n", u)
+	}
+
+	return qmkKeymap, true
 }
