@@ -1,7 +1,6 @@
 package main
 
 import (
-	"encoding/json"
 	"errors"
 	"flag"
 	"fmt"
@@ -11,6 +10,7 @@ import (
 	"os"
 	"strings"
 
+	"github.com/bytedance/sonic"
 	"github.com/spf13/cast"
 )
 
@@ -121,8 +121,8 @@ func wrapGetQMKInfo(qmkKeyboardStr, qmkInfoFile string, debug bool) (QMKInfo, er
 		}
 
 		qmkInfo := QMKInfo{}
-		if err := json.Unmarshal(bytesInfo, &qmkInfo); err != nil {
-			return QMKInfo{}, fmt.Errorf("json: failed to unmarshal [%s]: %w", qmkInfoFile, err)
+		if err := sonic.Unmarshal(bytesInfo, &qmkInfo); err != nil {
+			return QMKInfo{}, fmt.Errorf("sonic: failed to unmarshal [%s]: %w", qmkInfoFile, err)
 		}
 
 		return qmkInfo, nil
@@ -187,9 +187,9 @@ func getQMKInfoByURL(u string, debug bool) (QMKInfo, bool) {
 	}
 
 	qmkInfo := QMKInfo{}
-	if err := json.Unmarshal(data, &qmkInfo); err != nil {
+	if err := sonic.Unmarshal(data, &qmkInfo); err != nil {
 		if debug {
-			log.Printf("Failed to json unmarshal [%s]: %s\n", u, err)
+			log.Printf("Failed to sonic unmarshal [%s]: %s\n", u, err)
 		}
 
 		return QMKInfo{}, false
@@ -220,8 +220,8 @@ func wrapGetQMKKeymap(qmkKeyboardStr, qmkKeymapStr, qmkKeymapFile string, debug 
 		}
 
 		qmkKeymap := QMKKeymap{}
-		if err := json.Unmarshal(bytesKeymap, &qmkKeymap); err != nil {
-			return QMKKeymap{}, fmt.Errorf("json: failed to unmarshal [%s]: %w", qmkKeymapFile, err)
+		if err := sonic.Unmarshal(bytesKeymap, &qmkKeymap); err != nil {
+			return QMKKeymap{}, fmt.Errorf("sonic: failed to unmarshal [%s]: %w", qmkKeymapFile, err)
 		}
 
 		return qmkKeymap, nil
@@ -283,9 +283,9 @@ func getQMKKeymapByURL(u string, debug bool) (QMKKeymap, bool) {
 	}
 
 	qmkKeymap := QMKKeymap{}
-	if err := json.Unmarshal(data, &qmkKeymap); err != nil {
+	if err := sonic.Unmarshal(data, &qmkKeymap); err != nil {
 		if debug {
-			log.Printf("Failed to json unmarshal [%s]: %s\n", u, err)
+			log.Printf("Failed to sonic unmarshal [%s]: %s\n", u, err)
 		}
 
 		return QMKKeymap{}, false
