@@ -178,6 +178,7 @@ More:
 - [Having fun with keyboard mappings under Linux](https://pulsar17.me/2023/09/keymapping)
 - [My personalised 55% split keyboard](https://leanrada.com/notes/my-personalised-keyboard/)
   - [Bitwise keyboard input method](https://leanrada.com/notes/developing-bitwise-input-method/)
+- [Adding Apple’s Globe key to a QMK-powered keyboard](https://skip.house/blog/qmk-globe-key)
 
 ## qmkasciigen
 
