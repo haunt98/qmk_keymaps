@@ -4,7 +4,7 @@ go 1.20
 
 require (
 	github.com/bytedance/sonic v1.12.6
-	github.com/spf13/cast v1.7.0
+	github.com/spf13/cast v1.7.1
 	github.com/stretchr/testify v1.10.0
 )
 
