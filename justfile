@@ -65,7 +65,6 @@ draw_keymap_drawer_upstream:
     curl https://raw.githubusercontent.com/caksoylar/keymap-drawer/main/resources/qmk_layouts/sofle_rotated.json --output sofle_rev1/keymap_drawer/sofle_rotated.json
 
 draw_keymap_drawer_format:
-    # bun upgrade
     bunx prettier --write \
     	dztech_dz60rgb_wkl/keymap_drawer/*.yaml \
         hineybush_h60/keymap_drawer/*.yaml \
