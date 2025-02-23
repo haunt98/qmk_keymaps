@@ -62,7 +62,7 @@ draw_keymap_drawer:
         coban_pad9a/keymap_drawer/keymap.svg
 
 draw_keymap_drawer_upstream:
-    curl https://raw.githubusercontent.com/caksoylar/keymap-drawer/main/resources/qmk_layouts/sofle_rotated.json --output sofle_rev1/keymap_drawer/sofle_rotated.json
+    curl https://raw.githubusercontent.com/caksoylar/keymap-drawer/main/resources/extra_layouts/sofle_rotated.json --output sofle_rev1/keymap_drawer/sofle_rotated.json
 
 draw_keymap_drawer_format:
     bunx prettier --write \
