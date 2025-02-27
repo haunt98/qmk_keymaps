@@ -2,5 +2,3 @@
 // SPDX-License-Identifier: MIT
 
 #include "haunt98.h"
-
-// Placebo for the future me

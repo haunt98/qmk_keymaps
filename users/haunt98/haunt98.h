@@ -5,7 +5,6 @@
 
 // https://github.com/qmk/qmk_firmware/blob/master/docs/feature_userspace.md
 
-#include QMK_KEYBOARD_H
 #include "oled.h"
 
 // https://github.com/qmk/qmk_firmware/blob/master/docs/feature_debounce_type.md

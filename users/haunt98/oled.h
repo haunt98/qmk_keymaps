@@ -3,8 +3,6 @@
 
 #pragma once
 
-#include QMK_KEYBOARD_H
-
 // https://github.com/qmk/qmk_firmware/blob/master/docs/features/oled_driver.md
 #ifdef OLED_ENABLE
 

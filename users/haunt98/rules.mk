@@ -31,3 +31,6 @@ SWAP_HANDS_ENABLE = no
 # Custom C
 SRC += haunt98.c
 SRC += oled.c
+
+# https://github.com/qmk/qmk_firmware/issues/21137
+INTROSPECTION_KEYMAP_C = combos.c
