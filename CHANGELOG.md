@@ -1,5 +1,93 @@
 # CHANGELOG
 
+## v0.0.25 (2025-02-28)
+
+### Added
+
+- feat(qmk): move combos.c to users (2025-02-28)
+
+- feat(qmk): improve coban_pad9a keymap (2025-02-20)
+
+- feat(qmk): disable rgb matrix (2024-09-18)
+
+- feat: support coban/pad9a (2024-09-18)
+
+- feat(qmk): LAYOUT_60_tsangan_hhkb -> LAYOUT_60_ansi_tsangan_split_bs_rshift (2024-09-04)
+
+- feat(qmk): move debounce to userspace (2024-08-22)
+
+- feat(qmk): remove tap dance (2024-08-22)
+
+- feat(qmk): use same layers (2024-08-22)
+
+### Fixed
+
+- fix(qmk): page up page down (2024-09-18)
+
+### Others
+
+- chore: fix old links (2025-02-23)
+
+- chore (2025-02-22)
+
+- chore (2025-02-20)
+
+- chore: re-gen with latest keymap-drawer (2025-01-06)
+
+- chore: deprecated check-shadowing in govet linter (2025-01-05)
+
+- chore: add apple globe key (2024-11-29)
+
+- Merge branch 'main' of https://github.com/haunt98/qmk_keymaps (2024-11-25)
+
+- draw: regen qmk_layout -> layout_name (2024-11-23)
+
+- chore: use sonic to unmarshal json (2024-11-01)
+
+- chore: fix lint (2024-10-26)
+
+- Merge branch 'main' of https://github.com/haunt98/qmk_keymaps (2024-09-19)
+
+- chore(dztech_dz60rgb_wkl): remove fallback backspace (2024-09-18)
+
+- chore(dztech_dz60rgb_wkl): re-gen (2024-09-18)
+
+- feat(dztech_dz60rgb_wkl): rm KC_DEL (2024-09-18)
+
+- chore (2024-09-18)
+
+- feat(sofle_rev1): use encoder_map (2024-09-18)
+
+- feat(dztech_dz60rgb_wkl): no rgb (2024-09-18)
+
+- feat(sofle_rev1): add combo key F1+F2 to F12 (2024-09-13)
+
+- feat(sofle_rev1): remove F12 key from keymap (2024-09-13)
+
+- chore: only pull master (2024-08-27)
+
+- chore(qmk): idk what the difference (2024-08-26)
+
+- chore (2024-08-22)
+
+- chore: migrate to justfile (2024-08-22)
+
+- chore(changelog): generate v0.0.24 (2024-08-21)
+
+### Build
+
+- chore(deps): bump github.com/bytedance/sonic from 1.12.8 to 1.12.9 (#27) (2025-02-20)
+
+- chore(deps): bump github.com/bytedance/sonic from 1.12.7 to 1.12.8 (#26) (2025-01-27)
+
+- chore(deps): bump github.com/bytedance/sonic from 1.12.6 to 1.12.7 (#25) (2025-01-08)
+
+- chore(deps): bump github.com/spf13/cast from 1.7.0 to 1.7.1 (#24) (2024-12-19)
+
+- chore(deps): bump github.com/bytedance/sonic from 1.12.5 to 1.12.6 (#23) (2024-12-17)
+
+- chore(deps): bump github.com/bytedance/sonic from 1.12.3 to 1.12.4 (#20) (2024-11-06)
+
 ## v0.0.24 (2024-08-21)
 
 ### Others
