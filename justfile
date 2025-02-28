@@ -93,6 +93,7 @@ qmk_cp:
     cp -rf coban_pad9a/keymaps/haunt98 ~/qmk_firmware/keyboards/coban/pad9a/keymaps/
 
 qmk_compile: qmk_cp
+    # Ignore qmk lint as header errors
     qmk compile -c -kb dztech/dz60rgb_wkl/v2_1 -km haunt98
     mv ~/qmk_firmware/dztech_dz60rgb_wkl_v2_1_haunt98.bin .
     qmk compile -c -kb hineybush/h60 -km haunt98
