@@ -138,6 +138,9 @@ Do:
   - [How can I use a rotary encoder?](https://docs.splitkb.com/hc/en-us/articles/360010513760-How-can-I-use-a-rotary-encoder)
 - [Mouse keys](https://github.com/qmk/qmk_firmware/blob/master/docs/features/mouse_keys.md)
 - [Combos](https://github.com/qmk/qmk_firmware/blob/master/docs/features/combo.md)
+- [Community Modules](https://github.com/qmk/qmk_firmware/blob/master/docs/features/community_modules.md)
+  - https://github.com/getreuer/qmk-modules
+  - https://github.com/tzarc/qmk_modules
 
 Don't:
 
