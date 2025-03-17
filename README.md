@@ -139,6 +139,7 @@ Do:
 - [Mouse keys](https://github.com/qmk/qmk_firmware/blob/master/docs/features/mouse_keys.md)
 - [Combos](https://github.com/qmk/qmk_firmware/blob/master/docs/features/combo.md)
 - [Community Modules](https://github.com/qmk/qmk_firmware/blob/master/docs/features/community_modules.md)
+  - https://github.com/drashna/qmk_modules
   - https://github.com/getreuer/qmk-modules
   - https://github.com/tzarc/qmk_modules
 
