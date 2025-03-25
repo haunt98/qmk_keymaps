@@ -250,7 +250,8 @@ func drawKey(
 	// Draw | on left and right
 	for i := key.NewY; i <= key.NewY+key.NewH; i++ {
 		for j := key.NewX; j <= key.NewX+key.NewW; j++ {
-			if i == key.NewY || i == key.NewY+key.NewH {
+			switch i {
+			case key.NewY, key.NewY + key.NewH:
 				if j == key.NewX || j == key.NewX+key.NewW {
 					// Draw corner
 					var temp string
@@ -278,7 +279,7 @@ func drawKey(
 					// Draw horizontal
 					table[i][j] = cp437Plus(table[i][j], cp437Horizontal)
 				}
-			} else if i == key.NewY+key.NewH/2 {
+			case key.NewY + key.NewH/2:
 				// Write key in the middle
 				if j == key.NewX || j == key.NewX+key.NewW {
 					// Draw vertical most left/right
@@ -288,7 +289,7 @@ func drawKey(
 					// Only handle ASCII keyStr
 					table[i][j] = string(keyStr[j-key.NewX-padding-1])
 				}
-			} else {
+			default:
 				// Draw vertical most left/right
 				if j == key.NewX || j == key.NewX+key.NewW {
 					table[i][j] = cp437Plus(table[i][j], cp437Vertical)
