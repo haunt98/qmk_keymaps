@@ -1,5 +1,37 @@
 # CHANGELOG
 
+## v0.0.26 (2025-04-08)
+
+### Added
+
+- feat: re-draw coban_pad9a (2025-04-08)
+
+- feat(qmk): use rp2040_ce instead of sparkfun_pm2040 (2025-04-07)
+
+### Others
+
+- chore: update go run (2025-03-25)
+
+- chore: migrate golangci-lint v2 (2025-03-25)
+
+- chore: more qmk modules (2025-03-17)
+
+- chore: qmk community_modules (2025-03-05)
+
+- chore: add hineybush_h60 to ci (2025-02-28)
+
+- chore(changelog): generate v0.0.25 (2025-02-28)
+
+### Build
+
+- chore(deps): bump golangci/golangci-lint-action from 6 to 7 (#31) (2025-03-25)
+
+- chore(deps): bump github.com/bytedance/sonic from 1.13.1 to 1.13.2 (#30) (2025-03-24)
+
+- chore(deps): bump github.com/bytedance/sonic from 1.12.10 to 1.13.1 (#29) (2025-03-10)
+
+- chore(deps): bump github.com/bytedance/sonic from 1.12.9 to 1.12.10 (#28) (2025-03-03)
+
 ## v0.0.25 (2025-02-28)
 
 ### Added
