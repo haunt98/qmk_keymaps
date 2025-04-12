@@ -70,7 +70,7 @@ func main() {
 
 	// 0,2,3 -> [0, 2, 3]
 	allowLayers := make(map[int]struct{})
-	for _, l := range strings.Split(flagAllowLayers, ",") {
+	for l := range strings.SplitSeq(flagAllowLayers, ",") {
 		l = strings.TrimSpace(l)
 		if l == "" {
 			continue
