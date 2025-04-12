@@ -165,7 +165,7 @@ Build/Optimize:
 
 More:
 
-- [Programming On 34 Keys](https://peppe.rs/posts/programming_on_34_keys/)
+- [Programming On 34 Keys](https://oppi.li/posts/programming_on_34_keys/)
 - [Miryoku](https://github.com/manna-harbour/miryoku)
 - [Pascal Getreuer's QMK keymap](https://github.com/getreuer/qmk-keymap)
   - [Designing a Symbol Layer](https://getreuer.info/posts/keyboards/symbol-layer/index.html)
