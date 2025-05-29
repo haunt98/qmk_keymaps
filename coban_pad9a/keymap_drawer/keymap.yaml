@@ -6,6 +6,6 @@ layers:
     - ESC
     - F2
     - F12
-    - { t: "$$mdi:keyboard-return$$", type: enter }
+    - WAKE
     - $$mdi:apple-finder$$
     - { t: "$$mdi:keyboard-return$$", type: enter }

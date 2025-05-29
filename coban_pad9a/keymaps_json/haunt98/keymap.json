@@ -2,7 +2,7 @@
     "keyboard": "coban/pad9a",
     "keymap": "haunt98",
     "layers": [
-        ["KC_MUTE", "KC_MUTE", "KC_ESC", "KC_F2", "KC_F12", "KC_ENT", "KC_LCMD", "KC_ENT"]
+        ["KC_MUTE", "KC_MUTE", "KC_ESC", "KC_F2", "KC_F12", "KC_WAKE", "KC_LCMD", "KC_ENT"]
     ],
     "layout": "LAYOUT"
 }

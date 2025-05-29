@@ -1,4 +1,4 @@
-all: qmk_all draw
+all: qmk draw
 
 # From changeloguru
 go:
@@ -74,7 +74,7 @@ draw_keymap_drawer_format:
 
 draw: draw_qmkasciigen draw_keymap_drawer draw_keymap_drawer_format
 
-qmk_all: qmk_clean qmk_format qmk_compile qmk_c2json
+qmk: qmk_clean qmk_format qmk_compile qmk_c2json
 
 qmk_upstream:
     qmk doctor

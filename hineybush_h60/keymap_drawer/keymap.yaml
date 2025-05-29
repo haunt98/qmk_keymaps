@@ -164,7 +164,7 @@ layers:
     - ""
     - ""
     - ""
-    - $$mdi:apple-keyboard-caps$$
+    - ""
     - $$mdi:volume-minus$$
     - $$mdi:volume-plus$$
     - $$mdi:volume-off$$
@@ -216,7 +216,7 @@ layers:
       "",
       "",
       "",
-      "",
+      WAKE,
       "",
       "",
       "",

@@ -9,7 +9,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [0] = LAYOUT(
         KC_MUTE,  KC_MUTE,
         KC_ESC,   KC_F2,    KC_F12,
-        KC_ENT,   KC_LCMD,  KC_ENT
+        KC_WAKE,  KC_LCMD,  KC_ENT
     ),
 };
 // clang-format on
