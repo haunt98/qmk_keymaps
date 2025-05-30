@@ -6,6 +6,6 @@ layers:
     - ESC
     - F2
     - F12
-    - WAKE
-    - $$mdi:apple-finder$$
+    - PGUP
+    - PGDN
     - { t: "$$mdi:keyboard-return$$", type: enter }
