@@ -12,6 +12,28 @@
 #define LAYER_STATE_8BIT
 
 // Feature
+// https://github.com/qmk/qmk_firmware/blob/master/docs/feature_debounce_type.md
+#ifdef DEBOUNCE
+#    undef DEBOUNCE
+#endif
+#define DEBOUNCE 5
+
 // https://github.com/qmk/qmk_firmware/blob/master/docs/tap_hold.md
+#ifdef TAPPING_TERM
+#    undef TAPPING_TERM
+#endif
+#define TAPPING_TERM 200
+
 #define HOLD_ON_OTHER_KEY_PRESS
+
+#ifdef QUICK_TAP_TERM
+#    undef QUICK_TAP_TERM
+#endif
+#define QUICK_TAP_TERM 120
+
+#ifdef FLOW_TAP_TERM
+#    undef FLOW_TAP_TERM
+#endif
+#define FLOW_TAP_TERM 150
+
 #define RETRO_TAPPING
