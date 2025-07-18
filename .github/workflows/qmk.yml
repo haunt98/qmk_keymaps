@@ -43,8 +43,6 @@ jobs:
           path: haunt98_qmk_keymaps
       - name: Copy keymaps
         run: |
-          rm -rf keyboards/dztech/dz60rgb_wkl/keymaps/haunt98
-          cp -rf haunt98_qmk_keymaps/dztech_dz60rgb_wkl/keymaps/haunt98 keyboards/dztech/dz60rgb_wkl/keymaps/
           rm -rf keyboards/hineybush/h60/keymaps/haunt98
           cp -rf haunt98_qmk_keymaps/hineybush_h60/keymaps/haunt98 keyboards/hineybush/h60/keymaps/
           rm -rf keyboards/sofle/keymaps/haunt98
@@ -53,20 +51,16 @@ jobs:
           cp -rf haunt98_qmk_keymaps/users/haunt98 users/
       - name: Build firmware
         run: |
-          make dztech/dz60rgb_wkl/v2_1:haunt98
           make hineybush/h60:haunt98
           make sofle/rev1:haunt98
       - name: Convert keymaps JSON
         run: |
-          qmk c2json -kb dztech/dz60rgb_wkl/v2_1 -km haunt98 -o dztech_dz60rgb_wkl_haunt98_keymap.json --no-cpp \
-            haunt98_qmk_keymaps/dztech_dz60rgb_wkl/keymaps/haunt98/keymap.c
           qmk c2json -kb hineybush/h60 -km haunt98 -o hineybush_h60_haunt98_keymap.json --no-cpp \
             haunt98_qmk_keymaps/hineybush_h60/keymaps/haunt98/keymap.c
           qmk c2json -kb sofle/rev1 -km haunt98 -o sofle_rev1_haunt98_keymap.json --no-cpp \
             haunt98_qmk_keymaps/sofle_rev1/keymaps/haunt98/keymap.c
       - name: Extra
         run: |
-          qmk info -m -l -kb dztech/dz60rgb_wkl/v2_1 -km haunt98
           qmk info -m -l -kb hineybush/h60 -km haunt98
           qmk info -m -l -kb sofle/rev1 -km haunt98
       - name: Archive firmware
