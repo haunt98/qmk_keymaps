@@ -47,7 +47,7 @@ layers:
     - C
     - V
     - B
-    - $$mdi:volume-off$$
+    - ""
     - ""
     - N
     - M
@@ -108,8 +108,8 @@ layers:
     - ""
     - ""
     - ""
-    - { t: "$$mdi:transfer-down$$", type: trans }
-    - { t: "$$mdi:transfer-down$$", type: trans }
+    - ""
+    - ""
     - "1"
     - "2"
     - "3"
@@ -169,8 +169,8 @@ layers:
     - F1
     - F2
     - F3
-    - { t: "$$mdi:transfer-down$$", type: trans }
-    - { t: "$$mdi:transfer-down$$", type: trans }
+    - ""
+    - ""
     - \
     - "|"
     - "'"
