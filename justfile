@@ -67,7 +67,7 @@ qmk: qmk_clean qmk_format qmk_compile qmk_c2json
 
 qmk_upstream:
     qmk doctor
-    git -C ~/qmk_firmware pull origin master
+    git -C ~/qmk_firmware pull origin master --tags
     qmk git-submodule
     qmk doctor
     curl https://raw.githubusercontent.com/qmk/qmk_firmware/master/.clang-format --output .clang-format
