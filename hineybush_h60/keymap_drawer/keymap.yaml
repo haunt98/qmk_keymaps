@@ -34,11 +34,7 @@ layers:
     - "["
     - "]"
     - $$mdi:keyboard-backspace$$
-    - {
-        t: "$$mdi:keyboard-esc$$",
-        h: "$$mdi:apple-keyboard-control$$",
-        type: esc,
-      }
+    - $$mdi:apple-keyboard-control$$
     - A
     - S
     - D
@@ -51,7 +47,7 @@ layers:
     - ;
     - "'"
     - { t: "$$mdi:keyboard-return$$", type: enter }
-    - { t: (, h: "$$mdi:apple-keyboard-shift$$" }
+    - LSFT
     - Z
     - X
     - C
@@ -62,7 +58,7 @@ layers:
     - ","
     - .
     - /
-    - { t: ), h: "$$mdi:apple-keyboard-shift$$" }
+    - RSFT
     - $$mdi:numeric-1-box-outline$$
     - ""
     - $$mdi:apple-keyboard-option$$
@@ -86,7 +82,7 @@ layers:
     - F11
     - F12
     - ""
-    - ""
+    - DEL
     - ""
     - ""
     - ""
@@ -101,7 +97,7 @@ layers:
     - { t: "$$mdi:chevron-up$$", type: arrow }
     - ""
     - ""
-    - ""
+    - $$mdi:apple-keyboard-caps$$
     - ""
     - ""
     - ""
