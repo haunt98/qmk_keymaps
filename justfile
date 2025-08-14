@@ -115,7 +115,7 @@ qmk_clean:
     rm -rf ~/qmk_firmware/keyboards/crkbd/keymaps/haunt98
     rm -rf ~/qmk_firmware/keyboards/coban/pad9a/keymaps/haunt98
     qmk clean -a
-    rm -rf *.bin *.hex
+    rm -rf *.bin *.hex *.uf2
 
 qmk_c2json:
     fd "keymap.json" --exec-batch rm

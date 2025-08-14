@@ -3,10 +3,12 @@
 # Optimize
 # https://github.com/qmk/qmk_firmware/blob/master/docs/squeezing_avr.md
 LTO_ENABLE = yes
-
 CONSOLE_ENABLE = no
 COMMAND_ENABLE = no
 EXTRAKEY_ENABLE = yes
+
+# https://github.com/qmk/qmk_firmware/blob/master/docs/features/mouse_keys.md
+MOUSEKEY_ENABLE = no
 
 # https://github.com/qmk/qmk_firmware/blob/master/docs/features/rgb_matrix.md
 RGB_MATRIX_ENABLE = no
