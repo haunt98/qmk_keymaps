@@ -56,7 +56,7 @@ layers:
     - /
     - { t: ), h: "$$mdi:apple-keyboard-shift$$" }
     - $$mdi:apple-keyboard-option$$
-    - $$mdi:apple-finder$$
+    - $$mdi:apple-keyboard-command$$
     - { t: "$$mdi:keyboard-space$$", type: space }
     - $$mdi:numeric-1-box-outline$$
     - "["

@@ -25,7 +25,7 @@ layers:
     - { t: L, type: vim }
     - ;
     - "'"
-    - LSFT
+    - $$mdi:apple-keyboard-shift$$
     - Z
     - X
     - C
@@ -68,7 +68,7 @@ layers:
     - RIGHT
     - ""
     - ""
-    - LSFT
+    - $$mdi:apple-keyboard-shift$$
     - ""
     - ""
     - ""
@@ -111,7 +111,7 @@ layers:
     - "]"
     - \
     - "`"
-    - LSFT
+    - $$mdi:apple-keyboard-shift$$
     - ""
     - ""
     - ""

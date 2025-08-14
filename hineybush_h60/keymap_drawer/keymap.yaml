@@ -47,7 +47,7 @@ layers:
     - ;
     - "'"
     - { t: "$$mdi:keyboard-return$$", type: enter }
-    - LSFT
+    - $$mdi:apple-keyboard-shift$$
     - Z
     - X
     - C
@@ -58,11 +58,11 @@ layers:
     - ","
     - .
     - /
-    - RSFT
+    - $$mdi:apple-keyboard-shift$$
     - $$mdi:numeric-1-box-outline$$
     - ""
     - $$mdi:apple-keyboard-option$$
-    - $$mdi:apple-finder$$
+    - $$mdi:apple-keyboard-command$$
     - { t: "$$mdi:keyboard-space$$", type: space }
     - $$mdi:apple-keyboard-command$$
     - $$mdi:numeric-2-box-outline$$
