@@ -11,13 +11,11 @@ Links:
 
 - [hineybush h60](https://hineybush.com/collections/pcbs/products/h60)
 
-### Keymap
-
 ![keymap_drawer](hineybush_h60/keymap_drawer/keymap.svg)
 
 ## [sofle/rev1](https://github.com/qmk/qmk_firmware/tree/master/keyboards/sofle/rev1)
 
-See [Official/Original](https://josefadamcik.github.io/SofleKeyboard/)
+See [Official](https://josefadamcik.github.io/SofleKeyboard/)
 
 > 128x32 OLED display module
 
@@ -30,7 +28,7 @@ Bought from [ergomech.store](https://ergomech.store/shop/sofle-v2-sandwich-style
 >
 > USB-C port - However, cannot be used with usb-c to usb-c cable
 
-### [Flash notes](https://josefadamcik.github.io/SofleKeyboard/build_guide.html)
+[Flash notes](https://josefadamcik.github.io/SofleKeyboard/build_guide.html):
 
 > - Make sure halves are not connected together with TRRS cable.
 > - Connect one half to USB, flash the firmware. Use the reset button to reset the keyboard when you are asked to in
@@ -39,15 +37,17 @@ Bought from [ergomech.store](https://ergomech.store/shop/sofle-v2-sandwich-style
 > - Disconnect the USB cable. Connect both halves together with TRRS cable.
 > - Connect USB cable to the left side.
 
-### Keymap
-
 ![keymap_drawer](sofle_rev1/keymap_drawer/keymap.svg)
+
+## [crkbd/rev1](https://github.com/qmk/qmk_firmware/tree/master/keyboards/crkbd/rev1)
+
+See [Official](https://github.com/foostan/crkbd)
+
+![keymap_drawer](crkbd_rev1/keymap_drawer/keymap.svg)
 
 ## [coban/pad9a](https://github.com/qmk/qmk_firmware/tree/master/keyboards/coban/pad9a)
 
 Bought from [COBAN STATIONERY](https://cobanstationery.com/product/coban-pad-9a-banh-chung/)
-
-### Keymap
 
 ![keymap_drawer](coban_pad9a/keymap_drawer/keymap.svg)
 
@@ -68,8 +68,8 @@ Step by step:
 
 - Make changes to keymaps: `*.c`, `*.h`, `*.mk`
     - Format `keymap.c` with `column -t`
-- Apply changes to keymaps JSON: `make qmk_all`
-- Visualize keymap: `make draw`
+- Apply changes to keymaps JSON: `just qmk`
+- Visualize keymap: `just draw`
 
 ## Features
 
