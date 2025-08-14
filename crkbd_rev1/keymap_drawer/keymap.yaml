@@ -1,0 +1,174 @@
+layout: { qmk_keyboard: crkbd/rev1, layout_name: LAYOUT_split_3x6_3 }
+layers:
+  L0:
+    - $$mdi:keyboard-tab$$
+    - Q
+    - W
+    - E
+    - R
+    - T
+    - Y
+    - U
+    - I
+    - O
+    - P
+    - $$mdi:keyboard-backspace$$
+    - $$mdi:apple-keyboard-control$$
+    - A
+    - S
+    - D
+    - F
+    - G
+    - { t: H, type: vim }
+    - { t: J, type: vim }
+    - { t: K, type: vim }
+    - { t: L, type: vim }
+    - ;
+    - "'"
+    - LSFT
+    - Z
+    - X
+    - C
+    - V
+    - B
+    - N
+    - M
+    - ","
+    - .
+    - /
+    - ESC
+    - LGUI
+    - L1
+    - { t: "$$mdi:keyboard-space$$", type: space }
+    - { t: "$$mdi:keyboard-return$$", type: enter }
+    - L2
+    - RALT
+  L1:
+    - $$mdi:keyboard-tab$$
+    - "1"
+    - "2"
+    - "3"
+    - "4"
+    - "5"
+    - "6"
+    - "7"
+    - "8"
+    - "9"
+    - "0"
+    - $$mdi:keyboard-backspace$$
+    - $$mdi:apple-keyboard-control$$
+    - ""
+    - ""
+    - ""
+    - ""
+    - ""
+    - { t: "$$mdi:chevron-left$$", type: arrow }
+    - { t: "$$mdi:chevron-down$$", type: arrow }
+    - { t: "$$mdi:chevron-up$$", type: arrow }
+    - RIGHT
+    - ""
+    - ""
+    - LSFT
+    - ""
+    - ""
+    - ""
+    - ""
+    - ""
+    - ""
+    - ""
+    - ""
+    - ""
+    - ""
+    - ""
+    - LGUI
+    - { type: held }
+    - { t: "$$mdi:keyboard-space$$", type: space }
+    - { t: "$$mdi:keyboard-return$$", type: enter }
+    - L3
+    - RALT
+  L2:
+    - $$mdi:keyboard-tab$$
+    - "!"
+    - "@"
+    - "#"
+    - $
+    - "%"
+    - ^
+    - "&"
+    - "*"
+    - (
+    - )
+    - $$mdi:keyboard-backspace$$
+    - $$mdi:apple-keyboard-control$$
+    - ""
+    - ""
+    - ""
+    - ""
+    - ""
+    - "-"
+    - "="
+    - "["
+    - "]"
+    - \
+    - "`"
+    - LSFT
+    - ""
+    - ""
+    - ""
+    - ""
+    - ""
+    - _
+    - +
+    - "{"
+    - "}"
+    - "|"
+    - "~"
+    - LGUI
+    - L3
+    - { t: "$$mdi:keyboard-space$$", type: space }
+    - { t: "$$mdi:keyboard-return$$", type: enter }
+    - { type: held }
+    - RALT
+  L3:
+    - QK BOOT
+    - ""
+    - ""
+    - ""
+    - ""
+    - ""
+    - ""
+    - ""
+    - ""
+    - ""
+    - ""
+    - ""
+    - RM TOGG
+    - RM HUEU
+    - RM SATU
+    - RM VALU
+    - ""
+    - ""
+    - ""
+    - ""
+    - ""
+    - ""
+    - ""
+    - ""
+    - RM NEXT
+    - RM HUED
+    - RM SATD
+    - RM VALD
+    - ""
+    - ""
+    - ""
+    - ""
+    - ""
+    - ""
+    - ""
+    - ""
+    - LGUI
+    - { type: held }
+    - { t: "$$mdi:keyboard-space$$", type: space }
+    - { t: "$$mdi:keyboard-return$$", type: enter }
+    - { type: held }
+    - RALT

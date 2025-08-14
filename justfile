@@ -35,7 +35,13 @@ draw_qmkasciigen_demo:
     go run ./cmd/qmkasciigen -print-out -allow-layers 0 -qmk-keyboard moondrop/dash75
     go run ./cmd/qmkasciigen -print-out -allow-layers 0 -qmk-keyboard ymdk/id75 -qmk-keymap via
 
-draw_keymap_drawer:
+draw_keymap_drawer_init:
+    mkdir -p hineybush_h60/keymap_drawer
+    mkdir -p sofle_rev1/keymap_drawer
+    mkdir -p crkbd_rev1/keymap_drawer
+    mkdir -p coban_pad9a/keymap_drawer
+
+draw_keymap_drawer: draw_keymap_drawer_init
     # https://github.com/caksoylar/keymap-drawer
     keymap -c keymap_drawer/config.yaml \
     	parse -q hineybush_h60/keymaps_json/haunt98/keymap.json > \
@@ -62,7 +68,7 @@ draw_keymap_drawer:
         draw coban_pad9a/keymap_drawer/keymap.yaml > \
         coban_pad9a/keymap_drawer/keymap.svg
 
-draw_keymap_drawer_upstream:
+draw_keymap_drawer_upstream: draw_keymap_drawer_init
     wcurl --curl-options="--clobber --netrc" https://raw.githubusercontent.com/caksoylar/keymap-drawer/main/resources/extra_layouts/sofle_rotated.json --output sofle_rev1/keymap_drawer/sofle_rotated.json
     wcurl --curl-options="--clobber --netrc" https://raw.githubusercontent.com/caksoylar/keymap-drawer/main/resources/extra_layouts/corne_rotated.json --output crkbd_rev1/keymap_drawer/corne_rotated.json
 

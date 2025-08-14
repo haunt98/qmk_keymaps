@@ -7,5 +7,5 @@
         ["KC_TAB", "KC_EXLM", "KC_AT", "KC_HASH", "KC_DLR", "KC_PERC", "KC_CIRC", "KC_AMPR", "KC_ASTR", "KC_LPRN", "KC_RPRN", "KC_BSPC", "KC_LCTL", "KC_NO", "KC_NO", "KC_NO", "KC_NO", "KC_NO", "KC_MINS", "KC_EQL", "KC_LBRC", "KC_RBRC", "KC_BSLS", "KC_GRV", "KC_LSFT", "KC_NO", "KC_NO", "KC_NO", "KC_NO", "KC_NO", "KC_UNDS", "KC_PLUS", "KC_LCBR", "KC_RCBR", "KC_PIPE", "KC_TILD", "KC_LGUI", "MO(3)", "KC_SPC", "KC_ENT", "KC_TRNS", "KC_RALT"],
         ["QK_BOOT", "KC_NO", "KC_NO", "KC_NO", "KC_NO", "KC_NO", "KC_NO", "KC_NO", "KC_NO", "KC_NO", "KC_NO", "KC_NO", "RM_TOGG", "RM_HUEU", "RM_SATU", "RM_VALU", "KC_NO", "KC_NO", "KC_NO", "KC_NO", "KC_NO", "KC_NO", "KC_NO", "KC_NO", "RM_NEXT", "RM_HUED", "RM_SATD", "RM_VALD", "KC_NO", "KC_NO", "KC_NO", "KC_NO", "KC_NO", "KC_NO", "KC_NO", "KC_NO", "KC_LGUI", "KC_TRNS", "KC_SPC", "KC_ENT", "KC_TRNS", "KC_RALT"]
     ],
-    "layout": "LAYOUT"
+    "layout": "LAYOUT_split_3x6_3"
 }
