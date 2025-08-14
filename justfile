@@ -21,6 +21,10 @@ draw_qmkasciigen: go
     	-qmk-keymap-file sofle_rev1/keymaps_json/haunt98/keymap.json \
     	-out sofle_rev1/asciiart/haunt98.txt
     go run ./cmd/qmkasciigen \
+    	-qmk-keyboard crkbd/rev1 \
+    	-qmk-keymap-file crkbd_rev1/keymaps_json/haunt98/keymap.json \
+    	-out crkbd_rev1/asciiart/haunt98.txt
+    go run ./cmd/qmkasciigen \
         -qmk-keyboard coban/pad9a \
         -qmk-keymap-file coban_pad9a/keymaps_json/haunt98/keymap.json \
         -out coban_pad9a/asciiart/haunt98.txt
@@ -46,6 +50,12 @@ draw_keymap_drawer:
     	draw sofle_rev1/keymap_drawer/keymap.yaml -j sofle_rev1/keymap_drawer/sofle_rotated.json > \
     	sofle_rev1/keymap_drawer/keymap.svg
     keymap -c keymap_drawer/config.yaml \
+    	parse -q crkbd_rev1/keymaps_json/haunt98/keymap.json > \
+    	crkbd_rev1/keymap_drawer/keymap.yaml
+    keymap -c keymap_drawer/config.yaml \
+    	draw crkbd_rev1/keymap_drawer/keymap.yaml -j crkbd_rev1/keymap_drawer/corne_rotated.json > \
+    	crkbd_rev1/keymap_drawer/keymap.svg
+    keymap -c keymap_drawer/config.yaml \
         parse -q coban_pad9a/keymaps_json/haunt98/keymap.json > \
         coban_pad9a/keymap_drawer/keymap.yaml
     keymap -c keymap_drawer/config.yaml \
@@ -54,11 +64,13 @@ draw_keymap_drawer:
 
 draw_keymap_drawer_upstream:
     wcurl --curl-options="--clobber --netrc" https://raw.githubusercontent.com/caksoylar/keymap-drawer/main/resources/extra_layouts/sofle_rotated.json --output sofle_rev1/keymap_drawer/sofle_rotated.json
+    wcurl --curl-options="--clobber --netrc" https://raw.githubusercontent.com/caksoylar/keymap-drawer/main/resources/extra_layouts/corne_rotated.json --output crkbd_rev1/keymap_drawer/corne_rotated.json
 
 draw_keymap_drawer_format:
     bunx prettier --write \
         hineybush_h60/keymap_drawer/*.yaml \
     	sofle_rev1/keymap_drawer/*.yaml \
+    	crkbd_rev1/keymap_drawer/*.yaml \
         coban_pad9a/keymap_drawer/*.yaml
 
 draw: draw_qmkasciigen draw_keymap_drawer draw_keymap_drawer_format
@@ -79,6 +91,7 @@ qmk_cp:
     cp -rf users/haunt98 ~/qmk_firmware/users/
     cp -rf hineybush_h60/keymaps/haunt98 ~/qmk_firmware/keyboards/hineybush/h60/keymaps/
     cp -rf sofle_rev1/keymaps/haunt98 ~/qmk_firmware/keyboards/sofle/keymaps/
+    cp -rf crkbd_rev1/keymaps/haunt98 ~/qmk_firmware/keyboards/crkbd/keymaps/
     cp -rf coban_pad9a/keymaps/haunt98 ~/qmk_firmware/keyboards/coban/pad9a/keymaps/
 
 qmk_compile: qmk_cp
@@ -86,12 +99,14 @@ qmk_compile: qmk_cp
     qmk compile -c -kb hineybush/h60 -km haunt98
     mv ~/qmk_firmware/hineybush_h60_haunt98.hex .
     qmk compile -c -kb sofle/rev1 -km haunt98
+    qmk compile -c -kb crkbd/rev1 -km haunt98
     qmk compile -c -kb coban/pad9a -km haunt98
 
 qmk_clean:
     rm -rf ~/qmk_firmware/users/haunt98
     rm -rf ~/qmk_firmware/keyboards/hineybush/h60/keymaps/haunt98
     rm -rf ~/qmk_firmware/keyboards/sofle/keymaps/haunt98
+    rm -rf ~/qmk_firmware/keyboards/crkbd/keymaps/haunt98
     rm -rf ~/qmk_firmware/keyboards/coban/pad9a/keymaps/haunt98
     qmk clean -a
     rm -rf *.bin *.hex
@@ -102,12 +117,17 @@ qmk_c2json:
     	hineybush_h60/keymaps/haunt98/keymap.c
     qmk c2json -kb sofle/rev1 -km haunt98 -o sofle_rev1/keymaps_json/haunt98/keymap.json --no-cpp \
     	sofle_rev1/keymaps/haunt98/keymap.c
+    qmk c2json -kb crkbd/rev1 -km haunt98 -o crkbd_rev1/keymaps_json/haunt98/keymap.json --no-cpp \
+    	crkbd_rev1/keymaps/haunt98/keymap.c
     qmk c2json -kb coban/pad9a -km haunt98 -o coban_pad9a/keymaps_json/haunt98/keymap.json --no-cpp \
     	coban_pad9a/keymaps/haunt98/keymap.c
     fd "keymap.json" --exec qmk format-json -i
 
 qmk_flash_sofle_rev1: qmk_clean qmk_cp
     qmk flash -c -kb sofle/rev1 -km haunt98
+
+qmk_flash_crkbd_rev1: qmk_clean qmk_cp
+    qmk flash -c -kb crkbd/rev1 -km haunt98
 
 qmk_flash_coban_pad9a: qmk_clean qmk_cp
     qmk flash -c -kb coban/pad9a -km haunt98
