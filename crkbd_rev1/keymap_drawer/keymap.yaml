@@ -13,7 +13,11 @@ layers:
     - O
     - P
     - $$mdi:keyboard-backspace$$
-    - $$mdi:apple-keyboard-control$$
+    - {
+        t: "$$mdi:keyboard-esc$$",
+        h: "$$mdi:apple-keyboard-control$$",
+        type: esc,
+      }
     - A
     - S
     - D
@@ -24,8 +28,8 @@ layers:
     - { t: K, type: vim }
     - { t: L, type: vim }
     - ;
-    - "'"
-    - $$mdi:apple-keyboard-shift$$
+    - { t: "$$mdi:keyboard-return$$", type: enter }
+    - { t: (, h: "$$mdi:apple-keyboard-shift$$" }
     - Z
     - X
     - C
@@ -36,139 +40,141 @@ layers:
     - ","
     - .
     - /
-    - ESC
-    - LGUI
-    - L1
+    - { t: ), h: "$$mdi:apple-keyboard-shift$$" }
+    - $$mdi:apple-keyboard-command$$
+    - $$mdi:numeric-1-box-outline$$
     - { t: "$$mdi:keyboard-space$$", type: space }
-    - { t: "$$mdi:keyboard-return$$", type: enter }
-    - L2
-    - RALT
+    - { t: "$$mdi:keyboard-space$$", type: space }
+    - $$mdi:numeric-2-box-outline$$
+    - $$mdi:apple-keyboard-option$$
   L1:
-    - $$mdi:keyboard-tab$$
-    - "1"
-    - "2"
-    - "3"
-    - "4"
-    - "5"
-    - "6"
+    - { t: "$$mdi:transfer-down$$", type: trans }
+    - ""
+    - ""
+    - ""
+    - "["
+    - "]"
     - "7"
     - "8"
     - "9"
     - "0"
-    - $$mdi:keyboard-backspace$$
-    - $$mdi:apple-keyboard-control$$
+    - ""
+    - { t: "$$mdi:transfer-down$$", type: trans }
+    - { t: "$$mdi:transfer-down$$", type: trans }
     - ""
     - ""
     - ""
     - ""
     - ""
+    - "4"
+    - "5"
+    - "6"
+    - ""
+    - ""
+    - ""
+    - { t: "$$mdi:transfer-down$$", type: trans }
+    - ""
+    - ""
+    - ""
+    - ""
+    - ""
+    - "1"
+    - "2"
+    - "3"
+    - { t: "$$mdi:transfer-down$$", type: trans }
+    - { t: "$$mdi:transfer-down$$", type: trans }
+    - { t: "$$mdi:transfer-down$$", type: trans }
+    - { t: "$$mdi:transfer-down$$", type: trans }
+    - { t: "$$mdi:transfer-down$$", type: trans }
+    - { t: "$$mdi:transfer-down$$", type: trans }
+    - { t: "$$mdi:transfer-down$$", type: trans }
+    - { t: "$$mdi:transfer-down$$", type: trans }
+    - { t: "$$mdi:transfer-down$$", type: trans }
+  L2:
+    - { t: "$$mdi:transfer-down$$", type: trans }
+    - { t: "$$mdi:transfer-down$$", type: trans }
+    - { t: "$$mdi:transfer-down$$", type: trans }
+    - F7
+    - F8
+    - F9
+    - "{"
+    - "}"
+    - "="
+    - +
+    - ""
+    - { t: "$$mdi:transfer-down$$", type: trans }
+    - { t: "$$mdi:transfer-down$$", type: trans }
+    - ""
+    - ""
+    - F4
+    - F5
+    - F6
     - { t: "$$mdi:chevron-left$$", type: arrow }
     - { t: "$$mdi:chevron-down$$", type: arrow }
     - { t: "$$mdi:chevron-up$$", type: arrow }
-    - RIGHT
+    - { t: "$$mdi:chevron-right$$", type: arrow }
+    - ":"
+    - { t: "$$mdi:transfer-down$$", type: trans }
+    - { t: "$$mdi:transfer-down$$", type: trans }
     - ""
     - ""
-    - $$mdi:apple-keyboard-shift$$
-    - ""
-    - ""
-    - ""
-    - ""
-    - ""
-    - ""
-    - ""
-    - ""
-    - ""
-    - ""
-    - ""
-    - LGUI
-    - { type: held }
-    - { t: "$$mdi:keyboard-space$$", type: space }
-    - { t: "$$mdi:keyboard-return$$", type: enter }
-    - L3
-    - RALT
-  L2:
-    - $$mdi:keyboard-tab$$
-    - "!"
-    - "@"
-    - "#"
-    - $
-    - "%"
-    - ^
-    - "&"
-    - "*"
-    - (
-    - )
-    - $$mdi:keyboard-backspace$$
-    - $$mdi:apple-keyboard-control$$
-    - ""
-    - ""
-    - ""
-    - ""
-    - ""
-    - "-"
-    - "="
-    - "["
-    - "]"
+    - F1
+    - F2
+    - F3
     - \
-    - "`"
-    - $$mdi:apple-keyboard-shift$$
-    - ""
-    - ""
-    - ""
-    - ""
-    - ""
-    - _
-    - +
-    - "{"
-    - "}"
     - "|"
-    - "~"
-    - LGUI
-    - L3
-    - { t: "$$mdi:keyboard-space$$", type: space }
-    - { t: "$$mdi:keyboard-return$$", type: enter }
-    - { type: held }
-    - RALT
+    - "'"
+    - '"'
+    - { t: "$$mdi:transfer-down$$", type: trans }
+    - { t: "$$mdi:transfer-down$$", type: trans }
+    - { t: "$$mdi:transfer-down$$", type: trans }
+    - { t: "$$mdi:transfer-down$$", type: trans }
+    - { t: "$$mdi:transfer-down$$", type: trans }
+    - { t: "$$mdi:transfer-down$$", type: trans }
+    - { t: "$$mdi:transfer-down$$", type: trans }
+    - { t: "$$mdi:transfer-down$$", type: trans }
   L3:
-    - QK BOOT
-    - ""
-    - ""
-    - ""
-    - ""
-    - ""
-    - ""
-    - ""
-    - ""
-    - ""
-    - ""
-    - ""
-    - RM TOGG
-    - RM HUEU
-    - RM SATU
-    - RM VALU
-    - ""
-    - ""
-    - ""
-    - ""
-    - ""
-    - ""
-    - ""
-    - ""
-    - RM NEXT
-    - RM HUED
-    - RM SATD
-    - RM VALD
-    - ""
-    - ""
-    - ""
-    - ""
-    - ""
-    - ""
-    - ""
-    - ""
-    - LGUI
-    - { type: held }
-    - { t: "$$mdi:keyboard-space$$", type: space }
-    - { t: "$$mdi:keyboard-return$$", type: enter }
-    - { type: held }
-    - RALT
+    [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+    ]

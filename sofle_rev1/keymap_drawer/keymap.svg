@@ -468,12 +468,10 @@ rect.esc, rect.vim {
 <g transform="translate(405, 312) rotate(30.0)" class="key keypos-54">
 <rect rx="6" ry="6" x="-28" y="-43" width="56" height="86" class="key side"/>
 <rect rx="4" ry="4" x="-22" y="-41" width="44" height="74" class="key"/>
-<text x="0" y="-4" class="key tap">[</text>
 </g>
 <g transform="translate(555, 312) rotate(-30.0)" class="key keypos-55">
 <rect rx="6" ry="6" x="-28" y="-43" width="56" height="86" class="key side"/>
 <rect rx="4" ry="4" x="-22" y="-41" width="44" height="74" class="key"/>
-<text x="0" y="-4" class="key tap">]</text>
 </g>
 <g transform="translate(621, 294) rotate(-22.5)" class="key keypos-56">
 <rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key side"/>
@@ -751,15 +749,13 @@ rect.esc, rect.vim {
 <rect rx="4" ry="4" x="-22" y="-26" width="44" height="44" class="key trans"/>
 <use href="#mdi:transfer-down" xlink:href="#mdi:transfer-down" x="-9" y="-13" height="18" width="18.0" class="key trans tap glyph mdi:transfer-down"/>
 </g>
-<g transform="translate(405, 312) rotate(30.0)" class="key trans keypos-54">
-<rect rx="6" ry="6" x="-28" y="-43" width="56" height="86" class="key trans side"/>
-<rect rx="4" ry="4" x="-22" y="-41" width="44" height="74" class="key trans"/>
-<use href="#mdi:transfer-down" xlink:href="#mdi:transfer-down" x="-9" y="-13" height="18" width="18.0" class="key trans tap glyph mdi:transfer-down"/>
+<g transform="translate(405, 312) rotate(30.0)" class="key keypos-54">
+<rect rx="6" ry="6" x="-28" y="-43" width="56" height="86" class="key side"/>
+<rect rx="4" ry="4" x="-22" y="-41" width="44" height="74" class="key"/>
 </g>
-<g transform="translate(555, 312) rotate(-30.0)" class="key trans keypos-55">
-<rect rx="6" ry="6" x="-28" y="-43" width="56" height="86" class="key trans side"/>
-<rect rx="4" ry="4" x="-22" y="-41" width="44" height="74" class="key trans"/>
-<use href="#mdi:transfer-down" xlink:href="#mdi:transfer-down" x="-9" y="-13" height="18" width="18.0" class="key trans tap glyph mdi:transfer-down"/>
+<g transform="translate(555, 312) rotate(-30.0)" class="key keypos-55">
+<rect rx="6" ry="6" x="-28" y="-43" width="56" height="86" class="key side"/>
+<rect rx="4" ry="4" x="-22" y="-41" width="44" height="74" class="key"/>
 </g>
 <g transform="translate(621, 294) rotate(-22.5)" class="key trans keypos-56">
 <rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key trans side"/>
@@ -1049,15 +1045,13 @@ rect.esc, rect.vim {
 <rect rx="4" ry="4" x="-22" y="-26" width="44" height="44" class="key trans"/>
 <use href="#mdi:transfer-down" xlink:href="#mdi:transfer-down" x="-9" y="-13" height="18" width="18.0" class="key trans tap glyph mdi:transfer-down"/>
 </g>
-<g transform="translate(405, 312) rotate(30.0)" class="key trans keypos-54">
-<rect rx="6" ry="6" x="-28" y="-43" width="56" height="86" class="key trans side"/>
-<rect rx="4" ry="4" x="-22" y="-41" width="44" height="74" class="key trans"/>
-<use href="#mdi:transfer-down" xlink:href="#mdi:transfer-down" x="-9" y="-13" height="18" width="18.0" class="key trans tap glyph mdi:transfer-down"/>
+<g transform="translate(405, 312) rotate(30.0)" class="key keypos-54">
+<rect rx="6" ry="6" x="-28" y="-43" width="56" height="86" class="key side"/>
+<rect rx="4" ry="4" x="-22" y="-41" width="44" height="74" class="key"/>
 </g>
-<g transform="translate(555, 312) rotate(-30.0)" class="key trans keypos-55">
-<rect rx="6" ry="6" x="-28" y="-43" width="56" height="86" class="key trans side"/>
-<rect rx="4" ry="4" x="-22" y="-41" width="44" height="74" class="key trans"/>
-<use href="#mdi:transfer-down" xlink:href="#mdi:transfer-down" x="-9" y="-13" height="18" width="18.0" class="key trans tap glyph mdi:transfer-down"/>
+<g transform="translate(555, 312) rotate(-30.0)" class="key keypos-55">
+<rect rx="6" ry="6" x="-28" y="-43" width="56" height="86" class="key side"/>
+<rect rx="4" ry="4" x="-22" y="-41" width="44" height="74" class="key"/>
 </g>
 <g transform="translate(621, 294) rotate(-22.5)" class="key trans keypos-56">
 <rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key trans side"/>

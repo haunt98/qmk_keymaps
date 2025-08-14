@@ -59,8 +59,8 @@ layers:
     - $$mdi:apple-keyboard-command$$
     - { t: "$$mdi:keyboard-space$$", type: space }
     - $$mdi:numeric-1-box-outline$$
-    - "["
-    - "]"
+    - ""
+    - ""
     - $$mdi:numeric-2-box-outline$$
     - { t: "$$mdi:keyboard-space$$", type: space }
     - $$mdi:apple-keyboard-command$$
@@ -120,8 +120,8 @@ layers:
     - { t: "$$mdi:transfer-down$$", type: trans }
     - { t: "$$mdi:transfer-down$$", type: trans }
     - { t: "$$mdi:transfer-down$$", type: trans }
-    - { t: "$$mdi:transfer-down$$", type: trans }
-    - { t: "$$mdi:transfer-down$$", type: trans }
+    - ""
+    - ""
     - { t: "$$mdi:transfer-down$$", type: trans }
     - { t: "$$mdi:transfer-down$$", type: trans }
     - { t: "$$mdi:transfer-down$$", type: trans }
@@ -181,8 +181,8 @@ layers:
     - { t: "$$mdi:transfer-down$$", type: trans }
     - { t: "$$mdi:transfer-down$$", type: trans }
     - { t: "$$mdi:transfer-down$$", type: trans }
-    - { t: "$$mdi:transfer-down$$", type: trans }
-    - { t: "$$mdi:transfer-down$$", type: trans }
+    - ""
+    - ""
     - { t: "$$mdi:transfer-down$$", type: trans }
     - { t: "$$mdi:transfer-down$$", type: trans }
     - { t: "$$mdi:transfer-down$$", type: trans }
