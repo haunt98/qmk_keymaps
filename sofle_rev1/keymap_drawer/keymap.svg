@@ -662,9 +662,10 @@ rect.esc, rect.vim {
 <rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key side"/>
 <rect rx="4" ry="4" x="-22" y="-26" width="44" height="44" class="key"/>
 </g>
-<g transform="translate(930, 188)" class="key keypos-35">
-<rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key side"/>
-<rect rx="4" ry="4" x="-22" y="-26" width="44" height="44" class="key"/>
+<g transform="translate(930, 188)" class="key trans keypos-35">
+<rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key trans side"/>
+<rect rx="4" ry="4" x="-22" y="-26" width="44" height="44" class="key trans"/>
+<use href="#mdi:transfer-down" xlink:href="#mdi:transfer-down" x="-9" y="-13" height="18" width="18.0" class="key trans tap glyph mdi:transfer-down"/>
 </g>
 <g transform="translate(30, 248)" class="key trans keypos-36">
 <rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key trans side"/>

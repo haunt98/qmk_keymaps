@@ -101,7 +101,7 @@ layers:
     - "6"
     - ""
     - ""
-    - ""
+    - { t: "$$mdi:transfer-down$$", type: trans }
     - { t: "$$mdi:transfer-down$$", type: trans }
     - ""
     - ""
