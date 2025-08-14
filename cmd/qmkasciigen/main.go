@@ -8,6 +8,7 @@ import (
 	"log"
 	"net/http"
 	"os"
+	"path/filepath"
 	"strings"
 
 	"github.com/bytedance/sonic"
@@ -105,6 +106,10 @@ func main() {
 
 	// Optional
 	if flagOutput != "" {
+		if err := os.MkdirAll(filepath.Dir(flagOutput), 0o700); err != nil {
+			log.Fatalln("Failed to mkdir all", flagOutput, err)
+		}
+
 		if err := os.WriteFile(flagOutput, []byte(result), 0o600); err != nil {
 			log.Fatalln("Failed to write file", flagOutput, err)
 		}
