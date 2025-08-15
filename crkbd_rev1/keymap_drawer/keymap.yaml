@@ -136,6 +136,8 @@ layers:
   L3:
     [
       "",
+      BRMD,
+      BRMU,
       "",
       "",
       "",
@@ -146,11 +148,9 @@ layers:
       "",
       "",
       "",
-      "",
-      "",
-      "",
-      "",
-      "",
+      "$$mdi:volume-minus$$",
+      "$$mdi:volume-plus$$",
+      "$$mdi:volume-off$$",
       "",
       "",
       "",

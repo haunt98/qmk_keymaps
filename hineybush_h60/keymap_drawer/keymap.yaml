@@ -147,8 +147,6 @@ layers:
     - ""
     - ""
     - ""
-    - BRMD
-    - BRMU
     - ""
     - ""
     - ""
@@ -161,9 +159,11 @@ layers:
     - ""
     - ""
     - ""
-    - $$mdi:volume-minus$$
-    - $$mdi:volume-plus$$
-    - $$mdi:volume-off$$
+    - ""
+    - ""
+    - ""
+    - ""
+    - ""
     - ""
     - ""
     - ""
@@ -195,8 +195,6 @@ layers:
     - ""
   L3:
     [
-      QK BOOT,
-      EE CLR,
       "",
       "",
       "",
@@ -213,6 +211,8 @@ layers:
       "",
       "",
       "",
+      BRMD,
+      BRMU,
       "",
       "",
       "",
@@ -225,9 +225,9 @@ layers:
       "",
       "",
       "",
-      "",
-      "",
-      "",
+      "$$mdi:volume-minus$$",
+      "$$mdi:volume-plus$$",
+      "$$mdi:volume-off$$",
       "",
       "",
       "",
