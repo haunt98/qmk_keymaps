@@ -1,11 +1,20 @@
 layout: { qmk_keyboard: coban/pad9a, layout_name: LAYOUT }
 layers:
   L0:
-    - $$mdi:volume-off$$
-    - $$mdi:volume-off$$
+    - ""
+    - ""
     - ESC
-    - F2
+    - { t: "$$mdi:chevron-up$$", type: arrow }
     - F12
-    - PGUP
-    - PGDN
+    - $$mdi:numeric-1-box-outline$$
+    - { t: "$$mdi:chevron-down$$", type: arrow }
     - { t: "$$mdi:keyboard-return$$", type: enter }
+  L1:
+    - ""
+    - ""
+    - { t: "$$mdi:transfer-down$$", type: trans }
+    - PGUP
+    - { t: "$$mdi:transfer-down$$", type: trans }
+    - { t: "$$mdi:transfer-down$$", type: trans }
+    - PGDN
+    - { t: "$$mdi:transfer-down$$", type: trans }

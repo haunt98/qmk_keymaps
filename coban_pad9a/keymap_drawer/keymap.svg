@@ -1,10 +1,19 @@
-<svg width="240" height="292" viewBox="0 0 240 292" class="keymap" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="240" height="528" viewBox="0 0 240 528" class="keymap" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <defs>/* start glyphs */
+<svg id="mdi:chevron-down">
+<svg xmlns="http://www.w3.org/2000/svg" id="mdi-chevron-down" viewBox="0 0 24 24"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" /></svg>
+</svg>
+<svg id="mdi:chevron-up">
+<svg xmlns="http://www.w3.org/2000/svg" id="mdi-chevron-up" viewBox="0 0 24 24"><path d="M7.41,15.41L12,10.83L16.59,15.41L18,14L12,8L6,14L7.41,15.41Z" /></svg>
+</svg>
 <svg id="mdi:keyboard-return">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-keyboard-return" viewBox="0 0 24 24"><path d="M19,7V11H5.83L9.41,7.41L8,6L2,12L8,18L9.41,16.58L5.83,13H21V7H19Z" /></svg>
 </svg>
-<svg id="mdi:volume-off">
-<svg xmlns="http://www.w3.org/2000/svg" id="mdi-volume-off" viewBox="0 0 24 24"><path d="M12,4L9.91,6.09L12,8.18M4.27,3L3,4.27L7.73,9H3V15H7L12,20V13.27L16.25,17.53C15.58,18.04 14.83,18.46 14,18.7V20.77C15.38,20.45 16.63,19.82 17.68,18.96L19.73,21L21,19.73L12,10.73M19,12C19,12.94 18.8,13.82 18.46,14.64L19.97,16.15C20.62,14.91 21,13.5 21,12C21,7.72 18,4.14 14,3.23V5.29C16.89,6.15 19,8.83 19,12M16.5,12C16.5,10.23 15.5,8.71 14,7.97V10.18L16.45,12.63C16.5,12.43 16.5,12.21 16.5,12Z" /></svg>
+<svg id="mdi:numeric-1-box-outline">
+<svg xmlns="http://www.w3.org/2000/svg" id="mdi-numeric-1-box-outline" viewBox="0 0 24 24"><path d="M19,19H5V5H19M19,3H5A2,2 0 0,0 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5A2,2 0 0,0 19,3M12,17H14V7H10V9H12" /></svg>
+</svg>
+<svg id="mdi:transfer-down">
+<svg xmlns="http://www.w3.org/2000/svg" id="mdi-transfer-down" viewBox="0 0 24 24"><path d="M16,3V5H8V3H16M16,7V9H8V7H16M16,11V13H8V11H16M5,15H19L12,22L5,15Z" /></svg>
 </svg>
 </defs>/* end glyphs */
 <style>/* inherit to force styles through use tags */
@@ -155,22 +164,20 @@ rect.esc, rect.vim {
 <g transform="translate(30, 30)" class="key keypos-0">
 <rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key side"/>
 <rect rx="4" ry="4" x="-22" y="-26" width="44" height="44" class="key"/>
-<use href="#mdi:volume-off" xlink:href="#mdi:volume-off" x="-9" y="-13" height="18" width="18.0" class="key tap glyph mdi:volume-off"/>
 </g>
 <g transform="translate(150, 30)" class="key keypos-1">
 <rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key side"/>
 <rect rx="4" ry="4" x="-22" y="-26" width="44" height="44" class="key"/>
-<use href="#mdi:volume-off" xlink:href="#mdi:volume-off" x="-9" y="-13" height="18" width="18.0" class="key tap glyph mdi:volume-off"/>
 </g>
 <g transform="translate(30, 90)" class="key keypos-2">
 <rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key side"/>
 <rect rx="4" ry="4" x="-22" y="-26" width="44" height="44" class="key"/>
 <text x="0" y="-4" class="key tap">ESC</text>
 </g>
-<g transform="translate(90, 90)" class="key keypos-3">
-<rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key side"/>
-<rect rx="4" ry="4" x="-22" y="-26" width="44" height="44" class="key"/>
-<text x="0" y="-4" class="key tap">F2</text>
+<g transform="translate(90, 90)" class="key arrow keypos-3">
+<rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key arrow side"/>
+<rect rx="4" ry="4" x="-22" y="-26" width="44" height="44" class="key arrow"/>
+<use href="#mdi:chevron-up" xlink:href="#mdi:chevron-up" x="-9" y="-13" height="18" width="18.0" class="key arrow tap glyph mdi:chevron-up"/>
 </g>
 <g transform="translate(150, 90)" class="key keypos-4">
 <rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key side"/>
@@ -180,12 +187,12 @@ rect.esc, rect.vim {
 <g transform="translate(30, 150)" class="key keypos-5">
 <rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key side"/>
 <rect rx="4" ry="4" x="-22" y="-26" width="44" height="44" class="key"/>
-<text x="0" y="-4" class="key tap">PGUP</text>
+<use href="#mdi:numeric-1-box-outline" xlink:href="#mdi:numeric-1-box-outline" x="-9" y="-13" height="18" width="18.0" class="key tap glyph mdi:numeric-1-box-outline"/>
 </g>
-<g transform="translate(90, 150)" class="key keypos-6">
-<rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key side"/>
-<rect rx="4" ry="4" x="-22" y="-26" width="44" height="44" class="key"/>
-<text x="0" y="-4" class="key tap">PGDN</text>
+<g transform="translate(90, 150)" class="key arrow keypos-6">
+<rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key arrow side"/>
+<rect rx="4" ry="4" x="-22" y="-26" width="44" height="44" class="key arrow"/>
+<use href="#mdi:chevron-down" xlink:href="#mdi:chevron-down" x="-9" y="-13" height="18" width="18.0" class="key arrow tap glyph mdi:chevron-down"/>
 </g>
 <g transform="translate(150, 150)" class="key enter keypos-7">
 <rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key enter side"/>
@@ -194,4 +201,47 @@ rect.esc, rect.vim {
 </g>
 </g>
 </g>
-<text x="210.0" y="264.0" class="footer">Created by haunt98</text></svg>
+<g transform="translate(30, 236)" class="layer-L1">
+<text x="0" y="28" class="label" id="L1">L1</text>
+<g transform="translate(0, 56)">
+<g transform="translate(30, 30)" class="key keypos-0">
+<rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key side"/>
+<rect rx="4" ry="4" x="-22" y="-26" width="44" height="44" class="key"/>
+</g>
+<g transform="translate(150, 30)" class="key keypos-1">
+<rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key side"/>
+<rect rx="4" ry="4" x="-22" y="-26" width="44" height="44" class="key"/>
+</g>
+<g transform="translate(30, 90)" class="key trans keypos-2">
+<rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key trans side"/>
+<rect rx="4" ry="4" x="-22" y="-26" width="44" height="44" class="key trans"/>
+<use href="#mdi:transfer-down" xlink:href="#mdi:transfer-down" x="-9" y="-13" height="18" width="18.0" class="key trans tap glyph mdi:transfer-down"/>
+</g>
+<g transform="translate(90, 90)" class="key keypos-3">
+<rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key side"/>
+<rect rx="4" ry="4" x="-22" y="-26" width="44" height="44" class="key"/>
+<text x="0" y="-4" class="key tap">PGUP</text>
+</g>
+<g transform="translate(150, 90)" class="key trans keypos-4">
+<rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key trans side"/>
+<rect rx="4" ry="4" x="-22" y="-26" width="44" height="44" class="key trans"/>
+<use href="#mdi:transfer-down" xlink:href="#mdi:transfer-down" x="-9" y="-13" height="18" width="18.0" class="key trans tap glyph mdi:transfer-down"/>
+</g>
+<g transform="translate(30, 150)" class="key trans keypos-5">
+<rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key trans side"/>
+<rect rx="4" ry="4" x="-22" y="-26" width="44" height="44" class="key trans"/>
+<use href="#mdi:transfer-down" xlink:href="#mdi:transfer-down" x="-9" y="-13" height="18" width="18.0" class="key trans tap glyph mdi:transfer-down"/>
+</g>
+<g transform="translate(90, 150)" class="key keypos-6">
+<rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key side"/>
+<rect rx="4" ry="4" x="-22" y="-26" width="44" height="44" class="key"/>
+<text x="0" y="-4" class="key tap">PGDN</text>
+</g>
+<g transform="translate(150, 150)" class="key trans keypos-7">
+<rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key trans side"/>
+<rect rx="4" ry="4" x="-22" y="-26" width="44" height="44" class="key trans"/>
+<use href="#mdi:transfer-down" xlink:href="#mdi:transfer-down" x="-9" y="-13" height="18" width="18.0" class="key trans tap glyph mdi:transfer-down"/>
+</g>
+</g>
+</g>
+<text x="210.0" y="500.0" class="footer">Created by haunt98</text></svg>
