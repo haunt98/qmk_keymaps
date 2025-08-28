@@ -132,8 +132,17 @@ qmk_c2json:
 qmk_flash_sofle_rev1: qmk_clean qmk_cp
     qmk flash -c -kb sofle/rev1 -km haunt98
 
+qmk_flash_sofle_rev1_default: qmk_clean
+    qmk flash -c -kb sofle/rev1 -km default -e CONVERT_TO=rp2040_ce
+
 qmk_flash_crkbd_rev1: qmk_clean qmk_cp
     qmk flash -c -kb crkbd/rev1 -km haunt98
 
+qmk_flash_crkbd_rev1_default: qmk_clean
+    qmk flash -c -kb crkbd/rev1 -km default -e CONVERT_TO=rp2040_ce
+
 qmk_flash_coban_pad9a: qmk_clean qmk_cp
     qmk flash -c -kb coban/pad9a -km haunt98
+
+qmk_flash_coban_pad9a_default: qmk_clean
+    qmk flash -c -kb coban/pad9a -km default -e CONVERT_TO=rp2040_ce

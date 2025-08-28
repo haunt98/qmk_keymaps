@@ -43,6 +43,8 @@ Bought from [ergomech.store](https://ergomech.store/shop/sofle-v2-sandwich-style
 
 See [Official](https://github.com/foostan/crkbd)
 
+Hold `Q` or `P` to enter bootloader not top corner-most position.
+
 ![keymap_drawer](crkbd_rev1/keymap_drawer/keymap.svg)
 
 ## [coban/pad9a](https://github.com/qmk/qmk_firmware/tree/master/keyboards/coban/pad9a)
@@ -55,7 +57,8 @@ Bought from [COBAN STATIONERY](https://cobanstationery.com/product/coban-pad-9a-
 
 Enter bootloader in many ways:
 
-- Bootmagic reset: Unplug cable, then hold key in row 0 col 0 and plug cable.
+- Unplug cable, then hold key in top corner-most position (row 0, col 0) and plug cable. Can be different position for
+  different keyboard.
 - Keycode: Press `QK_BOOT`.
 - Physical reset button: Read manual of your PCB, likely will have a reset button
 
