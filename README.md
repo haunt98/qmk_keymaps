@@ -146,6 +146,7 @@ More:
 - [Miryoku](https://github.com/manna-harbour/miryoku)
 - [Pascal Getreuer's QMK keymap](https://github.com/getreuer/qmk-keymap)
     - [Designing a Symbol Layer](https://getreuer.info/posts/keyboards/symbol-layer/index.html)
+    - [QMK: SOCD Cleaner](https://getreuer.info/posts/keyboards/socd-cleaner/)
 - [filterpaper/qmk_userspace](https://github.com/filterpaper/qmk_userspace)
 - [The SpaceFN concept](https://kbd.news/The-SpaceFN-concept-2315.html)
 - [RP2040 Controller is now the default option](https://ergomech.store/blog/ergomech-blog-1/rp2040-controller-is-now-the-default-option-3):
