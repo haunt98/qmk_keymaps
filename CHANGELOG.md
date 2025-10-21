@@ -1,5 +1,87 @@
 # CHANGELOG
 
+## v0.0.27 (2025-10-21)
+
+### Added
+
+- feat(qmk): rm experimental (2025-10-21)
+
+- feat(qmk): refactor coban_pad9a keymap (2025-08-28)
+
+- feat: adjust keymap in sofle_rev1 (2025-08-15)
+
+- feat: move brightness, volume keys to adjust layer (2025-08-15)
+
+- feat: update keymaps for sofle_rev1, crkbd_rev1 (2025-08-15)
+
+- feat: update keymaps for crkbd_rev1 and sofle_rev1 (2025-08-15)
+
+- feat: disable MOUSEKEY_ENABLE globally (2025-08-15)
+
+- feat(qmkasciigen): create dir if not exist (2025-08-15)
+
+- feat: init support crkbd_rev1 with default keymaps (2025-08-15)
+
+- feat(qmk): add FLOW_TAP_TERM (2025-06-23)
+
+- feat(qmk): KC_WAKE not work as I expected (2025-05-30)
+
+- feat(qmk): disable mouse, add KC_WAKE (2025-05-29)
+
+### Others
+
+- docs: add socd-cleaner (2025-09-11)
+
+- docs: note for crkbd_rev1 (2025-08-28)
+
+- feat(keymap_drawer): add mdi shift (2025-08-15)
+
+- docs: add crkbd_rev1 (2025-08-15)
+
+- feat(crkbd_rev1): add draw (2025-08-15)
+
+- feat(hineybush_h60): for techworker (2025-08-10)
+
+- chore: pull qmk_firmware tags (2025-08-03)
+
+- feat(sofle_rev1): disable KC_MUTE (2025-07-31)
+
+- chore: rm dztech_dz60rgb_wkl (broken) (2025-07-18)
+
+- chore: use wcurl (2025-05-19)
+
+- docs (2025-04-12)
+
+- chore: run golangci-lint (2025-04-12)
+
+- chore(changelog): generate v0.0.26 (2025-04-08)
+
+### Build
+
+- chore(deps): bump github.com/spf13/cast from 1.9.2 to 1.10.0 (#43) (2025-09-09)
+
+- chore(deps): bump actions/setup-go from 5 to 6 (#42) (2025-09-05)
+
+- chore(deps): bump github.com/bytedance/sonic from 1.14.0 to 1.14.1 (#41) (2025-09-04)
+
+- chore(deps): bump github.com/stretchr/testify from 1.11.0 to 1.11.1 (#40) (2025-08-28)
+
+- chore(deps): bump github.com/stretchr/testify from 1.10.0 to 1.11.0 (#39) (2025-08-25)
+
+- chore(deps): bump actions/checkout from 4 to 5 (#38) (2025-08-13)
+
+- chore(deps): bump github.com/bytedance/sonic from 1.13.3 to 1.14.0 (#37) (2025-07-23)
+
+- chore(deps): bump github.com/bytedance/sonic from 1.13.2 to 1.13.3 (#36) (2025-06-04)
+
+- chore(deps): bump github.com/spf13/cast from 1.9.1 to 1.9.2 (#35) (2025-06-03)
+
+- chore(deps): bump github.com/spf13/cast from 1.8.0 to 1.9.1 (#34) (2025-06-02)
+
+- chore(deps): bump golangci/golangci-lint-action from 7 to 8 (#33) (2025-05-05)
+
+- chore(deps): bump github.com/spf13/cast from 1.7.1 to 1.8.0 (#32) (2025-05-05)
+
 ## v0.0.26 (2025-04-08)
 
 ### Added
