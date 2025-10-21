@@ -37,3 +37,10 @@
 #define FLOW_TAP_TERM 150
 
 #define RETRO_TAPPING
+
+// https://github.com/qmk/qmk_firmware/issues/9962
+#define NO_USB_STARTUP_CHECK
+
+// https://github.com/qmk/qmk_firmware/blob/master/docs/config_options.md
+// https://github.com/qmk/qmk_firmware/issues/17316
+#define USB_SUSPEND_WAKEUP_DELAY 200
