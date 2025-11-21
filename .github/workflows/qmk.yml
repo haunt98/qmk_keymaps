@@ -32,13 +32,13 @@ jobs:
       - name: Disable git safe directory checks
         run: git config --global --add safe.directory '*'
       - name: Checkout QMK
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6
         with:
           repository: qmk/qmk_firmware
           submodules: recursive
           ref: ${{ matrix.qmk_ref }}
       - name: Checkout personal keymaps
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6
         with:
           path: haunt98_qmk_keymaps
       - name: Copy keymaps
