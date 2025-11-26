@@ -206,5 +206,5 @@ Copycat QMK features with software.
     - [x] Get data directly from qmk
     - [x] Split transform keycodes to raw binding/transform (same as keymap-drawer)
     - [x] Support [Code page 437](https://en.wikipedia.org/wiki/Code_page_437)
-    - [x] Split draw func to multipls small func for easily maintenance
+    - [x] Split draw func to multiples small func for easily maintenance
     - [ ] Move scaleX, scaleY to config flag

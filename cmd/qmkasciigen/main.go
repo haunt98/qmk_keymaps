@@ -43,7 +43,7 @@ var (
 )
 
 func init() {
-	flag.BoolVar(&flagDebug, "debug", false, "Debug mode, print eveyrthing")
+	flag.BoolVar(&flagDebug, "debug", false, "Debug mode, print everything")
 	flag.StringVar(&flagQMKKeyboard, "qmk-keyboard", "", "QMK keyboard name")
 	flag.StringVar(&flagQMKKeymap, "qmk-keymap", "default", "QMK keymap name")
 	flag.StringVar(&flagQMKInfoFile, "qmk-info-file", "", "QMK info json file")
