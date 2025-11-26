@@ -1,5 +1,27 @@
 # CHANGELOG
 
+## v0.0.28 (2025-11-26)
+
+### Added
+
+- feat(qmk): put - right next to 0 (2025-11-26)
+
+### Others
+
+- chore: typo (2025-11-26)
+
+- chore(changelog): generate v0.0.27 (2025-10-21)
+
+### Build
+
+- chore(deps): bump actions/checkout from 5 to 6 (#47) (2025-11-21)
+
+- chore(deps): bump golangci/golangci-lint-action from 8 to 9 (#46) (2025-11-10)
+
+- chore(deps): bump github.com/bytedance/sonic from 1.14.1 to 1.14.2 (#45) (2025-10-29)
+
+- chore(deps): bump actions/upload-artifact from 4 to 5 (#44) (2025-10-27)
+
 ## v0.0.27 (2025-10-21)
 
 ### Added
