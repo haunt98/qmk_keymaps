@@ -84,6 +84,7 @@ draw: draw_qmkasciigen draw_keymap_drawer draw_keymap_drawer_format
 qmk: qmk_clean qmk_format qmk_compile qmk_c2json
 
 qmk_upstream:
+    # curl -fsSL https://install.qmk.fm | SKIP_UV=1 sh
     qmk doctor
     git -C ~/qmk_firmware pull origin master --tags
     qmk git-submodule
