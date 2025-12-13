@@ -223,19 +223,19 @@ func drawLayer(
 	}
 
 	// Print
-	layerStr := ""
+	var layerStr strings.Builder
 	if cfg.PrintLayer {
-		layerStr += fmt.Sprintf("Layer %d\n", layerIndex)
+		layerStr.WriteString(fmt.Sprintf("Layer %d\n", layerIndex))
 	}
 
 	for i := range table {
 		for j := range table[i] {
-			layerStr += table[i][j]
+			layerStr.WriteString(table[i][j])
 		}
-		layerStr += "\n"
+		layerStr.WriteString("\n")
 	}
 
-	return layerStr
+	return layerStr.String()
 }
 
 func drawKey(
