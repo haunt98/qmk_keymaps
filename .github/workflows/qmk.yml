@@ -60,7 +60,7 @@ jobs:
           qmk info -m -l -kb hineybush/h60 -km haunt98
           qmk info -m -l -kb sofle/rev1 -km haunt98
       - name: Archive firmware
-        uses: actions/upload-artifact@v6
+        uses: actions/upload-artifact@v7
         with:
           name: haunt98_firmware_${{ matrix.qmk_ref }}
           path: |
@@ -68,7 +68,7 @@ jobs:
             *.bin
             *.uf2
       - name: Archive keymaps JSON
-        uses: actions/upload-artifact@v6
+        uses: actions/upload-artifact@v7
         with:
           name: haunt98_keymaps_${{ matrix.qmk_ref }}
           path: |
