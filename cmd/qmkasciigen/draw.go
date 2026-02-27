@@ -225,7 +225,7 @@ func drawLayer(
 	// Print
 	var layerStr strings.Builder
 	if cfg.PrintLayer {
-		layerStr.WriteString(fmt.Sprintf("Layer %d\n", layerIndex))
+		fmt.Fprintf(&layerStr, "Layer %d\n", layerIndex)
 	}
 
 	for i := range table {
