@@ -110,12 +110,7 @@ qmk_compile: qmk_cp
     qmk compile -c -kb coban/pad9a -km haunt98
 
 qmk_clean:
-    rm -rf ~/qmk_firmware/users/haunt98
-    rm -rf ~/qmk_firmware/keyboards/hineybush/h60/keymaps/haunt98
-    rm -rf ~/qmk_firmware/keyboards/sofle/keymaps/haunt98
-    rm -rf ~/qmk_firmware/keyboards/crkbd/keymaps/haunt98
-    rm -rf ~/qmk_firmware/keyboards/coban/pad9a/keymaps/haunt98
-    qmk clean -a
+    git -C ~/qmk_firmware clean -fdx
     rm -rf *.bin *.hex *.uf2
 
 qmk_c2json:
