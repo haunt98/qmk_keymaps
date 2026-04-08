@@ -81,7 +81,7 @@ draw_keymap_drawer_format:
 
 draw: draw_qmkasciigen draw_keymap_drawer draw_keymap_drawer_format
 
-qmk: qmk_clean qmk_format qmk_compile qmk_c2json
+qmk: qmk_compile qmk_format qmk_c2json
 
 qmk_upstream:
     # curl -fsSL https://install.qmk.fm | CONFIRM=1 SKIP_UV=1 sh
@@ -91,8 +91,9 @@ qmk_upstream:
     qmk doctor
     curl https://raw.githubusercontent.com/qmk/qmk_firmware/master/.clang-format --output .clang-format
 
-qmk_format:
-    fd --extension c --extension h --exec clang-format -i
+qmk_clean:
+    git -C ~/qmk_firmware clean -fdx
+    rm -rf *.bin *.hex *.uf2
 
 qmk_cp:
     cp -rf users/haunt98 ~/qmk_firmware/users/
@@ -101,17 +102,16 @@ qmk_cp:
     cp -rf crkbd_rev1/keymaps/haunt98 ~/qmk_firmware/keyboards/crkbd/keymaps/
     cp -rf coban_pad9a/keymaps/haunt98 ~/qmk_firmware/keyboards/coban/pad9a/keymaps/
 
-qmk_compile: qmk_cp
+qmk_compile: qmk_clean qmk_cp
     # Ignore qmk lint as header errors
-    qmk compile -c -kb hineybush/h60 -km haunt98
+    qmk compile -kb hineybush/h60 -km haunt98
     mv ~/qmk_firmware/hineybush_h60_haunt98.hex .
-    qmk compile -c -kb sofle/rev1 -km haunt98
-    qmk compile -c -kb crkbd/rev1 -km haunt98
-    qmk compile -c -kb coban/pad9a -km haunt98
+    qmk compile -kb sofle/rev1 -km haunt98
+    qmk compile -kb crkbd/rev1 -km haunt98
+    qmk compile -kb coban/pad9a -km haunt98
 
-qmk_clean:
-    git -C ~/qmk_firmware clean -fdx
-    rm -rf *.bin *.hex *.uf2
+qmk_format:
+    fd --extension c --extension h --exec clang-format -i
 
 qmk_c2json:
     fd "keymap.json" --exec-batch rm
@@ -126,19 +126,19 @@ qmk_c2json:
     fd "keymap.json" --exec qmk format-json -i
 
 qmk_flash_sofle_rev1: qmk_clean qmk_cp
-    qmk flash -c -kb sofle/rev1 -km haunt98
+    qmk flash -kb sofle/rev1 -km haunt98
 
 qmk_flash_sofle_rev1_default: qmk_clean
-    qmk flash -c -kb sofle/rev1 -km default -e CONVERT_TO=rp2040_ce
+    qmk flash -kb sofle/rev1 -km default -e CONVERT_TO=rp2040_ce
 
 qmk_flash_crkbd_rev1: qmk_clean qmk_cp
-    qmk flash -c -kb crkbd/rev1 -km haunt98
+    qmk flash -kb crkbd/rev1 -km haunt98
 
 qmk_flash_crkbd_rev1_default: qmk_clean
-    qmk flash -c -kb crkbd/rev1 -km default -e CONVERT_TO=rp2040_ce
+    qmk flash -kb crkbd/rev1 -km default -e CONVERT_TO=rp2040_ce
 
 qmk_flash_coban_pad9a: qmk_clean qmk_cp
-    qmk flash -c -kb coban/pad9a -km haunt98
+    qmk flash -kb coban/pad9a -km haunt98
 
 qmk_flash_coban_pad9a_default: qmk_clean
-    qmk flash -c -kb coban/pad9a -km default -e CONVERT_TO=rp2040_ce
+    qmk flash -kb coban/pad9a -km default -e CONVERT_TO=rp2040_ce
