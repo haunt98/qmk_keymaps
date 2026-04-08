@@ -39,22 +39,17 @@ jobs:
           path: haunt98_qmk_keymaps
       - name: Copy keymaps
         run: |
-          rm -rf keyboards/hineybush/h60/keymaps/haunt98
-          cp -rf haunt98_qmk_keymaps/hineybush_h60/keymaps/haunt98 keyboards/hineybush/h60/keymaps/
-          rm -rf keyboards/sofle/keymaps/haunt98
-          cp -rf haunt98_qmk_keymaps/sofle_rev1/keymaps/haunt98 keyboards/sofle/keymaps/haunt98/
-          rm -rf users/haunt98
           cp -rf haunt98_qmk_keymaps/users/haunt98 users/
+          cp -rf haunt98_qmk_keymaps/hineybush_h60/keymaps/haunt98 keyboards/hineybush/h60/keymaps/
+          cp -rf haunt98_qmk_keymaps/sofle_rev1/keymaps/haunt98 keyboards/sofle/keymaps/
+          cp -rf haunt98_qmk_keymaps/crkbd_rev1/keymaps/haunt98 keyboards/crkbd/keymaps/
+          cp -rf haunt98_qmk_keymaps/coban_pad9a/keymaps/haunt98 keyboards/coban/pad9a/keymaps/
       - name: Build firmware
         run: |
           make hineybush/h60:haunt98
           make sofle/rev1:haunt98
-      - name: Convert keymaps JSON
-        run: |
-          qmk c2json -kb hineybush/h60 -km haunt98 -o hineybush_h60_haunt98_keymap.json --no-cpp \
-            haunt98_qmk_keymaps/hineybush_h60/keymaps/haunt98/keymap.c
-          qmk c2json -kb sofle/rev1 -km haunt98 -o sofle_rev1_haunt98_keymap.json --no-cpp \
-            haunt98_qmk_keymaps/sofle_rev1/keymaps/haunt98/keymap.c
+          make crkbd/rev1:haunt98
+          make coban/pad9a:haunt98
       - name: Extra
         run: |
           qmk info -m -l -kb hineybush/h60 -km haunt98
@@ -65,11 +60,4 @@ jobs:
           name: haunt98_firmware_${{ matrix.qmk_ref }}
           path: |
             *.hex
-            *.bin
             *.uf2
-      - name: Archive keymaps JSON
-        uses: actions/upload-artifact@v7
-        with:
-          name: haunt98_keymaps_${{ matrix.qmk_ref }}
-          path: |
-            *_keymap.json

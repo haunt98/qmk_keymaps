@@ -93,7 +93,7 @@ qmk_upstream:
 
 qmk_clean:
     git -C ~/qmk_firmware clean -fdx
-    rm -rf *.bin *.hex *.uf2
+    rm -rf *.hex *.uf2
 
 qmk_cp:
     cp -rf users/haunt98 ~/qmk_firmware/users/
@@ -105,10 +105,11 @@ qmk_cp:
 qmk_compile: qmk_clean qmk_cp
     # Ignore qmk lint as header errors
     qmk compile -kb hineybush/h60 -km haunt98
-    mv ~/qmk_firmware/hineybush_h60_haunt98.hex .
     qmk compile -kb sofle/rev1 -km haunt98
     qmk compile -kb crkbd/rev1 -km haunt98
     qmk compile -kb coban/pad9a -km haunt98
+    mv ~/qmk_firmware/*.hex .
+    mv ~/qmk_firmware/*.uf2 .
 
 qmk_format:
     fd --extension c --extension h --exec clang-format -i

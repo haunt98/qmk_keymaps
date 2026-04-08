@@ -12,5 +12,5 @@ coverage.out
 vendor
 
 # QMK
-*.bin
 *.hex
+*.uf2
