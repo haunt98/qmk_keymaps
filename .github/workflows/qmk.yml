@@ -50,10 +50,6 @@ jobs:
           make sofle/rev1:haunt98
           make crkbd/rev1:haunt98
           make coban/pad9a:haunt98
-      - name: Extra
-        run: |
-          qmk info -m -l -kb hineybush/h60 -km haunt98
-          qmk info -m -l -kb sofle/rev1 -km haunt98
       - name: Archive firmware
         uses: actions/upload-artifact@v7
         with:
