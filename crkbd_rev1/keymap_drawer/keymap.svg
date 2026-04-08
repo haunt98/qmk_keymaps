@@ -639,7 +639,7 @@ rect.esc, rect.vim {
 <g transform="translate(210, 30)" class="key keypos-3">
 <rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key side"/>
 <rect rx="4" ry="4" x="-22" y="-26" width="44" height="44" class="key"/>
-<text x="0" y="-4" class="key tap">F7</text>
+<text x="0" y="-4" class="key tap">F9</text>
 </g>
 <g transform="translate(270, 38)" class="key keypos-4">
 <rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key side"/>
@@ -649,7 +649,7 @@ rect.esc, rect.vim {
 <g transform="translate(330, 45)" class="key keypos-5">
 <rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key side"/>
 <rect rx="4" ry="4" x="-22" y="-26" width="44" height="44" class="key"/>
-<text x="0" y="-4" class="key tap">F9</text>
+<text x="0" y="-4" class="key tap">F7</text>
 </g>
 <g transform="translate(570, 45)" class="key keypos-6">
 <rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key side"/>
@@ -697,7 +697,7 @@ rect.esc, rect.vim {
 <g transform="translate(210, 90)" class="key keypos-15">
 <rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key side"/>
 <rect rx="4" ry="4" x="-22" y="-26" width="44" height="44" class="key"/>
-<text x="0" y="-4" class="key tap">F4</text>
+<text x="0" y="-4" class="key tap">F6</text>
 </g>
 <g transform="translate(270, 98)" class="key keypos-16">
 <rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key side"/>
@@ -707,7 +707,7 @@ rect.esc, rect.vim {
 <g transform="translate(330, 105)" class="key keypos-17">
 <rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key side"/>
 <rect rx="4" ry="4" x="-22" y="-26" width="44" height="44" class="key"/>
-<text x="0" y="-4" class="key tap">F6</text>
+<text x="0" y="-4" class="key tap">F4</text>
 </g>
 <g transform="translate(570, 105)" class="key arrow keypos-18">
 <rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key arrow side"/>
@@ -755,7 +755,7 @@ rect.esc, rect.vim {
 <g transform="translate(210, 150)" class="key keypos-27">
 <rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key side"/>
 <rect rx="4" ry="4" x="-22" y="-26" width="44" height="44" class="key"/>
-<text x="0" y="-4" class="key tap">F1</text>
+<text x="0" y="-4" class="key tap">F3</text>
 </g>
 <g transform="translate(270, 158)" class="key keypos-28">
 <rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key side"/>
@@ -765,7 +765,7 @@ rect.esc, rect.vim {
 <g transform="translate(330, 165)" class="key keypos-29">
 <rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key side"/>
 <rect rx="4" ry="4" x="-22" y="-26" width="44" height="44" class="key"/>
-<text x="0" y="-4" class="key tap">F3</text>
+<text x="0" y="-4" class="key tap">F1</text>
 </g>
 <g transform="translate(570, 165)" class="key keypos-30">
 <rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key side"/>
