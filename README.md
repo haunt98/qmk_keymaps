@@ -103,8 +103,9 @@ Do:
     - [Keyboard Matrix Scanning and Debouncing](https://summivox.wordpress.com/2016/06/03/keyboard-matrix-scanning-and-debouncing/)
 - [Grave Escape](https://github.com/qmk/qmk_firmware/blob/master/docs/features/grave_esc.md): Useful on layout <= 60%,
   because of missing `Fn` row.
-- [Mod-Tap](https://github.com/qmk/qmk_firmware/blob/master/docs/mod_tap.md): To replace `CAPSLOCK` with `CTRL` when
-  hold and `ESC` when tap.
+- [Mod-Tap](https://github.com/qmk/qmk_firmware/blob/master/docs/mod_tap.md)
+    - To replace `CAPSLOCK` with `CTRL` when hold and `ESC` when tap.
+    - [A guide to home row mods](https://precondition.github.io/home-row-mods)
 - [Tap-Hold Configuration Options](https://github.com/qmk/qmk_firmware/blob/master/docs/tap_hold.md)
 - [Tap Dance: A Single Key Can Do 3, 5, or 100 Different Things](https://github.com/qmk/qmk_firmware/blob/master/docs/features/tap_dance.md):
   I use it for safely `QK_BOOT`.
@@ -116,10 +117,6 @@ Do:
     - [How can I use a rotary encoder?](https://docs.splitkb.com/hc/en-us/articles/360010513760-How-can-I-use-a-rotary-encoder)
 - [Mouse keys](https://github.com/qmk/qmk_firmware/blob/master/docs/features/mouse_keys.md)
 - [Combos](https://github.com/qmk/qmk_firmware/blob/master/docs/features/combo.md)
-- [Community Modules](https://github.com/qmk/qmk_firmware/blob/master/docs/features/community_modules.md)
-    - https://github.com/drashna/qmk_modules
-    - https://github.com/getreuer/qmk-modules
-    - https://github.com/tzarc/qmk_modules
 
 Don't:
 
@@ -129,9 +126,6 @@ Don't:
 - [RGB Matrix Lighting](https://github.com/qmk/qmk_firmware/blob/master/docs/features/rgb_matrix.md)
 - [Auto Shift: Why Do We Need a Shift Key?](https://github.com/qmk/qmk_firmware/blob/master/docs/features/auto_shift.md):
   Conflict with space cadet when using vim `:w` -> `:)w`.
-- [Swap-Hands Action](https://github.com/qmk/qmk_firmware/blob/master/docs/features/swap_hands.md)
-- `qmk format-c`: I have custom `clang-format`.
-- [A guide to home row mods](https://precondition.github.io/home-row-mods): Hard to get it right, so ignore it for now.
 
 Build/Optimize:
 
@@ -140,14 +134,18 @@ Build/Optimize:
 - [Reducing firmware size](https://get.vial.today/docs/firmware-size.html)
 - [Configuring QMK (VIA)](https://www.caniusevia.com/docs/configuring_qmk)
 
-More:
+Interesting:
+
+- [Designing a Symbol Layer](https://getreuer.info/posts/keyboards/symbol-layer/index.html)
+- [QMK: SOCD Cleaner](https://getreuer.info/posts/keyboards/socd-cleaner/)
+- [Community Modules](https://github.com/qmk/qmk_firmware/blob/master/docs/features/community_modules.md)
+    - https://github.com/drashna/qmk_modules
+    - https://github.com/getreuer/qmk-modules
+    - https://github.com/tzarc/qmk_modules
+- https://github.com/manna-harbour/miryoku
+- https://github.com/filterpaper/qmk_userspace
 
 - [Programming On 34 Keys](https://oppi.li/posts/programming_on_34_keys/)
-- [Miryoku](https://github.com/manna-harbour/miryoku)
-- [Pascal Getreuer's QMK keymap](https://github.com/getreuer/qmk-keymap)
-    - [Designing a Symbol Layer](https://getreuer.info/posts/keyboards/symbol-layer/index.html)
-    - [QMK: SOCD Cleaner](https://getreuer.info/posts/keyboards/socd-cleaner/)
-- [filterpaper/qmk_userspace](https://github.com/filterpaper/qmk_userspace)
 - [The SpaceFN concept](https://kbd.news/The-SpaceFN-concept-2315.html)
 - [RP2040 Controller is now the default option](https://ergomech.store/blog/ergomech-blog-1/rp2040-controller-is-now-the-default-option-3):
   Limit of ATmega32U4 aka Pro Micro:
@@ -155,14 +153,10 @@ More:
     - Do not work well with USB-C to USB-C cable.
 - [I Bought the Stack Overflow Keyboard. I Instantly Became a 10x Developer and Ended Up Writing the Default Firmware for It](https://teknologiumum.com/posts/i-bought-the-stack-overflow-keyboard-i-instantly-became-a-10x-developer-and-ended-up-writing-the-default-firmware-for-it)
 - [Building a keyboard firmware](https://matt3o.com/building-a-keyboard-firmware/)
-- [Having fun with keyboard mappings under Linux](https://pulsar17.me/2023/09/keymapping)
 - [My personalised 55% split keyboard](https://leanrada.com/notes/my-personalised-keyboard/)
-    - [Bitwise keyboard input method](https://leanrada.com/notes/developing-bitwise-input-method/)
+- [Bitwise keyboard input method](https://leanrada.com/notes/developing-bitwise-input-method/)
 - [Adding Apple’s Globe key to a QMK-powered keyboard](https://skip.house/blog/qmk-globe-key)
-- rust:
-    - [How to make your C codebase rusty: rewriting keyboard firmware keymap in Rust](https://about.houqp.me/posts/rusty-c/)
-    - [How to talk to your QMK-based keyboard using Rust](http://rantsideasstuff.com/posts/2021/01/26-how-to-talk-to-your-qmk-based-keyboard-using-rust/)
-    - [Oxidising my keyboard: how I wrote my QMK userland in Rust](https://nullp.tr/posts/oxidising-my-keyboard/)
+- [Having fun with keyboard mappings under Linux](https://pulsar17.me/2023/09/keymapping)
 
 ## qmkasciigen
 
