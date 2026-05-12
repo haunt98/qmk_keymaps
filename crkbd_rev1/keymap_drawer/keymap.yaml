@@ -19,7 +19,7 @@ layers:
         type: esc,
       }
     - A
-    - S
+    - OPT KCS
     - D
     - F
     - G
