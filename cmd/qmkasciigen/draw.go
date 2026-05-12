@@ -14,6 +14,7 @@ var mapRawBinding = []map[string]string{
 	{
 		// My custom
 		"CTL_ESC": "ESC CTRL",
+		"OPT_KCS": "S OPT",
 	},
 }
 
@@ -106,6 +107,7 @@ var mapTransformTiny = []map[string]string{
 		"BACKSPACE": "BACK",
 		"CAPSLOCK":  "CAPS",
 		"ESC CTRL":  "ESCTL",
+		"OPT_KCS":   "SOPT",
 		"( SHIFT":   "( SFT",
 		") SHIFT":   "( SFT",
 	},

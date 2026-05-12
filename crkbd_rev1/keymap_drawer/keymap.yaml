@@ -19,7 +19,7 @@ layers:
         type: esc,
       }
     - A
-    - OPT KCS
+    - { t: S, h: "$$mdi:apple-keyboard-option$$" }
     - D
     - F
     - G

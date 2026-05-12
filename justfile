@@ -74,6 +74,7 @@ draw_keymap_drawer_upstream: draw_keymap_drawer_init
 
 draw_keymap_drawer_format:
     bunx prettier --log-level error --write \
+        keymap_drawer/config.yaml \
         hineybush_h60/keymap_drawer/*.yaml \
     	sofle_rev1/keymap_drawer/*.yaml \
     	crkbd_rev1/keymap_drawer/*.yaml \
