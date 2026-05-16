@@ -73,7 +73,7 @@ draw_keymap_drawer_upstream: draw_keymap_drawer_init
     wcurl --curl-options="--clobber --netrc" https://raw.githubusercontent.com/caksoylar/keymap-drawer/main/resources/extra_layouts/corne_rotated.json --output crkbd_rev1/keymap_drawer/corne_rotated.json
 
 draw_keymap_drawer_format:
-    bunx prettier --log-level error --write \
+    npx prettier --log-level error --write \
         keymap_drawer/config.yaml \
         hineybush_h60/keymap_drawer/*.yaml \
     	sofle_rev1/keymap_drawer/*.yaml \
