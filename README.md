@@ -136,6 +136,7 @@ Build/Optimize:
 
 Interesting:
 
+- [Keyboard FAQs](https://getreuer.info/posts/keyboards/faqs/index.html)
 - [Designing a Symbol Layer](https://getreuer.info/posts/keyboards/symbol-layer/index.html)
 - [QMK: SOCD Cleaner](https://getreuer.info/posts/keyboards/socd-cleaner/)
 - [Community Modules](https://github.com/qmk/qmk_firmware/blob/master/docs/features/community_modules.md)
@@ -187,18 +188,3 @@ Thanks:
 Copycat QMK features with software.
 
 - [Modern Space Cadet (rev 3)](https://ke-complex-modifications.pqrs.org/json/space_cadet.json)
-
-## TODO
-
-- [x] How to flash
-- [x] Add stock firmware/docs
-- [x] Add qmk lint
-- [x] Visualize
-- [x] qmkasciigen
-    - [x] Use flag
-    - [x] Add docs
-    - [x] Get data directly from qmk
-    - [x] Split transform keycodes to raw binding/transform (same as keymap-drawer)
-    - [x] Support [Code page 437](https://en.wikipedia.org/wiki/Code_page_437)
-    - [x] Split draw func to multiples small func for easily maintenance
-    - [ ] Move scaleX, scaleY to config flag
