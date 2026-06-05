@@ -17,6 +17,10 @@ bool get_hold_on_other_key_press(uint16_t keycode, keyrecord_t *record) {
     switch (keycode) {
         case CTL_ESC:
             return true;
+        case SC_LSPO:
+            return true;
+        case SC_RSPC:
+            return true;
         default:
             return false;
     }
