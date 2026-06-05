@@ -3,7 +3,7 @@ module github.com/haunt98/qmk_keymaps
 go 1.25.0
 
 require (
-	github.com/bytedance/sonic v1.15.1
+	github.com/bytedance/sonic v1.15.2
 	github.com/spf13/cast v1.10.0
 	github.com/stretchr/testify v1.11.1
 )
