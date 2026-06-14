@@ -146,6 +146,7 @@ Interesting:
 - https://github.com/manna-harbour/miryoku
 - https://github.com/filterpaper/qmk_userspace
 
+- [Cursor keys belong at the center of your keyboard](https://tonsky.me/blog/cursor-keys/)
 - [Programming On 34 Keys](https://oppi.li/posts/programming_on_34_keys/)
 - [The SpaceFN concept](https://kbd.news/The-SpaceFN-concept-2315.html)
 - [RP2040 Controller is now the default option](https://ergomech.store/blog/ergomech-blog-1/rp2040-controller-is-now-the-default-option-3):
