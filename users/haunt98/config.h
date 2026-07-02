@@ -35,8 +35,6 @@
 
 #define CHORDAL_HOLD
 
-#define SPECULATIVE_HOLD
-
 // https://github.com/qmk/qmk_firmware/issues/9962
 #define NO_USB_STARTUP_CHECK
 
