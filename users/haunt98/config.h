@@ -22,7 +22,7 @@
 #ifdef TAPPING_TERM
 #    undef TAPPING_TERM
 #endif
-#define TAPPING_TERM 200
+#define TAPPING_TERM 250
 
 #define HOLD_ON_OTHER_KEY_PRESS_PER_KEY
 
