@@ -21,13 +21,10 @@ RGBLIGHT_ENABLE = no
 MAGIC_ENABLE = no
 BOOTMAGIC_ENABLE = yes
 
-# https://github.com/qmk/qmk_firmware/blob/master/docs/feature_debounce_type.md
-DEBOUNCE_TYPE = sym_defer_pr
-
 # https://github.com/qmk/qmk_firmware/blob/master/docs/features/tri_layer.md
 TRI_LAYER_ENABLE = yes
 
-# https://github.com/qmk/qmk_firmware/blob/master/docs/features/tri_layer.md
+# https://github.com/qmk/qmk_firmware/blob/master/docs/features/swap_hands.md
 SWAP_HANDS_ENABLE = no
 
 # Custom C

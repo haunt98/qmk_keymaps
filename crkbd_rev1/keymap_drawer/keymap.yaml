@@ -19,7 +19,7 @@ layers:
         type: esc,
       }
     - A
-    - { t: S, h: "$$mdi:apple-keyboard-option$$" }
+    - S
     - D
     - F
     - G
@@ -77,7 +77,7 @@ layers:
     - ""
     - ""
     - ""
-    - ""
+    - $$mdi:apple-keyboard-option$$
     - "1"
     - "2"
     - "3"
