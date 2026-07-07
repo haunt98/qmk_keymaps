@@ -883,9 +883,10 @@ rect.esc, rect.vim {
 <rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key side"/>
 <rect rx="4" ry="4" x="-22" y="-26" width="44" height="44" class="key"/>
 </g>
-<g transform="translate(30, 112)" class="key keypos-12">
-<rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key side"/>
-<rect rx="4" ry="4" x="-22" y="-26" width="44" height="44" class="key"/>
+<g transform="translate(30, 112)" class="key trans keypos-12">
+<rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key trans side"/>
+<rect rx="4" ry="4" x="-22" y="-26" width="44" height="44" class="key trans"/>
+<use href="#mdi:transfer-down" xlink:href="#mdi:transfer-down" x="-9" y="-13" height="18" width="18.0" class="key trans tap glyph mdi:transfer-down"/>
 </g>
 <g transform="translate(90, 112)" class="key keypos-13">
 <rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key side"/>
@@ -910,29 +911,34 @@ rect.esc, rect.vim {
 <rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key side"/>
 <rect rx="4" ry="4" x="-22" y="-26" width="44" height="44" class="key"/>
 </g>
-<g transform="translate(570, 105)" class="key keypos-18">
-<rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key side"/>
-<rect rx="4" ry="4" x="-22" y="-26" width="44" height="44" class="key"/>
+<g transform="translate(570, 105)" class="key arrow keypos-18">
+<rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key arrow side"/>
+<rect rx="4" ry="4" x="-22" y="-26" width="44" height="44" class="key arrow"/>
+<use href="#mdi:chevron-left" xlink:href="#mdi:chevron-left" x="-9" y="-13" height="18" width="18.0" class="key arrow tap glyph mdi:chevron-left"/>
 </g>
-<g transform="translate(630, 98)" class="key keypos-19">
-<rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key side"/>
-<rect rx="4" ry="4" x="-22" y="-26" width="44" height="44" class="key"/>
+<g transform="translate(630, 98)" class="key arrow keypos-19">
+<rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key arrow side"/>
+<rect rx="4" ry="4" x="-22" y="-26" width="44" height="44" class="key arrow"/>
+<use href="#mdi:chevron-down" xlink:href="#mdi:chevron-down" x="-9" y="-13" height="18" width="18.0" class="key arrow tap glyph mdi:chevron-down"/>
 </g>
-<g transform="translate(690, 90)" class="key keypos-20">
-<rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key side"/>
-<rect rx="4" ry="4" x="-22" y="-26" width="44" height="44" class="key"/>
+<g transform="translate(690, 90)" class="key arrow keypos-20">
+<rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key arrow side"/>
+<rect rx="4" ry="4" x="-22" y="-26" width="44" height="44" class="key arrow"/>
+<use href="#mdi:chevron-up" xlink:href="#mdi:chevron-up" x="-9" y="-13" height="18" width="18.0" class="key arrow tap glyph mdi:chevron-up"/>
 </g>
-<g transform="translate(750, 98)" class="key keypos-21">
-<rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key side"/>
-<rect rx="4" ry="4" x="-22" y="-26" width="44" height="44" class="key"/>
+<g transform="translate(750, 98)" class="key arrow keypos-21">
+<rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key arrow side"/>
+<rect rx="4" ry="4" x="-22" y="-26" width="44" height="44" class="key arrow"/>
+<use href="#mdi:chevron-right" xlink:href="#mdi:chevron-right" x="-9" y="-13" height="18" width="18.0" class="key arrow tap glyph mdi:chevron-right"/>
 </g>
 <g transform="translate(810, 112)" class="key keypos-22">
 <rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key side"/>
 <rect rx="4" ry="4" x="-22" y="-26" width="44" height="44" class="key"/>
 </g>
-<g transform="translate(870, 112)" class="key keypos-23">
-<rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key side"/>
-<rect rx="4" ry="4" x="-22" y="-26" width="44" height="44" class="key"/>
+<g transform="translate(870, 112)" class="key trans keypos-23">
+<rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key trans side"/>
+<rect rx="4" ry="4" x="-22" y="-26" width="44" height="44" class="key trans"/>
+<use href="#mdi:transfer-down" xlink:href="#mdi:transfer-down" x="-9" y="-13" height="18" width="18.0" class="key trans tap glyph mdi:transfer-down"/>
 </g>
 <g transform="translate(30, 172)" class="key keypos-24">
 <rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key side"/>
@@ -957,6 +963,7 @@ rect.esc, rect.vim {
 <g transform="translate(330, 165)" class="key keypos-29">
 <rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key side"/>
 <rect rx="4" ry="4" x="-22" y="-26" width="44" height="44" class="key"/>
+<use href="#mdi:apple-keyboard-option" xlink:href="#mdi:apple-keyboard-option" x="-9" y="-13" height="18" width="18.0" class="key tap glyph mdi:apple-keyboard-option"/>
 </g>
 <g transform="translate(570, 165)" class="key keypos-30">
 <rect rx="6" ry="6" x="-28" y="-28" width="56" height="56" class="key side"/>

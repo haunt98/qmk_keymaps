@@ -134,47 +134,45 @@ layers:
     - { t: "$$mdi:transfer-down$$", type: trans }
     - { t: "$$mdi:transfer-down$$", type: trans }
   L3:
-    [
-      "",
-      BRMD,
-      BRMU,
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-      "$$mdi:volume-minus$$",
-      "$$mdi:volume-plus$$",
-      "$$mdi:volume-off$$",
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-    ]
+    - ""
+    - BRMD
+    - BRMU
+    - ""
+    - ""
+    - ""
+    - ""
+    - ""
+    - ""
+    - ""
+    - ""
+    - ""
+    - { t: "$$mdi:transfer-down$$", type: trans }
+    - $$mdi:volume-minus$$
+    - $$mdi:volume-plus$$
+    - $$mdi:volume-off$$
+    - ""
+    - ""
+    - { t: "$$mdi:chevron-left$$", type: arrow }
+    - { t: "$$mdi:chevron-down$$", type: arrow }
+    - { t: "$$mdi:chevron-up$$", type: arrow }
+    - { t: "$$mdi:chevron-right$$", type: arrow }
+    - ""
+    - { t: "$$mdi:transfer-down$$", type: trans }
+    - ""
+    - ""
+    - ""
+    - ""
+    - ""
+    - $$mdi:apple-keyboard-option$$
+    - ""
+    - ""
+    - ""
+    - ""
+    - ""
+    - ""
+    - ""
+    - ""
+    - ""
+    - ""
+    - ""
+    - ""
