@@ -90,7 +90,7 @@ qmk_upstream:
     git -C ~/qmk_firmware pull origin master --tags
     qmk git-submodule
     qmk doctor
-    curl https://raw.githubusercontent.com/qmk/qmk_firmware/master/.clang-format --output .clang-format
+    cp ~/qmk_firmware/.clang-format .clang-format
 
 qmk_clean:
     git -C ~/qmk_firmware clean -fdx
