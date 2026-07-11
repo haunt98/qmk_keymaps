@@ -145,6 +145,7 @@ Interesting:
     - https://github.com/tzarc/qmk_modules
 - https://github.com/manna-harbour/miryoku
 - https://github.com/filterpaper/qmk_userspace
+- https://github.com/ergohaven/entropy
 
 - [Cursor keys belong at the center of your keyboard](https://tonsky.me/blog/cursor-keys/)
 - [Programming On 34 Keys](https://oppi.li/posts/programming_on_34_keys/)
