@@ -86,6 +86,7 @@ qmk: qmk_compile qmk_format qmk_c2json
 
 qmk_upstream:
     # curl -fsSL https://install.qmk.fm | CONFIRM=1 SKIP_UV=1 sh
+    # qmk setup
     qmk doctor
     git -C ~/qmk_firmware pull origin master --tags
     qmk git-submodule
